@@ -15,7 +15,7 @@ import io.Simulator;
  */
 public class CurriculumContentCS42SAP 
 {
-
+// Hello World!
     /**
      * Default constructor, set class properties
      */
