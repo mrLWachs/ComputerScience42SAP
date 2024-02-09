@@ -27,5 +27,5 @@ public class CurriculumContentCS42SAP
         new Part4();
         Simulator.header("Computer Science 42SAP curriculum content complete!");
     }
-    // Hello! this is a test using a Master Key with all permissions
+    // Hello! this is a test using a Classic Personal Acess Token! 
 }
