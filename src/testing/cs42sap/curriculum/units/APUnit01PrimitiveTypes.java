@@ -48,7 +48,15 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        
+        // System.out.println moves cursor down to next line for the next output
+           System.out.println("println");
+           System.out.println("println2");
+         // System.out.print leaves the cursor on the same line, 
+         // causing the next print to be on the same line
+            System.out.print("print ");
+            System.out.print("print2 \n");
+         // System.out.print printed both texts on the same line. 
+         // \n is used to move the cursor down to the next line
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
@@ -72,7 +80,12 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
-        
+        // integers remeber single digit numbers  
+        int number = 1;
+      // doubles remeber numbers with a decimal value up to 16 digits
+        double number2 = 1.1;
+      // boolean remebers 2 states, true or false
+        boolean trueFalse = true;
         
         //////////////////////////////////////////////////////////////////////// 
         Simulator.comment("1.3 Expressions and Assignment Statements");        
@@ -105,7 +118,22 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
+        int add = 1 + 1;
         
+        int subtract = 2 - 1;
+        
+        int multiply = 2*2;
+        
+        int divide = 4/2;
+        
+        int modulus = 9 % 2;
+        
+        
+        System.out.println(" 1 + 1 = " + add);
+        System.out.println(" 2 - 1 = " + subtract);
+        System.out.println(" 2 * 2 = " + multiply);
+        System.out.println(" 4/2 = " + divide);
+        System.out.println(" 9/2 remainder = " + modulus);
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.4 Compound Assignment Operators");
