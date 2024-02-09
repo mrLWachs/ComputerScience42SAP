@@ -8,6 +8,7 @@ on:
     branches: [ "Forest" ]
   pull_request:
     branches: [ "Forest" ]
+  workflow_dispatch:
 
 jobs:
   build:
