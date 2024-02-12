@@ -48,7 +48,7 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Hello World"); //Prints a line on the con
+        System.out.println("Hello World"); //Prints text on the console
         
         System.out.print("Hello");
         System.out.print("World");
@@ -76,7 +76,9 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
-        
+        int a = 1;
+        double b = 3.3;
+        boolean c = true;
         
         //////////////////////////////////////////////////////////////////////// 
         Simulator.comment("1.3 Expressions and Assignment Statements");        
