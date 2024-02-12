@@ -48,8 +48,10 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Hello World");
+        System.out.println("Hello World"); //Prints a line on the con
         
+        System.out.print("Hello");
+        System.out.print("World");
         
         
         ////////////////////////////////////////////////////////////////////////
