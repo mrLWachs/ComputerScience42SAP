@@ -20,11 +20,34 @@ import javax.swing.JFrame;
  */
 public class Simulator {
 
+    /**
+     *
+     */
     public static final String MESSAGE_DIALOG = "Message";
+
+    /**
+     *
+     */
     public static final String CONFIRM_DIALOG = "Confirm";
+
+    /**
+     *
+     */
     public static final String OPTION_DIALOG = "Option";
+
+    /**
+     *
+     */
     public static final String INPUT_DIALOG = "Input";
+
+    /**
+     *
+     */
     public static final String FILE_CHOOSER_DIALOG = "File Chooser";
+
+    /**
+     *
+     */
     public static final String FRAME = "GUI Frame";
 
     private static final String SIMULATED_DIALOG_1 = "~~~ SIMULATED {";
@@ -232,6 +255,18 @@ public class Simulator {
         }
         String text = object.toString();
         simpleOutput(newLine ? text + NEW_LINE : text, text);
+    }
+
+    /**
+     *
+     * @param object
+     * @param newLine
+     */
+    public static void forestOutput(Object object, boolean newLine) {
+        if (object == null) {
+            object = NULL;
+        }
+        colorOutput(object.toString(), GREEN, RESET);
     }
 
     /**
@@ -472,6 +507,9 @@ public class Simulator {
         return FLAG_FILE;
     }
 
+    /**
+     *
+     */
     public static void saveOutput() {
         FileHandler<LinkedList> handler = new FileHandler<>();
         handler.save(allOutput, DATA_FILE);
