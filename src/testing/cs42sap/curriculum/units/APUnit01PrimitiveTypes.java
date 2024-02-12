@@ -50,8 +50,7 @@ public class APUnit01PrimitiveTypes
         
         System.out.println("Hello World");
         
-        System.out.print("Hello");
-        System.out.print("World");
+        
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
