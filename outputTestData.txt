@@ -64,12 +64,12 @@
 63:	answer4 = 125.0
 64:	answer5 = 3.0
 65:	answer6 = -0.6931471805599453
-66:	seed = 0.7124026758967671
+66:	seed = 0.9108976151123435
 67:	low    = 1.0
 68:	high   = 10.0
-69:	number = 8.12402675896767
-70:	value = 8
-71:	card is 48
+69:	number = 10.108976151123434
+70:	value = 10
+71:	card is 43
 72:	equal
 73:	The example is 
 74:	less than
@@ -538,12 +538,12 @@ They would like an easy w ... (line shortened) ...
 534:	~~~ SIMULATED {Message} DIALOG: [25,250,2,-25,0,] ~~~ 
 535:	~~~ SIMULATED {Message} DIALOG: [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
 536:	~~~ SIMULATED {Message} DIALOG: [0,0,0,1,2,] ~~~ 
-537:	~~~ SIMULATED {Message} DIALOG: [8,6,4,6,10,4,1,7,1,4,9,3,1,7,10,10,5,1,6,3,10,5,1,1,2,9,3,3,8,1,6,8,3,3,6,9,8,8,3,3,4,4,4,1,1,10,7,10,3,9,] ~~~ 
-538:	Random character was F
-539:	q : + 0 w # , Y t N q p 6 U K y ^ c k g [ ! . / . M % N o e 
-r 4 6 L , Q l ^ ` N ! > n + C 6 g O 2 : G k ^ O n V 6 W Q < 
-Q j m Y u K U ) u z q V 9 u w t < e * X Y y i < * _ H B 3 L 
-d G M 0 = * = a x ... (line shortened) ...
+537:	~~~ SIMULATED {Message} DIALOG: [7,8,8,7,1,9,7,7,8,1,6,6,2,8,10,6,2,5,7,4,2,10,4,1,4,3,2,4,3,3,5,7,9,3,5,7,2,2,6,9,6,2,3,5,5,2,7,10,8,2,] ~~~ 
+538:	Random character was 5
+539:	! o % h _ $ 6 H w L / , ! g J ) \ W z \ * < z m N ` K I / ' 
+7 v Q ^ n i P e 8 I u $ z w T / , ) K I S O d x ` W h m $ % 
+> m h Y ] w > q } L o { p m n @ 1 7 w d B E $ p G ( ` E J ? 
+K z L ] w \ + = 1 ... (line shortened) ...
 540:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
 541:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
 542:	X O X 
@@ -885,14 +885,14 @@ X O X
 875:	I am a student
 876:		 Number: 	1
 877:		 GPA:    	0.3
-878:	O1 = java.lang.Object@eec5a4a
-879:	O2 = java.lang.Object@2b2948e2
-880:	O3 = java.lang.Object@2b2948e2
+878:	O1 = java.lang.Object@210366b4
+879:	O2 = java.lang.Object@eec5a4a
+880:	O3 = java.lang.Object@eec5a4a
 881:	Person  as string = Person
 882:	Student as string = Student: Person
 883:	Teacher as string = Teacher: Person
 884:	String  as string = squirrel
-885:	JOptionPane as string = io.JOptionPane@6ddf90b0
+885:	JOptionPane as string = io.JOptionPane@2b2948e2
 886:	O2==O3
 887:	P1==P2
 888:	P2==P3
@@ -958,9 +958,9 @@ X O X
 941:	Class name: Double, Hash Code: 300063655, To String: 3.14
 942:	Class name: Character, Hash Code: 97, To String: a
 943:	Class name: String, Hash Code: 3556498, To String: test
-944:	Class name: Athlete, Hash Code: 1643691748, To String: Athlete: Husky: HighSchool: Student: Person
-945:	Class name: JOptionPane, Hash Code: 2068434592, To String: io.JOptionPane@7b49cea0
-946:	Class name: Object, Hash Code: 143110009, To String: java.lang.Object@887af79
+944:	Class name: Athlete, Hash Code: 1335298403, To String: Athlete: Husky: HighSchool: Student: Person
+945:	Class name: JOptionPane, Hash Code: 1643691748, To String: io.JOptionPane@61f8bee4
+946:	Class name: Object, Hash Code: 2068434592, To String: java.lang.Object@7b49cea0
 947:	true
 948:	0
 949:	3.14
@@ -972,11 +972,11 @@ X O X
 955:	Class name: Double, Hash Code: 300063655, To String: 3.14
 956:	Class name: Character, Hash Code: 97, To String: a
 957:	Class name: String, Hash Code: 3556498, To String: test
-958:	Class name: Athlete, Hash Code: 1643691748, To String: Athlete: Husky: HighSchool: Student: Person
+958:	Class name: Athlete, Hash Code: 1335298403, To String: Athlete: Husky: HighSchool: Student: Person
 959:	Home Owner:
 960:	Mr. Lawrence Wachs
 961:	And the contents...
-962:	testing.cs40s.advancedclasses.Meeting@6e0e048a
+962:	testing.cs40s.advancedclasses.Meeting@5b87ed94
 963:	Mr. Lawrence Wachs is eating Apple from Do not eat!
 964:	Grill on the BBQ
 965:	Mr. Lawrence Wachs is eating Protein it was Savory
@@ -1596,107 +1596,107 @@ X O X
 1579:	// Test toString, size, isEmpty, and push methods...
 1580:	Empty = true	Size = 0	Empty Stack
 1581:	// Loop through adding random values
-1582:	Empty = false	Size = 1	Stack top -> [Swiss] <- bottom
-1583:	Empty = false	Size = 2	Stack top -> [Irish,Swiss] <- bottom
-1584:	Empty = false	Size = 3	Stack top -> [gaper,Irish,Swiss] <- bottom
-1585:	Empty = false	Size = 4	Stack top -> [sorry,gaper,Irish,Swiss] <- bottom
-1586:	Empty = false	Size = 5	Stack top -> [Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1587:	Empty = false	Size = 6	Stack top -> [trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1588:	Empty = false	Size = 7	Stack top -> [evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1589:	Empty = false	Size = 8	Stack top -> [Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1590:	Empty = false	Size = 9	Stack top -> [puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1591:	Empty = false	Size = 10	Stack top -> [Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
+1582:	Empty = false	Size = 1	Stack top -> [exist] <- bottom
+1583:	Empty = false	Size = 2	Stack top -> [Logan,exist] <- bottom
+1584:	Empty = false	Size = 3	Stack top -> [drunk,Logan,exist] <- bottom
+1585:	Empty = false	Size = 4	Stack top -> [Olwen,drunk,Logan,exist] <- bottom
+1586:	Empty = false	Size = 5	Stack top -> [later,Olwen,drunk,Logan,exist] <- bottom
+1587:	Empty = false	Size = 6	Stack top -> [durum,later,Olwen,drunk,Logan,exist] <- bottom
+1588:	Empty = false	Size = 7	Stack top -> [Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
+1589:	Empty = false	Size = 8	Stack top -> [Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
+1590:	Empty = false	Size = 9	Stack top -> [harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
+1591:	Empty = false	Size = 10	Stack top -> [moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
 1592:	// Test clone method...
-1593:	Clone stack: Stack top -> [Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
+1593:	Clone stack: Stack top -> [moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
 1594:	// Test equals method...
-1595:	Stack top -> [Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
+1595:	Stack top -> [moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
 ==
-Stack top -> [Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
+Stack top -> [moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
 1596:	// Now change the copy
 1597:	// Now check again
-1598:	Stack top -> [Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
+1598:	Stack top -> [moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
 !=
-Stack top -> [avail] <- bottom
+Stack top -> [leans] <- bottom
 1599:	// Re-clone the stack, and output
-1600:	Stack top -> [Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
+1600:	Stack top -> [moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
 1601:	// Text the pop method...
-1602:	Clone stack:	Empty = false	Size = 10	Stack top -> [Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
+1602:	Clone stack:	Empty = false	Size = 10	Stack top -> [moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
 1603:	// Loop through removing values
-1604:	Popped -> Grata	Empty = false	Size = 9	Stack top -> [puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1605:	Popped -> puces	Empty = false	Size = 8	Stack top -> [Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1606:	Popped -> Kurds	Empty = false	Size = 7	Stack top -> [evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1607:	Popped -> evoke	Empty = false	Size = 6	Stack top -> [trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1608:	Popped -> trace	Empty = false	Size = 5	Stack top -> [Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1609:	Popped -> Chevy	Empty = false	Size = 4	Stack top -> [sorry,gaper,Irish,Swiss] <- bottom
-1610:	Popped -> sorry	Empty = false	Size = 3	Stack top -> [gaper,Irish,Swiss] <- bottom
-1611:	Popped -> gaper	Empty = false	Size = 2	Stack top -> [Irish,Swiss] <- bottom
-1612:	Popped -> Irish	Empty = false	Size = 1	Stack top -> [Swiss] <- bottom
-1613:	Popped -> Swiss	Empty = true	Size = 0	Empty Stack
+1604:	Popped -> moody	Empty = false	Size = 9	Stack top -> [harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
+1605:	Popped -> harts	Empty = false	Size = 8	Stack top -> [Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
+1606:	Popped -> Alexi	Empty = false	Size = 7	Stack top -> [Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
+1607:	Popped -> Mateo	Empty = false	Size = 6	Stack top -> [durum,later,Olwen,drunk,Logan,exist] <- bottom
+1608:	Popped -> durum	Empty = false	Size = 5	Stack top -> [later,Olwen,drunk,Logan,exist] <- bottom
+1609:	Popped -> later	Empty = false	Size = 4	Stack top -> [Olwen,drunk,Logan,exist] <- bottom
+1610:	Popped -> Olwen	Empty = false	Size = 3	Stack top -> [drunk,Logan,exist] <- bottom
+1611:	Popped -> drunk	Empty = false	Size = 2	Stack top -> [Logan,exist] <- bottom
+1612:	Popped -> Logan	Empty = false	Size = 1	Stack top -> [exist] <- bottom
+1613:	Popped -> exist	Empty = true	Size = 0	Empty Stack
 1614:	Popped -> null	Empty = true	Size = 0	Empty Stack
 1615:	// Test peek (top is wrapper no testing needed)...
 1616:	Clone Top = null
-1617:	Stack Top = Grata
+1617:	Stack Top = moody
 1618:	// Test to array and to linked list...
-1619:	Linked List 	[Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss]
-1620:	Array   	[Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss]
+1619:	Linked List 	[moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist]
+1620:	Array   	[moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist]
 1621:	// Test our constructors...
-1622:	Stack top -> [Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
-1623:	Stack top -> [Grata,puces,Kurds,evoke,trace,Chevy,sorry,gaper,Irish,Swiss] <- bottom
+1622:	Stack top -> [moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
+1623:	Stack top -> [moody,harts,Alexi,Mateo,durum,later,Olwen,drunk,Logan,exist] <- bottom
 1624:	// Test the Queue object...
 1625:	// Test toString,size,isEmpty, and enqueue methods...
 1626:	Empty = true	Size = 0	Empty Queue
 1627:	// Loop through adding random values
-1628:	Empty = false	Size = 1	Queue back -> [helps] <- front
-1629:	Empty = false	Size = 2	Queue back -> [sassy,helps] <- front
-1630:	Empty = false	Size = 3	Queue back -> [Bilbo,sassy,helps] <- front
-1631:	Empty = false	Size = 4	Queue back -> [Medea,Bilbo,sassy,helps] <- front
-1632:	Empty = false	Size = 5	Queue back -> [scene,Medea,Bilbo,sassy,helps] <- front
-1633:	Empty = false	Size = 6	Queue back -> [piton,scene,Medea,Bilbo,sassy,helps] <- front
-1634:	Empty = false	Size = 7	Queue back -> [image,piton,scene,Medea,Bilbo,sassy,helps] <- front
-1635:	Empty = false	Size = 8	Queue back -> [vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
-1636:	Empty = false	Size = 9	Queue back -> [Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
-1637:	Empty = false	Size = 10	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
+1628:	Empty = false	Size = 1	Queue back -> [logos] <- front
+1629:	Empty = false	Size = 2	Queue back -> [gypsy,logos] <- front
+1630:	Empty = false	Size = 3	Queue back -> [ouzos,gypsy,logos] <- front
+1631:	Empty = false	Size = 4	Queue back -> [goofs,ouzos,gypsy,logos] <- front
+1632:	Empty = false	Size = 5	Queue back -> [laved,goofs,ouzos,gypsy,logos] <- front
+1633:	Empty = false	Size = 6	Queue back -> [paned,laved,goofs,ouzos,gypsy,logos] <- front
+1634:	Empty = false	Size = 7	Queue back -> [NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
+1635:	Empty = false	Size = 8	Queue back -> [rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
+1636:	Empty = false	Size = 9	Queue back -> [eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
+1637:	Empty = false	Size = 10	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
 1638:	// Test clone method...
-1639:	Clone Queue 			Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
+1639:	Clone Queue 			Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
 1640:	// Test equals method...
-1641:	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
+1641:	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
 ==
-Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
+Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
 1642:	// Now change the duplicate
 1643:	// Now check again
-1644:	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
+1644:	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
 ==
-Queue back -> [sires] <- front
+Queue back -> [blabs] <- front
 1645:	// Re-clone the queue, and output
-1646:	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
+1646:	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
 1647:	// Test the dequeue method...
-1648:	Clone queue:	Empty = false	Size = 10	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
+1648:	Clone queue:	Empty = false	Size = 10	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
 1649:	// Loop through removing values
-1650:	Dequeued -> helps	Empty = false	Size = 9	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy] <- front
-1651:	Dequeued -> sassy	Empty = false	Size = 8	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo] <- front
-1652:	Dequeued -> Bilbo	Empty = false	Size = 7	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea] <- front
-1653:	Dequeued -> Medea	Empty = false	Size = 6	Queue back -> [bunts,Helli,vital,image,piton,scene] <- front
-1654:	Dequeued -> scene	Empty = false	Size = 5	Queue back -> [bunts,Helli,vital,image,piton] <- front
-1655:	Dequeued -> piton	Empty = false	Size = 4	Queue back -> [bunts,Helli,vital,image] <- front
-1656:	Dequeued -> image	Empty = false	Size = 3	Queue back -> [bunts,Helli,vital] <- front
-1657:	Dequeued -> vital	Empty = false	Size = 2	Queue back -> [bunts,Helli] <- front
-1658:	Dequeued -> Helli	Empty = false	Size = 1	Queue back -> [bunts] <- front
-1659:	Dequeued -> bunts	Empty = true	Size = 0	Empty Queue
+1650:	Dequeued -> logos	Empty = false	Size = 9	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy] <- front
+1651:	Dequeued -> gypsy	Empty = false	Size = 8	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos] <- front
+1652:	Dequeued -> ouzos	Empty = false	Size = 7	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs] <- front
+1653:	Dequeued -> goofs	Empty = false	Size = 6	Queue back -> [swats,eased,rocks,NoDoz,paned,laved] <- front
+1654:	Dequeued -> laved	Empty = false	Size = 5	Queue back -> [swats,eased,rocks,NoDoz,paned] <- front
+1655:	Dequeued -> paned	Empty = false	Size = 4	Queue back -> [swats,eased,rocks,NoDoz] <- front
+1656:	Dequeued -> NoDoz	Empty = false	Size = 3	Queue back -> [swats,eased,rocks] <- front
+1657:	Dequeued -> rocks	Empty = false	Size = 2	Queue back -> [swats,eased] <- front
+1658:	Dequeued -> eased	Empty = false	Size = 1	Queue back -> [swats] <- front
+1659:	Dequeued -> swats	Empty = true	Size = 0	Empty Queue
 1660:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
 1661:	// Test front and back...
 1662:	Clone Front = null
-1663:	Queue Front = helps
+1663:	Queue Front = logos
 1664:	Clone Back  = null
-1665:	Queue Back  = bunts
+1665:	Queue Back  = swats
 1666:	// Test to array and to linked list...
-1667:	Linked List 	[bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps]
-1668:	Array   	[bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps]
+1667:	Linked List 	[swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos]
+1668:	Array   	[swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos]
 1669:	// Test our constructors...
-1670:	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
-1671:	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
+1670:	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
+1671:	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
 1672:	// Constructors from stack to queue (and back)...
-1673:	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front	 into 	Stack top -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- bottom
-1674:	Stack top -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- bottom	 into 	Queue back -> [bunts,Helli,vital,image,piton,scene,Medea,Bilbo,sassy,helps] <- front
+1673:	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front	 into 	Stack top -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- bottom
+1674:	Stack top -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- bottom	 into 	Queue back -> [swats,eased,rocks,NoDoz,paned,laved,goofs,ouzos,gypsy,logos] <- front
 1675:	Stacks and Queues Test completed!...................................................
 1676:	Searching and Sorting Test started......................................................
 1677:	// For the I.B. Exam, you only need to know:
@@ -1734,9 +1734,9 @@ Queue back -> [sires] <- front
 1709:	// Linking the TreeNodes...
 1710:	// Testing TreeNode equals...
 1711:	// Testing TreeNode toString...
-1712:	50
-1713:	10
-1714:	76
+1712:	12
+1713:	87
+1714:	59
 1715:	// Creating a Tree object...
 1716:	// Test the insert method...
 1717:	// Insert one more...
@@ -1745,17 +1745,17 @@ Queue back -> [sires] <- front
 1720:	Should NOT be found = false
 1721:	// Test toString() and pre, post, in order traversals
 1722:	Binary Tree:
-Order: Linked List 	[89,25,69,68,31,48]
-Pre:   Linked List 	[89,25,69,68,31,48]
-Post:  Linked List 	[48,31,68,69,25,89]
-In:    Linked List 	[25,31,48,68,69,89]
+Order: Linked List 	[31,44,95,25,73,44]
+Pre:   Linked List 	[31,25,44,95,73,44]
+Post:  Linked List 	[25,44,73,95,44,31]
+In:    Linked List 	[25,31,44,44,73,95]
 1723:	// Building second tree (test clone) and test equals
-1724:	1st tree -> Linked List 	[25,31,48,68,69,89]
-1725:	2nd tree -> Linked List 	[31,43,48,53,64,97]
+1724:	1st tree -> Linked List 	[25,31,44,44,73,95]
+1725:	2nd tree -> Linked List 	[31,32,34,66,77,88]
 1726:	1st!=2nd
 1727:	// Building a third tree (test clone) and test equals
-1728:	1st tree -> Linked List 	[25,31,48,68,69,89]
-1729:	3rd tree -> Linked List 	[25,31,48,68,69,89]
+1728:	1st tree -> Linked List 	[25,31,44,44,73,95]
+1729:	3rd tree -> Linked List 	[25,31,44,44,73,95]
 1730:	1st==3rd
 1731:	// Build all our data structures from each other...
 1732:	// Create variable objects...
@@ -1765,33 +1765,33 @@ In:    Linked List 	[25,31,48,68,69,89]
 1736:	// Create Queue from Stack...
 1737:	// Create Tree from Queue...
 1738:	// Output variables,array,list,stack,queue,tree...
-1739:	tries
-1740:	laban
-1741:	mauro
-1742:	peter
-1743:	hoofs
-1744:	[tries,laban,mauro,peter,hoofs]
-1745:	Linked List 	[tries,laban,mauro,peter,hoofs]
-1746:	Stack top -> [tries,laban,mauro,peter,hoofs] <- bottom
-1747:	Queue back -> [tries,laban,mauro,peter,hoofs] <- front
+1739:	freon
+1740:	corty
+1741:	divan
+1742:	regor
+1743:	roars
+1744:	[freon,corty,divan,regor,roars]
+1745:	Linked List 	[freon,corty,divan,regor,roars]
+1746:	Stack top -> [freon,corty,divan,regor,roars] <- bottom
+1747:	Queue back -> [freon,corty,divan,regor,roars] <- front
 1748:	Binary Tree:
-Order: Linked List 	[tries,laban,mauro,peter,hoofs]
-Pre:   Linked List 	[tries,laban,hoofs,mauro,peter]
-Post:  Linked List 	[hoofs,peter,mauro,laban,tries]
-In:    Linked List 	[hoofs,laba ... (line shortened) ...
+Order: Linked List 	[freon,corty,divan,regor,roars]
+Pre:   Linked List 	[freon,corty,divan,regor,roars]
+Post:  Linked List 	[divan,corty,roars,regor,freon]
+In:    Linked List 	[corty,diva ... (line shortened) ...
 1749:	// Now re-building queue from tree
 1750:	// Now re-building stack from queue
 1751:	// Now re-building LinkedList from stack...
 1752:	// Now re-building array from LinkedList...
 1753:	// Output array,list,stack,queue,tree again...
-1754:	[hoofs,laban,mauro,peter,tries]
-1755:	Linked List 	[hoofs,laban,mauro,peter,tries]
-1756:	Stack top -> [hoofs,laban,mauro,peter,tries] <- bottom
-1757:	Queue back -> [hoofs,laban,mauro,peter,tries] <- front
+1754:	[corty,divan,freon,regor,roars]
+1755:	Linked List 	[corty,divan,freon,regor,roars]
+1756:	Stack top -> [corty,divan,freon,regor,roars] <- bottom
+1757:	Queue back -> [corty,divan,freon,regor,roars] <- front
 1758:	Binary Tree:
-Order: Linked List 	[tries,laban,mauro,peter,hoofs]
-Pre:   Linked List 	[tries,laban,hoofs,mauro,peter]
-Post:  Linked List 	[hoofs,peter,mauro,laban,tries]
-In:    Linked List 	[hoofs,laba ... (line shortened) ...
+Order: Linked List 	[freon,corty,divan,regor,roars]
+Pre:   Linked List 	[freon,corty,divan,regor,roars]
+Post:  Linked List 	[divan,corty,roars,regor,freon]
+In:    Linked List 	[corty,diva ... (line shortened) ...
 1759:	Binary Trees Test completed!...................................................
 1760:	Computer Science 42SAP bonus content complete!...................................................

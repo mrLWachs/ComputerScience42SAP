@@ -81,9 +81,9 @@ public class APUnit01PrimitiveTypes
         ////////////////////////////////////////////////////////////////////////
         
         // integers remeber single digit numbers  
-        int number = 1;
+        int numberInt = 1;
       // doubles remeber numbers with a decimal value up to 16 digits
-        double number2 = 1.1;
+        double numberDecimal = 1.1;
       // boolean remebers 2 states, true or false
         boolean trueFalse = true;
         
@@ -118,14 +118,26 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
+        
+        //you can add integers or doubles with +
+        // the resulting output is an integer or double value depending on 
+        // the inputs
         int add = 1 + 1;
-        
+        // you can subtract integers or doubles with -
+        // the resulting output is an integer or double value depending on 
+        // the inputs
         int subtract = 2 - 1;
-        
+         // you can multiply integers or doubles with *
+        // the resulting output is an integer or double value depending on 
+        // the inputs
         int multiply = 2*2;
-        
+         // you can divide integers or doubles with /
+        // the resulting output is an integer or double value depending on 
+        // the inputs
         int divide = 4/2;
-        
+         // you can get the remainder of dividing integers or doubles with %
+        // the resulting output is an integer or double value depending on 
+        // the inputs
         int modulus = 9 % 2;
         
         
@@ -145,8 +157,45 @@ public class APUnit01PrimitiveTypes
             //           (−−) are used to add 1 or subtract 1 from the stored 
             //           value of a variable or an array element. The new 
             //           value is assigned to the variable or array element
-        ////////////////////////////////////////////////////////////////////////    
+        ////////////////////////////////////////////////////////////////////////   
         
+        // compound operators let you use shorter code to add, subract,
+        //multiply, divide and mod by using the operators (+=, −=, *=, /=, %=) 
+        
+        int compoundAdd = 2;
+        int compoundSubtract = 2;
+        int compoundMultiply = 2;
+        int compoundDivide = 2;
+        int compoundMod = 2;
+        
+        compoundAdd+= 2;
+        System.out.println("2 += 2 = " +compoundAdd);
+        
+        compoundSubtract -= 2;
+        System.out.println("2 -= 2 = " + compoundSubtract);
+        
+        compoundMultiply *= 2;
+        System.out.println("2 *= 2 = " + compoundMultiply);
+        
+        compoundDivide /= 2;
+        System.out.println("2 /= 2 = " +compoundDivide);
+        
+        compoundMod %= 2;
+        System.out.println("2 %= 2 = " +compoundMod);
+        
+        // you can add or subtract 1 from an integer or double using the shorthand
+        // (++) or (--)
+        int incrimentOpAdd = 2;
+        int incrimentOpSubtract = 2;
+        
+        System.out.println(" incrimentOpAdd = 2");
+        System.out.println("incrimentOpSubtract = 2");
+        
+        incrimentOpAdd ++;
+        System.out.println("incrimenOpAdd ++ = " + incrimentOpAdd);
+        
+        incrimentOpSubtract --;
+        System.out.println("incrimenOpSubtract -- = " + incrimentOpSubtract);
         
         
         ////////////////////////////////////////////////////////////////////////
