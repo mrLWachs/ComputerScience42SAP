@@ -48,11 +48,26 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Hello World"); //Prints text on the console
-        
+        System.out.println("System.out.println displays info on the moniter"
+                + " and moves down to the next line:");
+        System.out.println("Hello World");
+
+        System.out.println("System.out.print also displays info on the moniter"
+                + " but does not move down to the next line:");
         System.out.print("Hello");
-        System.out.print("World");
+        System.out.print("World"); 
+
+        /*
+            The output looks like this:
+
+                System.out.println displays info on the moniter and moves down to the next line:
+                Hello World
+
+                System.out.print also displays info on the moniter but does not move down to the next line:
+                HelloWorld
+         */
         
+        System.out.println("\n" + "Notice how the last two outputs are done on the same line");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
