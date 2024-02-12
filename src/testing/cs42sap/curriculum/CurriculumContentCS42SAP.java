@@ -20,6 +20,9 @@ public class CurriculumContentCS42SAP
      * Default constructor, set class properties
      */
     public CurriculumContentCS42SAP() {
+        
+        Simulator.comment("Hello World!");
+        
         Simulator.header("Computer Science 42SAP curriculum content starting...");         
         new Part1();
         new Part2();
