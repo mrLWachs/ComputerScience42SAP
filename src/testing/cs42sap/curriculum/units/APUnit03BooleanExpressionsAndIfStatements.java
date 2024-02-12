@@ -46,6 +46,17 @@ public class APUnit03BooleanExpressionsAndIfStatements
         ////////////////////////////////////////////////////////////////////////
         
         
+        String hello = "hello";
+        String world = "world";
+        
+         Simulator.comment(" using the == operand, we can compare the equivilency of primitive types!");
+        System.out.print("is \"hello\" == \"world\":" );
+        System.out.println(hello == world);
+            
+        Simulator.comment("You can also do this with numerical types!");
+        System.out.print("is 5 = 5?: ");
+        int five = 5;
+        System.out.println(five == 5);
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.2 if Statements and Control Flow");  
