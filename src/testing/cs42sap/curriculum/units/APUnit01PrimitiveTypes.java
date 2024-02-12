@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import collections.LinkedList;
 import io.Simulator;
 
  
@@ -72,6 +73,14 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
+        int age = 17;
+        final String name = "Forest";
+        
+        LinkedList<Object> values = new LinkedList<>();
+        values.add(name);
+        values.add(age);
+        
+        Simulator.forestOutput("%s is %d y/o", values);
         
         
         //////////////////////////////////////////////////////////////////////// 
