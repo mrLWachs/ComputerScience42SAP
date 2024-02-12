@@ -235,7 +235,6 @@ public class Simulator {
     }
 
     /**
-     *
      * @param object
      * @param newLine
      */
@@ -250,6 +249,14 @@ public class Simulator {
      *
      * @param fString
      * @param values
+     *
+     * <code>
+     *     LinkedList<Object> values = new LinkedList<>();
+     *     values.add("Forest");
+     *     values.add(17);
+     *     Simulator.forestOutput("%s is %d y/o", values);
+     *     // Output: Forest is 17 y/o
+     * </code>
      */
     public static void forestOutput(String fString, LinkedList<Object> values) {
         final String formattedString = String.format(fString, values.toArray(new Object[0]));
