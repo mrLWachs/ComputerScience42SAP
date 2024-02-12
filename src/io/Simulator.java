@@ -20,34 +20,11 @@ import javax.swing.JFrame;
  */
 public class Simulator {
 
-    /**
-     *
-     */
     public static final String MESSAGE_DIALOG = "Message";
-
-    /**
-     *
-     */
     public static final String CONFIRM_DIALOG = "Confirm";
-
-    /**
-     *
-     */
     public static final String OPTION_DIALOG = "Option";
-
-    /**
-     *
-     */
     public static final String INPUT_DIALOG = "Input";
-
-    /**
-     *
-     */
     public static final String FILE_CHOOSER_DIALOG = "File Chooser";
-
-    /**
-     *
-     */
     public static final String FRAME = "GUI Frame";
 
     private static final String SIMULATED_DIALOG_1 = "~~~ SIMULATED {";
@@ -267,6 +244,16 @@ public class Simulator {
             object = NULL;
         }
         colorOutput(object.toString(), GREEN, RESET);
+    }
+
+    /**
+     *
+     * @param fString
+     * @param values
+     */
+    public static void forestOutput(String fString, LinkedList<Object> values) {
+        final String formattedString = String.format(fString, values.toArray(new Object[0]));
+        colorOutput(formattedString, GREEN, RESET);
     }
 
     /**
