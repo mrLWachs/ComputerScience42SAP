@@ -45,7 +45,7 @@ public class APUnit01PrimitiveTypes {
         // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
 
-        System.out.println("I am a string literal!");
+        Simulator.output("I am a string literal!");
 
         System.out.print("using print() doens't create a new line");
         System.out.println("so these two print statements will be shoved together awkwardly!");
@@ -72,25 +72,25 @@ public class APUnit01PrimitiveTypes {
         //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
 
-        System.out.println("Java automatically allocates memory and creates these variables \n");
-        
-        System.out.println("Let's Model a Person! we can model thier traits using vairables");
-        System.out.println("this person has three important traits, thier age, net worth, and weather they are rich");
+        Simulator.comment("Java automatically allocates memory and creates these variables \n");
+
+        Simulator.comment("Let's Model a Person! we can model thier traits using vairables");
+        Simulator.comment("this person has three important traits, thier age, net worth, and weather they are rich");
         // bracket here so i can use these names later, if needed
         {
-        int age = 32;
-        System.out.println("age: " + age);
-        double dollars = 0.02;
-        System.out.println("dollars: " + dollars);
-        boolean isRich = false;
-        System.out.println("isRich: " + isRich);
-        
-        System.out.println("This person also has one trait that doesn't change, thier eye color");
-        // this may seem like a strange way to encode the color, but it's perfectally valid
-        // i could've done this with a string, like "blue", but this section only talks about
-        // value types and not refrence types, so i decided against it
-        final int EYE_COLOR = 0x505cc4; 
-        System.out.println("eye color: " + EYE_COLOR);
+            int age = 32;
+            Simulator.output("age: " + age);
+            double dollars = 0.02;
+            Simulator.output("dollars: " + dollars);
+            boolean isRich = false;
+            Simulator.output("isRich: " + isRich);
+
+            System.out.println("This person also has one trait that doesn't change, thier eye color");
+            // this may seem like a strange way to encode the color, but it's perfectally valid
+            // i could've done this with a string, like "blue", but this section only talks about
+            // value types and not refrence types, so i decided against it
+            final int EYE_COLOR = 0x505cc4;
+            System.out.println("eye color: " + EYE_COLOR);
         }
         //////////////////////////////////////////////////////////////////////// 
         Simulator.comment("1.3 Expressions and Assignment Statements");
@@ -123,21 +123,49 @@ public class APUnit01PrimitiveTypes {
         //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         {
-        // (1.3.1.1)  &  (1.3.1.2) 
-        double a = 2d;
-        int b = 7;
-        int c = 4;
+            // (1.3.1.1)  &  (1.3.1.2) 
+            double a = 2d;
+            int b = 7;
+            int c = 4;
             // (1.3.1.3)
-            System.out.println("you can use arithmetic operators to do math!");
-            System.out.println("let a = 2, b = 7;");
-            System.out.println("b + c: " + (b + c)); // (1.3.1.4)
-            System.out.println("a - b: " + (a - b)); 
-            System.out.println("a * b: " + (a * b));
-            System.out.println("a / b: " + (a / b));  //  (1.3.1.5)
-            System.out.println("a % b: " + (a % b));
-            System.out.println("you can even combine many to do more complex operations!");
-            System.out.println("(a%b)/ c + (b*a))" + (a%b)/ c + (b*a)); // (1.3.1.6)
-            System.out.println("these follow the order of operations!");
+            Simulator.comment("you can use arithmetic operators to do math!");
+            Simulator.comment("let a = 2, b = 7;");
+            Simulator.output("b + c: " + (b + c)); // (1.3.1.4)
+            Simulator.output("a - b: " + (a - b));
+            Simulator.output("a * b: " + (a * b));
+            Simulator.output("a / b: " + (a / b));  //  (1.3.1.5)
+            Simulator.output("a % b: " + (a % b));
+            Simulator.comment("you can even combine many to do more complex operations!");
+            Simulator.output("(a%b)/ c + (b*a)) = " + (a % b) / c + (b * a)); // (1.3.1.6)
+            Simulator.comment("these follow the order of operations!"); //(1.3.1.7)
+            
+            Simulator.comment("Just like with real math, you can't devide by zero!");
+            Simulator.output("b / 0 = ");
+            //(1.3.1.8)
+            try
+            {
+                Simulator.output(b / 0);
+            }
+            catch (ArithmeticException ae) // catches erorrs, not covered by AP
+            {
+               Simulator.output("\033[0;31m" + ae.toString());
+            }   
+            
+            // (1.3.2)
+            Simulator.comment("Once variables are created, they can be changed");
+            Simulator.output("a = " + a);
+            // (1.3.2.1)
+            Simulator.comment("let a = b"); a = b;        
+            Simulator.output("a = " + a);
+            // (1.3.2.2)
+            Simulator.comment("You can do complex assingments, like before!");
+            Simulator.comment("let a = 5 + ((a*a) + b/c)");
+            a = 5 + ((a*a) + b/c);
+            Simulator.output(a);
+            // (1.3.2.3) 
+            Simulator.comment("Notice how the value turned out to be a Double, "
+                    + "the value of the expression has a type based on the "
+                    + "evaluation of the expression ");
         }
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.4 Compound Assignment Operators");
