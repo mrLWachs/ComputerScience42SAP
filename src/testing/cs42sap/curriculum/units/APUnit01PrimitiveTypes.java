@@ -34,7 +34,7 @@ public class APUnit01PrimitiveTypes
     public APUnit01PrimitiveTypes() {
         Simulator.header("AP: Unit 1 (Primitive Types) started...");
         
-        // Me when I make a change:
+        // Me when I make a change 2:
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.1 Why Programming? Why Java?");        
