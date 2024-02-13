@@ -4,10 +4,9 @@ package testing;
 
 /** Required API imports */
 import io.Simulator;
-import testing.cs30s.ComputerScience30S;
-import testing.cs40s.ComputerScience40S;
 import testing.cs42sap.ComputerScience42SAP;
-import testing.cs42sap.bonus.BonusContentCS42SAP;
+import testing.cs42sap.PostCourseContent;
+import testing.cs42sap.PreCourseContent;
 
 
 /**
@@ -24,10 +23,9 @@ public class Tester
      */
     public Tester() {
         Simulator.header("Mr. Wachs Computer Science testing started...");
-        //new ComputerScience30S();
-        //new ComputerScience40S();        
+        new PreCourseContent();        
         new ComputerScience42SAP();        
-        //new BonusContentCS42SAP();
+        new PostCourseContent();
         Simulator.saveOutput();
         Simulator.header("Mr. Wachs Computer Science testing complete!");
     }

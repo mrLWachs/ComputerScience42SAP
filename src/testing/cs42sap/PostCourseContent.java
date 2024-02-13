@@ -1,9 +1,13 @@
 
 /** Required package class namespace */
-package testing.cs42sap.bonus;
+package testing.cs42sap;
 
 /** Required API imports */
 import io.Simulator;
+import testing.cs42sap.bonus.PermanentStorageTest;
+import testing.cs42sap.bonus.SearchSortTest;
+import testing.cs42sap.bonus.StacksQueuesTest;
+import testing.cs42sap.bonus.TreesTest;
 
  
 /**
@@ -15,13 +19,13 @@ import io.Simulator;
  * @author Mr. Wachs
  * @since June 2023
  */
-public class BonusContentCS42SAP 
+public class PostCourseContent 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public BonusContentCS42SAP() {
+    public PostCourseContent() {
         Simulator.header("Computer Science 42SAP bonus content starting...");         
         new PermanentStorageTest();
         new StacksQueuesTest();

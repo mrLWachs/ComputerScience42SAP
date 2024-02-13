@@ -18,84 +18,89 @@ import javax.swing.JFrame;
  * @author Mr. Wachs
  * @since June 2023
  */
-public class Simulator {
-
-    public static final String MESSAGE_DIALOG = "Message";
-    public static final String CONFIRM_DIALOG = "Confirm";
-    public static final String OPTION_DIALOG = "Option";
-    public static final String INPUT_DIALOG = "Input";
-    public static final String FILE_CHOOSER_DIALOG = "File Chooser";
-    public static final String FRAME = "GUI Frame";
-
-    private static final String SIMULATED_DIALOG_1 = "~~~ SIMULATED {";
-    private static final String SIMULATED_DIALOG_2 = "} DIALOG: ";
-    private static final int FLAG_INTEGER = -1;
-    private static final int MAX_LINE_LENGTH = 200;
-
-    private static final String FLAG_STRING = "-1";
-    private static final String FLAG_FILENAME = "simulatedFile.txt";
-    private static final String FLAG_INPUT = "simulated input line";
-    private static final String DATA_FILENAME = "outputTestData.txt";
-
-    private static final File FLAG_FILE = new File(FLAG_FILENAME);
-    private static final File DATA_FILE = new File(DATA_FILENAME);
-
-    private static final String NEW_LINE = "\n";
-    private static final String COMMENT = "// ";
-    private static final String NULL = "null";
-
-    private static final String RESET = "\033[0m";
-    private static final String BLACK = "\033[0;30m";
-    private static final String RED = "\033[0;31m";
-    private static final String GREEN = "\033[0;32m";
-    private static final String YELLOW = "\033[0;33m";
-    private static final String BLUE = "\033[0;34m";
-    private static final String PURPLE = "\033[0;35m";
-    private static final String CYAN = "\033[0;36m";
-    private static final String WHITE = "\033[0;37m";
-    private static final String BLACK_BOLD = "\033[1;30m";
-    private static final String RED_BOLD = "\033[1;31m";
-    private static final String GREEN_BOLD = "\033[1;32m";
-    private static final String YELLOW_BOLD = "\033[1;33m";
-    private static final String BLUE_BOLD = "\033[1;34m";
-    private static final String PURPLE_BOLD = "\033[1;35m";
-    private static final String CYAN_BOLD = "\033[1;36m";
-    private static final String WHITE_BOLD = "\033[1;37m";
-    private static final String BLACK_UNDERLINED = "\033[4;30m";
-    private static final String RED_UNDERLINED = "\033[4;31m";
-    private static final String GREEN_UNDERLINED = "\033[4;32m";
-    private static final String YELLOW_UNDERLINED = "\033[4;33m";
-    private static final String BLUE_UNDERLINED = "\033[4;34m";
-    private static final String PURPLE_UNDERLINED = "\033[4;35m";
-    private static final String CYAN_UNDERLINED = "\033[4;36m";
-    private static final String WHITE_UNDERLINED = "\033[4;37m";
-    private static final String BLACK_BACKGROUND = "\033[40m";
-    private static final String RED_BACKGROUND = "\033[41m";
-    private static final String GREEN_BACKGROUND = "\033[42m";
-    private static final String YELLOW_BACKGROUND = "\033[43m";
-    private static final String BLUE_BACKGROUND = "\033[44m";
-    private static final String PURPLE_BACKGROUND = "\033[45m";
-    private static final String CYAN_BACKGROUND = "\033[46m";
-    private static final String WHITE_BACKGROUND = "\033[47m";
-    private static final String BLACK_BRIGHT = "\033[0;90m";
-    private static final String RED_BRIGHT = "\033[0;91m";
-    private static final String GREEN_BRIGHT = "\033[0;92m";
-    private static final String YELLOW_BRIGHT = "\033[0;93m";
-    private static final String BLUE_BRIGHT = "\033[0;94m";
-    private static final String PURPLE_BRIGHT = "\033[0;95m";
-    private static final String CYAN_BRIGHT = "\033[0;96m";
-    private static final String WHITE_BRIGHT = "\033[0;97m";
-    private static final String BLACK_BOLD_BRIGHT = "\033[1;90m";
-    private static final String RED_BOLD_BRIGHT = "\033[1;91m";
-    private static final String GREEN_BOLD_BRIGHT = "\033[1;92m";
-    private static final String YELLOW_BOLD_BRIGHT = "\033[1;93m";
-    private static final String BLUE_BOLD_BRIGHT = "\033[1;94m";
-    private static final String PURPLE_BOLD_BRIGHT = "\033[1;95m";
-    private static final String CYAN_BOLD_BRIGHT = "\033[1;96m";
-    private static final String WHITE_BOLD_BRIGHT = "\033[1;97m";
-    private static final String BLACK_BACKGROUND_BRIGHT = "\033[0;100m";
-    private static final String RED_BACKGROUND_BRIGHT = "\033[0;101m";
-    private static final String GREEN_BACKGROUND_BRIGHT = "\033[0;102m";
+public class Simulator 
+{
+        
+    public static final  String MESSAGE_DIALOG           = "Message";
+    public static final  String CONFIRM_DIALOG           = "Confirm";
+    public static final  String OPTION_DIALOG            = "Option";
+    public static final  String INPUT_DIALOG             = "Input";
+    public static final  String FILE_CHOOSER_DIALOG      = "File Chooser";
+    public static final  String FRAME                    = "GUI Frame";
+        
+    private static final String SIMULATED_DIALOG_1       = "~~~ SIMULATED {";
+    private static final String SIMULATED_DIALOG_2       = "} DIALOG: ";
+    private static final int    FLAG_INTEGER             = -1;
+    private static final int    MAX_LINE_LENGTH          = 200;    
+    
+    private static final String FLAG_STRING              = "-1";
+    private static final String FLAG_FILENAME            = "simulatedFile.txt";
+    private static final String FLAG_INPUT               = "simulated input line";
+    private static final String DATA_FILENAME            = "outputTestData.txt";
+    private static final String CLEAN_DATA_FILENAME      = "cleanOutputTestData.txt";
+    
+    
+    private static final File   FLAG_FILE                = new File(FLAG_FILENAME); 
+    private static final File   DATA_FILE                = new File(DATA_FILENAME); 
+    private static final File   CLEAN_DATA_FILE          = new File(CLEAN_DATA_FILENAME); 
+    
+    
+    private static final String NEW_LINE                 = "\n";
+    private static final String COMMENT                  = "// ";
+    private static final String NULL                     = "null";
+    
+    private static final String RESET                    = "\033[0m";  
+    private static final String BLACK                    = "\033[0;30m";   
+    private static final String RED                      = "\033[0;31m";   
+    private static final String GREEN                    = "\033[0;32m";  
+    private static final String YELLOW                   = "\033[0;33m";  
+    private static final String BLUE                     = "\033[0;34m";   
+    private static final String PURPLE                   = "\033[0;35m";  
+    private static final String CYAN                     = "\033[0;36m";  
+    private static final String WHITE                    = "\033[0;37m";  
+    private static final String BLACK_BOLD               = "\033[1;30m";  
+    private static final String RED_BOLD                 = "\033[1;31m";   
+    private static final String GREEN_BOLD               = "\033[1;32m"; 
+    private static final String YELLOW_BOLD              = "\033[1;33m"; 
+    private static final String BLUE_BOLD                = "\033[1;34m";  
+    private static final String PURPLE_BOLD              = "\033[1;35m"; 
+    private static final String CYAN_BOLD                = "\033[1;36m";  
+    private static final String WHITE_BOLD               = "\033[1;37m"; 
+    private static final String BLACK_UNDERLINED         = "\033[4;30m"; 
+    private static final String RED_UNDERLINED           = "\033[4;31m";  
+    private static final String GREEN_UNDERLINED         = "\033[4;32m"; 
+    private static final String YELLOW_UNDERLINED        = "\033[4;33m"; 
+    private static final String BLUE_UNDERLINED          = "\033[4;34m";  
+    private static final String PURPLE_UNDERLINED        = "\033[4;35m";
+    private static final String CYAN_UNDERLINED          = "\033[4;36m";  
+    private static final String WHITE_UNDERLINED         = "\033[4;37m"; 
+    private static final String BLACK_BACKGROUND         = "\033[40m";  
+    private static final String RED_BACKGROUND           = "\033[41m";  
+    private static final String GREEN_BACKGROUND         = "\033[42m"; 
+    private static final String YELLOW_BACKGROUND        = "\033[43m"; 
+    private static final String BLUE_BACKGROUND          = "\033[44m";   
+    private static final String PURPLE_BACKGROUND        = "\033[45m"; 
+    private static final String CYAN_BACKGROUND          = "\033[46m";   
+    private static final String WHITE_BACKGROUND         = "\033[47m";  
+    private static final String BLACK_BRIGHT             = "\033[0;90m";  
+    private static final String RED_BRIGHT               = "\033[0;91m"; 
+    private static final String GREEN_BRIGHT             = "\033[0;92m";  
+    private static final String YELLOW_BRIGHT            = "\033[0;93m"; 
+    private static final String BLUE_BRIGHT              = "\033[0;94m";  
+    private static final String PURPLE_BRIGHT            = "\033[0;95m"; 
+    private static final String CYAN_BRIGHT              = "\033[0;96m";  
+    private static final String WHITE_BRIGHT             = "\033[0;97m";  
+    private static final String BLACK_BOLD_BRIGHT        = "\033[1;90m"; 
+    private static final String RED_BOLD_BRIGHT          = "\033[1;91m";  
+    private static final String GREEN_BOLD_BRIGHT        = "\033[1;92m"; 
+    private static final String YELLOW_BOLD_BRIGHT       = "\033[1;93m";
+    private static final String BLUE_BOLD_BRIGHT         = "\033[1;94m"; 
+    private static final String PURPLE_BOLD_BRIGHT       = "\033[1;95m";
+    private static final String CYAN_BOLD_BRIGHT         = "\033[1;96m";  
+    private static final String WHITE_BOLD_BRIGHT        = "\033[1;97m"; 
+    private static final String BLACK_BACKGROUND_BRIGHT  = "\033[0;100m";
+    private static final String RED_BACKGROUND_BRIGHT    = "\033[0;101m";
+    private static final String GREEN_BACKGROUND_BRIGHT  = "\033[0;102m";
     private static final String YELLOW_BACKGROUND_BRIGHT = "\033[0;103m";
     private static final String BLUE_BACKGROUND_BRIGHT = "\033[0;104m";
     private static final String PURPLE_BACKGROUND_BRIGHT = "\033[0;105m";
@@ -119,28 +124,48 @@ public class Simulator {
     };
 
     private static LinkedList<String> allOutput;
-
+    private static LinkedList<String> cleanOutput;
+        
+    private static String holdText = "";
+    
     private static int lineCount = 0;
 
     /**
      * Does a simple output with the passed message
-     *
+     * 
      * @param message the message to output
+     * @param original the original string value
      */
     private static void simpleOutput(String message, String original) {
-        java.lang.System.out.print(message);
+        simpleOutput(message, original, false);
+    }
+    
+    /**
+     * Does a simple output with the passed message
+     *
+     * @param message the message to output
+     * @param original the original string value
+     * @param newLine flag to determine if a line break or not
+     */
+    private static void simpleOutput(String message, String original, boolean newLine) {
+        if (newLine) java.lang.System.out.println(message);
+        else         java.lang.System.out.print(message);
         // Save all the output messages to a running list 
-        if (allOutput == null) {
-            allOutput = new LinkedList();
-        }
+        if (allOutput   == null) allOutput   = new LinkedList();
+        if (cleanOutput == null) cleanOutput = new LinkedList(); 
         if (original != null && !original.equals("")) {
-            lineCount++;
-            if (original.length() > MAX_LINE_LENGTH) {
-                original = original.substring(0, MAX_LINE_LENGTH)
-                        + " ... (line shortened) ...";
+            holdText += original;
+            if (newLine == true) {
+                lineCount++;
+                if (holdText.length() > MAX_LINE_LENGTH) {
+                    holdText = holdText.substring(0, MAX_LINE_LENGTH) + 
+                               " ... (line shortened) ...";
+                }            
+                allOutput.add(lineCount + ":\t" + holdText);
+                cleanOutput.add(holdText);
+                holdText = "";
             }
-            allOutput.add(lineCount + ":\t" + original);
-        }
+        }        
     }
 
     /**
@@ -152,10 +177,9 @@ public class Simulator {
      * @param resetCode the color reset code
      */
     private static void colorOutput(String message, String colorCode,
-            String resetCode) {
-        simpleOutput("", "");
-        simpleOutput(colorCode + message + resetCode, message);
-        simpleOutput(NEW_LINE, "");
+                                    String resetCode) {
+        String formattedMessage = colorCode + message + resetCode;
+        simpleOutput(formattedMessage, message, true);
     }
 
     /**
@@ -218,6 +242,18 @@ public class Simulator {
         }
         colorOutput(COMMENT + object, YELLOW, RESET);
     }
+    
+    /**
+     * Simulates the 'Printing' of an object but uses an output style 
+     * that tries to look like "code"
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void code(Object object) {
+        if (object == null)  object = new String(NULL); 
+        String text = object.toString();
+        colorOutput(text, PURPLE_BOLD, RESET);
+    }
 
     /**
      * Adds this object to the dynamic list of outputs with or without a new
@@ -231,7 +267,7 @@ public class Simulator {
             object = NULL;
         }
         String text = object.toString();
-        simpleOutput(newLine ? text + NEW_LINE : text, text);
+        simpleOutput(text,text,newLine); 
     }
 
     /**
@@ -507,6 +543,7 @@ public class Simulator {
     public static void saveOutput() {
         FileHandler<LinkedList> handler = new FileHandler<>();
         handler.save(allOutput, DATA_FILE);
+        handler.save(cleanOutput, CLEAN_DATA_FILE);        
     }
 
 }

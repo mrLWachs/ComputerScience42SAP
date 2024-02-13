@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ComputerScience42SAP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/ComputerScience42SAP.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
