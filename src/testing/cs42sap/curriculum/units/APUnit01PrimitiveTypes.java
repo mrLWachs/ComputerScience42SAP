@@ -48,7 +48,13 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        // 
+        // 1.1.1.1 - Output inside output box.
+        // 1.1.1.2 - System out print line makes a line break for new info. 
+        // System out print keeps displaying out put in same line.
+        // 1.1.2.1 - This means that the words you want to be outputed must be
+        // enclosed in quotes with semi colon to function. (Ex: sout TAB(String 
+        // words = "words");
+        
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
