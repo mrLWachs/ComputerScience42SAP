@@ -48,7 +48,7 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        // Hello World, It is Manskrit Sedha a student
+        // 
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
