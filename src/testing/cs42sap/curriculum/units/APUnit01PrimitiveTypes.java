@@ -48,7 +48,13 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        // I made a change :D
+        System.out.print("This is what System.out.print does!");
+        System.out.println(" And this is System.out.println, it adds a line "
+                + "break at the end!");
+        
+        String string = "The text inside the double quotes is called the "
+                + "string literal.\n";
+        System.out.println(string);
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
@@ -72,7 +78,23 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
+        System.out.println("The data type defines how to interepret and operate"
+                + " on the data the variable stores.");
+        System.out.println("A primitive data type stores the data directly, "
+                + "whereas a reference data type stores memory addresses.");
         
+        int number = 1;
+        double decimal = 1.0;
+        boolean bool = true;
+        
+        System.out.println("\nThis is an int: " + number);
+        System.out.println("This is an double: " + decimal);
+        System.out.println("This is an boolean: " + bool);
+        
+        System.out.println("\nEach variable has a memory address associated"
+                + " with it where the data is stored.");
+        System.out.println("If a variable is declared final the data at that"
+                + " memory address cannot be modified.\n");
         
         //////////////////////////////////////////////////////////////////////// 
         Simulator.comment("1.3 Expressions and Assignment Statements");        
@@ -105,7 +127,38 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
+        System.out.println("A literal is the text representing the data "
+                + "stored in a variable (the bit after the equals when defining"
+                + " a variable for example).");
+        System.out.println("Arithmetic operations can be performed on number"
+                + " data types such as ints and doubles.");
+        System.out.println("The arithmetic operators are addition (+), "
+                + "subtraction (-), multiplication (*), division (/), and "
+                + "modulus (%).");
+        System.out.println("Arithmetic operations between 2 integers will "
+                + "result in an integer: ");
         
+        int int1 = 2;
+        int int2 = 3;
+        
+        System.out.println("\n2 + 3 = " + (int1 + int2) + "\n");
+        
+        System.out.println("Arithmetic operations between an integers and "
+                + "a double will result in a double: ");
+        
+        double double1 = 2.0;
+        
+        System.out.println("\n2.0 + 3 = " + (double1 + int2) + "\n");
+        
+        System.out.println("Arithmetic operations follow BEDMAS, and attempting"
+                + " to divide by 0 will result in an error.");
+        System.out.println("Variables are defined as follows:\n");
+        System.out.println("{data type} {name} = {literal}\n");
+        System.out.println("And they are modified as follows:\n");
+        System.out.println("{name} = {literal}\n");
+        
+        System.out.println("Expressions are evaluated to one value, and have "
+                + "a data type based on the operations performed.\n");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.4 Compound Assignment Operators");
@@ -119,7 +172,16 @@ public class APUnit01PrimitiveTypes
             //           value is assigned to the variable or array element
         ////////////////////////////////////////////////////////////////////////    
         
-        
+        System.out.println("An operator can be placed before the 'equals' (=) "
+                + "sign as a shorthand representation of performing that "
+                + "operator between the variable and the literal given, "
+                + "for example:\n");
+        System.out.println("var1 += var2; is equivalent to var1 = var1 + "
+                + "var2;\n");
+        System.out.println("A double + or double - can be used to increment "
+                + "or decrement by 1 respectively:\n");
+        System.out.println("var1++; is equivalent to var1 = var1 + 1;");
+        System.out.println("var1--; is equivalent to var1 = var1 - 1;\n");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.5 Casting and Ranges of Variables");
@@ -145,7 +207,8 @@ public class APUnit01PrimitiveTypes
             //           within the allowed range
         ////////////////////////////////////////////////////////////////////////    
         
-        
+        System.out.println("A variable can be 'cast' to a different data type"
+                + " by placing ({data type}) before the literal.");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("AP: Unit 1 (Primitive Types) completed!");
