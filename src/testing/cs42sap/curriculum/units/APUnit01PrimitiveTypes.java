@@ -1,4 +1,3 @@
-
 /** Required package class namespace */
 package testing.cs42sap.curriculum.units;
 
@@ -34,7 +33,7 @@ public class APUnit01PrimitiveTypes
     public APUnit01PrimitiveTypes() {
         Simulator.header("AP: Unit 1 (Primitive Types) started...");
         
-        // Me when I make a change 2:
+        
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.1 Why Programming? Why Java?");        
@@ -48,7 +47,10 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.print("This is a system out print");
+        System.out.println("This is a system out println");
+        System.out.println("String literal is whatever is in between the "
+                + "double \"\" quotes");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
@@ -72,7 +74,15 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("Variables are used for two purposes in java; to"
+                + "reference objects / classes and to store values in it");
+        System.out.println("Primitive / built in data types are the data"
+                + " types that we have used many times previously, such as "
+                + "double or boolean");
+        System.out.println("For example, string is not considered a primitive"
+                + " type as it is not stored directly in a variable and it "
+                + " needs many methods to be called upon while processing "
+                + "(String is a class)");
         
         //////////////////////////////////////////////////////////////////////// 
         Simulator.comment("1.3 Expressions and Assignment Statements");        
@@ -105,7 +115,10 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("Simply put arithmetic operators are signs like "
+                + " + or % that we use to evaluate an two double / int values");
+        System.out.println("Isn't limited to only numbers though");
+        System.out.println("Assignment operator evaluates the answer");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.4 Compound Assignment Operators");
@@ -119,8 +132,9 @@ public class APUnit01PrimitiveTypes
             //           value is assigned to the variable or array element
         ////////////////////////////////////////////////////////////////////////    
         
-        
-        
+        System.out.println("These just show shortended / arguably better "
+                + "versions of previously stated operations, ex: ++");
+            
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.5 Casting and Ranges of Variables");
         // (1.5.1) Evaluate arithmetic expressions that use casting
@@ -145,10 +159,16 @@ public class APUnit01PrimitiveTypes
             //           within the allowed range
         ////////////////////////////////////////////////////////////////////////    
         
-        
+        System.out.println("Casting temporarily \"changes\" a value into a "
+                + "different data type inputted");
+        System.out.println("The value changes according to its changed type"
+                + "(ex. when double changes into int it rounds off");
+        System.out.println("If an int value is evaluated to over its range"
+                + " an intenger overflow occurs, which might result in an"
+                + " incorrect value within the allowed range of 4 bytes of "
+                + "memory");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("AP: Unit 1 (Primitive Types) completed!");
-    }
-     
+    }    
 }
