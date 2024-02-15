@@ -104,9 +104,7 @@ public class APUnit01PrimitiveTypes
         System.out.println("specified type of data. However, the data ");
         System.out.print("itself can change (or \"vary\") after the initial ");
         System.out.println("declaration. Examples of this are below...");
-        
-        int age = 17;
-        final String name = "Forest";
+
         // Variables declared and assigned initial ("starting") values:
         boolean a = true;
         int     b = 0;

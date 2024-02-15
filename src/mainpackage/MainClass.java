@@ -1,10 +1,13 @@
 
-/** Required package class namespace */
+/**
+ * Required package class namespace
+ */
 package mainpackage;
 
 /** Required API imports */
-import testing.Tester;
 
+import testing.Tester;
+import testing.forest.TestCode;
 
 /**
  * MainClass.java - the main class for this project
@@ -12,18 +15,18 @@ import testing.Tester;
  * @author Mr. Wachs
  * @since June 2023
  */
-public class MainClass 
-{
+public class MainClass {
 
     /**
      * Main method for the project
-     * 
+     *
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new Tester();  
+        //new Tester();
+        new TestCode(); // Forest's code
     }
-    
+
 }
 
 // <editor-fold>   
