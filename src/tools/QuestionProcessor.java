@@ -1,8 +1,10 @@
 package tools;
 
-import java.util.List;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
+import io.Simulator;
+import java.util.Set;
+import org.reflections.Reflections;
+import static org.reflections.scanners.Scanners.SubTypes;
+import static org.reflections.scanners.Scanners.TypesAnnotated;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -17,25 +19,26 @@ public class QuestionProcessor
 
     public static void RunAllQuestions()
     {
+        Reflections reflections = new Reflections("questions");
         try
         {
-            Class<?> clazz = ClassLoader.getSystemClassLoader()
-                    .loadClass("com.baeldung.annotation.scanner.SampleAnnotatedClass");
-            Question classAnnotation = clazz.getAnnotation(Question.class);
-            Method[] methods = clazz.getMethods();
-            List<String> annotatedMethods = new ArrayList<>();
-            for (Method method : methods)
+            Set<Class<?>> annotated
+                    = reflections.get(SubTypes
+                            .of(TypesAnnotated
+                                    .with(Question.class))
+                            .asClass());
+
+            for (Class<?> clazz : annotated)
             {
-                Question annotation = method.getAnnotation(Question.class);
-                if (annotation != null)
-                {
-                    annotatedMethods.add(annotation.Test());
-                }
+                Simulator.output("Testing " + clazz.getCanonicalName() + ": ");
+                clazz.getConstructor().newInstance();
             }
+
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             e.printStackTrace();
         }
     }
+
 }
