@@ -16,10 +16,24 @@ public class ExamQuestionsCS42SAP
      */
     public ExamQuestionsCS42SAP() {
         
-        question5();
+        //q1();
+        //q5();
+        //q6();
+        q9();
     }
 
-    private static void question5(){
+    //<editor-fold>
+
+    private static void q1(){
+        
+        int a = 5;
+        int b = 2;
+        double c = 3.0;
+        
+        System.out.println(5 + a / b * c - 1 );
+    }
+    
+    private static void q5(){
         
 //        boolean a = false;
 //        boolean b = true;
@@ -44,14 +58,6 @@ public class ExamQuestionsCS42SAP
         boolean e = test2(a,d);
         
         System.out.println(e);
-        
-        
-        
-        
-        
-        
-        
-        
     }
     
     public static boolean test0(boolean a, boolean b) {
@@ -76,6 +82,43 @@ public class ExamQuestionsCS42SAP
         return d;
     }
     
+    public static void q6() {
+        
+        int val = 48;
+        int div = 6;
+        
+        while ((val % 2 == 0) && div > 0) {
+            
+            if (val % div == 0){
+                
+                System.out.println(val + " ");
+            }
+            
+            val /= 2;
+            div--;
+        }
+        
+
+    }
     
+    //</editor-fold>
+    
+    public static void q9(){
+        
+        int[] nums = {1,2,3,4,5,6};
+        
+        for (int k = 0; k < nums.length; k++) {
+            
+            nums[k] = nums[k] * nums[k];
+            System.out.println(nums[k]);
+        }
+        
+        for(int n : nums){
+            
+            n = n * n;
+            System.out.println(n);
+        }
+        
+    }
     
 }

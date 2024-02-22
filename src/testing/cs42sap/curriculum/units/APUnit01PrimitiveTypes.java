@@ -94,6 +94,12 @@ public class APUnit01PrimitiveTypes
         int a = 1;
         double b = 3.3;
         boolean c = true;
+
+        System.out.println("This is an int: " + a);
+        System.out.println("This is a double: " + b);
+        if (c) System.out.println("c is a boolean and is true");
+        
+        // How to find the memory address of a primitive??
         
         //////////////////////////////////////////////////////////////////////// 
         Simulator.comment("1.3 Expressions and Assignment Statements");        
