@@ -16,18 +16,21 @@ import static org.reflections.scanners.Scanners.TypesAnnotated;
  */
 public class QuestionProcessor
 {
-
     public static void RunAllQuestions()
     {
         Reflections reflections = new Reflections("questions");
+        
         try
         {
+            System.out.println("getting annotated classes");
             Set<Class<?>> annotated
                     = reflections.get(SubTypes
                             .of(TypesAnnotated
                                     .with(Question.class))
                             .asClass());
-
+            
+            System.out.println("annotated size: " + annotated.size());
+            
             for (Class<?> clazz : annotated)
             {
                 Simulator.output("Testing " + clazz.getCanonicalName() + ": ");
