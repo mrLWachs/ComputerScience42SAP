@@ -132,6 +132,23 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
+        int add = 4 + 5;
+        System.out.println("This is addition:"
+                + "(The answer will be a whole number (an integer))"
+                + "\n" + "4 + 5 = " + add
+        );
+        
+        int subtract = 5 - 4;
+        System.out.println("This is subtraction: 5 - 4 = " + subtract);
+        
+        double multiply = 500 * 1.12;
+        System.out.println("This is multiplication:"  
+                + "(The answer to this will evaluate to a double)"
+                + "\n" + "500 * 1.12 = " + multiply
+        );
+        
+        double divide = 3 / 2;
+        System.out.println("This is division: 3 / 2 = " + divide);
         
         
         ////////////////////////////////////////////////////////////////////////
