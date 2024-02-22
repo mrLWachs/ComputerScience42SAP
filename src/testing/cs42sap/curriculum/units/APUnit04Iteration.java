@@ -28,7 +28,7 @@ public class APUnit04Iteration
      * Default constructor, set class properties
      */
     public APUnit04Iteration() {
-        Simulator.header("AP: Unit 4 (Iteration) started...");
+        Simulator.header("AP: Unit 4 (Iteration) started...");    
         
         
         
