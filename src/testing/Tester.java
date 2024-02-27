@@ -8,7 +8,6 @@ import testing.cs30s.ComputerScience30S;
 import testing.cs40s.ComputerScience40S;
 import testing.cs42sap.ComputerScience42SAP;
 import testing.cs42sap.bonus.BonusContentCS42SAP;
-import tools.QuestionProcessor;
 
 
 /**
@@ -29,7 +28,6 @@ public class Tester
         //new ComputerScience40S();        
         new ComputerScience42SAP();        
         //new BonusContentCS42SAP();
-        QuestionProcessor.RunAllQuestions();
         Simulator.saveOutput();
         Simulator.header("Mr. Wachs Computer Science testing complete!");
     }
