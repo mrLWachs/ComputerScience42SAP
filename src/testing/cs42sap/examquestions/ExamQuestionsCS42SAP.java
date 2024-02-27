@@ -19,7 +19,9 @@ public class ExamQuestionsCS42SAP
         //q1();
         //q5();
         //q6();
-        q9();
+        //q9();
+        mock();
+        
     }
 
     //<editor-fold>
@@ -118,6 +120,39 @@ public class ExamQuestionsCS42SAP
             n = n * n;
             System.out.println(n);
         }
+        
+    }
+    
+    //https://www.crackap.com/ap/computer-science-a/test1.html
+    private static void mock(){
+        
+        // 1: B 2: D 3:D
+        
+        //q4: A
+        double answer = 13 / 5; // = 2.0 coz it gets truncated (it's a division
+                                // between 2 integers)
+        double ans = (double)(13/5); // this one will not work coz it takes the 
+                                     // result of (13/5) and just turns the entire
+                                     // thing into a double
+        // to fix the problem it has to be a double/int or int/double or double/double
+        // int/int will just get truncated 
+        
+        //q5: E
+        int result = 13 - 3 * 6 / 4 % 3;
+        
+        //13 - 18 / 4 % 3;
+        //13 - 4 % 3     <--- 18/4 is 4.5 but it is truncated
+        //13 - 1 
+        //12
+        System.out.println(result);
+        
+        //q6: C
+        //2 + 3 * 12 / 7 - 4 + 8   <--- what is the answer if its not PEMDAS but PEADMS
+        //5 * 12 / 7 - 4 + 8
+        // 5 * 12 / 3 + 8
+        // 5 * 12 / 11
+        
+        System.out.println(5 * 12 / 11); // = 5
         
     }
     
