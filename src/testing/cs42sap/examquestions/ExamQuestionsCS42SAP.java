@@ -123,12 +123,16 @@ public class ExamQuestionsCS42SAP
         
     }
     
-    //https://www.crackap.com/ap/computer-science-a/test1.html
+    /**
+     * https://www.crackap.com/ap/computer-science-a/test1.html
+     * 
+     * 12 questions 
+     */
     private static void mock(){
         
         // 1: B 2: D 3:D
         
-        //q4: A
+        //q4: E
         double answer = 13 / 5; // = 2.0 coz it gets truncated (it's a division
                                 // between 2 integers)
         double ans = (double)(13/5); // this one will not work coz it takes the 
@@ -151,8 +155,60 @@ public class ExamQuestionsCS42SAP
         //5 * 12 / 7 - 4 + 8
         // 5 * 12 / 3 + 8
         // 5 * 12 / 11
-        
         System.out.println(5 * 12 / 11); // = 5
+        
+        //q7: C
+        //3.0 == x * (3.0 / x)
+        double x = 4.0;
+        if (3.0 == x * (3.0 / x)) System.out.println("true"); 
+        else System.out.println("false");
+        // K i am stupid coz all this boolean expression does is like
+        // x * 3 / x   <--- it will always be 3 except for when x = 0 coz the x's
+        //                  will cancel out 
+        
+        //q8: B
+        //(Math.pow(y,0.5) == Math.sqrt(y)) <--- it will only be false if y is 
+        //                                       is negative
+        
+        /*
+            double min =    -0.00001; // Double.MIN_VALUE;
+            double max = 99999.99999; //Double.MAX_VALUE;
+
+            for (double i = min; i < max; i = i + Math.abs(min)) {
+
+                double y = i;
+                if (Math.pow(y,0.5) == Math.sqrt(y)) {
+                    System.out.println(i + " = true");
+                }
+                else {
+                    System.out.println(i + " = false");
+                }
+            }
+        */
+        
+        //q9: D
+//        int num = 22;        
+//        if (num > 0)
+//        if (num % 5 == 0) 
+//        System.out.println(num);
+//        else System.out.println(num + " is negative");
+       
+//        int num = 22;        
+//        if (num > 0) if (num % 5 == 0) System.out.println(num);
+//        else System.out.println(num + " is negative");
+        
+        int num = 22;        
+        if (num > 0) {
+            if (num % 5 == 0) {
+                System.out.println(num);
+            }
+            else {
+                System.out.println(num + " is negative");
+            }
+        }
+        
+
+        
         
     }
     
