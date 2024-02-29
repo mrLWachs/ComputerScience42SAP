@@ -4,10 +4,12 @@ package testing;
 
 /** Required API imports */
 import io.Simulator;
+import questions.Questions;
 import testing.cs30s.ComputerScience30S;
 import testing.cs40s.ComputerScience40S;
 import testing.cs42sap.ComputerScience42SAP;
 import testing.cs42sap.bonus.BonusContentCS42SAP;
+import testing.cs42sap.bonus.Searching;
 
 
 /**
@@ -28,6 +30,8 @@ public class Tester
         //new ComputerScience40S();        
         new ComputerScience42SAP();        
         //new BonusContentCS42SAP();
+        new Questions();
+        new Searching("Macaroons");
         Simulator.saveOutput();
         Simulator.header("Mr. Wachs Computer Science testing complete!");
     }
