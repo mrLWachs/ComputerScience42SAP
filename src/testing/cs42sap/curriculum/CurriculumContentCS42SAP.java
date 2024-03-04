@@ -22,9 +22,9 @@ public class CurriculumContentCS42SAP
     public CurriculumContentCS42SAP() {
         Simulator.header("Computer Science 42SAP curriculum content starting...");         
         new Part1();
-        new Part2();
-        new Part3();
-        new Part4();
+        //new Part2();
+        //new Part3();
+        //new Part4();
         Simulator.header("Computer Science 42SAP curriculum content complete!");
     }
     // Hello! this is a test using a Classic Personal Acess Token! 

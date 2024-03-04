@@ -28,8 +28,8 @@ public class Part1
     public Part1() {
         Simulator.header("AP curriculum - Part 1 Test started...");
         new APUnit01PrimitiveTypes();
-        new APUnit03BooleanExpressionsAndIfStatements();
-        new APUnit04Iteration();
+        //new APUnit03BooleanExpressionsAndIfStatements();
+        //new APUnit04Iteration();
         Simulator.header("AP curriculum - Part 1 Test completed!");
     }
         

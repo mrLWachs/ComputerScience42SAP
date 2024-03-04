@@ -48,7 +48,11 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
+        System.out.print("Displays text in the output");
+        System.out.println("Displays text in the output with a line break"); 
         
+        String literal = "A string literal is what is enclosed in the double "
+                + "quotation marks";        
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
@@ -72,7 +76,16 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
+        int integer = 1;
+        double doub = 2.54;
+        boolean bool = true;        
+        System.out.println("An integer is a whole number, such as " + integer);
+        System.out.println("A double is a number which can contain decimals, "
+                + "such as " + doub);
+        System.out.println("A boolean is a true or false value");
         
+        final int FINAL = 5;        
+        System.out.println("A constant's value cannot be modified");
         
         //////////////////////////////////////////////////////////////////////// 
         Simulator.comment("1.3 Expressions and Assignment Statements");        
@@ -105,6 +118,13 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
+        int i1 = 4;
+        int i2 = 2;
+        double d1 = 8.82;
+        double d2 = 4.31;
+        
+        System.out.println(i1 + " + " + i2 + " = " + (i1 + i2));
+        System.out.println(d1 + " - " + d2 + " = " + (d1 - d2));
         
         
         ////////////////////////////////////////////////////////////////////////
@@ -119,7 +139,29 @@ public class APUnit01PrimitiveTypes
             //           value is assigned to the variable or array element
         ////////////////////////////////////////////////////////////////////////    
         
+        int i3 = 12;
+        final int I4 = 3;
         
+        System.out.println(i3 + " += " + I4 + " is the same as " + i3 + 
+                " = " + i3 + " + " + I4 + " which results in " + 
+                (i3 + I4));
+        System.out.println(i3 + " -= " + I4 + " is the same as " + i3 + 
+                " = " + i3 + " - " + I4 + " which results in " + 
+                (i3 - I4));
+        System.out.println(i3 + " *= " + I4 + " is the same as " + i3 + 
+                " = " + i3 + " * " + I4 + " which results in " + 
+                (i3 * I4));
+        System.out.println(i3 + " /= " + I4 + " is the same as " + i3 + 
+                " = " + i3 + " / " + I4 + " which results in " + 
+                (i3 / I4));
+        System.out.println(i3 + " %= " + I4 + " is the same as " + i3 + 
+                " = " + i3 + " % " + I4 + " which results in " + 
+                (i3 % I4));
+        
+        System.out.println("i++ can be used intead of i = i + 1 to add 1 to the"
+                + " variable");
+        System.out.println("i-- can be used intead of i = i - 1 to subtract 1"
+                + " from the variable");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.5 Casting and Ranges of Variables");
@@ -145,7 +187,20 @@ public class APUnit01PrimitiveTypes
             //           within the allowed range
         ////////////////////////////////////////////////////////////////////////    
         
+        int i5 = 8;
+        int i6 = 5;
+        double d3 = 3.445746;
         
+        double d5 = (double) i5 / i6;
+        int i7 = (int) d3;
+        
+        System.out.println("Casting can be done to convert values to different"
+                + " data types. \nFor example, you can use integers in an "
+                + "operation but have the final value be a double type");
+        System.out.println("(double) " + i5 + " / " + i6 + " = " + d5);
+        System.out.println("If you cast a double to an integer, it removes all "
+                + " the decimals from the value");
+        System.out.println("(int) " + d3 + " = " + i7);
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("AP: Unit 1 (Primitive Types) completed!");
