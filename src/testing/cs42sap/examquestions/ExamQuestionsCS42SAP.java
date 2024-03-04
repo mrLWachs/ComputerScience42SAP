@@ -20,7 +20,8 @@ public class ExamQuestionsCS42SAP
         //q5();
         //q6();
         //q9();
-        mock();
+        //mockTest1();
+        mockTest2();
         
     }
 
@@ -130,7 +131,7 @@ public class ExamQuestionsCS42SAP
      * 
      * got 10/12
      */
-    private static void mock(){
+    private static void mockTest1(){
         
         // 1: B 2: E 3:D
         
@@ -211,5 +212,47 @@ public class ExamQuestionsCS42SAP
         
         //q10: A q11: C q12: D
     }
+    
+    /**
+     * https://www.crackap.com/ap/computer-science-a/test2.html
+     * 
+     * 12 questions
+     */
+    private static void mockTest2(){
+        
+        //1: A
+        
+        
+        //q6:
+        boolean valid = checkNumber(6143); 
+        if (valid) System.out.println("V");
+
+        boolean valid2 = checkNumber(6143);
+        if (valid) System.out.println("V2");
+
+        boolean valid3 = checkNumber(6143);
+        if (valid) System.out.println("V3");
+
+        boolean valid4 = checkNumber(6143);
+        if (valid) System.out.println("V4");
+    }
+    
+    public static boolean checkNumber(int n){
+        
+        int d1, d2, d3, checkDigit, nRemaining, rem;
+        
+        checkDigit = n % 10;
+        nRemaining = n / 10;
+        d3 = nRemaining % 10;
+        nRemaining /= 10;
+        d2 = nRemaining % 10;
+        nRemaining /= 10;
+        d1 = nRemaining % 10;
+        
+        rem = (d1 + d2 + d3) % 7;
+        
+        return rem == checkDigit;
+    }
+    
     
 }
