@@ -127,10 +127,12 @@ public class ExamQuestionsCS42SAP
      * https://www.crackap.com/ap/computer-science-a/test1.html
      * 
      * 12 questions 
+     * 
+     * got 10/12
      */
     private static void mock(){
         
-        // 1: B 2: D 3:D
+        // 1: B 2: E 3:D
         
         //q4: E
         double answer = 13 / 5; // = 2.0 coz it gets truncated (it's a division
@@ -157,7 +159,7 @@ public class ExamQuestionsCS42SAP
         // 5 * 12 / 11
         System.out.println(5 * 12 / 11); // = 5
         
-        //q7: C
+        //q7: C <--- Answer is B
         //3.0 == x * (3.0 / x)
         double x = 4.0;
         if (3.0 == x * (3.0 / x)) System.out.println("true"); 
@@ -166,7 +168,7 @@ public class ExamQuestionsCS42SAP
         // x * 3 / x   <--- it will always be 3 except for when x = 0 coz the x's
         //                  will cancel out 
         
-        //q8: B
+        //q8: B <-- Answer is D
         //(Math.pow(y,0.5) == Math.sqrt(y)) <--- it will only be false if y is 
         //                                       is negative
         
@@ -186,7 +188,7 @@ public class ExamQuestionsCS42SAP
             }
         */
         
-        //q9: D
+        //q9: D 
 //        int num = 22;        
 //        if (num > 0)
 //        if (num % 5 == 0) 
@@ -207,9 +209,7 @@ public class ExamQuestionsCS42SAP
             }
         }
         
-
-        
-        
+        //q10: A q11: C q12: D
     }
     
 }
