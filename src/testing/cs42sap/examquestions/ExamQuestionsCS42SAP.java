@@ -104,7 +104,6 @@ public class ExamQuestionsCS42SAP
 
     }
     
-    //</editor-fold>
     
     public static void q9(){
         
@@ -123,7 +122,9 @@ public class ExamQuestionsCS42SAP
         }
         
     }
-    
+
+    //</editor-fold>
+
     /**
      * https://www.crackap.com/ap/computer-science-a/test1.html
      * 
@@ -227,14 +228,28 @@ public class ExamQuestionsCS42SAP
         boolean valid = checkNumber(6143); 
         if (valid) System.out.println("V");
 
-        boolean valid2 = checkNumber(6143);
-        if (valid) System.out.println("V2");
+        boolean valid2 = checkNumber(6144);
+        if (valid2) System.out.println("V2");
 
-        boolean valid3 = checkNumber(6143);
-        if (valid) System.out.println("V3");
+        boolean valid3 = checkNumber(6145);
+        if (valid3) System.out.println("V3");
 
-        boolean valid4 = checkNumber(6143);
-        if (valid) System.out.println("V4");
+        boolean valid4 = checkNumber(6146);
+        if (valid4) System.out.println("V4");
+
+        boolean valid5 = checkNumber(6147);
+        if (valid5) System.out.println("V5");
+        
+        //q9: 
+        for (int i = 5; i >= 1; i--) {
+            
+            for (int j = i; j >= 1; j--) {
+                
+                System.out.println(2 * j - 1);
+            }
+            
+            System.out.println();
+        }
     }
     
     public static boolean checkNumber(int n){
