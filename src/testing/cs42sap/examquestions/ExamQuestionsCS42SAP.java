@@ -11,6 +11,8 @@ package testing.cs42sap.examquestions;
 public class ExamQuestionsCS42SAP 
 {
 
+
+
     /**
      * Default constructor, set class properties
      */
@@ -22,7 +24,7 @@ public class ExamQuestionsCS42SAP
         //q9();
         //mockTest1();
         mockTest2();
-        
+        mockTest3();
     }
 
     //<editor-fold>
@@ -269,5 +271,27 @@ public class ExamQuestionsCS42SAP
         return rem == checkDigit;
     }
     
+    public static void mockTest3(){
+        
+        //q4: C
+        //Two overloaded methods in the same class must have parameters with different names
+        //this is false???
+        String message = "Hello World";
+        String punctuation = "!";
+        output(message);
+        output(message, punctuation);
+        //this is false: to overload a method it only has to have a different
+        //amount of parameters
+    }
     
+    private static void output(String message) {
+        
+        String punctuation = "!";
+        System.out.println(message + punctuation);
+    }
+
+    private static void output(String message, String punctuation) {
+        
+        System.out.println(message + punctuation);
+    }
 }
