@@ -7,127 +7,176 @@ import io.Simulator;
 
  
 /**
- * APUnit04Iteration.java - This unit focuses on iteration using while and for
- * loops. As you saw in Unit 3, Boolean expressions are useful when a program
- * needs to perform different operations under different conditions. Boolean
- * expressions are also one of the main components in iteration. This unit
- * introduces several standard algorithms that use iteration. Knowledge of
- * standard algorithms makes solving similar problems easier, as algorithms
- * can be modified or combined to suit new situations. Iteration is used when
- * traversing data structures such as arrays, ArrayLists, and 2D arrays. In
- * addition, it is a necessary component of several standard algorithms,
- * including searching and sorting, which will be covered in later units
+ * APUnit03BooleanExpressionsAndIfStatements.java - Algorithms are composed of
+ * three building blocks: sequencing, selection, and iteration. This unit
+ * focuses on selection, which is represented in a program by using conditional
+ * statements. Conditional statements give the program the ability to decide
+ * and respond appropriately and are a critical aspect of any nontrivial
+ * computer program. In addition to learning the syntax and proper use of
+ * conditional statements, students will build on the introduction of Boolean
+ * variables by writing Boolean expressions with relational and logical
+ * operators. The third building block of all algorithms is iteration, which
+ * you will cover in Unit 4. Selection and iteration work together to solve
+ * problems
  *
  * @author Mr. Wachs
  * @since June 2023
  */
-public class APUnit04Iteration 
+public class APUnit03BooleanExpressionsAndIfStatements 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public APUnit04Iteration() {
-        Simulator.header("AP: Unit 4 (Iteration) started...");
+    public APUnit03BooleanExpressionsAndIfStatements() {
+        Simulator.header("AP: Unit 3 (Boolean Expressions And If Statements) started...");
         
         
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.1 while Loops");  
-        // (4.1.1) Represent iterative processes using a while loop
-            // (4.1.1.1) Iteration statements change the flow of control by 
-            //           repeating a set of statements zero or more times until
-            //           a condition is met
-            // (4.1.1.2) In loops, the Boolean expression is evaluated before
-            //           each iteration of the loop body, including the first. 
-            //           When the expression evaluates to true, the loop body
-            //           is executed. This continues until the expression 
-            //           evaluates to false, whereupon the iteration ceases
-            // (4.1.1.3) A loop is an infinite loop when the Boolean 
-            //           expression always evaluates to true
-            // (4.1.1.4) If the Boolean expression evaluates to false 
-            //           initially, the loop body is not executed at all
-            // (4.1.1.5) Executing a return statement inside an iteration 
-            //           statement will halt the loop and exit the method or 
-            //           constructor
-        // (4.1.2) For algorithms in the context of a particular specification 
-        //         that does not require the use of traversals: (A) Identify
-        //         standard algorithms, (B) Modify standard algorithms, (C) 
-        //         Develop an algorithm
-            // (4.1.2.1) There are standard algorithms to: (A) Identify if an
-            //           integer is or is not evenly divisible by another 
-            //           integer, (B) Identify the individual digits in an 
-            //           integer, (C) Determine the frequency with which a 
-            //           specific criterion is met
-            // (4.1.2.2) There are standard algorithms to: (A) Determine a 
-            //           minimum or maximum value, (B) Compute a sum, average,
-            //           or mode
+        Simulator.comment("3.1 Boolean Expressions");  
+        // (3.1.1) Evaluate Boolean expressions that use relational operators 
+        //         in program code
+            // (3.1.1.1) Primitive values and reference values can be compared
+            //           using relational operators (i.e., == and !=)
+            // (3.1.1.2) Arithmetic expression values can be compared using 
+            //           relational operators (i.e., <, >, <=, >=)
+            // (3.1.1.3) An expression involving relational operators evaluates
+            //           to a Boolean value
+        ////////////////////////////////////////////////////////////////////////
+         
+        // == compares 2 variables, checking if they are the same
+        //!= compares 2 variables checking if they are different
+        
+        // (<,>) operators can be used for integers or doubles, checking if one is
+        // bigger or smaller than the other. as well as larger or equals (>=) and 
+        // smaller or equals (<=)
+       
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("3.2 if Statements and Control Flow");  
+        // (3.2.1) Represent branching logical processes by using conditional 
+        //         statements
+            // (3.2.1.1) Conditional statements interrupt the sequential 
+            //           execution of statements
+            // (3.2.1.2) if statements affect the flow of control by executing
+            //           different statements based on the value of a Boolean
+            //           expression
+            // (3.2.1.3) A one-way selection (if statement) is written when
+            //           there is a set of statements to execute under a 
+            //           certain condition. In this case, the body is executed
+            //           only when the Boolean condition is true
+        ////////////////////////////////////////////////////////////////////////
+        
+           // set good mood
+        boolean goodMood = true;
+        
+        if (goodMood) {
+            System.out.println("Today is a good day");
+        }
+        
+        int a = 3;
+        int b =5;
+        if (a < b) {
+            System.out.println("b is bigger than a");
+        }
+        
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("3.3 if-else Statements");  
+        // (3.3.1) Represent branching logical processes by using conditional 
+        //         statements
+            // (3.3.1.1) A two-way selection is written when there are two 
+            //           sets of statements— one to be executed when the 
+            //           Boolean condition is true, and another set for when 
+            //           the Boolean condition is false. In this case, the 
+            //           body of the "if" is executed when the Boolean 
+            //           condition is true, and the body of the "else" is 
+            //           executed when the Boolean condition is false
+        ////////////////////////////////////////////////////////////////////////
+        boolean hitByCar = false;
+        
+        if (goodMood) {
+            System.out.println("today is a good day");
+        }
+        else   System.out.println("today is not a good day,"
+                + " but at least i didnt get hit by a car");
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("3.4 else if Statements");  
+        // (3.4.1) Represent branching logical processes by using conditional 
+        //         statements
+            // (3.4.1.1) A multi-way selection is written when there are a 
+            //           series of conditions with different statements for 
+            //           each condition. Multi-way selection is performed 
+            //           using if-else-if statements such that exactly one 
+            //           section of code is executed based on the first
+            //           condition that evaluates to true
+        ////////////////////////////////////////////////////////////////////////
+        
+          if (goodMood) {
+            System.out.println("today is a good day");
+        }
+        else if (hitByCar){
+            System.out.println("dead");
+        }
+        else   System.out.println("today is not a good day,"
+                + " but at least i didnt get hit by a car");
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("3.5 Compound Boolean Expressions");  
+        // (3.5.1) Represent branching logical processes by using nested 
+        //         conditional statements
+            // (3.5.1.1) Nested if statements consist of if statements within
+            //           if statements
+        // (3.5.2) Evaluate compound Boolean expressions in program code
+            // (3.5.2.1) Logical operators !(not), &&(and), and ||(or) are 
+            //           used with Boolean values. This represents the order 
+            //           these operators will be evaluated
+            // (3.5.2.2) An expression involving logical operators evaluates 
+            //           to a Boolean value
+            // (3.5.2.3) When the result of a logical expression using && or
+            //           || can be determined by evaluating only the first 
+            //           Boolean operand, the second is not evaluated. This is
+            //           known as short-circuited evaluation
         ////////////////////////////////////////////////////////////////////////
         
         
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.2 for Loops");  
-        // (4.2.1) Represent iterative processes using a for loop
-            // (4.2.1.1) There are three parts in a for loop header: the 
-            //           initialization, the Boolean expression, and the 
-            //           increment. The increment statement can also be a 
-            //           decrement statement
-            // (4.2.1.2) In a for loop, the initialization statement is only
-            //           executed once before the first Boolean expression 
-            //           evaluation. The variable being initialized is referred 
-            //           to as a loop control variable
-            // (4.2.1.3) In each iteration of a for loop, the increment 
-            //           statement is executed after the entire loop body is 
-            //           executed and before the Boolean expression is 
-            //           evaluated again
-            // (4.2.1.4) A for loop can be rewritten into an equivalent while
-            //           loop and vice versa
-            // (4.2.1.5) “Off by one” errors occur when the iteration statement
-            //           loops one time too many or one time too few
+        Simulator.comment("3.6 Equivalent Boolean Expressions");  
+        // (3.6.1) Compare and contrast equivalent Boolean expressions
+            // (3.6.1.1) De Morgan’s Laws can be applied to Boolean expressions
+            // (3.6.1.2) Truth tables can be used to prove Boolean identities
+            // (3.6.1.3) Equivalent Boolean expressions will evaluate to the 
+            //           same value in all cases
         ////////////////////////////////////////////////////////////////////////
         
         
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.3 Developing Algorithms Using Strings");  
-        // (4.3.1) For algorithms in the context of a particular specification
-        //         that involves String objects: (A) Identify standard 
-        //         algorithms, (B) Modify standard algorithms, (C) Develop an 
-        //         algorithm
-            // (4.3.1.1) There are standard algorithms that utilize String 
-            //           traversals to: (A) Find if one or more substrings has 
-            //           a particular property, (B) Determine the number of 
-            //           substrings that meet specific criteria, (C) Create a
-            //           new string with the characters reversed
+        Simulator.comment("3.7 Comparing Objects");  
+        // (3.7.1) Compare object references using Boolean expressions in 
+        //         program code
+            // (3.7.1.1) Two object references are considered aliases when 
+            //           they both reference the same object
+            // (3.7.1.2) Object reference values can be compared, using == 
+            //           and !=, to identify aliases
+            // (3.7.1.3) A reference value can be compared with null, using 
+            //           == or !=, to determine if the reference actually 
+            //           references an object
+            // (3.7.1.4) Often classes have their own equals method, which can
+            //           be used to determine whether two objects of the class 
+            //           are equivalent
         ////////////////////////////////////////////////////////////////////////
         
         
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.4 Nested Iteration");  
-        // (4.4.1) Represent nested iterative processes
-            // (4.4.1.1) Nested iteration statements are iteration statements 
-            //           that appear in the body of another iteration statement
-            // (4.4.1.2) When a loop is nested inside another loop, the inner
-            //           loop must complete all its iterations before the outer
-            //           loop can continue
-        ////////////////////////////////////////////////////////////////////////
-        
-        
-        
-        ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.5 Informal Code Analysis");  
-        // (4.5.1) Compute statement execution counts and informal run-time 
-        //         comparison of iterative statements
-            // (4.5.1.1) A statement execution count indicates the number of 
-            //           times a statement is executed by the program
-        ////////////////////////////////////////////////////////////////////////
-        
-        
-        
-        ////////////////////////////////////////////////////////////////////////
-        Simulator.header("AP: Unit 4 (Iteration) completed!");
+        Simulator.header("AP: Unit 3 (Boolean Expressions And If Statements) completed!");
     }
-    
+     
 }
