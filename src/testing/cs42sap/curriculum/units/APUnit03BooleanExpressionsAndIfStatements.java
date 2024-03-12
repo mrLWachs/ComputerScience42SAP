@@ -45,7 +45,14 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           to a Boolean value
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("When comparing two primitive values,\n== can be"
+                + " used to check if they are equal and\n!= can check if the"
+                + " two values are not equal");
+        System.out.println("You can also compare values by using symbols such"
+                + " as\n< : lesser than\n> : greater than\n<= : lesser than"
+                + " or equal to\n>= : greater than or equal to");
+        System.out.println("The result of the comparison will be a boolean"
+                + " expression - either true or false");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.2 if Statements and Control Flow");  
@@ -62,7 +69,15 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           only when the Boolean condition is true
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("if statements will only run their code if their "
+                + "conditions are met. This gives the ability\nfor the code to "
+                + "make choices");
+        System.out.println("This 'choice' is made with a boolean expression"
+                + " that displays the conditions of the statement.\nIf the"
+                + " conditions are met, the boolean expression will be true"
+                + " and will run the code. If any\nof the conditions are not"
+                + " met, the boolean will be determined to be false and will"
+                + " skip over\nthe section of code within the if statement");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.3 if-else Statements");  
@@ -77,7 +92,11 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           executed when the Boolean condition is false
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("An else statement can be written after an if"
+                + " statement so that different code will run if the\nboolean"
+                + " of the if statement is false.");
+        System.out.println("This code will not be run at"
+                + " all if the boolean of the if statement is true.");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.4 else if Statements");  
@@ -91,7 +110,12 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           condition that evaluates to true
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("One or multiple else if statements can be written"
+                + " after an if statement to give the code\nmultiple choices"
+                + " for a decision. Each else if statement will have it's own"
+                + " conditions to be\nable to run. The statement that is chosen"
+                + " to run will be the first if or else if statment\nwho's"
+                + " conditions are true");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.5 Compound Boolean Expressions");  
