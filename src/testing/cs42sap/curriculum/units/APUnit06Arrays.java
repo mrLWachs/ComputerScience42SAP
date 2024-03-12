@@ -1,10 +1,13 @@
 
+/
 /** Required package class namespace */
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
-import io.Simulator;
 
+import io.Simulator;
+import java.lang.reflect.Array;
+import java.util.Arrays;
  
 /**
  * APUnit06Arrays.java - This unit focuses on data structures, which are used
@@ -61,8 +64,11 @@ public class APUnit06Arrays
             //           will result in an ArrayIndexOutOfBoundsException 
             //           being thrown
         ////////////////////////////////////////////////////////////////////////
-        
-        
+
+     
+        String[] arrayString = new String[]{"zero","one","two","three","four","this is out of place"};
+        int[] arrayInt = new int[]{0,1,2,3,4};
+        int[] messyArray = new int[]{234,33,67,223,15,43,62,53,34,6,75,3,1};
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("6.2 Traversing Arrays");  
@@ -79,8 +85,20 @@ public class APUnit06Arrays
             //           an ArrayIndexOutOfBoundsException being thrown
         ////////////////////////////////////////////////////////////////////////
         
+        int indexInt1 = arrayInt[1];
+        System.out.println(indexInt1);
         
+        String indexString1 = arrayString[1];
+        System.out.println(indexString1);
+        // for loop "i" starts and 0 and outputs that index in the array
+        // 1 is added to "i" every ideration untill it reaches the legnth of the array
+        for (int i = 0; i < arrayInt.length; i++) {
+            System.out.println(arrayInt[i]);
+        }
         
+        for (int i = 0; i < arrayString.length; i++) {
+            System.out.println(arrayString[i]);
+        }
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("6.3 Enhanced for Loop for Arrays");  
         // (6.3.1) Traverse the elements in a 1D array object using an enhanced
@@ -96,9 +114,15 @@ public class APUnit06Arrays
             //           traverse and access elements in an array can be 
             //           rewritten using an indexed for loop or a while loop
         ////////////////////////////////////////////////////////////////////////
-        
-        
-        
+        // enhanced for loops 
+        // the int "one" assigned the value of what is found at that index of 
+        //the array and the body code outputs that value
+        for (int one : arrayInt) {
+            System.out.println(one);
+        }
+        for ( String output : arrayString ) {
+            System.out.println(output);
+        }
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("6.4 Developing Algorithms Using Arrays");  
         // (6.4.1) For algorithms in the context of a particular specification 
@@ -119,8 +143,34 @@ public class APUnit06Arrays
             //           right, (b) Reverse the order of the elements
         ////////////////////////////////////////////////////////////////////////
         
-        
-        
+        for (int i = 0; i < arrayInt.length; i++) {
+            if (arrayInt[i] == 1) {
+                System.out.println(" found it" +" 1 is at index " + i);
+            }
+           
+        }
+          
+        for (int i = 0; i < arrayString.length; i++) {
+            if (arrayString[i] == "this is out of place") {
+                System.out.println( "index " + i + " is out of place");
+            }
+           
+        }
+        // sorting
+        int i;
+        int j;
+        int temp;
+         for (i = 0; i < messyArray.length - 1; i++) {
+            for ( j = 0; j < messyArray.length - 1 - i; j++) {
+                if (messyArray[j] > messyArray[j+1]) {
+                  
+                 temp = messyArray[j];
+                 messyArray[j] = messyArray[j+1];
+                 messyArray[j + 1] = temp;
+                }
+                System.out.println(Arrays.toString(messyArray));
+            }
+        }
         Simulator.header("AP: Unit 6 (Arrays) completed!");
     }   
     
