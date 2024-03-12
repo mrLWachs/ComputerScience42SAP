@@ -4,6 +4,7 @@ package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
 import io.Simulator;
+import javax.security.auth.Subject;
 
  
 /**
@@ -23,6 +24,7 @@ import io.Simulator;
  * @author Mr. Wachs
  * @since 29-Jun-2023, 2:14:04 PM
  */
+
 public class APUnit05WritingClasses 
 {
 
@@ -66,6 +68,13 @@ public class APUnit05WritingClasses
             //           allow client code to use and modify data
         ////////////////////////////////////////////////////////////////////////
         
+        // classes can be used to break up code easily into different sections
+        // or different uses. for example if you have a program for a people at a 
+        //school you may make multiple classes such as "studemts" or "teachers" 
+        
+        // classes are called by a line of code that may look like this
+        students Scott = new students();
+        
         
         
         ////////////////////////////////////////////////////////////////////////
@@ -93,9 +102,10 @@ public class APUnit05WritingClasses
             //           no-argument constructor, and the instance variables 
             //           are set to default values
         ////////////////////////////////////////////////////////////////////////
-                
-        
-        
+         // a constuctor method sets the perameters of a class
+         // for a teacher a perameter may be a subject that they teach                          
+         teachers wachs = new teachers("computer science");
+           // for example                      ^^^^^^^^^^^^^^^^^
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("5.2 Documentation with Comments");  
         // (5.3.1) Describe the functionality and use of program code through 
@@ -149,7 +159,8 @@ public class APUnit05WritingClasses
             //           and the returned string is printed
         ////////////////////////////////////////////////////////////////////////
         
-        
+       String subject = wachs.getsubject();
+               System.out.println(subject);
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("5.5 Mutator Methods");  
@@ -274,3 +285,22 @@ public class APUnit05WritingClasses
     }
      
 }
+ class students{
+    // this is a class, classes can be made in other classes or in its own file
+     
+     public void write(){
+         System.out.println("this is being written from a class");
+ }
+}
+ class teachers{
+     
+     String subject = "";
+     teachers(String subject){
+        this.subject = subject;
+     }
+   
+     public String getsubject(){
+        
+         return subject;
+     }
+ }
