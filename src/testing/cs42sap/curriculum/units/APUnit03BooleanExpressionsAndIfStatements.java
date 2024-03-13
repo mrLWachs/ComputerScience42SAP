@@ -135,7 +135,19 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           known as short-circuited evaluation
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("Nested if statements are when an if statement is"
+                + " inside of another if statement. The code\ninside of the"
+                + " nested if statement will only run if the conditions of the"
+                + " original if statement\nand the conditions of the nested if"
+                + " statement are both true.");
+        System.out.println("To give multiple conditions for one if statement"
+                + " or to have the if statement only run if the\nconditions are"
+                + " false, you can use operators such as:\n!(not)\n&&(and)\n"
+                + "||(or)");
+        System.out.println("When using && or ||, if the result of the boolean"
+                + " expression can be determined with only the\nfirst"
+                + " condition, it will not look at the next condition. This is"
+                + " called short-circuited evaluation");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.6 Equivalent Boolean Expressions");  
