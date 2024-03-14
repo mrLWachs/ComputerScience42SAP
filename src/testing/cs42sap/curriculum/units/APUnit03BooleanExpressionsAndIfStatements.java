@@ -69,6 +69,12 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           only when the Boolean condition is true
         ////////////////////////////////////////////////////////////////////////
         
+        boolean condition = true;
+        
+        if (condition) {
+            // code
+        }
+        
         System.out.println("if statements will only run their code if their "
                 + "conditions are met. This gives the ability\nfor the code to "
                 + "make choices");
@@ -78,7 +84,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
                 + " and will run the code. If any\nof the conditions are not"
                 + " met, the boolean will be determined to be false and will"
                 + " skip over\nthe section of code within the if statement");
-        
+
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.3 if-else Statements");  
         // (3.3.1) Represent branching logical processes by using conditional 
@@ -92,10 +98,17 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           executed when the Boolean condition is false
         ////////////////////////////////////////////////////////////////////////
         
+        if (condition) {
+            // boolean is true code
+        }
+        else {
+            // boolean is false code
+        }
+        
         System.out.println("An else statement can be written after an if"
                 + " statement so that different code will run if the\nboolean"
                 + " of the if statement is false.");
-        System.out.println("This code will not be run at"
+        System.out.println("This code of the else statement will not be run at"
                 + " all if the boolean of the if statement is true.");
         
         ////////////////////////////////////////////////////////////////////////
@@ -109,6 +122,18 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           section of code is executed based on the first
             //           condition that evaluates to true
         ////////////////////////////////////////////////////////////////////////
+        
+        boolean condition2 = false;
+        
+        if (condition) {
+            // condition is true code
+        }
+        else if (condition2) {
+            // condition2 is true code
+        }
+        else {
+            // neither condition is true code
+        }
         
         System.out.println("One or multiple else if statements can be written"
                 + " after an if statement to give the code\nmultiple choices"
@@ -135,6 +160,31 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           known as short-circuited evaluation
         ////////////////////////////////////////////////////////////////////////
         
+        boolean condition3 = true;
+        boolean condition4 = true;
+        
+        if (condition) {
+            // condition is true code
+            if (condition4) {
+                // condition4 is true code
+            }
+            else {
+                // condition4 is not true code
+            }
+        }
+        else if (condition2 && condition3) {
+            // condition2 and condition 3 are true code
+        }
+        else if (!condition3) {
+            // condition3 is false code
+        }
+        else if (condition2 || condition4) {
+            // condition2 or condition4 is true code
+        }
+        else {
+            // none of the conditions are true code
+        }
+        
         System.out.println("Nested if statements are when an if statement is"
                 + " inside of another if statement. The code\ninside of the"
                 + " nested if statement will only run if the conditions of the"
@@ -157,7 +207,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
             // (3.6.1.3) Equivalent Boolean expressions will evaluate to the 
             //           same value in all cases
         ////////////////////////////////////////////////////////////////////////
-        
         
         
         ////////////////////////////////////////////////////////////////////////
