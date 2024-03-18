@@ -4,6 +4,8 @@ package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
 import io.Simulator;
+import java.util.ArrayList;
+import java.util.Collections;
 
  
 /**
@@ -51,8 +53,12 @@ public class APUnit07ArrayList
             //           otherwise be found at run-time
         ////////////////////////////////////////////////////////////////////////
         
+        ArrayList<String> list = new ArrayList<String>();
         
+        list.add(0,"Zero");
+        list.add(1, "ONE");
         
+       
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("7.2 ArrayList Methods");  
         // (7.2.1) Represent collections of related object reference data 
@@ -80,6 +86,11 @@ public class APUnit07ArrayList
             //           size;  returns the element formerly at position index
         ////////////////////////////////////////////////////////////////////////
         
+        list.add(0,"Zero");
+        list.add(1, "ONE");
+        
+        String index0 = list.get(0);
+        String index1 = list.get(1);
         
         
         ////////////////////////////////////////////////////////////////////////
@@ -103,8 +114,14 @@ public class APUnit07ArrayList
             //           traverse an ArrayList, you should not add or remove 
             //           elements
         ////////////////////////////////////////////////////////////////////////
-        
-        
+        // using for loop
+        for (int i = 0; i < list.size() ; i++) {
+            System.out.println(list.get(i));
+        }
+       // using enhanced for loop
+        for(String i : list){
+            System.out.println(i);
+        }
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("7.4 Developing Algorithms Using ArrayLists");  
@@ -132,6 +149,11 @@ public class APUnit07ArrayList
             //           all elements in the array or ArrayList have been 
             //           checked
         ////////////////////////////////////////////////////////////////////////
+       
+        
+ 
+        
+        
         
         
         
@@ -147,7 +169,25 @@ public class APUnit07ArrayList
             // (7.6.2.1) Informal run-time comparisons of program code segments
             //           can be made using statement execution counts
         ////////////////////////////////////////////////////////////////////////
+         ArrayList<Integer> intList = new ArrayList<Integer>();        
         
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        
+        intList.add(324);
+        intList.add(2);
+        intList.add(332);
+        intList.add(42);
+        intList.add(1);
+        for(int i : intList){
+            System.out.println(i);
+        }
+        // sort the list
+        Collections.sort(intList);
+                 
+                 
+           for(int i : intList){
+            System.out.println(i);
+        }   
         
         
         ////////////////////////////////////////////////////////////////////////
@@ -168,3 +208,8 @@ public class APUnit07ArrayList
     }
      
 }
+
+      
+          
+        
+   
