@@ -208,6 +208,10 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           same value in all cases
         ////////////////////////////////////////////////////////////////////////
         
+        System.out.println("The boolean expressions of if statements have"
+                + " specific rules to follow such as the order of\noperations"
+                + " when determining if it should run the block of code or"
+                + " not");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.7 Comparing Objects");  
@@ -225,7 +229,17 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           are equivalent
         ////////////////////////////////////////////////////////////////////////
         
+        String s1 = "abc";
+        String s2 = "ABC";
         
+        if (s1.equals(s2)) {
+            // code if s1 = s2
+        }
+        
+        System.out.println("Objects cannot be compared using symbols such as"
+                + " ==, !=, <, >. Instead they have their own\nequals methods"
+                + " that compare specific traits of the object to determine"
+                + " their equality");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("AP: Unit 3 (Boolean Expressions And If Statements) completed!");
