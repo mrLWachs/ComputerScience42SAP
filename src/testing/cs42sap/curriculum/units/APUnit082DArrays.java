@@ -43,7 +43,26 @@ public class APUnit082DArrays
             //           while “column-major order” traversal occurs down 
             //           each column
         ////////////////////////////////////////////////////////////////////////
+     
+      int[][] Array2d = new int[5][5];
         
+         // that array would look like this
+        
+        //[][][][][]
+        //[][][][][]
+        //[][][][][]
+        //[][][][][]
+        //[][][][][]
+        
+        Array2d[0][0] = 1;
+        //  0 1 2 3 4
+        //0[1][][][][]
+        //1[][][][][]
+        //2[][][][][]
+        //3[][][][][]
+        //4[][][][][]
+        
+        System.out.println(Array2d[0][0]);
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("8.2 Traversing 2D Arrays");  
         // (8.1.1) For 2D array objects: (a) Traverse using nested for loops,
