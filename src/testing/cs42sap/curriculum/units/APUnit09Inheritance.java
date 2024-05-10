@@ -69,7 +69,7 @@ public class APUnit09Inheritance
         System.out.println("also called a \"is-a\" relationship between ");
         System.out.print("classes. In other words, a child (sub) class ");
         System.out.println("\"is-a\" parent (super) class. A class can ");
-        System.out.print("extend only one superclass.");
+        System.out.println("extend only one superclass.");
         
         // Example of class inheritance...
         // class Parent {
@@ -174,9 +174,53 @@ public class APUnit09Inheritance
             //           superclass; these methods remain public in the subclass
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("");
-        Simulator.comment("");
+        System.out.print("When you have one class inheriting from another ");
+        System.out.println("class (parent and child classes), method ");
+        System.out.print("overriding can occur. A method is an override ");
+        System.out.println("method if it has the same method signature ");
+        System.out.print("(meaning the same name, return type, and ");
+        System.out.println("possible parameters) as a method (a public ");
+        System.out.print("method) in the superclass. When this method ");
+        System.out.println("is called from the child class, then this ");
+        System.out.print("method \"over-rides\" the method it inherited ");
+        System.out.println("from its parent class. You can still call ");
+        System.out.print("the originally inherited method from inside ");
+        System.out.println("the override emthod by using the line ");
+        System.out.print("of code \"super.methodName()\" with the ");
+        System.out.println("\"methodName\" and any parameters/return ");
+        System.out.println("values also being used.");
+        
+        Simulator.comment("Example of override methods");
+        Simulator.code("class Parent {");
+        Simulator.code("    public void talk() {");
+        Simulator.code("        // code here...");
+        Simulator.code("    }");
+        Simulator.code("}");
         Simulator.code("");
+        Simulator.code("class Child extends Parent ");
+        Simulator.code("    // the override method");
+        Simulator.code("    public void talk() {");
+        Simulator.code("        // Calling the super class method");
+        Simulator.code("        super.talk();");
+        Simulator.code("        // code here...");
+        Simulator.code("    }");
+        Simulator.code("}");
+                
+        // Example of override methods...
+        // class Parent {
+        //     public void talk() {
+        //         // code here...
+        //     }
+        // }
+
+        // class Child extends Parent {
+        //     // the override method
+        //     public void talk() {
+        //         // Calling the super class method
+        //         super.talk();
+        //         // code here...
+        //     }
+        // }
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.4 super Keyword");  
@@ -188,9 +232,57 @@ public class APUnit09Inheritance
             //           passing appropriate parameters
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("");
-        Simulator.comment("");
+        System.out.print("The keyword \"super\" makes a reference to the ");
+        System.out.println("\"super-class\" when you have an inheritance ");
+        System.out.print("relationship between a parent and child class. ");
+        System.out.println("By using the super keyword in a child class, ");
+        System.out.print("you can call methods from the super class by ");
+        System.out.println("typing \"super.methodName();\" or change ");
+        System.out.print("properties (not encapsulated) for example: ");
+        System.out.println("\"super.name = \"\";\" You can even call a ");
+        System.out.print("super-constructor method from the super class, ");
+        System.out.println("for example: \"super();\".");
+        
+        Simulator.comment("Example of super keyword");
+        Simulator.code("class Parent {");
+        Simulator.code("    int number;");
+        Simulator.code("    public Parent() {");
+        Simulator.code("        // code");
+        Simulator.code("    }");
+        Simulator.code("    public void action(int x) {");
+        Simulator.code("        // code");
+        Simulator.code("    }");
+        Simulator.code("}");
         Simulator.code("");
+        Simulator.code("class Child extends Parent {");
+        Simulator.code("    public Child() {");
+        Simulator.code("        super();");
+        Simulator.code("    }");
+        Simulator.code("    public void event() {");
+        Simulator.code("        super.number = 5;");
+        Simulator.code("        super.action(5);");
+        Simulator.code("    }");
+        Simulator.code("}");
+        
+    // class Parent {
+    //     int number;
+    //     public Parent() {
+    //         // code
+    //     }        
+    //     public void action(int x) {
+    //         // code
+    //     }        
+    // }
+    // 
+    // class Child extends Parent {
+    //     public Child() {
+    //         super();
+    //     }
+    //     public void event() {
+    //         super.number = 5;
+    //         super.action(5);
+    //     } 
+    // }
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.5 Creating References Using Inheritance Hierarchies");  
@@ -210,8 +302,42 @@ public class APUnit09Inheritance
         ////////////////////////////////////////////////////////////////////////
         
         System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        
         Simulator.comment("");
         Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        Simulator.code("");
+        
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.6 Polymorphism");  
@@ -247,6 +373,6 @@ public class APUnit09Inheritance
         Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
-    }
-         
+    }   
+    
 }
