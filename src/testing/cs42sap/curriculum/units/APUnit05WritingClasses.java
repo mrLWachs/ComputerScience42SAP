@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -40,12 +41,12 @@ public class APUnit05WritingClasses
         }
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5);
+        CurriculumContentCS42SAP.showUnit(5);
         // AP: Unit 5 (Writing Classes)
         ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,1);
+        CurriculumContentCS42SAP.showUnit(5,1);
         // 5.1 Anatomy of a Class
         // (5.1.1) Designate access and visibility constraints to classes, 
         //         data, constructors, and methods
@@ -80,7 +81,7 @@ public class APUnit05WritingClasses
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,2);
+        CurriculumContentCS42SAP.showUnit(5,2);
         // 5.2 Constructors
         // (5.2.1) Define instance variables for the attributes to be 
         //         initialized through the constructors of a class
@@ -109,7 +110,7 @@ public class APUnit05WritingClasses
         System.out.println("Add your own example(s) here...");   
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,3);
+        CurriculumContentCS42SAP.showUnit(5,3);
         // 5.3 Documentation with Comments  
         // (5.3.1) Describe the functionality and use of program code through 
         //         comments
@@ -136,7 +137,7 @@ public class APUnit05WritingClasses
         System.out.println("Add your own example(s) here...");
                 
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,4);
+        CurriculumContentCS42SAP.showUnit(5,4);
         // 5.4 Accessor Methods
         // (5.4.1) Define behaviors of an object through non-void methods 
         //         without parameters written in a class
@@ -166,7 +167,7 @@ public class APUnit05WritingClasses
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,5);
+        CurriculumContentCS42SAP.showUnit(5,5);
         // 5.5 Mutator Methods
         // (5.5.1) Define behaviors of an object through void methods with or 
         //         without parameters written in a class
@@ -180,7 +181,7 @@ public class APUnit05WritingClasses
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,6);
+        CurriculumContentCS42SAP.showUnit(5,6);
         // 5.6 Writing Methods
         // (5.6.1) Define behaviors of an object through non-void methods 
         //         with parameters written in a class
@@ -212,7 +213,7 @@ public class APUnit05WritingClasses
         System.out.println("Add your own example(s) here...");
 
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,7);
+        CurriculumContentCS42SAP.showUnit(5,7);
         // 5.7 Static Variables and Methods
         // (5.7.1) Define behaviors of a class through static methods
             // (5.7.1.1) Static methods are associated with the class, not 
@@ -240,7 +241,7 @@ public class APUnit05WritingClasses
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,8);
+        CurriculumContentCS42SAP.showUnit(5,8);
         // 5.8 Scope and Access
         // (5.8.1) Explain where variables can be used in the program code
             // (5.8.1.1) Local variables can be declared in the body of 
@@ -261,7 +262,7 @@ public class APUnit05WritingClasses
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,9);
+        CurriculumContentCS42SAP.showUnit(5,9);
         // 5.9 this Keyword
         // (5.9.1) Evaluate object reference expressions that use the keyword
         //         this
@@ -275,7 +276,7 @@ public class APUnit05WritingClasses
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(5,10);
+        CurriculumContentCS42SAP.showUnit(5,10);
         // 5.10 Ethical and Social Implications of Computing Systems
         // (5.10.1) Explain the ethical and social implications of computing 
         //          systems

@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -39,12 +40,12 @@ public class APUnit06Arrays
         }
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(6);
+        CurriculumContentCS42SAP.showUnit(6);
         // AP: Unit 6 (Arrays)
         ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(6,1);
+        CurriculumContentCS42SAP.showUnit(6,1);
         // 6.1 Array Creation and Access
         // (6.1.1) Represent collections of related primitive or object 
         //         reference data using onedimensional (1D) array objects
@@ -76,7 +77,7 @@ public class APUnit06Arrays
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(6,2);
+        CurriculumContentCS42SAP.showUnit(6,2);
         // 6.2 Traversing Arrays
         // (6.2.1) Traverse the elements in a 1D array
             // (6.2.1.1) Iteration statements can be used to access all the
@@ -94,7 +95,7 @@ public class APUnit06Arrays
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(6,3);
+        CurriculumContentCS42SAP.showUnit(6,3);
         // 6.3 Enhanced for Loop for Arrays
         // (6.3.1) Traverse the elements in a 1D array object using an enhanced
         //         for loop
@@ -113,7 +114,7 @@ public class APUnit06Arrays
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(6,4);
+        CurriculumContentCS42SAP.showUnit(6,4);
         // 6.4 Developing Algorithms Using Arrays
         // (6.4.1) For algorithms in the context of a particular specification 
         //         that requires the use of array traversals: (a) Identify 

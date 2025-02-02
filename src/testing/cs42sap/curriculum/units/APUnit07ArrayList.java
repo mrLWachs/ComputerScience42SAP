@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -39,12 +40,12 @@ public class APUnit07ArrayList
         }
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(7);
+        CurriculumContentCS42SAP.showUnit(7);
         // AP: Unit 7 (Array List)
         ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(7,1);
+        CurriculumContentCS42SAP.showUnit(7,1);
         // 7.1 Introduction to ArrayList
         // (7.1.1) Represent collections of related object reference data 
         //         using ArrayList objects
@@ -65,7 +66,7 @@ public class APUnit07ArrayList
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(7,2);
+        CurriculumContentCS42SAP.showUnit(7,2);
         // 7.2 ArrayList Methods
         // (7.2.1) Represent collections of related object reference data 
         //         using ArrayList objects
@@ -95,7 +96,7 @@ public class APUnit07ArrayList
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(7,3);
+        CurriculumContentCS42SAP.showUnit(7,3);
         // 7.3 Traversing ArrayLists
         // (7.3.1) For ArrayList objects: (a) Traverse using a for or while 
         //         loop, (b) Traverse using an enhanced for loop
@@ -120,7 +121,7 @@ public class APUnit07ArrayList
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(7,4);
+        CurriculumContentCS42SAP.showUnit(7,4);
         // 7.4 Developing Algorithms Using ArrayLists
         // (7.4.1) For algorithms in the context of a particular specification
         //         that requires the use of ArrayList traversals: (a) Identify
@@ -137,7 +138,7 @@ public class APUnit07ArrayList
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(7,5);
+        CurriculumContentCS42SAP.showUnit(7,5);
         // 7.5 Searching
         // (7.5.1) Apply sequential/linear search algorithms to search for
         //         specific information in array or ArrayList objects
@@ -151,7 +152,7 @@ public class APUnit07ArrayList
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(7,6);
+        CurriculumContentCS42SAP.showUnit(7,6);
         // 7.6 Sorting
         // (7.6.1) Apply selection sort and insertion sort algorithms to sort
         //         the elements of array or ArrayList objects
@@ -167,7 +168,7 @@ public class APUnit07ArrayList
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(7,7);
+        CurriculumContentCS42SAP.showUnit(7,7);
         // 7.7 Ethical Issues Around Data Collection
         // (7.7.1) Explain the risks to privacy from collecting and storing 
         //         personal data on computer systems

@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -42,12 +43,12 @@ public class APUnit01PrimitiveTypes
         }
                 
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(1);
+        CurriculumContentCS42SAP.showUnit(1);
         // AP: Unit 1 (Primitive Types)
         ////////////////////////////////////////////////////////////////////////
                 
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(1,1);
+        CurriculumContentCS42SAP.showUnit(1,1);
         // 1.1 Why Programming? Why Java? 
         // (1.1.1) Call System class methods to generate output to the console
             // (1.1.1.1) System.out.print and System.out.println display 
@@ -62,7 +63,7 @@ public class APUnit01PrimitiveTypes
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(1,2);
+        CurriculumContentCS42SAP.showUnit(1,2);
         // 1.2 Variables and Data Types        
         // (1.2.1) Identify the most appropriate data type category for a 
         //         particular specification
@@ -87,7 +88,7 @@ public class APUnit01PrimitiveTypes
         System.out.println("Add your own example(s) here...");
         
         //////////////////////////////////////////////////////////////////////// 
-        CurriculumContent.showUnit(1,3);
+        CurriculumContentCS42SAP.showUnit(1,3);
         // 1.3 Expressions and Assignment Statements
         // (1.3.1) Evaluate arithmetic expressions in a program code
             // (1.3.1.1) A literal is the source code representation of a 
@@ -121,7 +122,7 @@ public class APUnit01PrimitiveTypes
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(1,4);
+        CurriculumContentCS42SAP.showUnit(1,4);
         // 1.4 Compound Assignment Operators
         // (1.4.1) Evaluate what is stored in a variable as a result of an 
         //         expression with an assignment statement
@@ -136,7 +137,7 @@ public class APUnit01PrimitiveTypes
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(1,5);
+        CurriculumContentCS42SAP.showUnit(1,5);
         // 1.5 Casting and Ranges of Variables
         // (1.5.1) Evaluate arithmetic expressions that use casting
             // (1.5.1.1) The casting operators (int) and (double) can be used 

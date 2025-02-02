@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -39,12 +40,12 @@ public class APUnit09Inheritance
         }
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(9);
+        CurriculumContentCS42SAP.showUnit(9);
         // AP: Unit 9 (Inheritance)
         ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(9,1);
+        CurriculumContentCS42SAP.showUnit(9,1);
         // 9.1 Creating Superclasses and Subclasses
         // (9.1.1) Create an inheritance relationship from a subclass to the 
         //         superclass
@@ -64,7 +65,7 @@ public class APUnit09Inheritance
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(9,2);
+        CurriculumContentCS42SAP.showUnit(9,2);
         // 9.2 Writing Constructors for Subclasses
         // (9.2.1) Create an inheritance relationship from a subclass to the 
         //         superclass
@@ -91,7 +92,7 @@ public class APUnit09Inheritance
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(9,3);
+        CurriculumContentCS42SAP.showUnit(9,3);
         // 9.3 Overriding Methods
         // (9.3.1) Create an inheritance relationship from a subclass to the 
         //         superclass
@@ -110,7 +111,7 @@ public class APUnit09Inheritance
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(9,4);
+        CurriculumContentCS42SAP.showUnit(9,4);
         // 9.4 super Keyword
         // (9.4.1) Create an inheritance relationship from a subclass to the superclass
             // (9.4.1.1) The keyword super can be used to call a superclass's 
@@ -123,7 +124,7 @@ public class APUnit09Inheritance
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(9,5);
+        CurriculumContentCS42SAP.showUnit(9,5);
         // 9.5 Creating References Using Inheritance Hierarchies
         // (9.5.1) Define reference variables of a superclass to be assigned to
         //         an object of a subclass in the same hierarchy
@@ -143,7 +144,7 @@ public class APUnit09Inheritance
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(9,6);
+        CurriculumContentCS42SAP.showUnit(9,6);
         // 9.6 Polymorphism
         // (9.6.1) Call methods in an inheritance relationship
             // (9.6.1.1) Utilize the Object class through inheritance
@@ -157,7 +158,7 @@ public class APUnit09Inheritance
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(9,7);
+        CurriculumContentCS42SAP.showUnit(9,7);
         // 9.7 Object Superclass
         // (9.7.1) Call Object class methods through inheritance
             // (9.7.1.1) The Object class is the superclass of all other 

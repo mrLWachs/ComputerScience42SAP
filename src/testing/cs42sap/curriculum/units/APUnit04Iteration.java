@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -38,12 +39,12 @@ public class APUnit04Iteration
         }
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(4);
+        CurriculumContentCS42SAP.showUnit(4);
         // AP: Unit 4 (Iteration)
         ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(4,1);
+        CurriculumContentCS42SAP.showUnit(4,1);
         // 4.1 while Loops" 
         // (4.1.1) Represent iterative processes using a while loop
             // (4.1.1.1) Iteration statements change the flow of control by 
@@ -78,7 +79,7 @@ public class APUnit04Iteration
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(4,2);
+        CurriculumContentCS42SAP.showUnit(4,2);
         // 4.2 for Loops 
         // (4.2.1) Represent iterative processes using a for loop
             // (4.2.1.1) There are three parts in a for loop header: the 
@@ -102,7 +103,7 @@ public class APUnit04Iteration
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(4,3);
+        CurriculumContentCS42SAP.showUnit(4,3);
         // 4.3 Developing Algorithms Using Strings
         // (4.3.1) For algorithms in the context of a particular specification
         //         that involves String objects: (A) Identify standard 
@@ -118,7 +119,7 @@ public class APUnit04Iteration
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(4,4);
+        CurriculumContentCS42SAP.showUnit(4,4);
         // 4.4 Nested Iteration
         // (4.4.1) Represent nested iterative processes
             // (4.4.1.1) Nested iteration statements are iteration statements 
@@ -131,7 +132,7 @@ public class APUnit04Iteration
         System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContent.showUnit(4,5);
+        CurriculumContentCS42SAP.showUnit(4,5);
         // 4.5 Informal Code Analysis
         // (4.5.1) Compute statement execution counts and informal run-time 
         //         comparison of iterative statements

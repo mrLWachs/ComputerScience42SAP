@@ -3,7 +3,7 @@
 package testing;
 
 /** Required API imports */
-import testing.cs42sap.curriculum.units.CurriculumContent;
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import utility.io.Simulator;
 
 
@@ -34,7 +34,7 @@ public class Tester
      */
     public Tester(int state) {
         if (state == DO_NOT_RUN) return;
-        CurriculumContent.initialize();
+        CurriculumContentCS42SAP.initialize();
         Simulator.initialize();
         Simulator.title("Mr. Wachs' Computer Science Classes");
         new PrerequisiteContent(state);      
