@@ -3,7 +3,7 @@
 package testing;
 
 /** Required API imports */
-import fun.FunFridaysCode;
+import testing.fun.FunFridaysCode;
 import testing.postsecondary.MorePostSecondaryContent;
 import utility.io.Simulator;
 

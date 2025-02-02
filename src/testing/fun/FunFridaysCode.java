@@ -1,5 +1,5 @@
 /** Required package class namespace */
-package fun;
+package testing.fun;
 
 /** Required API imports */
 import testing.Tester;
