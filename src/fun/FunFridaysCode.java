@@ -2,12 +2,6 @@
 package fun;
 
 /** Required API imports */
-import fun.datastructures.AdvancedDataStructures;
-import fun.examreview.ExamReview;
-import fun.files.Files;
-import fun.searching.Searching;
-import fun.sorting.Sorting;
-import fun.virus.Virus;
 import testing.Tester;
 import utility.io.Simulator;
 
@@ -33,12 +27,6 @@ public class FunFridaysCode
             return;
         }
         Simulator.title("Fun Friday (and Thursday) Content:"); 
-        new Files(state);
-        new Virus(Tester.RUN_SIMULATED);
-        new Searching(state);
-        new Sorting(state);
-        new ExamReview(state);
-        new AdvancedDataStructures(state);
     }
 
 }
