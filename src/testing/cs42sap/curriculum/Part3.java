@@ -3,7 +3,8 @@
 package testing.cs42sap.curriculum;
 
 /** Required API imports */
-import io.Simulator;
+import testing.Tester;
+import utility.io.Simulator;
 import testing.cs42sap.curriculum.units.APUnit06Arrays;
 import testing.cs42sap.curriculum.units.APUnit082DArrays;
 
@@ -22,12 +23,17 @@ public class Part3
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param state the run state of this code module
      */
-    public Part3() {
-        Simulator.header("AP curriculum - Part 3 Test started...");
-        new APUnit06Arrays();
-        new APUnit082DArrays();        
-        Simulator.header("AP curriculum - Part 3 Test completed!");
+    public Part3(int state) {
+        if (state == Tester.DO_NOT_RUN) {
+            Simulator.note("AP curriculum - Part 3 not running");
+            return;
+        }
+        Simulator.title("AP curriculum - Part 3");
+        new APUnit06Arrays(state);
+        new APUnit082DArrays(state);        
     }
         
 }

@@ -3,11 +3,20 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
-import io.Simulator;
-
+import testing.Tester;
+import utility.io.Simulator;
+import utility.io.System;
+ 
  
 /**
- * APUnit082DArrays.java - description
+ * APUnit082DArrays.java - In Unit 6, students learned how 1D arrays store 
+ * large amounts of related data. These same concepts will be implemented with
+ * two-dimensional (2D) arrays in this unit. A 2D array is most suitable to 
+ * represent a table. Each table element is accessed using the variable name 
+ * and row and column indices. Unlike 1D arrays, 2D arrays require nested 
+ * iterative statements to traverse and access all elements. The easiest way 
+ * to accomplished this is in row-major order, but it is important to cover 
+ * additional traversal patterns, such as back and forth or column-major.
  *
  * @author Mr. Wachs
  * @since 28-Jun-2023, 2:15:24 PM
@@ -17,14 +26,19 @@ public class APUnit082DArrays
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param state the run state of this code module
      */
-    public APUnit082DArrays() {
-        Simulator.header("AP: Unit 8 (2D Arrays) started...");
+    public APUnit082DArrays(int state) {
+        if (state == Tester.DO_NOT_RUN) {
+            Simulator.note("AP: Unit 8 (2D Arrays) not running");
+            return;
+        }
         
-        
+        Simulator.title("AP: Unit 8 (2D Arrays)");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("8.1 2D Arrays");  
+        Simulator.header("8.1 2D Arrays");  
         // (8.1.1) Represent collections of related primitive or object 
         //         reference data using two-dimensional (2D) array objects
             // (8.1.1.1) 2D arrays are stored as arrays of arrays. Therefore, 
@@ -44,8 +58,10 @@ public class APUnit082DArrays
             //           each column
         ////////////////////////////////////////////////////////////////////////
         
+        System.out.println("...");
+        
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("8.2 Traversing 2D Arrays");  
+        Simulator.header("8.2 Traversing 2D Arrays");  
         // (8.1.1) For 2D array objects: (a) Traverse using nested for loops,
         //         (b) Traverse using nested enhanced for loops
             // (8.1.1.1) Nested iteration statements can be written to traverse 
@@ -60,9 +76,9 @@ public class APUnit082DArrays
             //           in the 1D array            
         ////////////////////////////////////////////////////////////////////////
         
+        System.out.println("...");
         
-        
-        Simulator.header("AP: Unit 8 (2D Arrays) completed!");
+        ////////////////////////////////////////////////////////////////////////
     }
      
 }

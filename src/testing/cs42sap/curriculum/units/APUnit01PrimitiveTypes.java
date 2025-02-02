@@ -3,7 +3,9 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
-import io.Simulator;
+import testing.Tester;
+import utility.io.Simulator;
+import utility.io.System;
 
  
 /**
@@ -30,14 +32,19 @@ public class APUnit01PrimitiveTypes
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param state the run state of this code module
      */
-    public APUnit01PrimitiveTypes() {
-        Simulator.header("AP: Unit 1 (Primitive Types) started...");
+    public APUnit01PrimitiveTypes(int state) {
+        if (state == Tester.DO_NOT_RUN) {
+            Simulator.note("AP: Unit 1 (Primitive Types) not running");
+            return;
+        }
         
-        
+        Simulator.title("AP: Unit 1 (Primitive Types)");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("1.1 Why Programming? Why Java?");        
+        Simulator.header("1.1 Why Programming? Why Java?");        
         // (1.1.1) Call System class methods to generate output to the console
             // (1.1.1.1) System.out.print and System.out.println display 
             //           information on the computer monitor
@@ -48,10 +55,10 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("1.2 Variables and Data Types");        
+        Simulator.header("1.2 Variables and Data Types");        
         // (1.2.1) Identify the most appropriate data type category for a 
         //         particular specification
             // (1.2.1.1) A type is a set of values (a domain) and a set of 
@@ -72,10 +79,10 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("...");
         
         //////////////////////////////////////////////////////////////////////// 
-        Simulator.comment("1.3 Expressions and Assignment Statements");        
+        Simulator.header("1.3 Expressions and Assignment Statements");        
         // (1.3.1) Evaluate arithmetic expressions in a program code
             // (1.3.1.1) A literal is the source code representation of a 
             //           fixed value
@@ -105,10 +112,10 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("1.4 Compound Assignment Operators");
+        Simulator.header("1.4 Compound Assignment Operators");
         // (1.4.1) Evaluate what is stored in a variable as a result of an 
         //         expression with an assignment statement
             // (1.4.1.1) Compound assignment operators (+=, −=, *=, /=, %=) 
@@ -119,10 +126,10 @@ public class APUnit01PrimitiveTypes
             //           value is assigned to the variable or array element
         ////////////////////////////////////////////////////////////////////////    
         
-        
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("1.5 Casting and Ranges of Variables");
+        Simulator.header("1.5 Casting and Ranges of Variables");
         // (1.5.1) Evaluate arithmetic expressions that use casting
             // (1.5.1.1) The casting operators (int) and (double) can be used 
             //           to create a temporary value converted to a different 
@@ -145,10 +152,9 @@ public class APUnit01PrimitiveTypes
             //           within the allowed range
         ////////////////////////////////////////////////////////////////////////    
         
-        
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("AP: Unit 1 (Primitive Types) completed!");
     }
      
 }

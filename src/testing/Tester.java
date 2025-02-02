@@ -3,11 +3,7 @@
 package testing;
 
 /** Required API imports */
-import io.Simulator;
-import testing.cs30s.ComputerScience30S;
-import testing.cs40s.ComputerScience40S;
-import testing.cs42sap.ComputerScience42SAP;
-import testing.cs42sap.bonus.BonusContentCS42SAP;
+import utility.io.Simulator;
 
 
 /**
@@ -19,17 +15,30 @@ import testing.cs42sap.bonus.BonusContentCS42SAP;
 public class Tester 
 {
 
+    public static final int DO_NOT_RUN    = 0;
+    public static final int RUN_SIMULATED = 1;
+    public static final int RUN_NORMAL    = 2;
+    
     /**
-     * Default class constructor, runs on instantiation
+     * Default constructor for the class, sets class properties
      */
     public Tester() {
-        Simulator.header("Mr. Wachs Computer Science testing started...");
-        new ComputerScience30S();
-        new ComputerScience40S();        
-        new ComputerScience42SAP();        
-        new BonusContentCS42SAP();
+        this(RUN_NORMAL);
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param state the run state of this code module
+     */
+    public Tester(int state) {
+        if (state == DO_NOT_RUN) return;
+        Simulator.initialize();
+        Simulator.title("Mr. Wachs' Computer Science Classes");
+        new PrerequisiteContent(DO_NOT_RUN); //state);      
+        new ComputerScience42SAP(state); 
+        new PostSecondaryContent(DO_NOT_RUN); //state); 
         Simulator.saveOutput();
-        Simulator.header("Mr. Wachs Computer Science testing complete!");
     }
     
 }

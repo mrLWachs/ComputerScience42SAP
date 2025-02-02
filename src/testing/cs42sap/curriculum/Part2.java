@@ -3,7 +3,8 @@
 package testing.cs42sap.curriculum;
 
 /** Required API imports */
-import io.Simulator;
+import testing.Tester;
+import utility.io.Simulator;
 import testing.cs42sap.curriculum.units.APUnit02UsingObjects;
 import testing.cs42sap.curriculum.units.APUnit05WritingClasses;
 import testing.cs42sap.curriculum.units.APUnit09Inheritance;
@@ -24,13 +25,18 @@ public class Part2
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param state the run state of this code module
      */
-    public Part2() {
-        Simulator.header("AP curriculum - Part 2 Test started...");
-        new APUnit02UsingObjects();
-        new APUnit05WritingClasses();
-        new APUnit09Inheritance();        
-        Simulator.header("AP curriculum - Part 2 Test completed!");
+    public Part2(int state) {
+        if (state == Tester.DO_NOT_RUN) {
+            Simulator.note("AP curriculum - Part 2 not running");
+            return;
+        }
+        Simulator.title("AP curriculum - Part 2");
+        new APUnit02UsingObjects(state);
+        new APUnit05WritingClasses(state);
+        new APUnit09Inheritance(state);        
     }
         
 }
