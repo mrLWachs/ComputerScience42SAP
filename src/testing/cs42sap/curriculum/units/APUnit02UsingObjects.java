@@ -40,10 +40,14 @@ public class APUnit02UsingObjects
             return;
         }
         
-        Simulator.title("AP: Unit 2 (Using Objects)");
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContent.showUnit(2);
+        // AP: Unit 2 (Using Objects)
+        ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.1 Objects: Instances of Classes");  
+        CurriculumContent.showUnit(2,1);
+        // 2.1 Objects: Instances of Classes
         // (2.1.1) Explain the relationship between a class and an object
             // (2.1.1.1) An object is a specific instance of a class with 
             //           defined attributes
@@ -51,10 +55,11 @@ public class APUnit02UsingObjects
             //           of the attributes and behaviors of an object
         ////////////////////////////////////////////////////////////////////////
             
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.2 Creating and Storing Objects (Instantiation)");  
+        CurriculumContent.showUnit(2,2);
+        // 2.2 Creating and Storing Objects (Instantiation) 
         // (2.2.1) Identify, using its signature, the correct constructor 
         //         being called
             // (2.2.1.1) A signature consists of the constructor name and the 
@@ -96,10 +101,11 @@ public class APUnit02UsingObjects
             //           the referenced object
         ////////////////////////////////////////////////////////////////////////
                 
-        System.out.println("...");    
+        System.out.println("Add your own example(s) here...");    
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.3 Calling a Void Method");  
+        CurriculumContent.showUnit(2,3);
+        // 2.3 Calling a Void Method
         // (2.3.1) Call non-static void methods without parameters
             // (2.3.1.1) An object’s behavior refers to what the object can do
             //           (or what can be done to it) and is defined by methods
@@ -127,10 +133,11 @@ public class APUnit02UsingObjects
             //           be thrown
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.4 Calling a Void Method with Parameters"); 
+        CurriculumContent.showUnit(2,4);
+        // 2.4 Calling a Void Method with Parameters
         // (2.4.1) Call non-static void methods with parameters
             // (2.4.1.1) A method signature for a method with parameters 
             //           consists of the method name and the ordered list of 
@@ -143,10 +150,11 @@ public class APUnit02UsingObjects
             //           signature
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.5 Calling a Non-void Method");  
+        CurriculumContent.showUnit(2,5);
+        // 2.5 Calling a Non-void Method
         // (2.5.1) Call non-static non-void methods with or without parameters
             // (2.5.1.1) Non-void methods return a value that is the same type 
             //           as the return type in the signature. To use the return
@@ -154,10 +162,11 @@ public class APUnit02UsingObjects
             //           stored in a variable or used as part of an expression
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.6 String Objects: Concatenation, Literals, and More");  
+        CurriculumContent.showUnit(2,6);
+        // 2.6 String Objects: Concatenation, Literals, and More
         // (2.6.1) For String class: a. Create String objects. b. Call String 
         //         methods
             // (2.6.1.1) String objects can be created by using string literals
@@ -174,10 +183,11 @@ public class APUnit02UsingObjects
             //           include \", \\, and \n
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");   
+        System.out.println("Add your own example(s) here...");   
                 
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.7 String Methods");  
+        CurriculumContent.showUnit(2,7);
+        // 2.7 String Methods
         // (2.7.1) For String class: a. Create String objects. b. Call String methods
             // (2.7.1.1) Application program interfaces (APIs) and libraries 
             //           simplify complex programming tasks
@@ -216,10 +226,11 @@ public class APUnit02UsingObjects
             //           substring(index, index + 1)
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.8 Wrapper Classes: Integer and Double");  
+        CurriculumContent.showUnit(2,8);
+        // 2.8 Wrapper Classes: Integer and Double
         // (2.8.1) For wrapper classes: a. Create Integer objects, b. Call 
         //         Integer methods, c. Create Double objects, d. Call Double 
         //         methods
@@ -261,10 +272,11 @@ public class APUnit02UsingObjects
             //           primitive type
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
                 
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.9 Using the Math Class");  
+        CurriculumContent.showUnit(2,9);
+        // 2.9 Using the Math Class
         // (2.9.1) Call static methods
             // (2.9.1.1) Static methods are called using the dot operator 
             //           along with the class name unless they are defined in 
@@ -289,7 +301,7 @@ public class APUnit02UsingObjects
             //           defined range
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
     }

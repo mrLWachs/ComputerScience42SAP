@@ -38,10 +38,14 @@ public class APUnit03BooleanExpressionsAndIfStatements
             return;
         }
         
-        Simulator.title("AP: Unit 3 (Boolean Expressions And If Statements)");
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContent.showUnit(3);
+        // AP: Unit 3 (Boolean Expressions And If Statements)
+        ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("3.1 Boolean Expressions");  
+        CurriculumContent.showUnit(3,1);
+        // 3.1 Boolean Expressions
         // (3.1.1) Evaluate Boolean expressions that use relational operators 
         //         in program code
             // (3.1.1.1) Primitive values and reference values can be compared
@@ -52,10 +56,11 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           to a Boolean value
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("3.2 if Statements and Control Flow");  
+        CurriculumContent.showUnit(3,2);
+        // 3.2 if Statements and Control Flow
         // (3.2.1) Represent branching logical processes by using conditional 
         //         statements
             // (3.2.1.1) Conditional statements interrupt the sequential 
@@ -69,10 +74,11 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           only when the Boolean condition is true
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("3.3 if-else Statements");  
+        CurriculumContent.showUnit(3,3);
+        // 3.3 if-else Statements
         // (3.3.1) Represent branching logical processes by using conditional 
         //         statements
             // (3.3.1.1) A two-way selection is written when there are two 
@@ -84,10 +90,11 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           executed when the Boolean condition is false
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("3.4 else if Statements");  
+        CurriculumContent.showUnit(3,4);
+        // 3.4 else if Statements
         // (3.4.1) Represent branching logical processes by using conditional 
         //         statements
             // (3.4.1.1) A multi-way selection is written when there are a 
@@ -98,10 +105,11 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           condition that evaluates to true
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("3.5 Compound Boolean Expressions");  
+        CurriculumContent.showUnit(3,5);
+        // 3.5 Compound Boolean Expressions
         // (3.5.1) Represent branching logical processes by using nested 
         //         conditional statements
             // (3.5.1.1) Nested if statements consist of if statements within
@@ -118,10 +126,11 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           known as short-circuited evaluation
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("3.6 Equivalent Boolean Expressions");  
+        CurriculumContent.showUnit(3,6);
+        // 3.6 Equivalent Boolean Expressions
         // (3.6.1) Compare and contrast equivalent Boolean expressions
             // (3.6.1.1) De Morgan’s Laws can be applied to Boolean expressions
             // (3.6.1.2) Truth tables can be used to prove Boolean identities
@@ -129,10 +138,11 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           same value in all cases
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
                 
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("3.7 Comparing Objects");  
+        CurriculumContent.showUnit(3,7);
+        // 3.7 Comparing Objects
         // (3.7.1) Compare object references using Boolean expressions in 
         //         program code
             // (3.7.1.1) Two object references are considered aliases when 
@@ -147,7 +157,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           are equivalent
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
     }

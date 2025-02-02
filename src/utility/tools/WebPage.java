@@ -27,30 +27,40 @@ public class WebPage
     private static final String H1_FONT_COLOR          = "green";
     private static final String H2_FONT_COLOR          = "blue";
     private static final String H3_FONT_COLOR          = "purple";    
+    private static final String H3_TEXT_FONT_COLOR     = "fuchsia";    
+    
     private static final String PRE_FONT_COLOR         = "blue";
     private static final String PRE_COMMENT_FONT_COLOR = "gray";
         
     private static final String H1_FONT_SIZE          = "18pt"; 
     private static final String H2_FONT_SIZE          = "17pt"; 
     private static final String H3_FONT_SIZE          = "14pt"; 
+    private static final String H3_TEXT_FONT_SIZE     = "10pt"; 
+    
     private static final String PRE_FONT_SIZE         = DEFAULT_FONT_SIZE;
     private static final String PRE_COMMENT_FONT_SIZE = DEFAULT_FONT_SIZE;
         
     private static final String H1_FONT_FAMILY          = "Lucida Sans Typewriter"; 
     private static final String H2_FONT_FAMILY          = "Courier New"; 
     private static final String H3_FONT_FAMILY          = "Consolas"; 
+    private static final String H3_TEXT_FONT_FAMILY     = "Consolas"; 
+    
     private static final String PRE_FONT_FAMILY         = "Courier New"; 
     private static final String PRE_COMMENT_FONT_FAMILY = "Courier New"; 
         
     private static final String H1_FONT_STYLE          = DEFAULT_FONT_STYLE;
     private static final String H2_FONT_STYLE          = "italic";
-    private static final String H3_FONT_STYLE          = "italic";
+    private static final String H3_FONT_STYLE          = "oblique";
+    private static final String H3_TEXT_FONT_STYLE     = "normal";
+    
     private static final String PRE_FONT_STYLE         = DEFAULT_FONT_STYLE;
     private static final String PRE_COMMENT_FONT_STYLE = DEFAULT_FONT_STYLE;
     
     private static final String H1_FONT_WEIGHT          = "bold"; 
     private static final String H2_FONT_WEIGHT          = "600"; 
     private static final String H3_FONT_WEIGHT          = "normal"; 
+    private static final String H3_TEXT_FONT_WEIGHT     = "lighter"; 
+    
     private static final String PRE_FONT_WEIGHT         = "lighter"; 
     private static final String PRE_COMMENT_FONT_WEIGHT = "lighter"; 
     
@@ -93,6 +103,15 @@ public class WebPage
                 + "   color       : " + H3_FONT_COLOR  + ";" + NEW_LINE
             + "}";
     
+    private static final String H3_TEXT_STYLE = 
+            "h3.text {" + NEW_LINE
+                + "   font-family : " + H3_TEXT_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + H3_TEXT_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + H3_TEXT_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + H3_TEXT_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + H3_TEXT_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    
     private static final String PRE_STYLE =
             "pre {" + NEW_LINE
                 + "   font-family : " + PRE_FONT_FAMILY + ";" + NEW_LINE
@@ -117,6 +136,7 @@ public class WebPage
             H1_STYLE       + NEW_LINE + 
             H2_STYLE       + NEW_LINE + 
             H3_STYLE       + NEW_LINE + 
+            H3_TEXT_STYLE  + NEW_LINE +
             PRE_STYLE      + NEW_LINE + 
             PRE_COMMENT_STYLE + NEW_LINE + 
             "</style>";
@@ -128,16 +148,17 @@ public class WebPage
             "</head>" + NEW_LINE + 
             "<body>"  + NEW_LINE;
     
-    private static final String CLOSE      = "</body>";
-    private static final String BREAK      = "</br />";
-    private static final String H1_OPEN    = "<h1>";
-    private static final String H1_CLOSE   = "</h1>";
-    private static final String H2_OPEN    = "<h2>";
-    private static final String H2_CLOSE   = "</h2>";
-    private static final String H3_OPEN    = "<h3>";
-    private static final String H3_CLOSE   = "</h3>";
-    private static final String PRE_OPEN   = "<pre>";
-    private static final String PRE_CLOSE  = "</pre>";
+    private static final String CLOSE             = "</body>";
+    private static final String BREAK             = "</br />";
+    private static final String H1_OPEN           = "<h1>";
+    private static final String H1_CLOSE          = "</h1>";
+    private static final String H2_OPEN           = "<h2>";
+    private static final String H2_CLOSE          = "</h2>";
+    private static final String H3_OPEN           = "<h3>";
+    private static final String H3_TEXT_OPEN      = "<h3 class=\"text\">";    
+    private static final String H3_CLOSE          = "</h3>";
+    private static final String PRE_OPEN          = "<pre>";
+    private static final String PRE_CLOSE         = "</pre>";
     private static final String PRE_COMMENT_OPEN  = "<pre class=\"comment\">";
     
     private static String text;
@@ -190,7 +211,7 @@ public class WebPage
     public static void addH2(String line) {
         text += H2_OPEN + line + H2_CLOSE + NEW_LINE;
     }
-    
+        
     /**
      * Adds a note styled header to the webpage document
      * 
@@ -198,6 +219,15 @@ public class WebPage
      */
     public static void addH3(String line) {
         text += H3_OPEN + line + H3_CLOSE + NEW_LINE;
+    }    
+    
+    /**
+     * Adds a level 2 header to the webpage document
+     * 
+     * @param line the line of text to add
+     */
+    public static void addText(String line) {
+        text += H3_TEXT_OPEN + line + H3_CLOSE + NEW_LINE;
     }
     
     /**

@@ -37,10 +37,14 @@ public class APUnit04Iteration
             return;
         }
         
-        Simulator.title("AP: Unit 4 (Iteration)");
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContent.showUnit(4);
+        // AP: Unit 4 (Iteration)
+        ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.1 while Loops");  
+        CurriculumContent.showUnit(4,1);
+        // 4.1 while Loops" 
         // (4.1.1) Represent iterative processes using a while loop
             // (4.1.1.1) Iteration statements change the flow of control by 
             //           repeating a set of statements zero or more times until
@@ -71,10 +75,11 @@ public class APUnit04Iteration
             //           or mode
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.2 for Loops");  
+        CurriculumContent.showUnit(4,2);
+        // 4.2 for Loops 
         // (4.2.1) Represent iterative processes using a for loop
             // (4.2.1.1) There are three parts in a for loop header: the 
             //           initialization, the Boolean expression, and the 
@@ -94,10 +99,11 @@ public class APUnit04Iteration
             //           loops one time too many or one time too few
         ////////////////////////////////////////////////////////////////////////
              
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.3 Developing Algorithms Using Strings");  
+        CurriculumContent.showUnit(4,3);
+        // 4.3 Developing Algorithms Using Strings
         // (4.3.1) For algorithms in the context of a particular specification
         //         that involves String objects: (A) Identify standard 
         //         algorithms, (B) Modify standard algorithms, (C) Develop an 
@@ -109,10 +115,11 @@ public class APUnit04Iteration
             //           new string with the characters reversed
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.4 Nested Iteration");  
+        CurriculumContent.showUnit(4,4);
+        // 4.4 Nested Iteration
         // (4.4.1) Represent nested iterative processes
             // (4.4.1.1) Nested iteration statements are iteration statements 
             //           that appear in the body of another iteration statement
@@ -121,17 +128,18 @@ public class APUnit04Iteration
             //           loop can continue
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.5 Informal Code Analysis");  
+        CurriculumContent.showUnit(4,5);
+        // 4.5 Informal Code Analysis
         // (4.5.1) Compute statement execution counts and informal run-time 
         //         comparison of iterative statements
             // (4.5.1.1) A statement execution count indicates the number of 
             //           times a statement is executed by the program
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
                 
         ////////////////////////////////////////////////////////////////////////
     }

@@ -38,10 +38,14 @@ public class APUnit07ArrayList
             return;
         }
         
-        Simulator.title("AP: Unit 7 (Array List)");
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContent.showUnit(7);
+        // AP: Unit 7 (Array List)
+        ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("7.1 Introduction to ArrayList");  
+        CurriculumContent.showUnit(7,1);
+        // 7.1 Introduction to ArrayList
         // (7.1.1) Represent collections of related object reference data 
         //         using ArrayList objects
             // (7.1.1.1) An ArrayList object is mutable and contains object 
@@ -58,10 +62,11 @@ public class APUnit07ArrayList
             //           otherwise be found at run-time
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("7.2 ArrayList Methods");  
+        CurriculumContent.showUnit(7,2);
+        // 7.2 ArrayList Methods
         // (7.2.1) Represent collections of related object reference data 
         //         using ArrayList objects
             // (7.2.1.1) The ArrayList class is part of the java.util package.
@@ -87,10 +92,11 @@ public class APUnit07ArrayList
             //           size;  returns the element formerly at position index
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("7.3 Traversing ArrayLists");  
+        CurriculumContent.showUnit(7,3);
+        // 7.3 Traversing ArrayLists
         // (7.3.1) For ArrayList objects: (a) Traverse using a for or while 
         //         loop, (b) Traverse using an enhanced for loop
             // (7.3.1.1) Iteration statements can be used to access all the
@@ -111,10 +117,11 @@ public class APUnit07ArrayList
             //           elements
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("7.4 Developing Algorithms Using ArrayLists");  
+        CurriculumContent.showUnit(7,4);
+        // 7.4 Developing Algorithms Using ArrayLists
         // (7.4.1) For algorithms in the context of a particular specification
         //         that requires the use of ArrayList traversals: (a) Identify
         //         standard algorithms, (b) Modify standard algorithms, 
@@ -127,10 +134,11 @@ public class APUnit07ArrayList
             //           ArrayList objects to be traversed simultaneously
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("7.5 Searching");  
+        CurriculumContent.showUnit(7,5);
+        // 7.5 Searching
         // (7.5.1) Apply sequential/linear search algorithms to search for
         //         specific information in array or ArrayList objects
             // (7.5.1.1) There are standard algorithms for searching
@@ -140,10 +148,11 @@ public class APUnit07ArrayList
             //           checked
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("7.6 Sorting");  
+        CurriculumContent.showUnit(7,6);
+        // 7.6 Sorting
         // (7.6.1) Apply selection sort and insertion sort algorithms to sort
         //         the elements of array or ArrayList objects
             // (7.6.1.1) Selection sort and insertion sort are iterative 
@@ -155,10 +164,11 @@ public class APUnit07ArrayList
             //           can be made using statement execution counts
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("7.7 Ethical Issues Around Data Collection");  
+        CurriculumContent.showUnit(7,7);
+        // 7.7 Ethical Issues Around Data Collection
         // (7.7.1) Explain the risks to privacy from collecting and storing 
         //         personal data on computer systems
             // (7.7.1.1) When using the computer, personal privacy is at risk.
@@ -169,7 +179,7 @@ public class APUnit07ArrayList
             //           beneficial and/or harmful
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
     }
