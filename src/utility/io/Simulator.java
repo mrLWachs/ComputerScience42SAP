@@ -291,7 +291,7 @@ public class Simulator
     
     /**
      * Simulates the 'Printing' of an object but uses a text style of
-     * formatting that tries to look like a code "comment"
+     * formatting that tries to look like a point text
      *
      * @param object The Object type to be 'printed'
      */
@@ -300,6 +300,19 @@ public class Simulator
         String text = object.toString();
         colorOutput(text, PURPLE, RESET);
         WebPage.addText(text);
+    }
+    
+    /**
+     * Simulates the 'Printing' of an object but uses a text style of
+     * formatting that tries to look like a sub-point text
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void subText(Object object) {
+        if (object == null)  object = new String(NULL); 
+        String text = object.toString();
+        colorOutput(text, PURPLE, RESET);
+        WebPage.addSubText(text);
     }
     
     /**

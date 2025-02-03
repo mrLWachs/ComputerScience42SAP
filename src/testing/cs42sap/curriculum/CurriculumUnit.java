@@ -17,7 +17,7 @@ public class CurriculumUnit
 {
 
     private String title;
-    private LinkedList<Topics> topics;
+    private LinkedList<Topic> topics;
     
     
     /**
@@ -39,21 +39,21 @@ public class CurriculumUnit
             String line  = lines.get(i);
             int    index = line.indexOf(MARKER);
             if (index >= TOPIC_START && index < POINT_START) {
-                Topics topic = new Topics(line);
+                Topic topic = new Topic(line);
                 topics.add(topic);
                 currentTopic++;
                 currentPoint = -1;
             }
             else if (index >= POINT_START && index < SUB_POINT_START) {
-                Points point = new Points(line);
-                Topics topic = topics.get(currentTopic);
+                Point point = new Point(line);
+                Topic topic = topics.get(currentTopic);
                 topic.points.add(point);
                 currentPoint++;
             }
             else if (index >= SUB_POINT_START) {
                 SubPoint subPoint = new SubPoint(line);
-                Topics   topic    = topics.get(currentTopic);
-                Points   point    = topic.points.get(currentPoint);
+                Topic   topic    = topics.get(currentTopic);
+                Point   point    = topic.points.get(currentPoint);
                 point.subPoints.add(subPoint);
             }            
         }        
@@ -73,49 +73,40 @@ public class CurriculumUnit
      * @param number the topic number to display
      */
     public void getTopic(int number) {
-        Topics topic = topics.get(number - 1);
+        Topic topic = topics.get(number - 1);
         Simulator.header(topic.text);
-        for (int i = 0; i < topic.points.size(); i++) {
-            Points point = topic.points.get(i);
-            String text  = format(point.text,false);
-            Simulator.text(text);
-            for (int j = 0; j < point.subPoints.size(); j++) {
-                SubPoint subPoint = point.subPoints.get(j);
-                text = format(subPoint.text,true);
-                Simulator.text(text);
-            }
-        }
-    }
-
-    /**
-     * Formats the passed string into a displayable point (or sub-point)
-     * 
-     * @param text the text to format
-     * @return a formatted point (or sub-point)
-     */
-    private String format(String text, boolean isSubPoint) {
-        final String SPACE = "   ";
-        if (isSubPoint) return SPACE + SPACE + text;
-        else            return SPACE + text;
+        topic.showPoints();
     }
 
     /**
      * Internal class storing a topic from this unit and the points (and 
      * sub-points) of that topic
      */
-    private class Topics 
+    private class Topic 
     {
         public String text;
-        public LinkedList<Points> points;        
+        public LinkedList<Point> points;        
         
         /**
          * Class constructor, sets class properties to passed parameter
          * 
          * @param text the text to set the topic to
          */
-        public Topics(String text){
+        public Topic(String text){
             this.text = text;
             points    = new LinkedList<>();
+        }
+        
+        /**
+         * Shows all the points of this topic, and each point's sub-points
+         */
+        public void showPoints() {
+            for (int i = 0; i < points.size(); i++) {
+                Point point = points.get(i);
+                String text = point.text;
+                format(text, false);
+                point.showSubPoints();
+            }
         }
     }
     
@@ -123,7 +114,7 @@ public class CurriculumUnit
      * Internal class storing a point from this unit and topic and the 
      * sub-points of that point
      */
-    private class Points 
+    private class Point 
     {
         public String text;
         public LinkedList<SubPoint> subPoints;
@@ -133,10 +124,21 @@ public class CurriculumUnit
          * 
          * @param text the text to set the point to
          */
-        public Points(String text) {
+        public Point(String text) {
             this.text = text;
             subPoints = new LinkedList<>();
         }
+
+        /**
+         * Shows all the sub-points of this point
+         */
+        public void showSubPoints() {
+            for (int i = 0; i < subPoints.size(); i++) {
+                SubPoint subPoint = subPoints.get(i);
+                String text = subPoint.text; 
+                format(text , true);
+            }
+        }        
     }
     
     /**
@@ -155,5 +157,59 @@ public class CurriculumUnit
             this.text = text;
         }
     }
-            
+
+    /**
+     * Formats the passed string into displayable points (or sub-points)
+     * 
+     * @param originalLine the text to format
+     */
+    private void format(String originalLine, boolean isSubPoint) {
+        final char SPACE    = ' ';
+        final int  LINE_MAX = 80;
+        final String ADJUST = "           ";
+        final String SPACER = "" + SPACE + SPACE + SPACE;
+        String space = SPACER;
+        if (isSubPoint) space = space + SPACER;
+        int maxLength = LINE_MAX - space.length();
+        LinkedList<String> allLines = new LinkedList<>();
+        int count = 0;
+        String newLine = space;
+        for (int i = 0; i < originalLine.length(); i++) {
+            char character = originalLine.charAt(i);
+            newLine = newLine + character;   
+            count++;
+            if (count >= maxLength && character == SPACE) {
+                if (isEmpty(newLine) == false) allLines.add(newLine);
+                newLine = space;
+                count = 0;
+            }             
+        }
+        if (isEmpty(newLine) == false) allLines.add(newLine);
+        for (int i = 0; i < allLines.size(); i++) {
+            String line = allLines.get(i);
+            if (i != 0) line = ADJUST + line;
+            if (isSubPoint) Simulator.subText(line);
+            else            Simulator.text(line);
+        }
+    }
+    
+    /**
+     * Determines if a line has any characters others than spaces in it
+     * 
+     * @param line the string to check
+     * @return the line is empty (true) or not (false)
+     */
+    private boolean isEmpty(String line) {
+        if (line == null) return true;
+        if (line.equals("")) return true;
+        boolean empty = true;
+        for (int i = 0; i < line.length(); i++) {
+            char character = line.charAt(i);
+            if (character != ' ') {
+                empty = false;
+            }
+        }
+        return empty;
+    }
+
 }

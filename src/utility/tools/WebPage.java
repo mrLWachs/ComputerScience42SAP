@@ -222,11 +222,23 @@ public class WebPage
     }    
     
     /**
-     * Adds a level 2 header to the webpage document
+     * Adds "point" text to the webpage document
      * 
      * @param line the line of text to add
      */
     public static void addText(String line) {
+        line = "&nbsp;" + "&nbsp;" + "&nbsp;" + line;
+        text += H3_TEXT_OPEN + line + H3_CLOSE + NEW_LINE;
+    }
+    
+    /**
+     * Adds "sub-point" text to the webpage document
+     * 
+     * @param line the line of text to add
+     */
+    public static void addSubText(String line) {
+        line = "&nbsp;" + "&nbsp;" + "&nbsp;" + 
+               "&nbsp;" + "&nbsp;" + "&nbsp;" + line;
         text += H3_TEXT_OPEN + line + H3_CLOSE + NEW_LINE;
     }
     
