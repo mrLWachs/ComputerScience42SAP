@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -35,10 +36,14 @@ public class APUnit082DArrays
             return;
         }
         
-        Simulator.title("AP: Unit 8 (2D Arrays)");
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContentCS42SAP.showUnit(8);
+        // AP: Unit 8 (2D Arrays)
+        ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("8.1 2D Arrays");  
+        CurriculumContentCS42SAP.showUnit(8,1);
+        // 8.1 2D Arrays
         // (8.1.1) Represent collections of related primitive or object 
         //         reference data using two-dimensional (2D) array objects
             // (8.1.1.1) 2D arrays are stored as arrays of arrays. Therefore, 
@@ -58,16 +63,17 @@ public class APUnit082DArrays
             //           each column
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("8.2 Traversing 2D Arrays");  
-        // (8.1.1) For 2D array objects: (a) Traverse using nested for loops,
+        CurriculumContentCS42SAP.showUnit(8,2);
+        // 8.2 Traversing 2D Arrays
+        // (8.2.1) For 2D array objects: (a) Traverse using nested for loops,
         //         (b) Traverse using nested enhanced for loops
-            // (8.1.1.1) Nested iteration statements can be written to traverse 
+            // (8.2.1.1) Nested iteration statements can be written to traverse 
             //           the 2D array in “row-major order” or “column-major 
             //           order.”
-            // (8.1.1.2) The outer loop of a nested enhanced for loop used to 
+            // (8.2.1.2) The outer loop of a nested enhanced for loop used to 
             //           traverse a 2D array traverses the rows. Therefore, the
             //           enhanced for loop variable must be the type of each 
             //           row, which is a 1D array. The inner loop traverses a
@@ -76,7 +82,7 @@ public class APUnit082DArrays
             //           in the 1D array            
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
     }

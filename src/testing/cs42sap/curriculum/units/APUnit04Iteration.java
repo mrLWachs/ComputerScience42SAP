@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -37,10 +38,14 @@ public class APUnit04Iteration
             return;
         }
         
-        Simulator.title("AP: Unit 4 (Iteration)");
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContentCS42SAP.showUnit(4);
+        // AP: Unit 4 (Iteration)
+        ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.1 while Loops");  
+        CurriculumContentCS42SAP.showUnit(4,1);
+        // 4.1 while Loops" 
         // (4.1.1) Represent iterative processes using a while loop
             // (4.1.1.1) Iteration statements change the flow of control by 
             //           repeating a set of statements zero or more times until
@@ -115,7 +120,8 @@ public class APUnit04Iteration
         Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.2 for Loops");  
+        CurriculumContentCS42SAP.showUnit(4,2);
+        // 4.2 for Loops 
         // (4.2.1) Represent iterative processes using a for loop
             // (4.2.1.1) There are three parts in a for loop header: the 
             //           initialization, the Boolean expression, and the 
@@ -163,7 +169,8 @@ public class APUnit04Iteration
         Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.3 Developing Algorithms Using Strings");  
+        CurriculumContentCS42SAP.showUnit(4,3);
+        // 4.3 Developing Algorithms Using Strings
         // (4.3.1) For algorithms in the context of a particular specification
         //         that involves String objects: (A) Identify standard 
         //         algorithms, (B) Modify standard algorithms, (C) Develop an 
@@ -198,10 +205,11 @@ public class APUnit04Iteration
         Simulator.code("String parts2 = word.substring(1,7);");
         Simulator.code("for (int i = 0; i < word.length(); i++) {");
         Simulator.code("    char character = word.charAt(i);");
-        Simulator.code("}");       
+        Simulator.code("}");      
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.4 Nested Iteration");  
+        CurriculumContentCS42SAP.showUnit(4,4);
+        // 4.4 Nested Iteration
         // (4.4.1) Represent nested iterative processes
             // (4.4.1.1) Nested iteration statements are iteration statements 
             //           that appear in the body of another iteration statement
@@ -239,7 +247,8 @@ public class APUnit04Iteration
         Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("4.5 Informal Code Analysis");  
+        CurriculumContentCS42SAP.showUnit(4,5);
+        // 4.5 Informal Code Analysis
         // (4.5.1) Compute statement execution counts and informal run-time 
         //         comparison of iterative statements
             // (4.5.1.1) A statement execution count indicates the number of 

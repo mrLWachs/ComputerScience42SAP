@@ -3,6 +3,7 @@
 package testing;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import utility.io.Simulator;
 
 
@@ -23,7 +24,7 @@ public class Tester
      * Default constructor for the class, sets class properties
      */
     public Tester() {
-        this(RUN_NORMAL);
+        this(RUN_SIMULATED);
     }
     
     /**
@@ -33,6 +34,7 @@ public class Tester
      */
     public Tester(int state) {
         if (state == DO_NOT_RUN) return;
+        CurriculumContentCS42SAP.initialize();
         Simulator.initialize();
         Simulator.title("Mr. Wachs' Computer Science Classes");
         new PrerequisiteContent(state);      

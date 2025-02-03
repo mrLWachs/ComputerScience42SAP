@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -40,21 +41,25 @@ public class APUnit01PrimitiveTypes
             Simulator.note("AP: Unit 1 (Primitive Types) not running");
             return;
         }
-        
-        Simulator.title("AP: Unit 1 (Primitive Types)");
-        
+                
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("1.1 Why Programming? Why Java?");        
+        CurriculumContentCS42SAP.showUnit(1);
+        // AP: Unit 1 (Primitive Types)
+        ////////////////////////////////////////////////////////////////////////
+                
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContentCS42SAP.showUnit(1,1);
+        // 1.1 Why Programming? Why Java? 
         // (1.1.1) Call System class methods to generate output to the console
             // (1.1.1.1) System.out.print and System.out.println display 
-            //           information on the computer monitor
+             //           information on the computer monitor 
             // (1.1.1.2) System.out.println moves the cursor to a new line after 
             //           the information has been displayed, while 
             //           System.out.print does not        
         // (1.1.2) Create string literals
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
-        
+         
         System.out.print("System.out.print outputs text to the screen and ");
         System.out.println("System.out.println outputs with a line break");
         System.out.print("More specifically, the code word \"System\" ");
@@ -70,7 +75,8 @@ public class APUnit01PrimitiveTypes
         System.out.println("computer screen.");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("1.2 Variables and Data Types");        
+        CurriculumContentCS42SAP.showUnit(1,2);
+        // 1.2 Variables and Data Types        
         // (1.2.1) Identify the most appropriate data type category for a 
         //         particular specification
             // (1.2.1.1) A type is a set of values (a domain) and a set of 
@@ -156,7 +162,8 @@ public class APUnit01PrimitiveTypes
         Simulator.code("final char    CODE   = 'X';");
         
         //////////////////////////////////////////////////////////////////////// 
-        Simulator.header("1.3 Expressions and Assignment Statements");        
+        CurriculumContentCS42SAP.showUnit(1,3);
+        // 1.3 Expressions and Assignment Statements
         // (1.3.1) Evaluate arithmetic expressions in a program code
             // (1.3.1.1) A literal is the source code representation of a 
             //           fixed value
@@ -226,7 +233,8 @@ public class APUnit01PrimitiveTypes
         Simulator.code("double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("1.4 Compound Assignment Operators");
+        CurriculumContentCS42SAP.showUnit(1,4);
+        // 1.4 Compound Assignment Operators
         // (1.4.1) Evaluate what is stored in a variable as a result of an 
         //         expression with an assignment statement
             // (1.4.1.1) Compound assignment operators (+=, −=, *=, /=, %=) 
@@ -266,7 +274,8 @@ public class APUnit01PrimitiveTypes
         Simulator.code("value %= 5; // is the same as \"value = value % 5;\"");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("1.5 Casting and Ranges of Variables");
+        CurriculumContentCS42SAP.showUnit(1,5);
+        // 1.5 Casting and Ranges of Variables
         // (1.5.1) Evaluate arithmetic expressions that use casting
             // (1.5.1.1) The casting operators (int) and (double) can be used 
             //           to create a temporary value converted to a different 

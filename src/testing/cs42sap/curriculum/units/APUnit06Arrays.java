@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -38,10 +39,14 @@ public class APUnit06Arrays
             return;
         }
         
-        Simulator.title("AP: Unit 6 (Arrays)");
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContentCS42SAP.showUnit(6);
+        // AP: Unit 6 (Arrays)
+        ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("6.1 Array Creation and Access");  
+        CurriculumContentCS42SAP.showUnit(6,1);
+        // 6.1 Array Creation and Access
         // (6.1.1) Represent collections of related primitive or object 
         //         reference data using onedimensional (1D) array objects
             // (6.1.1.1) The use of array objects allows multiple related 
@@ -69,10 +74,11 @@ public class APUnit06Arrays
             //           being thrown
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("6.2 Traversing Arrays");  
+        CurriculumContentCS42SAP.showUnit(6,2);
+        // 6.2 Traversing Arrays
         // (6.2.1) Traverse the elements in a 1D array
             // (6.2.1.1) Iteration statements can be used to access all the
             //           elements in an array. This is called traversing the 
@@ -86,10 +92,11 @@ public class APUnit06Arrays
             //           an ArrayIndexOutOfBoundsException being thrown
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("6.3 Enhanced for Loop for Arrays");  
+        CurriculumContentCS42SAP.showUnit(6,3);
+        // 6.3 Enhanced for Loop for Arrays
         // (6.3.1) Traverse the elements in a 1D array object using an enhanced
         //         for loop
             // (6.3.1.1) An enhanced for loop header includes a variable, 
@@ -104,10 +111,11 @@ public class APUnit06Arrays
             //           rewritten using an indexed for loop or a while loop
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("6.4 Developing Algorithms Using Arrays");  
+        CurriculumContentCS42SAP.showUnit(6,4);
+        // 6.4 Developing Algorithms Using Arrays
         // (6.4.1) For algorithms in the context of a particular specification 
         //         that requires the use of array traversals: (a) Identify 
         //         standard algorithms, (b) Modify standard algorithms, 
@@ -126,7 +134,7 @@ public class APUnit06Arrays
             //           right, (b) Reverse the order of the elements
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("Add your own example(s) here...");
         
         ////////////////////////////////////////////////////////////////////////
     }   

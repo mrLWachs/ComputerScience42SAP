@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -39,10 +40,14 @@ public class APUnit05WritingClasses
             return;
         }
         
-        Simulator.title("AP: Unit 5 (Writing Classes)");
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContentCS42SAP.showUnit(5);
+        // AP: Unit 5 (Writing Classes)
+        ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.1 Anatomy of a Class");  
+        CurriculumContentCS42SAP.showUnit(5,1);
+        // 5.1 Anatomy of a Class
         // (5.1.1) Designate access and visibility constraints to classes, 
         //         data, constructors, and methods
             // (5.1.1.1) The keywords public and private affect the access of
@@ -118,7 +123,8 @@ public class APUnit05WritingClasses
         Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.2 Constructors");  
+        CurriculumContentCS42SAP.showUnit(5,2);
+        // 5.2 Constructors
         // (5.2.1) Define instance variables for the attributes to be 
         //         initialized through the constructors of a class
             // (5.2.1.1) An object’s state refers to its attributes and their 
@@ -185,10 +191,11 @@ public class APUnit05WritingClasses
         Simulator.code("    public Basket(Apple apple) {");
         Simulator.code("        // logic here");
         Simulator.code("    }");
-        Simulator.code("}");        
+        Simulator.code("}");         
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.2 Documentation with Comments");  
+        CurriculumContentCS42SAP.showUnit(5,3);
+        // 5.3 Documentation with Comments  
         // (5.3.1) Describe the functionality and use of program code through 
         //         comments
             // (5.3.1.1) Comments are ignored by the compiler and are not 
@@ -237,7 +244,8 @@ public class APUnit05WritingClasses
         Simulator.code("/** JavaDoc comment block */");
                 
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.4 Accessor Methods");  
+        CurriculumContentCS42SAP.showUnit(5,4);
+        // 5.4 Accessor Methods
         // (5.4.1) Define behaviors of an object through non-void methods 
         //         without parameters written in a class
             // (5.4.1.1) An accessor method allows other objects to obtain the
@@ -320,7 +328,8 @@ public class APUnit05WritingClasses
         Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.5 Mutator Methods");  
+        CurriculumContentCS42SAP.showUnit(5,5);
+        // 5.5 Mutator Methods
         // (5.5.1) Define behaviors of an object through void methods with or 
         //         without parameters written in a class
             // (5.5.1.1) A void method does not return a value. Its header 
@@ -358,7 +367,8 @@ public class APUnit05WritingClasses
         Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.6 Writing Methods");  
+        CurriculumContentCS42SAP.showUnit(5,6);
+        // 5.6 Writing Methods
         // (5.6.1) Define behaviors of an object through non-void methods 
         //         with parameters written in a class
             // (5.6.1.1) Methods can only access the private data and methods 
@@ -406,7 +416,8 @@ public class APUnit05WritingClasses
         System.out.println("referred to as \"aliases\".");
 
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.7 Static Variables and Methods");  
+        CurriculumContentCS42SAP.showUnit(5,7);
+        // 5.7 Static Variables and Methods
         // (5.7.1) Define behaviors of a class through static methods
             // (5.7.1.1) Static methods are associated with the class, not 
             //           objects of the class
@@ -473,7 +484,8 @@ public class APUnit05WritingClasses
         Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.8 Scope and Access");  
+        CurriculumContentCS42SAP.showUnit(5,8);
+        // 5.8 Scope and Access
         // (5.8.1) Explain where variables can be used in the program code
             // (5.8.1.1) Local variables can be declared in the body of 
             //           constructors and methods. These variables may only be
@@ -527,7 +539,8 @@ public class APUnit05WritingClasses
         Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.9 this Keyword");  
+        CurriculumContentCS42SAP.showUnit(5,9);
+        // 5.9 this Keyword
         // (5.9.1) Evaluate object reference expressions that use the keyword
         //         this
             // (5.9.1.1) Within a non-static method or a constructor, the 
@@ -548,7 +561,8 @@ public class APUnit05WritingClasses
         System.out.println("as an actual parameter in a method call.");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("5.10 Ethical and Social Implications of Computing Systems");  
+        CurriculumContentCS42SAP.showUnit(5,10);
+        // 5.10 Ethical and Social Implications of Computing Systems
         // (5.10.1) Explain the ethical and social implications of computing 
         //          systems
             // (5.10.1.1) System reliability is limited. Programmers should 

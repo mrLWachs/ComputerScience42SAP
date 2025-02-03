@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
@@ -40,10 +41,14 @@ public class APUnit02UsingObjects
             return;
         }
         
-        Simulator.title("AP: Unit 2 (Using Objects)");
+        ////////////////////////////////////////////////////////////////////////
+        CurriculumContentCS42SAP.showUnit(2);
+        // AP: Unit 2 (Using Objects)
+        ////////////////////////////////////////////////////////////////////////
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.1 Objects: Instances of Classes");  
+        CurriculumContentCS42SAP.showUnit(2,1);
+        // 2.1 Objects: Instances of Classes
         // (2.1.1) Explain the relationship between a class and an object
             // (2.1.1.1) An object is a specific instance of a class with 
             //           defined attributes
@@ -92,7 +97,8 @@ public class APUnit02UsingObjects
         Simulator.code("}");        
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.2 Creating and Storing Objects (Instantiation)");  
+        CurriculumContentCS42SAP.showUnit(2,2);
+        // 2.2 Creating and Storing Objects (Instantiation) 
         // (2.2.1) Identify, using its signature, the correct constructor 
         //         being called
             // (2.2.1.1) A signature consists of the constructor name and the 
@@ -199,10 +205,11 @@ public class APUnit02UsingObjects
         Simulator.code("    }");
         Simulator.code("}");
         Simulator.code("Person person1 = new Person();");
-        Simulator.code("Person person2 = new Person(5);");        
+        Simulator.code("Person person2 = new Person(5);");     
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.3 Calling a Void Method");  
+        CurriculumContentCS42SAP.showUnit(2,3);
+        // 2.3 Calling a Void Method
         // (2.3.1) Call non-static void methods without parameters
             // (2.3.1.1) An object’s behavior refers to what the object can do
             //           (or what can be done to it) and is defined by methods
@@ -285,7 +292,8 @@ public class APUnit02UsingObjects
         Simulator.code("int answer = double(5);");  
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.4 Calling a Void Method with Parameters"); 
+        CurriculumContentCS42SAP.showUnit(2,4);
+        // 2.4 Calling a Void Method with Parameters
         // (2.4.1) Call non-static void methods with parameters
             // (2.4.1.1) A method signature for a method with parameters 
             //           consists of the method name and the ordered list of 
@@ -333,7 +341,8 @@ public class APUnit02UsingObjects
         Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.5 Calling a Non-void Method");  
+        CurriculumContentCS42SAP.showUnit(2,5);
+        // 2.5 Calling a Non-void Method
         // (2.5.1) Call non-static non-void methods with or without parameters
             // (2.5.1.1) Non-void methods return a value that is the same type 
             //           as the return type in the signature. To use the return
@@ -349,7 +358,8 @@ public class APUnit02UsingObjects
         System.out.println("a variable) or used as part of an expression.");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.6 String Objects: Concatenation, Literals, and More");  
+        CurriculumContentCS42SAP.showUnit(2,6);
+        // 2.6 String Objects: Concatenation, Literals, and More
         // (2.6.1) For String class: a. Create String objects. b. Call String 
         //         methods
             // (2.6.1.1) String objects can be created by using string literals
@@ -398,7 +408,8 @@ public class APUnit02UsingObjects
         Simulator.code("str2 = \"\\n\" + str1 + \"\\\\\" + \"\\\" dog\";");    
                 
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.7 String Methods");  
+        CurriculumContentCS42SAP.showUnit(2,7);
+        // 2.7 String Methods
         // (2.7.1) For String class: a. Create String objects. b. Call String methods
             // (2.7.1.1) Application program interfaces (APIs) and libraries 
             //           simplify complex programming tasks
@@ -490,7 +501,8 @@ public class APUnit02UsingObjects
         Simulator.comment("and returns value > 0 if greater than other");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.8 Wrapper Classes: Integer and Double");  
+        CurriculumContentCS42SAP.showUnit(2,8);
+        // 2.8 Wrapper Classes: Integer and Double
         // (2.8.1) For wrapper classes: a. Create Integer objects, b. Call 
         //         Integer methods, c. Create Double objects, d. Call Double 
         //         methods
@@ -587,7 +599,8 @@ public class APUnit02UsingObjects
         Simulator.code("Double  doubleObject2     = doublePrimitive3;"); 
                 
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("2.9 Using the Math Class");  
+        CurriculumContentCS42SAP.showUnit(2,9);
+        // 2.9 Using the Math Class
         // (2.9.1) Call static methods
             // (2.9.1.1) Static methods are called using the dot operator 
             //           along with the class name unless they are defined in 
@@ -637,7 +650,7 @@ public class APUnit02UsingObjects
         Simulator.code("double value5 = Math.random();");
         Simulator.code("final double HIGH = 10.9d;");
         Simulator.code("final double LOW  = 5.5d;");
-        Simulator.code("double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;");        
+        Simulator.code("double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;");   
         
         ////////////////////////////////////////////////////////////////////////
     }

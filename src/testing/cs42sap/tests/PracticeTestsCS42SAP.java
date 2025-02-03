@@ -30,7 +30,7 @@ public class PracticeTestsCS42SAP
         new PracticeTest1(state); 
         new PracticeTest2(state); 
         new PracticeTest3(state); 
-        new PracticeTest4(Tester.DO_NOT_RUN);         
+        new PracticeTest4(state);         
     }
 
 }
