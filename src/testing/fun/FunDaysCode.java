@@ -7,13 +7,13 @@ import utility.io.Simulator;
 
 
 /**
- * FunFridaysCode - this is some of the "extra" learning we have done in our
- * course for both "Fun Fridays" and "new content Thursdays"
+ * FunDays - this is some of the "extra" learning we have done in our
+ * course for both "Fun days" and "new content days"
  * 
  * @author Mr. Wachs
- * @since Mar 4, 2024
+ * @since Mar 4, 2025
 */
-public class FunFridaysCode
+public class FunDaysCode
 {
     
     /**
@@ -21,12 +21,12 @@ public class FunFridaysCode
      * 
      * @param state the run state of this code module
      */
-    public FunFridaysCode(int state) {
+    public FunDaysCode(int state) {
         if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("Fun Friday (and Thursday) content not running");
+            Simulator.note("Fun days content not running");
             return;
         }
-        Simulator.title("Fun Friday (and Thursday) Content:"); 
+        Simulator.title("Fun days Content:"); 
     }
 
 }

@@ -3,7 +3,7 @@
 package testing;
 
 /** Required API imports */
-import testing.fun.FunFridaysCode;
+import testing.fun.FunDaysCode;
 import testing.postsecondary.MorePostSecondaryContent;
 import utility.io.Simulator;
 
@@ -31,7 +31,7 @@ public class PostSecondaryContent
             return;
         }
         Simulator.title("Computer Science 42SAP Post Secondary Content:");   
-        new FunFridaysCode(state); 
+        new FunDaysCode(state); 
         new MorePostSecondaryContent(state);  
     }
      
