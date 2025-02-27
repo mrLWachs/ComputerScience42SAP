@@ -128,7 +128,40 @@ public class ArrayLists
             System.out.println("Method add(T) success: " + success);
             System.out.println("ArrayList: " + list.toString());
         }
-                
+              
+        ////////////////////////////////////////////////////////////////////////
+        // (3) The "add(int,T)" method is a variation (overloaded) method used  
+        //     with another parameter to indicate an index value (which will  
+        //     add the value and shift all the preceeding values after the 
+        //     index over)
+        ////////////////////////////////////////////////////////////////////////
+        
+        int index = 3;
+        value = 99;
+        list.add(index,value);
+        System.out.println("Method add(int,T) ArrayList: " + list.toString());
+        
+        index = 0;
+        value = 98;
+        list.add(index, value);
+        System.out.println("Method add(int,T) ArrayList: " + list.toString());
+        
+        index = list.size();
+        value = 97;
+        list.add(index, value);
+        System.out.println("Method add(int,T) ArrayList: " + list.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // (4) The "get(int)" accessor method is used like accessing array like
+        //     "int value = array[index];" which retrieves the value at the 
+        //     passed index
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        
+        
+        
         
     }
 
