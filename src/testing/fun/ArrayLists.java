@@ -224,6 +224,17 @@ public class ArrayLists
         // an ArrayList, you should not add or remove elements
         ////////////////////////////////////////////////////////////////////////
         
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("'for' loop ArrayList: " + list.get(i));
+            // Like with arrays...
+            // array[i] and array.length
+        }
+        
+        
+        
+        
+        
+        
     }
 
 }
