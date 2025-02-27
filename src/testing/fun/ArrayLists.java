@@ -251,6 +251,15 @@ public class ArrayLists
         System.out.println("           or: for (Integer integer : list)");
         
         ////////////////////////////////////////////////////////////////////////
+        // NOTE: further resources for ArrayLists can be found here:
+        //  - A video reviewing this AP specific content: https://bit.ly/4h2uYlN
+        //  - Similar web page/presentation/PDF content: https://bit.ly/3QzsYGR
+        //  - The AP classroom site on unit 7: https://bit.ly/3DbsrYs
+        //  - Some other websites that go over the ArrayList in Java:
+        //     - https://bit.ly/3EV4Dsl
+        //     - https://bit.ly/3QDJPs8
+        //     - https://bit.ly/3F0OBNF
+        ////////////////////////////////////////////////////////////////////////
     }
 
 }
