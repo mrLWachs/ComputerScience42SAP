@@ -157,8 +157,20 @@ public class ArrayLists
         //     passed index
         ////////////////////////////////////////////////////////////////////////
         
+        index = 3;
+        System.out.println("Method get(3) = " + list.get(index));
         
+        index = 0;
+        System.out.println("Method get(0) = " + list.get(index));
         
+        index = list.size()-1;
+        System.out.println("Method get(list.size()-1) = " + list.get(index));
+        
+        ////////////////////////////////////////////////////////////////////////
+        // (5) The "set(int,T)" mutator method is used like changing an array
+        //     like: "array[index] = value;" mutates (changes) the value at the 
+        //     passed index and returns the previous value at that index
+        ////////////////////////////////////////////////////////////////////////
         
         
         
