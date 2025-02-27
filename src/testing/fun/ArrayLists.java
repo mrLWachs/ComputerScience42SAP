@@ -230,11 +230,27 @@ public class ArrayLists
             // array[i] and array.length, etc...
         }
         
+        for (Integer integer : list) {
+            System.out.println("'enhanced for' loop ArrayList = " + integer.toString());
+            // The enhanced for loop cannot be used with primitive data types
+        }
         
+        ////////////////////////////////////////////////////////////////////////
         
+        System.out.println("Comparing ArrayList to arrays...");
+        System.out.println("All array operations: ");
+        System.out.println(" - declaring:  int a[] = new int[5];");
+        System.out.println(" - mutating:   a[2] = 5;");
+        System.out.println(" - accessing:  int x = a[2];");
+        System.out.println(" - traversing: for (int i = 0; i < a.length; i++)");
+        System.out.println("Can also be performed with ArrayList:");
+        System.out.println(" - declaring:  ArrayList<Integer> a = new ArrayList<>();");
+        System.out.println(" - mutating:   a.set(2,5);");
+        System.out.println(" - accessing:  int x = a.get(2);");
+        System.out.println(" - traversing: for (int i = 0; i < a.size(); i++)");  
+        System.out.println("           or: for (Integer integer : list)");
         
-        
-        
+        ////////////////////////////////////////////////////////////////////////
     }
 
 }
