@@ -107,8 +107,8 @@ public class ArrayLists
         ////////////////////////////////////////////////////////////////////////
         
         int size = list.size();
-        System.out.println("ArrayList size: " + size);
-        System.out.println("ArrayList: " + list.toString());
+        System.out.print("Method size() = " + size);
+        System.out.println(" ArrayList: " + list.toString());
         
         ////////////////////////////////////////////////////////////////////////
         // (2) The "add(T)" method is used to add values dynamically into the 
@@ -116,17 +116,17 @@ public class ArrayLists
         //     the ArrayList
         ////////////////////////////////////////////////////////////////////////
         
-        Integer value = 20;
+        Integer value = 10;
         boolean success = list.add(value);
-        System.out.println("Method add(T) success: " + success);
-        System.out.println("ArrayList: " + list.toString());
+        System.out.print("Method add(T) = " + success);
+        System.out.println(" ArrayList: " + list.toString());
         
-        System.out.println("Repeating the add() method...");
-        for (int i = 0; i < 5; i++) {
-            value = i * 10 + 30;
+        System.out.println("...Repeating the add() method...");
+        for (int i = 0; i < 4; i++) {
+            value = i * 10 + 20;
             success = list.add(value);
-            System.out.println("Method add(T) success: " + success);
-            System.out.println("ArrayList: " + list.toString());
+            System.out.print("Method add(T) = " + success);
+            System.out.println(" ArrayList: " + list.toString());
         }
               
         ////////////////////////////////////////////////////////////////////////
@@ -139,17 +139,17 @@ public class ArrayLists
         int index = 3;
         value = 99;
         list.add(index,value);
-        System.out.println("Method add(int,T) ArrayList: " + list.toString());
+        System.out.println("Method add(3,99) ArrayList: " + list.toString());
         
         index = 0;
         value = 98;
         list.add(index, value);
-        System.out.println("Method add(int,T) ArrayList: " + list.toString());
+        System.out.println("Method add(0,98) ArrayList: " + list.toString());
         
         index = list.size();
         value = 97;
         list.add(index, value);
-        System.out.println("Method add(int,T) ArrayList: " + list.toString());
+        System.out.println("Method add(list.size(),97) ArrayList: " + list.toString());
         
         ////////////////////////////////////////////////////////////////////////
         // (4) The "get(int)" accessor method is used like accessing array like
@@ -157,8 +157,8 @@ public class ArrayLists
         //     passed index
         ////////////////////////////////////////////////////////////////////////
         
-        index = 3;
-        System.out.println("Method get(3) = " + list.get(index));
+        index = 4;
+        System.out.println("Method get(4) = " + list.get(index));
         
         index = 0;
         System.out.println("Method get(0) = " + list.get(index));
@@ -172,20 +172,20 @@ public class ArrayLists
         //     passed index and returns the previous value at that index
         ////////////////////////////////////////////////////////////////////////
         
-        index = 3;
-        value = 1;
-        System.out.println("Method set(3,1) was " + list.set(index, value));
-        System.out.println("ArrayList: " + list.toString());
+        index = 4;
+        value = 0;
+        System.out.print("Method set(4,0) = " + list.set(index, value));
+        System.out.println(" ArrayList: " + list.toString());
         
         index = 0;
-        value = 2;
-        System.out.println("Method set(0,2) was " + list.set(index,value));
-        System.out.println("ArrayList: " + list.toString());
+        value = 0;
+        System.out.print("Method set(0,0) = " + list.set(index,value));
+        System.out.println(" ArrayList: " + list.toString());
         
         index = list.size()-1;
-        value = 3;
-        System.out.println("Method set(list.size()-1,3) was " + list.set(index,value));
-        System.out.println("ArrayList: " + list.toString());
+        value = 0;
+        System.out.print("Method set(list.size()-1,0) = " + list.set(index,value));
+        System.out.println(" ArrayList: " + list.toString());
         
         ////////////////////////////////////////////////////////////////////////
         // (6) The "remove(int)" mutator method removes the index value from
@@ -193,17 +193,17 @@ public class ArrayLists
         //     element. It also returns the item it removes
         ////////////////////////////////////////////////////////////////////////
         
-        index = 2;
-        System.out.println("Method remove(2) removed " + list.remove(index));
-        System.out.println("ArrayList: " + list.toString());
+        index = 4;
+        System.out.print("Method remove(4) = " + list.remove(index));
+        System.out.println(" ArrayList: " + list.toString());
         
         index = 0;
-        System.out.println("Method list.remove(0) removed " + list.remove(index));
-        System.out.println("ArrayList: " + list.toString());
+        System.out.print("Method remove(0) = " + list.remove(index));
+        System.out.println(" ArrayList: " + list.toString());
         
         index = list.size()-1;
-        System.out.println("Method list.remove(list.size()-1) removed " + list.remove(index));
-        System.out.println("ArrayList: " + list.toString());
+        System.out.print("Method remove(list.size()-1) = " + list.remove(index));
+        System.out.println(" ArrayList: " + list.toString());
         
         ////////////////////////////////////////////////////////////////////////
         // Traversing an ArrayList with a standard for loop and an enhanced 
