@@ -193,8 +193,36 @@ public class ArrayLists
         //     element. It also returns the item it removes
         ////////////////////////////////////////////////////////////////////////
         
+        index = 2;
+        System.out.println("Method remove(2) removed " + list.remove(index));
+        System.out.println("ArrayList: " + list.toString());
         
+        index = 0;
+        System.out.println("Method list.remove(0) removed " + list.remove(index));
+        System.out.println("ArrayList: " + list.toString());
         
+        index = list.size()-1;
+        System.out.println("Method list.remove(list.size()-1) removed " + list.remove(index));
+        System.out.println("ArrayList: " + list.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Traversing an ArrayList with a standard for loop and an enhanced 
+        // for loop.
+        //
+        // The A.P. curriculum unit 7.3 states this as: for ArrayList 
+        // objects: (a) Traverse using a for or while loop, (b) Traverse using
+        // an enhanced for loop. Iteration statements can be used to access 
+        // all the elements in an ArrayList. This is called traversing the 
+        // ArrayList. Deleting elements during a traversal of an ArrayList
+        // requires using special techniques to avoid skipping elements. 
+        // Since the indices for an ArrayList start at 0 and end at the 
+        // number of elements − 1, accessing an index value outside of this 
+        // range will result in an ArrayIndexOutOfBoundsException being thrown.
+        // Changing the size of an ArrayList while traversing it using an 
+        // enhanced for loop can result in a ConcurrentModificationException 
+        // being thrown. Therefore, when using an enhanced for loop to traverse
+        // an ArrayList, you should not add or remove elements
+        ////////////////////////////////////////////////////////////////////////
         
     }
 
