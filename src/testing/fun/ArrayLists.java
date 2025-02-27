@@ -226,8 +226,8 @@ public class ArrayLists
         
         for (int i = 0; i < list.size(); i++) {
             System.out.println("'for' loop ArrayList: " + list.get(i));
-            // Like with arrays...
-            // array[i] and array.length
+            // If we compare with arrays, we would use code like: 
+            // array[i] and array.length, etc...
         }
         
         
