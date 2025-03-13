@@ -33,6 +33,13 @@ public class SearchingTest
         if (result) System.out.println("Found " + item);
         else        System.out.println("Not Found " + item);
         
+        // Get a more detailed result of a search
+        int index = linearSearch(array, item);
+        
+        // Display the result
+        System.out.println("Linear search: " + item + " was at " + index);
+        
+        
         
         
         
@@ -55,6 +62,37 @@ public class SearchingTest
         }
         // Go through the entire array, never found it
         return false;
+    }
+    
+    /**
+     * An implementation of a linear search (sequential search) algorithm. It
+     * will find the first occurrence of an item in the array and return
+     * the index where it found it, or a -1 if not found 
+     * 
+     * @param list the array to search through
+     * @param item the item to search for in the list
+     * @return the first index found at, or a -1 if not found
+     */
+    private static int linearSearch(String[] array, String item) {
+        // Travel the array (traverse, means to "visit" every spot) using a loop
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(item)) {
+                // Found it!
+                return i;
+            }
+        }
+        // Go through the entire array, never found it
+        return -1;
+        
+        // An alternative loop structure
+        // int i = 0;
+        // while (i < array.length) {
+        //     if (array[i].equals(item)) {
+        //         return i;
+        //     }
+        //     i++;
+        // }
+        // return -1;        
     }
     
 
