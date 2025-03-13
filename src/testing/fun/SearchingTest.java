@@ -1,6 +1,8 @@
 /** Required package class namespace */
 package testing.fun;
 
+import java.util.ArrayList;
+
 
 /*
  * SearchingTest - description
@@ -37,11 +39,23 @@ public class SearchingTest
         int index = linearSearch(array, item);
         
         // Display the result
-        System.out.println("Linear search: " + item + " was at " + index);
+        System.out.println("Linear search array: " + item + " was at " + index);
         
+        // Now do the linear search with an ArrayList...
         
+        ArrayList<String> list = new ArrayList<>();
+        // Fill the list (from the array)...
+        for (int i = 0; i < array.length; i++) {
+            list.add(array[i]);
+        }
         
+        result = list.contains(item);
         
+        if (result) System.out.println("List has " + item);
+        else        System.out.println("List does not has " + item);
+        
+        index = list.indexOf(item);
+        System.out.println("Linear search list: " + item + " was at " + index);
         
     }
 
