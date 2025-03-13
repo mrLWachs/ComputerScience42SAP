@@ -5,24 +5,27 @@ import java.util.ArrayList;
 
 
 /*
- * SearchingTest - description
+ * SearchingTest - useful methods for searching through arrays and lists of
+ * data for a specific item
  * 
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Mar 13, 2025
 */
 public class SearchingTest
 {
 
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         
         // Array of items to search through
         String[] array = {
-            "William", "Kurt", "Alan",
-            "Franz", "Kaleb", "Neal",
-            "Orion", "Tristan", "Cam", 
-            "Teddy", "Finlay", "Yevheniia",
-            "Thomas", "Hunter", "Nathaniel",
-            "Izen", "Jonah", "Wachs"
+            "William", "Kurt", "Alan", "Franz", "Kaleb", "Neal", "Orion", 
+            "Tristan", "Cam",  "Teddy", "Finlay", "Yevheniia", "Thomas", 
+            "Hunter", "Nathaniel", "Izen", "Jonah", "Wachs"
         };
         
         // An item to search for
@@ -32,14 +35,14 @@ public class SearchingTest
         boolean result = search(array,item);
         
         // Display the result
-        if (result) System.out.println("Found " + item);
-        else        System.out.println("Not Found " + item);
+        if (result) System.out.println("Search found " + item);
+        else        System.out.println("Search did not find " + item);
         
         // Get a more detailed result of a search
         int index = linearSearch(array, item);
         
         // Display the result
-        System.out.println("Linear search array: " + item + " was at " + index);
+        System.out.println("Linear search array: " + item + " at index " + index);
         
         // Now do the linear search with an ArrayList...
         
@@ -49,13 +52,13 @@ public class SearchingTest
             list.add(array[i]);
         }
         
-        result = list.contains(item);
-        
-        if (result) System.out.println("List has " + item);
-        else        System.out.println("List does not has " + item);
-        
+        // Now use "built-in" ArrayList methods to search the list...
+        result = list.contains(item);        
+        if (result) System.out.println("ArrayList found " + item);
+        else        System.out.println("ArrayList did not find " + item);
         index = list.indexOf(item);
-        System.out.println("Linear search list: " + item + " was at " + index);
+        System.out.println("Linear search ArrayList: " + item + " at index " + index);
+        
         
     }
 
