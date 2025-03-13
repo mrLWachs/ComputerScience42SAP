@@ -4,6 +4,7 @@ package testing;
 
 /** Required API imports */
 import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
+import testing.fun.FunDaysCode;
 import utility.io.Simulator;
 
 
@@ -40,6 +41,7 @@ public class Tester
         new PrerequisiteContent(state);      
         new ComputerScience42SAP(state); 
         new PostSecondaryContent(state); 
+        new FunDaysCode(state);
         Simulator.saveOutput();
     }
     

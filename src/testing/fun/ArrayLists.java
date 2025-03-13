@@ -53,7 +53,19 @@ import java.util.ArrayList;
 public class ArrayLists
 {
 
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
+        new ArrayLists();
+    }
+    
+    /**
+     * Class constructor, sets class properties
+     */
+    public ArrayLists() {
         ////////////////////////////////////////////////////////////////////////
         // Let us begin to start learning about ArrayLists...
         ////////////////////////////////////////////////////////////////////////
