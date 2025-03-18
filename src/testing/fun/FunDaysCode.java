@@ -26,7 +26,9 @@ public class FunDaysCode
             Simulator.note("Fun days content not running");
             return;
         }
-        ArrayLists arrayLists = new ArrayLists();
+        ArrayLists    arrayLists    = new ArrayLists();
+        SearchingTest searchingTest = new SearchingTest();
+        SortingTest   sortingTest   = new SortingTest();
         Simulator.title("Fun days Content:"); 
     }
 
