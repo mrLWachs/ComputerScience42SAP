@@ -27,15 +27,32 @@ import java.util.ArrayList;
  * desired value is found or all elements have been eliminated", and "binary 
  * search can be more efficient than sequential/linear search", and "search 
  * algorithms other than sequential/linear and binary search are outside the 
- * scope of the course and AP Exam". However, with more analysis of these 
- * curriculum points, more specifics can be drawn out. Since the curriculum
- * document is vague about it, I would interpret what you need to know about
- * searching is (1) what a sequential search is, how it works, and how to write
- * it in code as applied to both arrays and ArrayLists, (2) what a binary 
- * search is, and how it works (not necessarily how to write one), (3) how
- * these algorithms can be implemented with iteration (loops) or recursively,
- * and (4) how the binary search is more efficient than the linear search - but 
- * the binary search only works on sorted data.
+ * scope of the course and AP Exam". 
+ *
+ * However, with more analysis of these curriculum points, more specifics can 
+ * be drawn out. Since the curriculum document is vague about it, I would 
+ * interpret what you need to know about searching is:
+ * 
+ * (1) What a sequential search is, how it works, and how to write
+ *     it in code as applied to both arrays and ArrayLists
+ * (2) What a binary search is, and how it works (not necessarily how to 
+ *     write one)
+ * (3) How these algorithms can be implemented with iteration (loops) or 
+ *     recursively
+ * (4) How the binary search is more efficient than the linear search - but 
+ *     the binary search only works on sorted data
+ * 
+ * NOTE: further resources for searching can be found here:
+ *       - My video playlist on searching: https://bit.ly/4bN2dbu
+ *       - My presentation on searching: https://bit.ly/3FonaxA
+ *       - My assignment on searching: https://bit.ly/4269gZy
+ *       - My review sheet on searching: https://bit.ly/3FqTgZr
+ *       - Some other websites that go over searching:
+ *             - https://bit.ly/4hCIFIe
+ *             - https://bit.ly/4iu3WFa
+ *             - https://bit.ly/4iK8ZkE
+ *             - https://bit.ly/3FtFAwV
+ *             - https://bit.ly/4bOFITC
  * 
  * @author Mr. Wachs
  * @since Mar 13, 2025
@@ -129,21 +146,7 @@ public class SearchingTest
         else        System.out.println("ArrayList did not find " + item);
         index = list.indexOf(item);
         System.out.println("Linear search ArrayList: " + item + " at index " + index);
-        
-        ////////////////////////////////////////////////////////////////////////
-        // NOTE: further resources for searching can be found here:
-        //  - My video playlist on searching: https://bit.ly/4bN2dbu
-        //  - My presentation on searching: https://bit.ly/3FonaxA
-        //  - My assignment on searching: https://bit.ly/4269gZy
-        //  - My review sheet on searching: https://bit.ly/3FqTgZr
-        //  - Some other websites that go over searching:
-        //     - https://bit.ly/4hCIFIe
-        //     - https://bit.ly/4iu3WFa
-        //     - https://bit.ly/4iK8ZkE
-        //     - https://bit.ly/3FtFAwV
-        //     - https://bit.ly/4bOFITC
-        ////////////////////////////////////////////////////////////////////////
-        
+                
     }
 
     /**
