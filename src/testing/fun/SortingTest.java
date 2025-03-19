@@ -31,16 +31,15 @@ package testing.fun;
  *     though we will in this example)
  * 
  * NOTE: further resources for sorting can be found here:
- *       - My video playlist on searching: 
- *       - My presentation on searching: 
- *       - My assignment on searching: 
- *       - My review sheet on searching: 
+ *       - My video playlist on sorting: https://bit.ly/4bN2dbu
+ *       - My presentation on sorting: https://bit.ly/3FonaxA
+ *       - My assignment on sorting: https://bit.ly/4269gZy
+ *       - My review sheet on sorting: https://bit.ly/3FqTgZr
  *       - Some other websites that go over sorting:
- *             - 
- *             - 
- *             - 
- *             - 
- *             - 
+ *             - https://bit.ly/4izDppK
+ *             - https://bit.ly/4bH0HYI
+ *             - https://bit.ly/4iB2AZ8
+ *             - https://bit.ly/42dFt18
  * 
  * @author Mr. Wachs
  * @since Mar 18, 2025
