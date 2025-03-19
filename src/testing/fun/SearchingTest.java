@@ -146,6 +146,44 @@ public class SearchingTest
         else        System.out.println("ArrayList did not find " + item);
         index = list.indexOf(item);
         System.out.println("Linear search ArrayList: " + item + " at index " + index);
+        
+        ////////////////////////////////////////////////////////////////////////
+        // To use a binary search, there is a pre-condition that has to be 
+        // true before the search can take place...
+        //   - The array/list has to be SORTED first!
+        // We will manually sort the array and ArrayList in order...
+        ////////////////////////////////////////////////////////////////////////
+        
+        String[] sortedArray = {
+            "Alan",             // Index 0
+            "Cam",              // Index 1            
+            "Finlay",           // Index 2
+            "Franz",            // Index 3            
+            "Hunter",           // Index 4            
+            "Izen",             // Index 5            
+            "Jonah",            // Index 6            
+            "Kaleb",            // Index 7
+            "Kurt",             // Index 8
+            "Nathaniel",        // Index 9
+            "Neal",             // Index 10
+            "Orion",            // Index 11
+            "Teddy",            // Index 12
+            "Thomas",           // Index 13
+            "Tristan",          // Index 14
+            "Wachs",            // Index 15
+            "William",          // Index 16
+            "Yevheniia",        // Index 17
+        };
+        ArrayList<String> sortedList = new ArrayList<>();
+        for (String string : sortedArray) {
+            sortedList.add(string);
+        }
+        ////////////////////////////////////////////////////////////////////////
+        
+        index = binarySearch(sortedArray,item);
+        System.out.println("Binary search array: " + item + " at index " + index);
+        index = binarySearch(sortedList,item);
+        System.out.println("Binary search list: " + item + " at index " + index);
                 
     }
 
@@ -199,5 +237,84 @@ public class SearchingTest
         // return -1;        
     }
     
+    /**
+     * An implementation of a binary search algorithm. It will find the first 
+     * occurrence of an item in the array and return the index where it 
+     * found it, or a -1 if not found
+     * 
+     * @param list the array to search through
+     * @param item the item to search for in the list
+     * @return the first index found at, or a -1 if not found 
+     */
+    private static int binarySearch(String[] array, String item) {
+        int low  = 0;                   // Marker for the low end
+        int high = array.length - 1;    // Marker for the high end
+        while(low <= high) {            // Continue while markers not collapsed
+            int mid = (high + low) / 2; // Calculate middle between markers
+            if      (array[mid].equals(item))        return mid; // Found it
+            else if (array[mid].compareTo(item) > 0) high = mid - 1; // Too high 
+            else if (array[mid].compareTo(item) < 0) low  = mid + 1; // Too low
+        }
+        return -1;  // Not found
+    }
 
+//    // HERE IS AN EXAMPLE OF THE SAME ALGORITHM USING INTEGERS.....
+//    private int binarySearch(int[] array, int item) {
+//        int low  = 0;                   
+//        int high = array.length - 1;    
+//        while(low <= high) {          
+//            int middle = (high + low) / 2;  
+//            if (array[middle] == item){
+//                return middle;
+//            } 
+//            else if (array[middle] > item) {
+//                high = middle - 1;
+//            }
+//            else if (array[middle] < item) {
+//                low  = middle + 1;
+//            }
+//        }
+//        return -1;  
+//    }
+        
+    /**
+     * Another implementation of a binary search algorithm. This implementation
+     * uses a wrapper method around a private utility recursive method. It will
+     * find the first occurrence of an item in the ArrayList and return the 
+     * index where it found it, or a -1 if not found
+     * 
+     * @param list the ArrayList to search through
+     * @param item the item to search for in the list
+     * @return the first index found at, or a -1 if not found 
+     */
+    private static int binarySearch(ArrayList<String> list, String item) {
+        return binaryRecursive(list,item,0,list.size());
+    }
+
+    /**
+     * Recursive method used to find the item in the list and return the index 
+     * of it's location or a -1 if not found
+     * 
+     * @param list the ArrayList to search through
+     * @param item the item to search for in the list
+     * @param low the lowest index to start from
+     * @param high the highest index to go to
+     * @return the first index found at, or a -1 if not found 
+     */
+    private static int binaryRecursive(ArrayList<String> list, String item, 
+                                      int low, int high) {
+        if (low <= high) {                      // While markers not collapsed
+            int mid = low + (high - low) / 2;   // Calculate middle point 
+            if (list.get(mid) == null)
+                return -1;
+            else if (list.get(mid).compareTo(item) > 0) 
+                return binaryRecursive(list,item,low,mid-1);
+            else if (list.get(mid).compareTo(item) < 0) 
+                return binaryRecursive(list,item,mid+1,high);
+            else                                        
+                return mid;
+        }
+        return -1;                              // Not found
+    }
+    
 }
