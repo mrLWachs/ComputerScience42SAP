@@ -3,6 +3,12 @@ package testing.fun;
 
 /** Required API imports */
 import java.util.ArrayList;
+import java.util.Arrays;
+import utility.collections.LinkedList;
+import utility.tools.Numbers;
+import utility.tools.Search;
+import utility.tools.Sort;
+import utility.tools.Text;
 
 
 /*
@@ -66,7 +72,13 @@ public class SearchingTest
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        new SearchingTest();
+    }
+    
+    /**
+     * Class constructor, sets class properties
+     */
+    public SearchingTest() {
         ////////////////////////////////////////////////////////////////////////
         // Array of items to search through...
         ////////////////////////////////////////////////////////////////////////
@@ -185,6 +197,49 @@ public class SearchingTest
         index = binarySearch(sortedList,item);
         System.out.println("Binary search list: " + item + " at index " + index);
                 
+        ////////////////////////////////////////////////////////////////////////
+        // NOTE: more searching code including searching arrays and LinkedList
+        // (the one we developed ourselves in the CS40S class) of generic data
+        // types can be found in the utility.tools package namespace of this
+        // project in a class called "Sort.java" which has many search methods
+        // that can be seen and used by importing this class. For example...
+        ////////////////////////////////////////////////////////////////////////
+        
+        Search  search  = new Search();
+        Text    text    = new Text();
+        Numbers numbers = new Numbers();
+        Sort    sort    = new Sort();
+        
+        final int SIZE   = 10;
+        final int LENGTH = 3;
+        final int LOW    = SIZE;
+        final int HIGH   = -SIZE;
+        
+        String[]            wordsArray  = text.randomWordSize(SIZE,LENGTH);
+        LinkedList<Integer> numbersList = numbers.randomList(LOW,HIGH,SIZE);
+        
+        String  word  = wordsArray[SIZE/2];
+        Integer value = numbersList.get(SIZE/2);
+        
+        System.out.println("Searching array: " + Arrays.toString(wordsArray) + " for " + word);
+        System.out.println("Searching list: " + numbersList.toString() + " for " + value);
+        
+        index = search.linear(word, wordsArray);
+        System.out.println("Linear search array: " + word + " at index " + index);
+        index = search.linear(value, numbersList);
+        System.out.println("Linear search list: " + value + " at index " + index);
+        
+        sort.quick(wordsArray);
+        sort.quick(numbersList);   
+        
+        System.out.println("Searching array: " + Arrays.toString(wordsArray) + " for " + word);
+        System.out.println("Searching: " + numbersList.toString() + " for " + value);
+        
+        index = search.binary(word, wordsArray);
+        System.out.println("Binary search array: " + word + " at index " + index);
+        index = search.binary(value, numbersList);
+        System.out.println("Binary search list: " + value + " at index " + index);
+        
     }
 
     /**
