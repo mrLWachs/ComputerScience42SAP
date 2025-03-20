@@ -53,6 +53,7 @@ public class SortingTest
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("Let us begin to start learning about sorting...");
         
     }
 

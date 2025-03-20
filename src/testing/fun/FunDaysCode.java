@@ -26,10 +26,10 @@ public class FunDaysCode
             Simulator.note("Fun days content not running");
             return;
         }
+        Simulator.title("AP Student Driven 'fun' Days Learning:");
         ArrayLists    arrayLists    = new ArrayLists();
         SearchingTest searchingTest = new SearchingTest();
         SortingTest   sortingTest   = new SortingTest();
-        Simulator.title("Fun days Content:"); 
     }
 
 }
