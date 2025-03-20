@@ -27,9 +27,10 @@ public class FunDaysCode
             return;
         }
         Simulator.title("AP Student Driven 'fun' Days Learning:");
-        ArrayLists    arrayLists    = new ArrayLists();
-        SearchingTest searchingTest = new SearchingTest();
-        SortingTest   sortingTest   = new SortingTest();
+        ArrayLists        arrayLists        = new ArrayLists();
+        SearchingTest     searchingTest     = new SearchingTest();
+        SortingTest       sortingTest       = new SortingTest();
+        StringMethodsTest stringMethodsTest = new StringMethodsTest();
     }
 
 }

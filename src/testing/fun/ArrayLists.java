@@ -66,7 +66,7 @@ public class ArrayLists
      * Class constructor, sets class properties
      */
     public ArrayLists() {        
-        System.out.println("Let us begin to start learning about ArrayLists...");
+        System.out.println("Let us start learning about ArrayLists...");
         
         ////////////////////////////////////////////////////////////////////////
         // Let us begin to start learning about ArrayLists...

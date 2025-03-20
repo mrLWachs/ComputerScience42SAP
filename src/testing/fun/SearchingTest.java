@@ -79,7 +79,7 @@ public class SearchingTest
      * Class constructor, sets class properties
      */
     public SearchingTest() {        
-        System.out.println("Let us begin to start learning about searching...");
+        System.out.println("Let us start learning about searching...");
         
         ////////////////////////////////////////////////////////////////////////
         // Let us begin to start learning about searching...
