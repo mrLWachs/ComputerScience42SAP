@@ -195,6 +195,10 @@ public class SearchingTest
         for (String string : sortedArray) {
             sortedList.add(string);
         }
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Now apply the binary search algorithm to the sorted array and 
+        // LinkedList data structures
         ////////////////////////////////////////////////////////////////////////
         
         index = binarySearch(sortedArray,item);
@@ -205,45 +209,70 @@ public class SearchingTest
         ////////////////////////////////////////////////////////////////////////
         // NOTE: more searching code including searching arrays and LinkedList
         // (the one we developed ourselves in the CS40S class) of generic data
-        // types can be found in the utility.tools package namespace of this
+        // types can be found in the "utility.tools" package namespace of this
         // project in a class called "Sort.java" which has many search methods
-        // that can be seen and used by importing this class. For example...
+        // that can be seen and used by importing this class. Also, several
+        // other classes ("Text", "Numbers", "Sort") from this package are 
+        // instantiated to be used to create data, sort data, and demonstrate
+        // the various methods of the Sort class. For example...
         ////////////////////////////////////////////////////////////////////////
         
-        Search  search  = new Search();
-        Text    text    = new Text();
-        Numbers numbers = new Numbers();
-        Sort    sort    = new Sort();
+        Search  search  = new Search();     // For search methods
+        Text    text    = new Text();       // For text arrays and lists
+        Numbers numbers = new Numbers();    // For integer arrays and lists
+        Sort    sort    = new Sort();       // For sorting the arrays and lists
         
-        final int SIZE   = 10;
-        final int LENGTH = 3;
-        final int LOW    = SIZE;
-        final int HIGH   = -SIZE;
+        final int SIZE   = 10;              // The sizes of the arrays and lists
+        final int LENGTH = 5;               // The length of the words
+        final int LOW    = SIZE;            // The lowest random integer value
+        final int HIGH   = -SIZE;           // The highest random integer value
         
-        String[]            wordsArray  = text.randomWordSize(SIZE,LENGTH);
-        LinkedList<Integer> numbersList = numbers.randomList(LOW,HIGH,SIZE);
+        ////////////////////////////////////////////////////////////////////////
+        // Create random array of words (strings) and a random LinkedList of
+        // integers
+        ////////////////////////////////////////////////////////////////////////
         
-        String  word  = wordsArray[SIZE/2];
-        Integer value = numbersList.get(SIZE/2);
+        String[]            array1 = text.randomWordSize(SIZE,LENGTH);
+        LinkedList<Integer> list1  = numbers.randomList(LOW,HIGH,SIZE);
         
-        System.out.println("Searching array: " + Arrays.toString(wordsArray) + " for " + word);
-        System.out.println("Searching list: " + numbersList.toString() + " for " + value);
+        ////////////////////////////////////////////////////////////////////////
+        // Get 2 items to search for in the array and list 
+        ////////////////////////////////////////////////////////////////////////
         
-        index = search.linear(word, wordsArray);
-        System.out.println("Linear search array: " + word + " at index " + index);
-        index = search.linear(value, numbersList);
-        System.out.println("Linear search list: " + value + " at index " + index);
+        String  item1 = array1[SIZE/2];
+        Integer item2 = list1.get(SIZE/2);
         
-        sort.quick(wordsArray);
-        sort.quick(numbersList);   
+        ////////////////////////////////////////////////////////////////////////
+        // Sort the array and lists
+        ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Searching array: " + Arrays.toString(wordsArray) + " for " + word);
-        System.out.println("Searching: " + numbersList.toString() + " for " + value);
+        sort.quick(array1);
+        sort.quick(list1); 
         
-        index = search.binary(word, wordsArray);
-        System.out.println("Binary search array: " + word + " at index " + index);
-        index = search.binary(value, numbersList);
-        System.out.println("Binary search list: " + value + " at index " + index);
+        ////////////////////////////////////////////////////////////////////////
+        // Output the array and list
+        ////////////////////////////////////////////////////////////////////////
+        
+        System.out.println("Searching array: " + Arrays.toString(array1));
+        System.out.println("Searching list:  " + list1.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Do a linear search on the array and list and display results
+        ////////////////////////////////////////////////////////////////////////
+        
+        int index1 = search.linear(item1, array1);
+        int index2 = search.linear(item2, list1);
+        System.out.println("Linear search array: " + item1 + " at index " + index1);
+        System.out.println("Linear search list: "  + item2 + " at index " + index2);
+              
+        ////////////////////////////////////////////////////////////////////////
+        // Do a binary search on the array and list and display results
+        ////////////////////////////////////////////////////////////////////////
+        
+        index1 = search.binary(item1, array1);     
+        index2 = search.binary(item2, list1);
+        System.out.println("Binary search array: " + item1 + " at index " + index1);
+        System.out.println("Binary search list:  " + item2 + " at index " + index2);
         
     }
 
@@ -365,16 +394,16 @@ public class SearchingTest
                                       int low, int high) {
         if (low <= high) {                      // While markers not collapsed
             int mid = low + (high - low) / 2;   // Calculate middle point 
-            if (list.get(mid) == null)
-                return -1;
-            else if (list.get(mid).compareTo(item) > 0) 
-                return binaryRecursive(list,item,low,mid-1);
+            if (list.get(mid) == null) 
+                return -1;                                      // Not found
+            else if (list.get(mid).compareTo(item) > 0)  
+                return binaryRecursive(list,item,low,mid-1);    // Too low
             else if (list.get(mid).compareTo(item) < 0) 
-                return binaryRecursive(list,item,mid+1,high);
-            else                                        
-                return mid;
+                return binaryRecursive(list,item,mid+1,high);   // Too high
+            else 
+                return mid;                                     // Found it
         }
-        return -1;                              // Not found
+        return -1;                                              // Not found
     }
     
 }
