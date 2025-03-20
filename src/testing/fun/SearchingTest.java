@@ -84,7 +84,6 @@ public class SearchingTest
         ////////////////////////////////////////////////////////////////////////
         // Let us begin to start learning about searching...
         ////////////////////////////////////////////////////////////////////////
-        ////////////////////////////////////////////////////////////////////////
         // Array of items to search through...
         ////////////////////////////////////////////////////////////////////////
         
@@ -210,11 +209,11 @@ public class SearchingTest
         // NOTE: more searching code including searching arrays and LinkedList
         // (the one we developed ourselves in the CS40S class) of generic data
         // types can be found in the "utility.tools" package namespace of this
-        // project in a class called "Sort.java" which has many search methods
+        // project in a class called "Search.java" which has many search methods
         // that can be seen and used by importing this class. Also, several
         // other classes ("Text", "Numbers", "Sort") from this package are 
         // instantiated to be used to create data, sort data, and demonstrate
-        // the various methods of the Sort class. For example...
+        // the various methods of the Search class. For example...
         ////////////////////////////////////////////////////////////////////////
         
         Search  search  = new Search();     // For search methods
@@ -224,8 +223,8 @@ public class SearchingTest
         
         final int SIZE   = 10;              // The sizes of the arrays and lists
         final int LENGTH = 5;               // The length of the words
-        final int LOW    = SIZE;            // The lowest random integer value
-        final int HIGH   = -SIZE;           // The highest random integer value
+        final int LOW    = -SIZE;           // The lowest random integer value
+        final int HIGH   = SIZE;            // The highest random integer value
         
         ////////////////////////////////////////////////////////////////////////
         // Create random array of words (strings) and a random LinkedList of

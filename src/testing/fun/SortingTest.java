@@ -1,6 +1,14 @@
 /** Required package class namespace */
 package testing.fun;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import utility.collections.LinkedList;
+import utility.tools.Numbers;
+import utility.tools.Search;
+import utility.tools.Sort;
+import utility.tools.Text;
+
 
 /*
  * SortingTest - seful methods for sorting arrays and lists of data. This is 
@@ -62,6 +70,285 @@ public class SortingTest
     public SortingTest() {        
         System.out.println("Let us start learning about sorting...");
         
+        ////////////////////////////////////////////////////////////////////////
+        // Let us begin to start learning about sorting...
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Create a maximum number of random people for our list object and use
+        // three different actual population sizes for testing...
+        // Approximate population of Winnipeg:  783 thousand people    (783,096)
+        // Approximate population of Manitoba:  1.3 million  people  (1,342,153)
+        // Approximate population of Canada:   40.1 million  people (40,100,000)
+        ////////////////////////////////////////////////////////////////////////
+        
+        final int WINNIPEG =   783096;
+        final int MANITOBA =  1342153;
+        final int CANADA   = 40100000;
+        final int TOTAL    = WINNIPEG;
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Create the ADT list to store the data
+        ////////////////////////////////////////////////////////////////////////
+        
+        ArrayList<String> population = new ArrayList<>();
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Fill the ArrayList ADT with random names
+        ////////////////////////////////////////////////////////////////////////
+        
+        for (int i = 0; i < TOTAL; i++) {
+            String person = randomName();
+            population.add(person);
+        }
+        
+        final int AMOUNT_TO_DISPLAY = 5;
+        
+        sort(population);                       // Sort the list
+        output(population,AMOUNT_TO_DISPLAY);   // Display the sorted list
+        
+        ////////////////////////////////////////////////////////////////////////
+        // NOTE: more searching code including searching arrays and LinkedList
+        // (the one we developed ourselves in the CS40S class) of generic data
+        // types can be found in the "utility.tools" package namespace of this
+        // project in a class called "Sort.java" which has many sort methods
+        // that can be seen and used by importing this class. Also, several
+        // other classes ("Text", "Numbers") from this package are instantiated
+        // to be used to create data, sort data, and demonstrate the various 
+        // methods of the Sort class. For example...
+        ////////////////////////////////////////////////////////////////////////
+        
+        Text    text    = new Text();       // For text arrays and lists
+        Numbers numbers = new Numbers();    // For integer arrays and lists
+        Sort    sort    = new Sort();       // For sorting the arrays and lists
+        
+        final int SIZE   = 10;              // The sizes of the arrays and lists
+        final int LENGTH = 5;               // The length of the words
+        final int LOW    = 0;               // The lowest random integer value
+        final int HIGH   = SIZE;            // The highest random integer value
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Create random array of words (strings) and a random LinkedList of
+        // integers
+        ////////////////////////////////////////////////////////////////////////
+        
+        String[]            array = text.randomWordSize(SIZE,LENGTH,true);
+        System.out.println("Before bubble sort array: \t" + Arrays.toString(array));
+        sort.bubble(array);
+        System.out.println("After bubble sort array: \t" + Arrays.toString(array));
+        
+        LinkedList<Integer> list  = numbers.randomList(LOW,HIGH,SIZE); 
+        System.out.println("Before bubble sort list:  \t" + list.toString());      
+        sort.bubble(list);        
+        System.out.println("After bubble sort list:  \t" + list.toString());
+        
+        array = text.randomWordSize(SIZE,LENGTH,true);
+        System.out.println("Before selection sort array: \t" + Arrays.toString(array));
+        sort.selection(array);
+        System.out.println("After selection sort array: \t" + Arrays.toString(array));
+        
+        list  = numbers.randomList(LOW,HIGH,SIZE);
+        System.out.println("Before selection sort list:  \t" + list.toString()); 
+        sort.selection(list);        
+        System.out.println("After selection sort list:  \t" + list.toString());
+        
+        array = text.randomWordSize(SIZE,LENGTH,true);
+        System.out.println("Before insertion sort array: \t" + Arrays.toString(array));
+        sort.insertion(array);
+        System.out.println("After insertion sort array: \t" + Arrays.toString(array));  
+        
+        list  = numbers.randomList(LOW,HIGH,SIZE);
+        System.out.println("Before insertion sort list:  \t" + list.toString());
+        sort.insertion(list);      
+        System.out.println("After insertion sort list:  \t" + list.toString());
+        
+        array = text.randomWordSize(SIZE,LENGTH,true);
+        System.out.println("Before shell sort array: \t" + Arrays.toString(array));
+        sort.shell(array);
+        System.out.println("After shell sort array: \t" + Arrays.toString(array));
+        
+        list  = numbers.randomList(LOW,HIGH,SIZE);
+        System.out.println("Before shell sort list:  \t" + list.toString());                        
+        sort.shell(list);                
+        System.out.println("After shell sort list:  \t" + list.toString());
+        
+        array = text.randomWordSize(SIZE,LENGTH,true);
+        System.out.println("Before heap sort array: \t" + Arrays.toString(array));
+        sort.heap(array);
+        System.out.println("After heap sort array:  \t" + Arrays.toString(array));
+        
+        list  = numbers.randomList(LOW,HIGH,SIZE);        
+        System.out.println("Before heap sort list:  \t" + list.toString());                        
+        sort.heap(list);                
+        System.out.println("After heap sort list:   \t" + list.toString());
+        
+        array = text.randomWordSize(SIZE,LENGTH,true);
+        System.out.println("Before merge sort array: \t" + Arrays.toString(array));
+        sort.merge(array);
+        System.out.println("After merge sort array:  \t" + Arrays.toString(array));
+        
+        list  = numbers.randomList(LOW,HIGH,SIZE);        
+        System.out.println("Before merge sort list:  \t" + list.toString());                        
+        sort.merge(list);                
+        System.out.println("After merge sort list:   \t" + list.toString());
+        
+        array = text.randomWordSize(SIZE,LENGTH,true);
+        System.out.println("Before quick sort array: \t" + Arrays.toString(array));
+        sort.quick(array);
+        System.out.println("After quick sort array:  \t" + Arrays.toString(array));
+        
+        list  = numbers.randomList(LOW,HIGH,SIZE);        
+        System.out.println("Before quick sort list:  \t" + list.toString());                        
+        sort.quick(list);                
+        System.out.println("After quick sort list:   \t" + list.toString());
+                
+        list  = numbers.randomList(LOW,HIGH,SIZE);
+        System.out.println("Before radix sort list:  \t" + list.toString());                
+        sort.radix(list);        
+        System.out.println("After radix sort list:   \t" + list.toString());
+                
+    }
+
+    /**
+     * Creates a random "name" of a set number of random characters with the 
+     * first character being a capital letter
+     * 
+     * @return a random name
+     */
+    private String randomName() {
+        final int LOW  = (int)'a';
+        final int HIGH = (int)'z';
+        final int SIZE = 5;
+        String name = "";
+        for (int i = 0; i < SIZE; i++) {
+            char letter = (char)( (HIGH - LOW + 1d) * Math.random() + LOW);
+            if (i == 0) {
+                letter = Character.toUpperCase(letter);
+            }
+            name += letter;
+        }
+        return name;
+    }
+    
+    /**
+     * Display the list of on screen
+     * 
+     * @param list the ADT list
+     * @param amount 
+     */
+    private void output(ArrayList<String> list, int amount) {
+        System.out.println("Here are the first " + amount + " in the list...");
+        for (int i = 0; i < amount; i++) {
+            System.out.println(i + ": \t" + list.get(i));
+        }
+        System.out.println("Here are the last " + amount + " in the list...");
+        int end = list.size();
+        int start = end - amount;
+        for (int i = start; i < end; i++) {
+            System.out.println(i + ": \t" + list.get(i));
+        }
+    }
+    
+    /**
+     * The sorting of the list 
+     * 
+     * @param list the ADT list 
+     */
+    private void sort(ArrayList<String> list) {
+        // There are many types of sort algorithms you can investigate,
+        // the most intuitive one most people think of is known as the 
+        // "selection sort" algorithm. In which you search a list for the 
+        // smallest item, move it to a new list, and continue until all items
+        // fromt he original list are moved to a new list. However, the 
+        // "bubble sort" is the easiest algorithm to write.
+        
+        // A Basic "bubble sort" algorithm below:
+        // int a[] = { 3,5,7,2,9,1,8 };
+        // for (int i = 0; i < a.length; i++) {
+        //     for (int j = 0; j < a.length-1; j++) {
+        //         if (a[j] > a[j+1]) {
+        //             int temp = a[j];
+        //             a[j]     = a[j+1];
+        //             a[j+1]   = temp;
+        //         }
+        //     }
+        // }
+        
+        // Here is a more "optimized" version of the bubble sort
+        // for (int i = list.size()-1; i > 0; i--) {            
+        //     boolean didISwap = false;            
+        //     // Travel through the list...
+        //     for (int j = 0; j < i; j++) {
+        //         Person p1 = list.get(j);
+        //         Person p2 = list.get(j + 1);
+        //         // Check if the value is greater than 
+        //         // the next value
+        //         if (p1.compareTo(p2) > 0) {
+        //             didISwap = true;
+        //             // Swap them
+        //             Person p3 = p1.clone();
+        //             p1 = new Person(p2.name, p2.age, p2.iq);
+        //             p2 = new Person(p3.name, p3.age, p3.iq);
+        //             // Update the list
+        //             list.set(j, p1);
+        //             list.set(j + 1, p2);
+        //         }
+        //     }            
+        //     // check if no swaps took place
+        //     if (didISwap == false) {
+        //         return;
+        //     }
+        // }
+        // // Do it again (as many times as things in the list)
+        
+        
+        // And here is a "fancier" sort algorithm known as the "quick sort"
+        // algorithm that uses wrapper methods and recursion to sort the list
+        if (list == null) return;                       // error check
+        recursiveQuick(list,0,list.size()-1);        
+    }
+    
+    /**
+     * Recursive implementation of a quick sort algorithm 
+     * 
+     * @param list the ArrayList to sort
+     * @param front the marker for the front partition
+     * @param back the marker for the back partition 
+     */
+    private void recursiveQuick(ArrayList<String> list, int front, int back) {
+        if (back <= front) return;
+        else {
+            int pivot = partition(list,front,back);
+            recursiveQuick(list,front,pivot-1);
+            recursiveQuick(list,pivot+1,back);
+        }
+    }
+    
+    /**
+     * Partitions the list into S1 and S2 and separates
+     * 
+     * @param list the ArrayList to partition
+     * @param front the marker for the front partition
+     * @param back the marker for the back partition 
+     * @return the position of the partition in the list
+     */
+    private int partition(ArrayList<String> list, int front, int back) {
+        String pivot = list.get(front);
+        while (back > front) {
+            while (back > front && list.get(back).compareTo(pivot) > 0)
+                back--;
+            if (back == front) break;
+            list.set(front,list.get(back));
+            front++;            
+            while (back > front && list.get(front).compareTo(pivot) < 0)
+                front++;
+            if (back == front) break;
+            list.set(back,list.get(front));
+            back--;
+        }
+        list.set(front,pivot);
+        return front; 
     }
 
 }
