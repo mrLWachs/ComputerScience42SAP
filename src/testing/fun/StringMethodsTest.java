@@ -104,7 +104,46 @@ public class StringMethodsTest
         System.out.println("letter1.compareTo(letter2) = " + compare2);
         System.out.println("letter2.compareTo(letter1) = " + compare3);
         
+        ////////////////////////////////////////////////////////////////////////
         
+        final int VALUE = 42;
+        
+        Integer integer = new Integer(VALUE);
+        
+        System.out.println("Integer = " + integer);
+        
+        Integer minValue = Integer.MIN_VALUE;
+        Integer maxValue = Integer.MAX_VALUE;
+        
+        System.out.println("Integer.MIN_VALUE = " + minValue);
+        System.out.println("Integer.MAX_VALUE = " + maxValue);
+        
+        
+        int value1 = integer.intValue();
+        
+        System.out.println("integer.intValue() = " + value1);
+        
+        ////////////////////////////////////////////////////////////////////////
+        
+        final double DECIMAL = 3.14;
+        
+        Double doub = new Double(DECIMAL);
+        
+        System.out.println("Double = " + doub);
+        
+        double value2 = doub.doubleValue();
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        
+        final int NEGATIVE = -42;
+        
+        
+        System.out.println("doub.doubleValue() = " + value2);
+        
+        int absoluteValue = Math.abs(NEGATIVE);
+        
+        System.out.println("Math.abs(NEGATIVE) = " + absoluteValue);
         
         
     }
