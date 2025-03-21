@@ -1,11 +1,11 @@
 /** Required package class namespace */
 package testing.fun;
 
+/** Required API imports */
 import java.util.ArrayList;
 import java.util.Arrays;
 import utility.collections.LinkedList;
 import utility.tools.Numbers;
-import utility.tools.Search;
 import utility.tools.Sort;
 import utility.tools.Text;
 
@@ -103,6 +103,10 @@ public class SortingTest
             population.add(person);
         }
         
+        ////////////////////////////////////////////////////////////////////////
+        // Now sort the list and display some of the results
+        ////////////////////////////////////////////////////////////////////////
+        
         final int AMOUNT_TO_DISPLAY = 5;
         
         sort(population);                       // Sort the list
@@ -133,77 +137,109 @@ public class SortingTest
         // integers
         ////////////////////////////////////////////////////////////////////////
         
-        String[]            array = text.randomWordSize(SIZE,LENGTH,true);
+        ////////////////////////////////////////////////////////////////////////
+        // The bubble sort algorithm: https://bit.ly/4iOnkg5
+        ////////////////////////////////////////////////////////////////////////
+        
+        String[] array = text.randomWordSize(SIZE,LENGTH,true);
         System.out.println("Before bubble sort array: \t" + Arrays.toString(array));
         sort.bubble(array);
         System.out.println("After bubble sort array: \t" + Arrays.toString(array));
         
-        LinkedList<Integer> list  = numbers.randomList(LOW,HIGH,SIZE); 
+        LinkedList<Integer> list = numbers.randomList(LOW,HIGH,SIZE); 
         System.out.println("Before bubble sort list:  \t" + list.toString());      
         sort.bubble(list);        
         System.out.println("After bubble sort list:  \t" + list.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // The selection sort algorithm: https://bit.ly/4htmaFK
+        ////////////////////////////////////////////////////////////////////////
         
         array = text.randomWordSize(SIZE,LENGTH,true);
         System.out.println("Before selection sort array: \t" + Arrays.toString(array));
         sort.selection(array);
         System.out.println("After selection sort array: \t" + Arrays.toString(array));
         
-        list  = numbers.randomList(LOW,HIGH,SIZE);
+        list = numbers.randomList(LOW,HIGH,SIZE);
         System.out.println("Before selection sort list:  \t" + list.toString()); 
         sort.selection(list);        
         System.out.println("After selection sort list:  \t" + list.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // The insertion sort algorithm: https://bit.ly/4iuQyks
+        ////////////////////////////////////////////////////////////////////////
         
         array = text.randomWordSize(SIZE,LENGTH,true);
         System.out.println("Before insertion sort array: \t" + Arrays.toString(array));
         sort.insertion(array);
         System.out.println("After insertion sort array: \t" + Arrays.toString(array));  
         
-        list  = numbers.randomList(LOW,HIGH,SIZE);
+        list = numbers.randomList(LOW,HIGH,SIZE);
         System.out.println("Before insertion sort list:  \t" + list.toString());
         sort.insertion(list);      
         System.out.println("After insertion sort list:  \t" + list.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // The shell sort algorithm: https://bit.ly/4iOo5pr
+        ////////////////////////////////////////////////////////////////////////
         
         array = text.randomWordSize(SIZE,LENGTH,true);
         System.out.println("Before shell sort array: \t" + Arrays.toString(array));
         sort.shell(array);
         System.out.println("After shell sort array: \t" + Arrays.toString(array));
         
-        list  = numbers.randomList(LOW,HIGH,SIZE);
+        list = numbers.randomList(LOW,HIGH,SIZE);
         System.out.println("Before shell sort list:  \t" + list.toString());                        
         sort.shell(list);                
         System.out.println("After shell sort list:  \t" + list.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // The heap sort algorithm: https://bit.ly/4iJmy3V
+        ////////////////////////////////////////////////////////////////////////
         
         array = text.randomWordSize(SIZE,LENGTH,true);
         System.out.println("Before heap sort array: \t" + Arrays.toString(array));
         sort.heap(array);
         System.out.println("After heap sort array:  \t" + Arrays.toString(array));
         
-        list  = numbers.randomList(LOW,HIGH,SIZE);        
+        list = numbers.randomList(LOW,HIGH,SIZE);        
         System.out.println("Before heap sort list:  \t" + list.toString());                        
         sort.heap(list);                
         System.out.println("After heap sort list:   \t" + list.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // The merge sort algorithm: https://bit.ly/4hxtpfR
+        ////////////////////////////////////////////////////////////////////////
         
         array = text.randomWordSize(SIZE,LENGTH,true);
         System.out.println("Before merge sort array: \t" + Arrays.toString(array));
         sort.merge(array);
         System.out.println("After merge sort array:  \t" + Arrays.toString(array));
         
-        list  = numbers.randomList(LOW,HIGH,SIZE);        
+        list = numbers.randomList(LOW,HIGH,SIZE);        
         System.out.println("Before merge sort list:  \t" + list.toString());                        
         sort.merge(list);                
         System.out.println("After merge sort list:   \t" + list.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // The quick sort algorithm: https://bit.ly/4kEotbT
+        ////////////////////////////////////////////////////////////////////////
         
         array = text.randomWordSize(SIZE,LENGTH,true);
         System.out.println("Before quick sort array: \t" + Arrays.toString(array));
         sort.quick(array);
         System.out.println("After quick sort array:  \t" + Arrays.toString(array));
         
-        list  = numbers.randomList(LOW,HIGH,SIZE);        
+        list = numbers.randomList(LOW,HIGH,SIZE);        
         System.out.println("Before quick sort list:  \t" + list.toString());                        
         sort.quick(list);                
         System.out.println("After quick sort list:   \t" + list.toString());
                 
-        list  = numbers.randomList(LOW,HIGH,SIZE);
+        ////////////////////////////////////////////////////////////////////////
+        // The radix sort algorithm: https://bit.ly/4in5fpC
+        ////////////////////////////////////////////////////////////////////////
+        
+        list = numbers.randomList(LOW,HIGH,SIZE);
         System.out.println("Before radix sort list:  \t" + list.toString());                
         sort.radix(list);        
         System.out.println("After radix sort list:   \t" + list.toString());
@@ -217,25 +253,26 @@ public class SortingTest
      * @return a random name
      */
     private String randomName() {
-        final int LOW  = (int)'a';
-        final int HIGH = (int)'z';
-        final int SIZE = 5;
-        String name = "";
-        for (int i = 0; i < SIZE; i++) {
+        final int LOW  = (int)'a';              // Letters from the alphabet
+        final int HIGH = (int)'z';      
+        final int SIZE = 5;                     // The size of the name
+        String name = "";       
+        for (int i = 0; i < SIZE; i++) {        // Fill name with letters
             char letter = (char)( (HIGH - LOW + 1d) * Math.random() + LOW);
-            if (i == 0) {
+            if (i == 0) {                       // Capitalize first letter
                 letter = Character.toUpperCase(letter);
             }
-            name += letter;
+            name += letter;                     // Add letter to name
         }
         return name;
     }
     
     /**
-     * Display the list of on screen
+     * Display the list of on screen of a set amount from the beginning of the
+     * list and the ned of the list
      * 
-     * @param list the ADT list
-     * @param amount 
+     * @param list the ADT list to display
+     * @param amount the amount of items to display from the front and back
      */
     private void output(ArrayList<String> list, int amount) {
         System.out.println("Here are the first " + amount + " in the list...");

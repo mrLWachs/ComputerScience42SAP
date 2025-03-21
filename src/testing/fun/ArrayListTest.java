@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 
 /**
- * ArrayLists.java - the student requested review of the ArrayList concepts as 
- * needed for the AP exam (from the AP Computer Science curriculum). 
+ * ArrayListTest.java - the student requested review of the ArrayList concepts 
+ * as needed for the AP exam (from the AP Computer Science curriculum). 
  * 
  * In the A.P. Computer Science A curriculum in Unit 6, students learn that 
  * data structures are helpful when storing multiple related data values. 
@@ -47,10 +47,19 @@ import java.util.ArrayList;
  * implemented by the classes: "ArrayList", "LinkedList", "Vector", and 
  * "PriorityQueue" and the class "Stack" inherits from the "Vector" class.
  * 
+ * NOTE: further resources for ArrayLists can be found here:
+ *       - A video reviewing this AP specific content: https://bit.ly/4h2uYlN
+ *       - Similar web page/presentation/PDF content: https://bit.ly/3QzsYGR
+ *       - The AP classroom site on unit 7: https://bit.ly/3DbsrYs
+ *       - Some other websites that go over the ArrayList in Java:
+ *            - https://bit.ly/3EV4Dsl
+ *            - https://bit.ly/3QDJPs8
+ *            - https://bit.ly/3F0OBNF
+ * 
  * @author Mr. Wachs
  * @since Feb 27, 2025
  */
-public class ArrayLists
+public class ArrayListTest
 {
 
     /**
@@ -59,13 +68,13 @@ public class ArrayLists
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new ArrayLists();
+        new ArrayListTest();
     }
     
     /**
      * Class constructor, sets class properties
      */
-    public ArrayLists() {        
+    public ArrayListTest() {        
         System.out.println("Let us start learning about ArrayLists...");
         
         ////////////////////////////////////////////////////////////////////////
@@ -264,16 +273,6 @@ public class ArrayLists
         System.out.println(" - traversing: for (int i = 0; i < a.size(); i++)");  
         System.out.println("           or: for (Integer integer : list)");
         
-        ////////////////////////////////////////////////////////////////////////
-        // NOTE: further resources for ArrayLists can be found here:
-        //  - A video reviewing this AP specific content: https://bit.ly/4h2uYlN
-        //  - Similar web page/presentation/PDF content: https://bit.ly/3QzsYGR
-        //  - The AP classroom site on unit 7: https://bit.ly/3DbsrYs
-        //  - Some other websites that go over the ArrayList in Java:
-        //     - https://bit.ly/3EV4Dsl
-        //     - https://bit.ly/3QDJPs8
-        //     - https://bit.ly/3F0OBNF
-        ////////////////////////////////////////////////////////////////////////
     }
 
 }
