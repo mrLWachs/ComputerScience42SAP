@@ -60,7 +60,19 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
          
-        System.out.println("Add your own example(s) here...");
+        System.out.print("System.out.print outputs text to the screen and ");
+        System.out.println("System.out.println outputs with a line break");
+        System.out.print("More specifically, the code word \"System\" ");
+        System.out.println("refers to the \"computer system\" and the ");
+        System.out.print("word \"out\" refers to outputting, and finally ");
+        System.out.println("the word \"print\" or \"println\" are calls to ");
+        System.out.print("methods (or \"actions\") that take the string ");
+        System.out.println("literal (which is the word or words in between ");
+        System.out.print("the quotation marks) and outputs it. So the ");
+        System.out.println("command \"System.out.println(\"literal\");\" ");
+        System.out.print("will take the string literal and output it to ");
+        System.out.println("the default output device - that being the ");
+        System.out.println("computer screen.");
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(1,2);
@@ -85,7 +97,69 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("Data/information refers to the \"kind\" of data ");
+        System.out.println("being stored (or \"remembered\") by the program ");
+        System.out.print("in a \"variable\". A variable is a piece of the ");
+        System.out.println("computer's memory (storage) that has a \"name\" ");
+        System.out.print("(or \"address\") so that the programmer can refer ");
+        System.out.println("to it by that name. The \"type\" refers to the ");
+        System.out.print("\"kind\" of data that you are storing (e.g. text, ");
+        System.out.println("numbers, true/false, etc.). The type must be ");
+        System.out.print("specified at the time you write a line of code to ");
+        System.out.println("\"create\" (or \"declare\") the variable. A ");
+        System.out.print("variable can only be one type and only store that ");
+        System.out.println("specified type of data. However, the data ");
+        System.out.print("itself can change (or \"vary\") after the initial ");
+        System.out.println("declaration. Examples of this are below...");
+        
+        // Variables declared and assigned initial ("starting") values:
+        boolean a = true;
+        int     b = 0;
+        double  c = 1.0;
+        char    d = 'A';
+        
+        // Variables content changes ("reassigned"):
+        a = false;
+        b = 1;
+        c = 1.1;
+        d = 'B';
+        
+        Simulator.comment("Variables declared and assigned initial (\"starting\") values:");
+        Simulator.code("boolean a = true;");
+        Simulator.code("int     b = 0;");
+        Simulator.code("double  c = 1.0;");
+        Simulator.code("char    d = 'A';");
+        Simulator.comment("Variables content changes (\"reassigned\"):");
+        Simulator.code("a = false;");
+        Simulator.code("b = 1;");
+        Simulator.code("c = 1.1;");
+        Simulator.code("d = 'B';");  
+        
+        System.out.print("A \"final\" (or a \"constant\") is a variable ");
+        System.out.println("in which the stored value does NOT change ");
+        System.out.print("(it stays \"constant\") and it locked at that ");
+        System.out.println("value. Final (or constant) variables are ");
+        System.out.print("given the initial value when declared (or ");
+        System.out.println("initialized) and that value stays locked. These ");
+        System.out.print("types of values are written in ALL_CAPS with the ");
+        System.out.println("underscore value used to seperate words in ");
+        System.out.print("the name. Final variables are more efficient for ");
+        System.out.println("a number of reasons including ease of code ");
+        System.out.print("understanding, speed (faster code), easier to ");
+        System.out.println("update code, and others. Examples of finals ");
+        System.out.println("are below");
+        
+        // Constants (finals) declared (initialized)
+        final boolean FOUND  = true;
+        final int     VALUE  = 1;
+        final double  AMOUNT = 2.5;
+        final char    CODE   = 'X';
+        
+        Simulator.comment("Constants (finals) declared (initialized)");
+        Simulator.code("final boolean FOUND  = true;");
+        Simulator.code("final int     VALUE  = 1;");
+        Simulator.code("final double  AMOUNT = 2.5;");
+        Simulator.code("final char    CODE   = 'X';");
         
         //////////////////////////////////////////////////////////////////////// 
         CurriculumContentCS42SAP.showUnit(1,3);
@@ -119,7 +193,44 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("Arithmetic (or \"math\") statements in code ");
+        System.out.println("are lines of code (or \"statements\") that are ");
+        System.out.print("written to evaluate (or \"solve\") an equation ");
+        System.out.println("of logic the program needs to solve. In this ");
+        System.out.print("context, the word \"literal\" can also mean a ");
+        System.out.println("number (like \"5\"). This usually involves ");
+        System.out.print("variable types int and double (the number types) ");
+        System.out.println("used in a math expression or equation. This ");
+        System.out.print("can involve math operations like +, -, *, / and ");
+        System.out.println("% (modulus). When multiple int values are ");
+        System.out.print("evaluated in a formula, they always evaluate ");
+        System.out.println("to an int answer (solution) and double values ");
+        System.out.print("will evaluate to a double. Complex (or ");
+        System.out.println("\"compound\" expressions can be formed in which ");
+        System.out.print("the order of operations (or precedence order). ");
+        System.out.println("This means multiplication and division are ");
+        System.out.print("evaluated before addition and subtraction. If ");
+        System.out.println("operations are at the same precedence level, ");
+        System.out.print("then they are evaluated from left to right.");
+        System.out.println("When you try and divide by zero, an error ");
+        System.out.print("(the \"ArithmeticException\" error) will occur ");
+        System.out.println("and the program will stop running. Examples:"); 
+        
+        // Arithmetic evaluations using variables
+        int    v1 = 5;
+        int    v2 = 3;
+        int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;
+        double v4 = 5.2;
+        double v5 = 3.3;
+        double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;
+        
+        Simulator.comment("Arithmetic evaluations using variables");
+        Simulator.code("int    v1 = 5;");
+        Simulator.code("int    v2 = 3;");
+        Simulator.code("int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;");   
+        Simulator.code("double v4 = 5.2;");  
+        Simulator.code("double v5 = 3.3;");  
+        Simulator.code("double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;");
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(1,4);
@@ -134,7 +245,33 @@ public class APUnit01PrimitiveTypes
             //           value is assigned to the variable or array element
         ////////////////////////////////////////////////////////////////////////    
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("Compound statements in this context refers to ");
+        System.out.println("using shortcuts to quickly add or subtract one ");
+        System.out.print("(increment or decrement) to a variable. You ");
+        System.out.println("can also use more complex shorthand compound ");
+        System.out.print("statements to quickly multiply, divide, even ");
+        System.out.println("modulus a variable with itself or other ");
+        System.out.println("variables. For example:");
+        
+        // Shorthand Compound Arithmetic expressions
+        int value = 5;
+        value++;    // is the same as "value = value + 1;"
+        value--;    // is the same as "value = value + 1;"
+        value += 5; // is the same as "value = value + 5;"
+        value -= 5; // is the same as "value = value - 5;"
+        value *= 5; // is the same as "value = value * 5;"
+        value /= 5; // is the same as "value = value / 5;"
+        value %= 5; // is the same as "value = value % 5;"
+                        
+        Simulator.comment("Shorthand Compound Arithmetic expressions");
+        Simulator.code("int value = 5;");
+        Simulator.code("value++;    // is the same as \"value = value + 1;\"");
+        Simulator.code("value--;    // is the same as \"value = value + 1;\"");
+        Simulator.code("value += 5; // is the same as \"value = value + 5;\"");
+        Simulator.code("value -= 5; // is the same as \"value = value - 5;\"");
+        Simulator.code("value *= 5; // is the same as \"value = value * 5;\"");
+        Simulator.code("value /= 5; // is the same as \"value = value / 5;\"");
+        Simulator.code("value %= 5; // is the same as \"value = value % 5;\"");
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(1,5);
@@ -161,7 +298,38 @@ public class APUnit01PrimitiveTypes
             //           within the allowed range
         ////////////////////////////////////////////////////////////////////////    
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("Casting is the process of \"converting\" one ");
+        System.out.println("data type into another data type. When casting ");
+        System.out.print("an double to a int, the decimal portion of the ");
+        System.out.println("double is truncated (cut off) and not rounded ");
+        System.out.print("off. When a int is cast to a double, the int ");
+        System.out.println("is \"widened\" to now accomodate any decimals. ");
+        System.out.print("A char when cast will turn into it's ASCII ");
+        System.out.println("value. The process of casting involves putting ");
+        System.out.print("variable to be cast with the type being cast ");
+        System.out.println("into in round brackets to the left of that ");
+        System.out.print("variable. Integer values hold a finite amount ");
+        System.out.println("of number space (4 bytes) and the built-in ");
+        System.out.print("constants Integer.MAX_VALUE and MIN_VALUE are ");
+        System.out.println("the limits of the int. If an expression ");
+        System.out.print("evaluates an int outside that range, an error ");
+        System.out.println("will occur (overflow error). For example:");
+        
+        // Casting data types
+        int integer = Integer.MAX_VALUE;
+        double doub = Double.MIN_VALUE;
+        doub        = (int)integer;
+        integer     = (int)doub;
+        char letter = 'A';
+        integer     = (int)letter;
+                                
+        Simulator.comment("Casting data types");
+        Simulator.code("int integer = Integer.MAX_VALUE;");
+        Simulator.code("double doub = Double.MIN_VALUE;");
+        Simulator.code("doub        = (int)integer;");
+        Simulator.code("integer     = (int)doub;");
+        Simulator.code("char letter = 'A';");
+        Simulator.code("integer     = (int)letter;"); 
         
         ////////////////////////////////////////////////////////////////////////
     }

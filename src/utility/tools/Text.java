@@ -188,6 +188,23 @@ public class Text
     }
     
     /**
+     * Generates an array of random words from a dictionary file
+     * 
+     * @param size the size to make the array
+     * @param length the length (in characters) of the word to generate
+     * @param toLower flag for lowercase (true) or uppercase (false) letters
+     * @return an array of random words
+     */
+    public String[] randomWordSize(int size, int length, boolean toLower) {
+        String[] strings = randomWordSize(size, length);
+        for (int i = 0; i < strings.length; i++) {
+            if (toLower) strings[i] = strings[i].toLowerCase();
+            else         strings[i] = strings[i].toUpperCase();
+        }        
+        return strings;
+    }    
+    
+    /**
      * Generates a matrix of random characters in the range between low and high
      * 
      * @param rows the number of rows for the matrix

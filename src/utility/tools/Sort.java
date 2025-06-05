@@ -557,24 +557,118 @@ public class Sort <T extends Comparable<T>>
     
     /**
      * An implementation of a radix sort algorithm it will sort the array into 
-     * ascending order. 
+     * ascending order. NOTE: radix sort will work on array/lists of integers
+     * or data types that can be represented as integers (e.g. char ASCII values)
      * 
-     * @param array the array of generic items to sort
+     * @param array the integer array of generic items to sort
      */    
-    public void radix(T[] array) {
+    public void radix(Integer[] array) {
         if (array == null) return;                          // error check
-        // Not implemented!
+        int[] a = toPrimitive(array);
+        radix(a);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = a[i];            
+        }
     }
     
     /**
      * An implementation of a radix sort algorithm it will sort the list into 
-     * ascending order. 
+     * ascending order. NOTE: radix sort will work on array/lists of numbers
+     * or date types that can be represented as numbers (e.g. char ASCII values)
      * 
      * @param list the LinkedList to sort
      */    
-    public void radix(LinkedList<T> list) {
+    public void radix(LinkedList<Integer> list) {
         if (list == null) return;                          // error check
-        // Not implemented!
+        if (list.isEmpty()) return;                          // error check
+        Integer arrayFromList[] = new Integer[1];
+        arrayFromList = list.toArray(arrayFromList);
+        int[] array = new int[arrayFromList.length];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = arrayFromList[i].intValue();            
+        }
+        radix(array);
+        list.clear();
+        for (int i = 0; i < array.length; i++) {
+            list.add(array[i]);
+        }
+    }
+    
+    /**
+     * Sorts an array of integers using Radix Sort algorithm, which works by 
+     * sorting numbers digit by digit starting from the least significant 
+     * digit to the most significant
+     * 
+     * @param array The input array to be sorted
+     */
+    private void radix(int[] array) {
+        if (array == null) return;                          // error check
+        int maximum = getMaximum(array);    // Get largest in array
+        // Apply counting sort for every digit, moving from least 
+        // significant to most significant
+        for (int exponent = 1; maximum / exponent > 0; exponent *= 10) {
+            countingSort(array, exponent);
+        }
+    }
+    
+    /**
+     * Converts the Integer class array into the primitive int type array
+     * 
+     * @param array the Integer class array to convert
+     * @return a primitive int type array
+     */
+    private int[] toPrimitive(Integer[] array) {
+        int[] converted = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            converted[i] = array[i].intValue();            
+        }
+        return converted;
+    }
+            
+    /**
+     * Finds the maximum absolute value in the array
+     * 
+     * @param array The input array.
+     * @return The maximum absolute value in the array
+     */
+    private int getMaximum(int[] array) {
+        int maximum = Math.abs(array[0]);
+        for (int value : array) {
+            if (Math.abs(value) > maximum) {
+                maximum = Math.abs(value);
+            }
+        }
+        return maximum;
+    }
+    
+    /**
+     * Performs counting sort based on the digit represented by exp.
+     * 
+     * @param array The input array.
+     * @param exponent The exponent representing the digit place (1s, 10s, 
+     * 100s, etc.).
+     */
+    private static void countingSort(int[] array, int exponent) {
+        int length = array.length;
+        int[] outputArray = new int[length]; // Output array
+        int[] count = new int[19]; // Count array for digits (-9 to 9)
+        // Count occurrences of each digit
+        for (int i = 0; i < length; i++) {
+            count[9 + (array[i] / exponent) % 10]++;
+        }
+        // Change count[i] so that it contains actual position of the 
+        // digit in outputArray[]
+        for (int i = 1; i < 19; i++) {
+            count[i] += count[i - 1];
+        }
+        // Build the outputArray
+        for (int i = length - 1; i >= 0; i--) {
+            outputArray[count[9 + (array[i] / exponent) % 10] - 1] = array[i];
+            count[9 + (array[i] / exponent) % 10]--;
+        }
+        // Copy the outputArray to array, so that array now contains 
+        // sorted numbers
+        System.arraycopy(outputArray, 0, array, 0, length);
     }
     
 }

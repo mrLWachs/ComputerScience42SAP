@@ -56,7 +56,45 @@ public class APUnit02UsingObjects
             //           of the attributes and behaviors of an object
         ////////////////////////////////////////////////////////////////////////
             
-        System.out.println("Add your own example(s) here...");
+        System.out.print("A \"class\" is the \"blueprint\" for creating ");
+        System.out.println("an \"object\". In Java, the class is a way to ");
+        System.out.print("use code to model \"things\" using properties ");
+        System.out.println("and methods. The object is what the class ");
+        System.out.print("\"creates\" when the class is made into a ");
+        System.out.println("specific \"object\" of that class. The various ");
+        System.out.print("terms used for this vary but all revolve around ");
+        System.out.println("the same concepts. The term \"object\" ");
+        System.out.print("can also be called a \"instance\" of the class. ");
+        System.out.println("The term \"properties\" can also be ");
+        System.out.print("called \"things about the class\", or ");
+        System.out.println("\"descriptors\", or \"adjectives\", or ");
+        System.out.print("\"fields\". The term \"methods\" could also ");
+        System.out.println("be called \"what the class can do\", or ");
+        System.out.println("\"actions\", or \"verbs\", or \"functions\". ");
+               
+        // Example of a simple class with properties and methods
+        // class Person {
+        //     String name;
+        //     int age;
+        //     void walk() {
+        //         // code logic could go here
+        //     }     
+        //     void talk() {
+        //         // code logic could go here
+        //     }            
+        // }
+        
+        Simulator.comment("Example of a simple class with properties and methods");
+        Simulator.code("class Person {");
+        Simulator.code("    String name;");
+        Simulator.code("    int age;");
+        Simulator.code("    void walk() {");
+        Simulator.code("        // code logic could go here");
+        Simulator.code("    }");
+        Simulator.code("    void talk() {");
+        Simulator.code("        // code logic could go here");
+        Simulator.code("    }");
+        Simulator.code("}");        
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(2,2);
@@ -102,7 +140,72 @@ public class APUnit02UsingObjects
             //           the referenced object
         ////////////////////////////////////////////////////////////////////////
                 
-        System.out.println("Add your own example(s) here...");    
+        System.out.print("Methods are a way to break up code into logic ");
+        System.out.println("modules and it also provides a way to avoid ");
+        System.out.print("repeating code and be able to reuse sections of ");
+        System.out.println("code logic. You can think of methods as ");
+        System.out.print("analogous to \"machines\" that perform \"actions\" ");
+        System.out.println("and you can reuse. They are also analogous to ");
+        System.out.print("\"functions\" in math that may take a variable ");
+        System.out.println("\"input\" and generate an \"answer\".  The term ");
+        System.out.print("\"parameter\" (and you may have zero, one, or more ");
+        System.out.println("than one) is the \"input\" (if needed) to a ");
+        System.out.print("method that is passed to the method. The value(s) ");
+        System.out.println("passed are called \"argument(s)\". When you ");
+        System.out.print("define the method in the method \"signature\" ");
+        System.out.println("line, the round brackets can contain ");
+        System.out.print("parameters separated by comma (if needed). A ");
+        System.out.println("method may also give an \"output\" in the form ");
+        System.out.print("of its \"return\" value (which also might not ");
+        System.out.println("be needed, in which case it is a \"void\" method).");        
+        System.out.print("A method is \"overloaded\" if you have more ");
+        System.out.println("than one method with the exact same name but ");
+        System.out.print("different parameters. Classes have ");
+        System.out.println("\"constructor\" methods that are called when ");
+        System.out.print("a class is instantiated into an object. ");
+        System.out.println("Constructor methods do not have a return type ");
+        System.out.print("(not even the keyword \"void\"). They must have ");
+        System.out.println("the exact same name as the class (including a ");
+        System.out.print("capital letter). They are used to set the ");
+        System.out.println("properties of the class to starting (or ");
+        System.out.print("\"default\") values. If a class has multiple ");
+        System.out.println("constructor methods, they are said to be ");
+        System.out.print("overloaded constructors. When a line of code ");
+        System.out.println("is used to instantiate a class into an instance ");
+        System.out.print("of that class, the line includes the name of ");
+        System.out.println("the class, the identifier name of the object, ");
+        System.out.print("then an equals (\"=\"), then the keyword ");
+        System.out.println("\"new\" (which allots new memory for this ");
+        System.out.print("advanced data type), then a call to a ");
+        System.out.println("constructor method. If not constructor method ");
+        System.out.print("is called, then the object references a \"null\" ");
+        System.out.println("value until such time it is given a value to ");
+        System.out.println("reference.");
+        
+        // Example of a class with constructors and instantiation
+        // class Person {
+        //     Person() {
+        //         // code logic
+        //     }
+        //     Person(int age) {
+        //         // code logic
+        //     }
+        // }
+        // 
+        // Person person1 = new Person();
+        // Person person2 = new Person(5);
+        
+        Simulator.comment("Example of a class with constructors and instantiation");
+        Simulator.code("class Person {");
+        Simulator.code("    Person() {");
+        Simulator.code("        // code logic");
+        Simulator.code("    }");
+        Simulator.code("    Person(int age) {");
+        Simulator.code("        // code logic");
+        Simulator.code("    }");
+        Simulator.code("}");
+        Simulator.code("Person person1 = new Person();");
+        Simulator.code("Person person2 = new Person(5);");     
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(2,3);
@@ -134,7 +237,59 @@ public class APUnit02UsingObjects
             //           be thrown
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("A \"non-static\" method is a method (meaning a ");
+        System.out.println("\"action\", \"behaviour\", \"procedure\", ");
+        System.out.print("or \"verb\") that does not use the \"static\" ");
+        System.out.println("modifier word in the method signature line. ");
+        System.out.print("A method with no prameters (or \"inputs\") ");
+        System.out.println("means the method is defined with empty round ");
+        System.out.print("brackets \"( )\". The \"behavior\" or action ");
+        System.out.println("the method performs is defined in the body ");
+        System.out.print("block of the method (between the two curly ");
+        System.out.println("\"{ }\" brackets). The A.P. term \"procedural ");
+        System.out.print("abstraction\" refers to a programmer being able ");
+        System.out.println("to call a method without knowing how the ");
+        System.out.print("method was written (also known as \"black box\" ");
+        System.out.println("programming). When methods are \"called\" ");
+        System.out.print("the execution flow stops, jumps and runs all ");
+        System.out.println("the method body (or until a \"return\" ");
+        System.out.print("statement) and then returns to the next line ");
+        System.out.println("of execution after the method call line ");
+        System.out.print("(or part of a code expression line). Methods ");
+        System.out.println("can also be called from objects (or ");
+        System.out.print("\"instances\") of a class using the dot \".\" ");
+        System.out.println("operator. Void method do not return anthing ");
+        System.out.print("(no \"outputs\") and use the keyword modifier ");
+        System.out.println("\"void\" in the method signature in place of ");
+        System.out.println("the return type.");
+        
+        // Examples of methods, parameters, return, and calling
+        // public void show() {
+        //     System.out.println("*");
+        // }        
+        // public void show(char value) {
+        //     System.out.println(value);
+        // }        
+        // public int double(int number) {
+        //     return number * 2;
+        // }        
+        // show();
+        // show('A');
+        // int answer = double(5);
+                
+        Simulator.comment("Examples of methods, parameters, return, and calling");
+        Simulator.code("public void show() {");  
+        Simulator.code("    System.out.println(\"*\")");  
+        Simulator.code("}");  
+        Simulator.code("public void show(char value) {");  
+        Simulator.code("    System.out.println(value);");  
+        Simulator.code("}");  
+        Simulator.code("public int double(int number) {");  
+        Simulator.code("    return number * 2;");  
+        Simulator.code("} ");  
+        Simulator.code("show();");  
+        Simulator.code("show('A');");  
+        Simulator.code("int answer = double(5);");  
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(2,4);
@@ -151,7 +306,39 @@ public class APUnit02UsingObjects
             //           signature
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("A \"non-static void\" methods with parameters ");
+        System.out.println("is a method with no outputs, but has input(s). ");
+        System.out.print("This means the method signature has defined ");
+        System.out.println("parameter(s) within the round brackets \"( )\" ");
+        System.out.print("seperated by commas (if necessary). When this ");
+        System.out.println("type of method is called, the \"arguments\" ");
+        System.out.print("passed to this method must be in the same ");
+        System.out.println("order in terms of data type. A method is ");
+        System.out.print("\"overloaded\" when you have two or more ");
+        System.out.println("methods with the same name but different and ");
+        System.out.println("distinct parameter lists.");
+        
+        // Examples of method overloading
+        // public void show() {
+        //     System.out.println("*");
+        // }        
+        // public void show(char value) {
+        //     System.out.println(value);
+        // } 
+        // public void show(int value) {
+        //     System.out.println(value);
+        // } 
+        
+        Simulator.comment("Examples of method overloading");
+        Simulator.code("public void show() {");  
+        Simulator.code("    System.out.println(\"*\")");  
+        Simulator.code("}");  
+        Simulator.code("public void show(char value) {");  
+        Simulator.code("    System.out.println(value);");  
+        Simulator.code("}");
+        Simulator.code("public void show(int value) {");  
+        Simulator.code("    System.out.println(value);");  
+        Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(2,5);
@@ -163,7 +350,12 @@ public class APUnit02UsingObjects
             //           stored in a variable or used as part of an expression
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("A method that does return a value, defines the ");
+        System.out.println("return \"type\" in the method signature and ");
+        System.out.print("the keyword \"return\" somewhere in the method ");
+        System.out.println("body (at least once). When calling a return ");
+        System.out.print("method, the value returned must be stored (in ");
+        System.out.println("a variable) or used as part of an expression.");
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(2,6);
@@ -184,7 +376,36 @@ public class APUnit02UsingObjects
             //           include \", \\, and \n
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Add your own example(s) here...");   
+        System.out.print("The \"String\" class allows you to create ");
+        System.out.println("String variables, concatenate them (join) ");
+        System.out.print("together and use \"built-in\" methods of the ");
+        System.out.println("String class. String literals (contained in ");
+        System.out.print("quotes \"\") can be assigned to String variables ");
+        System.out.println("or concatenated with Strings. String methods ");
+        System.out.print("do not change the String (\"immutable\") object. ");
+        System.out.println("The \"+\" or the \"+=\" operators can be used ");
+        System.out.print("to concatenate Strings (resulting in a new ");
+        System.out.println("String object). Primitives (like int, double, ");
+        System.out.print("etc.) can also be concatenated with String ");
+        System.out.println("objects. Those are now automatically converted ");
+        System.out.print("to Strings and then concatenated. Escape ");
+        System.out.println("sequences is the character \"\\\" followed ");
+        System.out.print("by another character to make certain outputs ");
+        System.out.println("or changes to a String object. These include: ");
+        System.out.print("\\\" for a quote, \\\\ for a slash, and \\n ");
+        System.out.println("for a new line.");
+        
+        // Examples of Strings and escape sequences
+        String str1 = "cat";
+        String str2 = str1 + "ty";
+        str1 += str2;
+        str2 = "\n" + str1 + "\\" + "\" dog";
+        
+        Simulator.comment("Examples of Strings and escape sequences");
+        Simulator.code("String str1 = \"cat\";");    
+        Simulator.code("String str2 = str1 + \"ty\";");    
+        Simulator.code("str1 += str2;");    
+        Simulator.code("str2 = \"\\n\" + str1 + \"\\\\\" + \"\\\" dog\";");    
                 
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(2,7);
@@ -227,7 +448,57 @@ public class APUnit02UsingObjects
             //           substring(index, index + 1)
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("The \"API\" or Application Program Interface is ");
+        System.out.println("a \"library\" of code that could be imported ");
+        System.out.print("into a Java project or it could automatically ");
+        System.out.println("be part of every Java project without needing ");
+        System.out.print("an import. Classes and libraries are organized ");
+        System.out.println("into \"packages\" in Java (also known as ");
+        System.out.print("\"namespaces\"). The String class is in the ");
+        System.out.println("\"java.lang\" package. Strings are collections ");
+        System.out.print("of \"char\" values index from 0 up to the ");
+        System.out.println("length of the String minus 1 (just like arrays ");
+        System.out.print("are indexed). String methods used are: the ");
+        System.out.println("String constructor \"String s = new String();\", ");
+        System.out.print("the \"length()\" method, the \"substring(int)\" ");
+        System.out.println("and \"substring(int,int)\" methods, the ");
+        System.out.print("\"indexOf(String)\" method, the ");
+        System.out.println("\"equals(String)\" method, and the ");
+        System.out.println("\"compareTo(String)\" method.");
+        
+        // Examples of String methods
+        String str3 = new String("chatty"); 
+        // Constructs object with same sequence of characters as str3
+        int length = str3.length();
+        // Returns the number of characters in a String object
+        String str4 = str3.substring(1);
+        // Returns substring(from) starting at index "from" to the end
+        String str5 = str3.substring(1,3);
+        // Returns substring(from, to) starting at index "from" to index "to"
+        int index = str3.indexOf("hat");
+        // Returns the index of the first occurrence (returns -1 if not found)
+        boolean result1 = str3.equals(str4);
+        // Returns true if this is equal to other (returns false otherwise)
+        int result2 = str3.compareTo(str5);
+        // Returns value < 0 if less than other, returns 0 if equal to other, 
+        // and returns value > 0 if greater than other 
+        
+        Simulator.comment("Examples of String methods");
+        Simulator.code("String str3 = new String(\"chatty\");");   
+        Simulator.comment("Constructs object with same sequence of characters as str3");
+        Simulator.code("int length = str3.length();");   
+        Simulator.comment("Returns the number of characters in a String object");
+        Simulator.code("String str4 = str3.substring(1);");   
+        Simulator.comment("Returns substring(from) starting at index \"from\" to the end");
+        Simulator.code("String str5 = str3.substring(1,3);");   
+        Simulator.comment("Returns substring(from, to) starting at index \"from\" to index \"to\"");
+        Simulator.code("int index = str3.indexOf(\"hat\");");   
+        Simulator.comment("Returns the index of the first occurrence (returns -1 if not found)");
+        Simulator.code("boolean result1 = str3.equals(str4);");   
+        Simulator.comment("Returns true if this is equal to other (returns false otherwise)");
+        Simulator.code("int result2 = str3.compareTo(str5);");   
+        Simulator.comment("Returns value < 0 if less than other, returns 0 if equal to other,");   
+        Simulator.comment("and returns value > 0 if greater than other");
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(2,8);
@@ -273,7 +544,59 @@ public class APUnit02UsingObjects
             //           primitive type
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("A \"wrapper class\" is a class type that is based ");
+        System.out.println("in a primitive data type. For example the ");
+        System.out.print("primitive data type \"int\" has the wrapper ");
+        System.out.println("class \"Integer\". Similarily, the \"Double\" ");
+        System.out.print("wrapper class, wraps around the \"double\" ");
+        System.out.println("primitive type. The wrapper classes (using a ");
+        System.out.print("capital letter) are part of java.lang and have ");
+        System.out.println("built-in methods like \"parseInt()\" and ");
+        System.out.print("\"parseDouble()\". Other methods include: ");
+        System.out.println("\"Integer(int)\" a constructor, ");
+        System.out.print("\"Double(double)\" a constructor, \"MIN_VALUE\" ");
+        System.out.println("a constant, \"MAX_VALUE\", \"intValue()\", and ");
+        System.out.print("\"doubleValue()\". Boxing and unboxing can be ");
+        System.out.println("done between the wrapper classes and the ");
+        System.out.print("primitive types (known as \"autoboxing\"). The ");
+        System.out.println("term \"boxing\" means the conversion between ");
+        System.out.print("primitive types and corresponding wrapper. ");
+        System.out.println("The term \"unboxing\" means the conversion ");
+        System.out.println("from the wrapper class to the primitive type.");
+                
+        // Example of wrapper classes and methods...
+        int     integerPrimitive1 = Integer.parseInt("10");
+        double  doublePrimitive1  = Double.parseDouble("1.2");
+        Integer integerObject1    = new Integer("10");
+        Double  doubleObject1     = new Double("1.2");
+        int     integerPrimitive2 = integerObject1.intValue();
+        double  doublePrimitive2  = doubleObject1.doubleValue();
+        int     minInteger        = Integer.MIN_VALUE;
+        int     maxInteger        = Integer.MAX_VALUE;
+        double  minDouble         = Double.MIN_VALUE;
+        double  maxDouble         = Double.MAX_VALUE;
+        // Boxing and unboxing...
+        int     integerPrimitive3 = integerObject1;
+        double  doublePrimitive3  = doubleObject1;
+        Integer integerObject2    = integerPrimitive3;
+        Double  doubleObject2     = doublePrimitive3;
+        
+        Simulator.comment("Example of wrapper classes and methods...");
+        Simulator.code("int     integerPrimitive1 = Integer.parseInt(\"10\");");
+        Simulator.code("double  doublePrimitive1  = Double.parseDouble(\"1.2\");");
+        Simulator.code("Integer integerObject     = new Integer(\"10\");");
+        Simulator.code("Double  doubleObject      = new Double(\"1.2\");");
+        Simulator.code("int     integerPrimitive2 = integerObject.intValue();");
+        Simulator.code("double  doublePrimitive2  = doubleObject.doubleValue();");
+        Simulator.code("int     minInteger        = Integer.MIN_VALUE;");
+        Simulator.code("int     maxInteger        = Integer.MAX_VALUE;");
+        Simulator.code("double  minDouble         = Double.MIN_VALUE;");
+        Simulator.code("double  maxDouble         = Double.MAX_VALUE;"); 
+        Simulator.comment("Boxing and unboxing...");
+        Simulator.code("int     integerPrimitive3 = integerObject1;"); 
+        Simulator.code("double  doublePrimitive3  = doubleObject1;"); 
+        Simulator.code("Integer integerObject2    = integerPrimitive3;"); 
+        Simulator.code("Double  doubleObject2     = doublePrimitive3;"); 
                 
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(2,9);
@@ -302,7 +625,32 @@ public class APUnit02UsingObjects
             //           defined range
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Add your own example(s) here...");
+        System.out.print("The \"Math\" class is part of the java.lang ");
+        System.out.println("package and has built-in static methods that can ");
+        System.out.print("be called. Useful methods include: abs, pow, ");
+        System.out.println("sqrt, and random. Including manipulating the ");
+        System.out.print("random method in a formula to define random ");
+        System.out.println("numbers in a range. Examples of this follow...");
+        
+        // Examples of the Math class methods and randoms...
+        int    value1 = Math.abs(-1);
+        double value2 = Math.abs(-1.2);
+        double value3 = Math.pow(2,3);
+        double value4 = Math.sqrt(9);
+        double value5 = Math.random();
+        final double HIGH = 10.9d;
+        final double LOW  = 5.5d;
+        double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;
+        
+        Simulator.comment("Examples of the Math class methods and randoms...");
+        Simulator.code("int    value1 = Math.abs(-1);");
+        Simulator.code("double value2 = Math.abs(-1.2);");
+        Simulator.code("double value3 = Math.pow(2,3);");
+        Simulator.code("double value4 = Math.sqrt(9);");
+        Simulator.code("double value5 = Math.random();");
+        Simulator.code("final double HIGH = 10.9d;");
+        Simulator.code("final double LOW  = 5.5d;");
+        Simulator.code("double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;");   
         
         ////////////////////////////////////////////////////////////////////////
     }
