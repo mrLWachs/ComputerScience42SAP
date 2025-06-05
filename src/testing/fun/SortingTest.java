@@ -86,7 +86,7 @@ public class SortingTest
         final int WINNIPEG =   783096;
         final int MANITOBA =  1342153;
         final int CANADA   = 40100000;
-        final int TOTAL    = WINNIPEG;
+        final int TOTAL    = CANADA;
         
         ////////////////////////////////////////////////////////////////////////
         // Create the ADT list to store the data
