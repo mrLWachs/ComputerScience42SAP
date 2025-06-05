@@ -1,24 +1,17 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
 
-/** Required API imports */
-import utility.io.System;
-
 
 /**
- * House.java - represents a house, and has a homeowner property who 
- * generically restricted to be a person object or any children of the person
- * class. Also it contains contents (a property) which can be generically
- * anything. To add another generic, use a comma "," in the class signature
- * inside the angle brackets "< >" and another letter (a different letter) to 
- * act as another placeholder.
+ * House.java - represents a House. This class uses two different 'generic' 
+ * objects as properties of the class. The two are separated in the class
+ * signature line with a comma. Also, the first generic "T" is a restricted
+ * generic. this means you can use any data type as long as it fits the 
+ * restrictions. This means you can use any Person object, or any of the 
+ * children of the Person class. 
  *
  * @author Mr. Wachs
- * @param <T> the generic type of home owner (restricted to type Person and all
- * its children)
- * @param <U> the generic type for the contents of this house (unrestricted)
- * @since June 2023
+ * @since May 12, 2025
  */
 public class House <T extends Person, U>
 {
@@ -28,7 +21,7 @@ public class House <T extends Person, U>
      * of that class)
      */
     public T homeOwner;
-    
+
     /**
      * The generic contents in this house. Since this is a different generic 
      * object, a different letter is used (again it can be any letter you want)
@@ -42,18 +35,18 @@ public class House <T extends Person, U>
      * array
      *
      * @param <V> Food objects (or children of the Food class)
-     * @param items the array of generic items that are Food
+     * @param items the array of generic items that are restricted to Food
      * objects or children of the Food class
      */
     public <V extends Food> void party(V[] items) {
-        System.out.println("Home Owner:");
-        System.out.println(homeOwner.name);
-        System.out.println("And the contents...");
+        System.out.print("Home owner: ");
+        System.out.print(homeOwner.name);
+        System.out.print(" and the contents of the house are: ");
         System.out.println(contents.toString());
         // Enhanced for loop ("For every item in items")
         for (V item : items) {
             homeOwner.consume(item);
-        }
+        }        
     }
     
 }

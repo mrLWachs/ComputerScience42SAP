@@ -1,13 +1,11 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
-
  
 /**
- * Husky.java - represents a Husky HighSchool Student Person
+ * Husky.java - represents a Husky HighSchool Student Person 
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since May 2, 2025, 10:08:52 a.m.
  */
 public class Husky extends HighSchool
 {

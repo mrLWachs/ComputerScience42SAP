@@ -11,7 +11,7 @@ import testing.Tester;
  * MainClass.java - the main class for this project
  *
  * @author Mr. Wachs
- * @since June 2025
+ * @since February 2026
  */
 public class MainClass 
 {

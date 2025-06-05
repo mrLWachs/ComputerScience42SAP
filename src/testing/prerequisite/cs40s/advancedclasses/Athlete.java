@@ -1,12 +1,5 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
-
-/** Required API imports */
-import java.io.Serializable;
-import java.util.Random;
-import utility.io.System;
-
  
 /**
  * Athlete.java - represents a Athlete Husky HighSchool Student Person. Using 
@@ -15,20 +8,20 @@ import utility.io.System;
  * 'implement' (write) the abstract methods the were 'suggested' in that
  * interface. This can be done in NetBeans with the light bulb. You can 
  * implement ("follow the rules of") MULTIPLE interfaces (this cannot be done
- * with classes - one class can only inherit/extends from one other class). To
+ * with classes - one class can only inherit/extends from ONE other class). To
  * do multiple implementation, use a comma between interfaces.
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since May 2, 2025, 10:08:59 a.m.
  */
 public class Athlete extends Husky implements PermissionForm, Hockey, 
-        ExtremeIroning, SlapFighting, Serializable
+        CheeseRolling
 {
-
+    
     private boolean haveForm;       // Encapsulated properties (variables)
-    private String  opponentName;
-    private int     homeScore;
-    private int     opponentScore;
+    private String opponentName;
+    private int homeScore;
+    private int opponentScore;
     private boolean champion;
     
     private final boolean WE_WON  = true;    // Encapsulated constants
@@ -39,17 +32,13 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
      * Constructor, set class properties
      * 
      * @param name the name for this athlete
-     * @param age the age for this athlete
-     * @param gender the gender for this athlete
      */
-    public Athlete(String name, int age, String gender) {
+    public Athlete(String name) {
         super();                    // Call super-constructor
-        super.name = name;          // Modifying (mutating or changing) property
-        super.age  = age;           // Even protected properties
-        super.setGender(gender);    // Use a modifier/mutator method
-        opponentName  = "";
-        homeScore     = 0;
+        super.name    = name;       // Our inherited property
+        opponentName  = "";         // Even protected properties
         opponentScore = 0;
+        homeScore     = 0;
         haveForm      = PermissionForm.NOT_SIGNED;  // Using interface property
         champion      = WE_LOST;
     }
@@ -60,8 +49,8 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
     public Athlete() {
         // To have one constructor method call another class constructor method,
         // you use the keyword "this" with round brackets
-        this("Jock",15,"Sporty");
-    }    
+        this("Havoc");
+    }
          
     /**
      * String representation of this object
@@ -115,7 +104,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
     }
 
     /**
-     * A team scoring a point
+     * A hockey team scoring a point
      * 
      * @param name the name of the team who scored
      */
@@ -128,20 +117,19 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
 
     /**
      * The passed period of hockey is over
-	 *
+     *
      * @param period the period number
      */
     @Override
     public void endOfPeriod(int period) {
         String output = "End of period " + period;
         output += " and the score is "   + homeScore;
-        output += " for the "            + super.name;
+        output += " for "                + super.name;
         output += " and "                + opponentScore;
-        output += " for the "            + opponentName;
+        output += " for "                + opponentName;
         System.out.println(output);
     }
 
-    
     /**
      * Mutator method, setting the name of the player
      * 
@@ -182,50 +170,27 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
             return WE_LOST;
         }
     }
+
+    /**
+     * Start of the cheese rolling dow the hill but we delay for a certain 
+     * number of seconds first before people can start rolling
+     * 
+     * @param seconds the time to delay
+     */
+    @Override
+    public void start(int seconds) {
+        System.out.println("Rollers, please wait " + seconds + " seconds!");
+    }
+
+    /**
+     * To set the level of violence that rollers can have in this game
+     * 
+     * @param level a descriptor of the level of violence
+     */
+    @Override
+    public void violenceLevel(String level) {
+        System.out.println("Cheese rollers, you are " + level);
+        champion = WE_WON;
+    }
     
-    /**
-     * Determines if the participant meets the requirements to participate
-     * 
-     * @param boardLength the length of the ironing board must be 1 meter
-     * @param boardWidth the width of the ironing board must be 30 centimeters
-     * @return true/yes (they can participate) or no/false
-     */
-    @Override
-    public boolean metRequirements(int boardLength, int boardWidth) {
-        if (boardLength < 1)  return false;
-        if (boardWidth  < 30) return false;
-        return true;
-    }
-
-    /**
-     * Judge the participant on how well they did and how extreme they were
-     * 
-     * @return a judgment of the style of extreme ironing
-     */
-    @Override
-    public String judge() {
-        return "Hard core ironing of clothes!";
-    }
-
-    /**
-     * A player slaps another player
-     * 
-     * @param slapper the person doing the slapping
-     * @param slapie the person who got slapped
-     */
-    @Override
-    public void slap(String slapper, String slapie) {
-        System.out.println(slapper + " SLAPS " + slapie);
-    }
-
-    /**
-     * Checks if the game is over
-     * 
-     * @return they are knocked out (true) or not (false)
-     */
-    @Override
-    public boolean isKnockedOut() {  
-        return new Random().nextBoolean();
-    }
-
 }

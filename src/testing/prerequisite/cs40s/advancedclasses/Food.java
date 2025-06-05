@@ -1,7 +1,5 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
-
  
 /**
  * Food.java - abstract class representing the 'concept' of food, an abstract
@@ -13,21 +11,20 @@ package testing.prerequisite.cs40s.advancedclasses;
  * class must be an abstract class).
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since May 7, 2025, 10:30:42 a.m.
  */
 public abstract class Food 
 {
-    
+
     /**
-     * Agreed upon food groups: (0) Dairy, (1) Protein, (2) Grains,
-     * (3) Vegetables, (4) Fruits, (5) Other - "shared" constant array
+     * Agreed upon food groups: (0) Grains, (1) Dairy, (2) Protein, 
+     * (3) Fruits and Vegetables, (4) Other - "shared" constant array
      */
-    public static final String[] GROUPS = {
+    public static final String GROUPS[] = {
+        "Grains",
         "Dairy",
         "Protein",
-        "Grains",
-        "Vegetables",
-        "Fruits",
+        "Fruits and Vegatables",
         "Other"
     };
     
@@ -42,7 +39,7 @@ public abstract class Food
     /**
      * Available to this class and all children of this class, the flavour
      * quality of the food
-     */   
+     */ 
     protected String flavour;
     
     
@@ -54,7 +51,7 @@ public abstract class Food
     public Food(int group) {
         this.group = group;     // Assign parameter to private property
     }
-        
+    
     /**
      * How to eat this food object - note: abstract classes can ALSO have
      * "regular" methods and regular properties (not just abstract methods)
@@ -69,7 +66,7 @@ public abstract class Food
             prepare();
             return GROUPS[group] + " it was " + flavour;
         }
-    }  
+    }
     
     /**
      * Prepares food to be eaten. By adding the modifier "abstract" to a method,
@@ -80,17 +77,18 @@ public abstract class Food
     public abstract void prepare();
     
     /**
-     * Determines if this 'food' item has spoiled
+     * Determines if this 'food' item has spoiled - note: abstract methods
+     * can return things
      * 
      * @return the food has spoiled (true) or not (false)
      */
     public abstract boolean hasSpoiled();
     
     /**
-     * Smells the 'food' item
+     * Smells the 'food' item - note: abstract methods can have parameter(s)
      * 
      * @param seconds how many seconds to smell it
      */
     public abstract void smell(int seconds);
-    
+        
 }

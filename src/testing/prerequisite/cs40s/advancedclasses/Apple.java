@@ -1,9 +1,5 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
-
-/** Required API imports */
-import utility.io.System;
  
 /**
  * Apple.java - represents an apple. This class inherits from the abstract 
@@ -14,16 +10,16 @@ import utility.io.System;
  * over-ridden as well.
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since May 7, 2025, 10:30:55 a.m.
  */
 public class Apple extends Food
 {
-
+    
     /**
      * Default constructor, set class properties
      */
     public Apple() {
-        super(4);                   // Call super-constructor, passing the group
+        super(3);                   // Call super-constructor, passing the group
         super.flavour = "Sweet";    // Modifying our protected property
     }
 
@@ -54,7 +50,7 @@ public class Apple extends Food
     public void smell(int seconds) {
         if (seconds > 3) super.eatable = false;
         else             super.eatable = true;
-    }    
+    }
     
     /**
      * You still can over-ride methods from an abstract class that are not 
@@ -67,5 +63,5 @@ public class Apple extends Food
     public String eat() {
         return "Apple from " + super.eat();
     }
-   
+
 }

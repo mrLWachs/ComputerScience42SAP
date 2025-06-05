@@ -260,11 +260,8 @@ public class PermanentStorageTest
         // objects, assign them random names and ages, and then adding that 
         // instance to the list................................................
         for (int i = 0; i < 100; i++) {
-            String athleteName   = text.randomWord();
-            int    athleteAge    = numbers.random(14, 21);
-            String athleteGender = text.randomWord();
-            Athlete athleteForList = new Athlete(athleteName, 
-                    athleteAge, athleteGender);
+            String athleteName     = text.randomWord();
+            Athlete athleteForList = new Athlete(athleteName);
             athletes.add(athleteForList);
         }
         

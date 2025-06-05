@@ -1,15 +1,13 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
-
  
 /**
  * HighSchool.java - represents a high school student person. Before creating
  * this class we altered the NetBeans template (Tools - Templates) for a 
  * Java class so that the toString(), clone(), and equals() methods are now 
  * always part of any new class we create (whether or not we choose to over-ride
- * those methods).
- *
+ * those methods). 
+ * 
  * This class was later marked as a "abstract class" by adding the "abstract"
  * modifier word to the class signature line (below). An abstract class is a 
  * class which cannot be instantiated – in other words, you define it as a 
@@ -21,7 +19,7 @@ package testing.prerequisite.cs40s.advancedclasses;
  * abstract class
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since May 2, 2025, 10:08:46 a.m.
  */
 public abstract class HighSchool extends Student
 {

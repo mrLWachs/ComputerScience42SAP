@@ -1,13 +1,11 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
-
  
 /**
- * Doctor.java - represents a Doctor Person
+ * Doctor.java - represents a Doctor Person 
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since May 2, 2025, 10:03:12 a.m.
  */
 public class Doctor extends Person
 {

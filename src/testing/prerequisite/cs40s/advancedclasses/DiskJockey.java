@@ -1,15 +1,13 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
-
  
 /**
  * DiskJockey.java - represents a DiskJocky Person
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since May 2, 2025, 10:09:52 a.m.
  */
-public class DiskJockey extends Person 
+public class DiskJockey extends Person
 {
 
     /**

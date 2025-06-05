@@ -1,14 +1,12 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
-
-
+ 
 /**
  * PermissionForm.java - enforcing "the rules" of a permission form. Note: this
  * interface has two "properties" (that have to be marked as final)
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since May 9, 2025, 10:19:24 a.m.
  */
 public interface PermissionForm 
 {
@@ -34,5 +32,5 @@ public interface PermissionForm
      * @return has been signed (true), or not (false)
      */
     boolean haveYouGotItSigned();
-
+    
 }

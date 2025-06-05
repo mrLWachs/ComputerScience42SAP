@@ -1,9 +1,5 @@
-
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
-
-/** Required API imports */
-import utility.io.System;
  
 
 /**
@@ -17,17 +13,16 @@ import utility.io.System;
  *
  * @author Mr. Wachs
  * @param <T> the generic type for the box's contents
- * @since June 2023
+ * @since May 12, 2025
  */
 public class Box <T>
 {
-    
     /**
      * The generic property of this class which uses a data type
      * that will be defined when this class is instantiated
      */
     private T present;
-    
+   
     
     /**
      * Constructor for the class, sets class properties
@@ -39,8 +34,15 @@ public class Box <T>
     }
     
     /**
-     * Accessor method (giving access to a private/ encapsulated property) opens
-     * the box and returns the contents
+     * Does a "peek" in the box and outputs the contents
+     */
+    public void peek() {
+        System.out.println(present.toString());
+    }
+    
+    /**
+     * Accessor method (giving access to a private/ encapsulated property) 
+     * opens the box and returns the contents
      * 
      * @return  the generic "thing" in the box
      */
@@ -48,21 +50,4 @@ public class Box <T>
         return present;
     }
     
-    /**
-     * Does a "peek" in the box and outputs the contents
-     */
-    public void peek() {
-        System.out.println(present.toString());
-    }    
-    
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {
-        return present.toString();
-    }
-        
 }
