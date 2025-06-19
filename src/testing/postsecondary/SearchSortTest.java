@@ -3,7 +3,6 @@
 package testing.postsecondary;
 
 /** Required API imports */
-import testing.Tester;
 import utility.collections.LinkedList;
 import utility.io.Simulator;
 import utility.tools.Numbers;
@@ -24,16 +23,10 @@ public class SearchSortTest
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public SearchSortTest(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("Searching and Sorting Post Secondary Content not running");
-            return;
-        }
-        Simulator.title("Searching and Sorting Post Secondary Content:");
-                
+    public SearchSortTest() {
+        if (Simulator.check("Searching and Sorting Post Secondary")) return;
+        
         // For the I.B. Exam, you only need to know.............................
         Simulator.comment("For the I.B. Exam, you only need to know:");
         // Search: linear (sequential) search and binary search.................

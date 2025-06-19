@@ -30,14 +30,9 @@ public class APUnit03BooleanExpressionsAndIfStatements
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit03BooleanExpressionsAndIfStatements(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 3 (Boolean Expressions And If Statements) not running");
-            return;
-        }
+    public APUnit03BooleanExpressionsAndIfStatements() {
+        if (Simulator.check("AP: Unit 3 (Boolean Expressions And If Statements)")) return; 
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(3);

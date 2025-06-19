@@ -33,15 +33,10 @@ public class APUnit01PrimitiveTypes
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit01PrimitiveTypes(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 1 (Primitive Types) not running");
-            return;
-        }
-                
+    public APUnit01PrimitiveTypes() {
+        if (Simulator.check("AP: Unit 1 (Primitive Types)")) return; 
+        
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(1);
         // AP: Unit 1 (Primitive Types)

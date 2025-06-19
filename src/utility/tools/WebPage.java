@@ -148,7 +148,7 @@ public class WebPage
             "</head>" + NEW_LINE + 
             "<body>"  + NEW_LINE;
     
-    private static final String CLOSE             = "</body>";
+    private static final String CLOSE             = "</body></html>";
     private static final String BREAK             = "</br />";
     private static final String H1_OPEN           = "<h1>";
     private static final String H1_CLOSE          = "</h1>";

@@ -32,14 +32,9 @@ public class APUnit02UsingObjects
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit02UsingObjects(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 2 (Using Objects)");
-            return;
-        }
+    public APUnit02UsingObjects() {
+        if (Simulator.check("AP: Unit 2 (Using Objects)")) return; 
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(2);

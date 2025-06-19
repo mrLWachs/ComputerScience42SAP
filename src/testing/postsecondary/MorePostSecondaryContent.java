@@ -2,7 +2,6 @@
 package testing.postsecondary;
  
 /** Required API imports */
-import testing.Tester;
 import utility.io.Simulator;
 
 /**
@@ -19,19 +18,13 @@ public class MorePostSecondaryContent
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public MorePostSecondaryContent(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("More post secondary content not running");
-            return;
-        }
-        Simulator.title("More post secondary content:"); 
-        new PermanentStorageTest(state);
-        new StacksQueuesTest(state);
-        new SearchSortTest(state);   
-        new TreesTest(state); 
+    public MorePostSecondaryContent() {
+        if (Simulator.check("More Post Secondary")) return;
+        new PermanentStorageTest();
+        new StacksQueuesTest();
+        new SearchSortTest();   
+        new TreesTest(); 
     }
      
 }

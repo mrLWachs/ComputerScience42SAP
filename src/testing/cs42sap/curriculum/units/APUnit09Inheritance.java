@@ -30,14 +30,9 @@ public class APUnit09Inheritance
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit09Inheritance(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 9 (Inheritance) not running");
-            return;
-        }
+    public APUnit09Inheritance() {
+        if (Simulator.check("AP: Unit 9 (Inheritance)")) return; 
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(9);
@@ -151,7 +146,7 @@ public class APUnit09Inheritance
             // (9.6.1.2) At compile time, methods in or inherited by the 
             //           declared type determine the correctness of a 
             //           non-static method call
-            // (9.6.1.3) At run-time, the method in the actual object type is 
+            // (9.6.1.3) At check-time, the method in the actual object type is 
             //           executed for a non-static method call
         ////////////////////////////////////////////////////////////////////////
         

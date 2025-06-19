@@ -30,14 +30,9 @@ public class APUnit07ArrayList
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit07ArrayList(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 7 (Array List) not running");
-            return;
-        }
+    public APUnit07ArrayList() {
+        if (Simulator.check("AP: Unit 7 (Array List)")) return; 
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(7);
@@ -60,7 +55,7 @@ public class APUnit07ArrayList
             //           methods are type E
             // (7.1.1.5) ArrayList<E> is preferred over ArrayList because it 
             //           allows the compiler to find errors that would 
-            //           otherwise be found at run-time
+            //           otherwise be found at check-time
         ////////////////////////////////////////////////////////////////////////
         
         System.out.println("Add your own example(s) here...");
@@ -159,9 +154,9 @@ public class APUnit07ArrayList
             // (7.6.1.1) Selection sort and insertion sort are iterative 
             //           sorting algorithms that can be used to sort elements 
             //           in an array or ArrayList
-        // (7.6.2) Compute statement execution counts and informal run-time 
+        // (7.6.2) Compute statement execution counts and informal check-time 
         //         comparison of sorting algorithms
-            // (7.6.2.1) Informal run-time comparisons of program code segments
+            // (7.6.2.1) Informal check-time comparisons of program code segments
             //           can be made using statement execution counts
         ////////////////////////////////////////////////////////////////////////
         

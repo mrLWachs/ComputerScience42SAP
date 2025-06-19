@@ -13,7 +13,9 @@ import java.awt.Color;
 import java.awt.Font;                   // As you start to experiment with 
 import javax.swing.Icon;                // graphical items, more imports will
 import javax.swing.ImageIcon;           // be needed to bring these "libraries"
-import javax.swing.JOptionPane;         // of code into your projects
+//import javax.swing.JOptionPane;         // of code into your projects
+import utility.io.JOptionPane;
+import utility.io.System;
 import javax.swing.JTextArea;
 import testing.Tester;
 import utility.io.Simulator;
@@ -51,32 +53,20 @@ public class ComputerScience30S
     
     /**
      * Default class constructor, runs on instantiation
-     * 
-     * @param state state the run state of this code module
      */
-    public ComputerScience30S(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("Computer Science 30S course content not running");
-            return;
-        }
-        else if (state == Tester.RUN_SIMULATED) {
-            Simulator.title("Computer Science 30S Course:");
-            learnIntroToJava(); 
+    public ComputerScience30S() {
+        if (Simulator.check("Computer Science 30S Course")) return;
+        learnIntroToJava(); 
             // "Call" a method (means you use the name of the method)
             learnMethods();
             learnArrays();
             learnClasses();
+        if (Tester.state == Tester.RUN_SIMULATED) {
             Simulator.showFrame(null,"Graphics1");
             Simulator.showFrame(null,"Graphics2");
             Simulator.showFrame(null,"Graphics3");
         }
-        else if (state == Tester.RUN_NORMAL) {
-            Simulator.title("Computer Science 30S Course:");
-            learnIntroToJava(); 
-            // "Call" a method (means you use the name of the method)
-            learnMethods();
-            learnArrays();
-            learnClasses();
+        else if (Tester.state == Tester.RUN_NORMAL) {
             // Create "Class" "objects" for the different examples and launch the 
             // "constructor method" of each, to learn about "Graphics" in general 
             // and more specifically the "Graphical User Interfaces" or "GUI"...        
@@ -104,7 +94,7 @@ public class ComputerScience30S
         // All code right now goes between these two brackets. Comments are 
         // not code, so you can write what you want
         
-        // Clicking the green triangle on the toolbar above will "run" or
+        // Clicking the green triangle on the toolbar above will "check" or
         // "compile" your code and show you the running program in an output
         // window below...        
         
@@ -668,7 +658,7 @@ public class ComputerScience30S
         
         // The next type of loop is rarely used (you may never need it)
         // it tests for true/false at the bottom of the loop, you use it
-        // when you want the body (block) of the loop to run at least
+        // when you want the body (block) of the loop to check at least
         // once!
         
         String choice = "";
@@ -1503,7 +1493,7 @@ public class ComputerScience30S
 // (4)  The curly brackets (braces, parenthesis) are important "{" and "}" so
 //      do not remove them or an error may occur
 // (5)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
-// (6)  Click the green triangle on the top toolbar to run code
+// (6)  Click the green triangle on the top toolbar to check code
 // (7)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
 // (8)  The word "null" means "nothing" and can often act as a placeholder for 
 //      code you often do not need (right now)
@@ -1595,7 +1585,7 @@ public class ComputerScience30S
 //
 // UNIT 3: Arrays...............................................................
 //
-// (24) When your code "crashes" and an error takes place (run-time error) try
+// (24) When your code "crashes" and an error takes place (check-time error) try
 //      to READ what the error says down in the output window of NetBeans as
 //      it may offer clues on how to debug the error (and click on the links)
 // (25) When writing for loops with array, if you type "for" then press TAB, 

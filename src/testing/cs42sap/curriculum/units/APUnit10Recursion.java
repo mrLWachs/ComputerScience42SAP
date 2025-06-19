@@ -28,14 +28,9 @@ public class APUnit10Recursion
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit10Recursion(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 10 (Recursion) not running");
-            return;
-        }
+    public APUnit10Recursion() {
+        if (Simulator.check("AP: Unit 10 (Recursion)")) return; 
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(10);

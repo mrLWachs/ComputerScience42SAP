@@ -5,6 +5,7 @@ package utility.io;
 /** Required API imports */
 import java.awt.Component;
 import javax.swing.Icon;
+import testing.Tester;
 
 
 /**
@@ -14,9 +15,8 @@ import javax.swing.Icon;
  * @author Mr. Wachs 
  * @since June 2023
  */
-public class JOptionPane 
+public class JOptionPane
 {
-
     /**
      * Type meaning Look and Feel should not supply any options -- only
      * use the options from the <code>JOptionPane</code>.
@@ -53,6 +53,10 @@ public class JOptionPane
     /** No icon is used. */
     public static final int PLAIN_MESSAGE = -1;
     
+    /**
+     * Default constructor for the class
+     */
+    public JOptionPane() {  }
     
     /**
      * Re-directs the dialog to custom output
@@ -62,7 +66,12 @@ public class JOptionPane
      */
     public static void showMessageDialog(Component parentComponent, 
             Object message) {
-        Simulator.dialog(parentComponent,message,Simulator.MESSAGE_DIALOG);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            Simulator.dialog(parentComponent,message,Simulator.MESSAGE_DIALOG);
+        }
+        else {
+            javax.swing.JOptionPane.showMessageDialog(parentComponent, message);
+        }
     }
 
     /**
@@ -75,8 +84,14 @@ public class JOptionPane
      */
     public static void showMessageDialog(Component parentComponent, 
             Object message, String title, int messageType) {
-        Simulator.dialog(parentComponent,message,title,
-                Simulator.MESSAGE_DIALOG);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            Simulator.dialog(parentComponent,message,title,
+                    Simulator.MESSAGE_DIALOG);
+        }
+        else {
+            javax.swing.JOptionPane.showMessageDialog(parentComponent, message,
+                    title, javax.swing.JOptionPane.INFORMATION_MESSAGE);
+        }
     }
     
     /**
@@ -90,8 +105,14 @@ public class JOptionPane
      */
     public static void showMessageDialog(Component parentComponent,
         Object message, String title, int messageType, Icon icon) {
-        Simulator.dialog(parentComponent,message,title,messageType,icon,
-                Simulator.MESSAGE_DIALOG);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            Simulator.dialog(parentComponent,message,title,messageType,icon,
+                    Simulator.MESSAGE_DIALOG);
+        }
+        else {
+            javax.swing.JOptionPane.showMessageDialog(parentComponent, message, 
+                    title, messageType, icon);
+        }
     }
     
     /**
@@ -103,8 +124,14 @@ public class JOptionPane
      */
     public static int showConfirmDialog(Component parentComponent,
         Object message) {
-        return Simulator.dialog(parentComponent,message,
-                Simulator.CONFIRM_DIALOG);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return Simulator.dialog(parentComponent,message,
+                    Simulator.CONFIRM_DIALOG);
+        }
+        else {
+            return javax.swing.JOptionPane.showConfirmDialog(parentComponent, 
+                    message);
+        }
     }
 
     /**
@@ -118,8 +145,14 @@ public class JOptionPane
      */
     public static int showConfirmDialog(Component parentComponent,
         Object message, String title, int optionType) {
-        return Simulator.dialog(parentComponent,message,title,optionType,
-                Simulator.CONFIRM_DIALOG);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return Simulator.dialog(parentComponent,message,title,optionType,
+                    Simulator.CONFIRM_DIALOG);
+        }
+        else {
+            return javax.swing.JOptionPane.showConfirmDialog(parentComponent, 
+                    message, title, optionType);
+        }
     }
 
     /**
@@ -134,8 +167,14 @@ public class JOptionPane
      */
     public static int showConfirmDialog(Component parentComponent,
         Object message, String title, int optionType, int messageType) {
-        return Simulator.dialog(parentComponent,message,title,optionType,
-                messageType,Simulator.CONFIRM_DIALOG);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return Simulator.dialog(parentComponent,message,title,optionType,
+                    messageType,Simulator.CONFIRM_DIALOG);
+        }
+        else {
+            return javax.swing.JOptionPane.showConfirmDialog(parentComponent, 
+                    message, title, optionType, messageType);
+        }
     }
 
     /**
@@ -152,8 +191,14 @@ public class JOptionPane
     public static int showConfirmDialog(Component parentComponent,
         Object message, String title, int optionType,
         int messageType, Icon icon) { 
-        return Simulator.dialog(parentComponent,message,title,optionType,
-                messageType,icon,Simulator.CONFIRM_DIALOG);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return Simulator.dialog(parentComponent,message,title,optionType,
+                    messageType,icon,Simulator.CONFIRM_DIALOG);
+        }
+        else {
+            return javax.swing.JOptionPane.showConfirmDialog(parentComponent, 
+                    message, title, optionType, messageType, icon);
+        }
     }
 
     /**
@@ -172,8 +217,15 @@ public class JOptionPane
     public static int showOptionDialog(Component parentComponent,
         Object message, String title, int optionType, int messageType,
         Icon icon, Object[] options, Object initialValue) {
-        return Simulator.dialog(parentComponent,message,title,optionType,
-                messageType,icon,options,initialValue,Simulator.OPTION_DIALOG);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return Simulator.dialog(parentComponent,message,title,optionType,
+                    messageType,icon,options,initialValue,Simulator.OPTION_DIALOG);
+        }
+        else {
+            return javax.swing.JOptionPane.showOptionDialog(parentComponent,
+                    message, title, optionType, messageType, icon, options, 
+                    initialValue);
+        }
     }
     
     /**
@@ -183,7 +235,12 @@ public class JOptionPane
      * @return will not apply!
      */
     public static String showInputDialog(Object message) {
-        return Simulator.dialog(message,Simulator.INPUT_DIALOG);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return Simulator.dialog(message,Simulator.INPUT_DIALOG);
+        }
+        else {
+            return javax.swing.JOptionPane.showInputDialog(message);
+        }
     }
 
     /**
@@ -195,7 +252,13 @@ public class JOptionPane
      */
     public static String showInputDialog(Object message, 
             Object initialSelectionValue) {
-        return showInputDialog(message);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return showInputDialog(message);
+        }
+        else {
+            return javax.swing.JOptionPane.showInputDialog(message, 
+                    initialSelectionValue);
+        }
     }
 
     /**
@@ -207,7 +270,13 @@ public class JOptionPane
      */
     public static String showInputDialog(Component parentComponent,
         Object message) {
-        return showInputDialog(message);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return showInputDialog(message);
+        }
+        else {
+            return javax.swing.JOptionPane.showInputDialog(parentComponent, 
+                    message);
+        }
     }
     
     /**
@@ -220,7 +289,13 @@ public class JOptionPane
      */
     public static String showInputDialog(Component parentComponent, 
             Object message, Object initialSelectionValue) {
-        return showInputDialog(message);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return showInputDialog(message);
+        }
+        else {
+            return javax.swing.JOptionPane.showInputDialog(parentComponent, 
+                    message, initialSelectionValue);
+        }
     }
 
     /**
@@ -234,7 +309,13 @@ public class JOptionPane
      */
     public static String showInputDialog(Component parentComponent,
         Object message, String title, int messageType) {
-        return showInputDialog(message);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return showInputDialog(message);
+        }
+        else {
+            return javax.swing.JOptionPane.showInputDialog(parentComponent, 
+                    message, title, messageType);
+        }
     }
 
     /**
@@ -252,7 +333,14 @@ public class JOptionPane
     public static Object showInputDialog(Component parentComponent,
         Object message, String title, int messageType, Icon icon,
         Object[] selectionValues, Object initialSelectionValue) {
-        return showInputDialog(message);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return showInputDialog(message);
+        }
+        else {
+            return javax.swing.JOptionPane.showInputDialog(parentComponent, 
+                    message, title, messageType, icon, selectionValues, 
+                    initialSelectionValue);
+        }
     }
 
 }

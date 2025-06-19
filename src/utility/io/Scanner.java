@@ -4,6 +4,7 @@ package utility.io;
 
 /** Required API imports */
 import java.io.InputStream;
+import testing.Tester;
 
  
 /**
@@ -16,12 +17,21 @@ import java.io.InputStream;
 public class Scanner 
 {
 
+    private static java.util.Scanner actual;
+    
+    /**
+     * Default constructor for the class
+     */
+    public Scanner() { }
+
     /**
      * Constructor, set class properties 
      * 
      * @param in this simulator does nothing with the parameter
      */
-    public Scanner(InputStream in) { }
+    public Scanner(InputStream in) { 
+        actual = new java.util.Scanner(in);
+    }
 
     /**
      * Re-directs the console input to custom input
@@ -29,7 +39,12 @@ public class Scanner
      * @return a simulated scanner input
      */
     public String nextLine() {
-        return Simulator.scannerInput();
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return Simulator.scannerInput();
+        }
+        else {
+            return actual.nextLine();
+        }
     }
 
 }

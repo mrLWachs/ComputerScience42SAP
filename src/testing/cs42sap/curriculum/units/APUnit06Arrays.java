@@ -30,14 +30,9 @@ public class APUnit06Arrays
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit06Arrays(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 6 (Arrays) not running");
-            return;
-        }
+    public APUnit06Arrays() {
+        if (Simulator.check("AP: Unit 6 (Arrays)")) return; 
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(6);

@@ -15,7 +15,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import testing.Tester;
 import testing.prerequisite.cs40s.advancedclasses.Athlete;
 import utility.tools.Numbers;
 import utility.tools.Text;
@@ -52,15 +51,9 @@ public class PermanentStorageTest
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public PermanentStorageTest(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("Permanent Storage Post Secondary Content not running");
-            return;
-        }
-        Simulator.title("Permanent Storage Post Secondary Content:");
+    public PermanentStorageTest() {
+        if (Simulator.check("Permanent Storage Post Secondary")) return;
 
         // Learn about "error traps"...........................................   
         Simulator.comment("Learn about 'error traps'");
@@ -221,9 +214,9 @@ public class PermanentStorageTest
         Simulator.comment("Class to save/open multiple lines (with user)");
         
         Dialogs dialog = new Dialogs();
-//        file = dialog.saveFile(null);
+        file = dialog.saveFile(null);
         fileHandler.save(poem, file);
-//        file = dialog.openFile(null);
+        file = dialog.openFile(null);
         String[] newPoem = fileHandler.openArray(file);
         
         // Compare the before and after (and use another class "tool" to help).  
@@ -269,8 +262,8 @@ public class PermanentStorageTest
         fileHandler.saveObject(athletes, file);
         LinkedList<Athlete> newAthletes = 
                 (LinkedList<Athlete>)fileHandler.openObject(file);
-        System.out.println("Before: " + athletes.toString());
-        System.out.println("After:  " + newAthletes.toString());
+        System.out.println("Before: " + athletes);
+        System.out.println("After:  " + newAthletes);
         
         // End of file handling................................................
     }   

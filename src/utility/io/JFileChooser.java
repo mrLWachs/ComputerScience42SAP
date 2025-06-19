@@ -5,6 +5,7 @@ package utility.io;
 /** Required API imports */
 import java.awt.Window;
 import java.io.File;
+import testing.Tester;
 
  
 /**
@@ -16,18 +17,24 @@ import java.io.File;
  */
 public class JFileChooser 
 {
+    
+    private static javax.swing.JFileChooser actual;
 
     /**
-     * Default constructor, set class properties
+     * Default constructor for the class
      */
-    public JFileChooser() { }
+    public JFileChooser() {
+        actual = new javax.swing.JFileChooser();
+    }
 
     /**
      * Constructor, set class properties
      * 
      * @param title the title of this dialog
      */
-    public JFileChooser(String title) { }
+    public JFileChooser(String title) { 
+        this();
+    }
     
     /**
      * Re-directs the dialog to custom output
@@ -35,7 +42,12 @@ public class JFileChooser
      * @param parent the parent component of the dialog 
      */
     public void showSaveDialog(Window parent) {
-        Simulator.showSaveDialog(parent);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            Simulator.showSaveDialog(parent);
+        }
+        else {
+            actual.showSaveDialog(parent);
+        }
     }
     
     /**
@@ -44,7 +56,12 @@ public class JFileChooser
      * @param parent the parent component of the dialog 
      */
     public void showOpenDialog(Window parent) {
-        Simulator.showOpenDialog(parent);
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            Simulator.showOpenDialog(parent);
+        }
+        else {
+            actual.showOpenDialog(parent);
+        }
     }
         
     /**
@@ -53,7 +70,12 @@ public class JFileChooser
      * @return a simulated file object
      */
     public File getSelectedFile() {
-        return Simulator.getFile();
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            return Simulator.getFile();
+        }
+        else {
+            return actual.getSelectedFile();
+        }
     }
 
 }

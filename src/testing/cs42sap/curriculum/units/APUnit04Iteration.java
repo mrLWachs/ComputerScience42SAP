@@ -29,14 +29,9 @@ public class APUnit04Iteration
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit04Iteration(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 4 (Iteration) not running");
-            return;
-        }
+    public APUnit04Iteration() {
+        if (Simulator.check("AP: Unit 4 (Iteration)")) return; 
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(4);
@@ -249,7 +244,7 @@ public class APUnit04Iteration
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(4,5);
         // 4.5 Informal Code Analysis
-        // (4.5.1) Compute statement execution counts and informal run-time 
+        // (4.5.1) Compute statement execution counts and informal check-time 
         //         comparison of iterative statements
             // (4.5.1.1) A statement execution count indicates the number of 
             //           times a statement is executed by the program

@@ -2,7 +2,6 @@
 package testing.fun;
 
 /** Required API imports */
-import testing.Tester;
 import utility.io.Simulator;
 
 
@@ -18,15 +17,9 @@ public class FunDaysCode
     
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public FunDaysCode(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("Fun days content not running");
-            return;
-        }
-        Simulator.title("AP Student Driven 'fun' Days Learning:");
+    public FunDaysCode() {
+        if (Simulator.check("Student Driven 'fun' Days")) return;
     }
 
 }

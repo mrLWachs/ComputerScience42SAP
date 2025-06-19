@@ -21,16 +21,10 @@ public class ComputerScience20S
 
     /**
      * Default class constructor, runs on instantiation
-     * 
-     * @param state the run state of this code module
      */
-    public ComputerScience20S(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("Computer Science 20S course content not running");
-            return;
-        }
-        else if (state == Tester.RUN_SIMULATED) {
-            Simulator.title("Computer Science 20S Course:");
+    public ComputerScience20S() {
+        if (Simulator.check("Computer Science 20S Course")) return; 
+        if (Tester.state == Tester.RUN_SIMULATED) {
             Simulator.showFrame(null,"unit2Introduction");
             Simulator.showFrame(null,"unit3Variables1");
             Simulator.showFrame(null,"unit3Variables2");
@@ -39,7 +33,7 @@ public class ComputerScience20S
             Simulator.showFrame(null,"unit5Looping1");
             Simulator.showFrame(null,"unit5Looping2");
         }
-        else if (state == Tester.RUN_NORMAL) {        
+        else if (Tester.state == Tester.RUN_NORMAL) {        
             Unit2Introduction  unit2Introduction  = new Unit2Introduction();
             Unit3Variables1    unit3Variables1    = new Unit3Variables1();
             Unit3Variables2    unit3Variables2    = new Unit3Variables2();

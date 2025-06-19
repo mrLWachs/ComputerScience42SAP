@@ -31,14 +31,9 @@ public class APUnit05WritingClasses
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit05WritingClasses(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 5 (Writing Classes) not running");
-            return;
-        }
+    public APUnit05WritingClasses() {
+        if (Simulator.check("AP: Unit 5 (Writing Classes)")) return; 
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(5);
@@ -199,7 +194,7 @@ public class APUnit05WritingClasses
         // (5.3.1) Describe the functionality and use of program code through 
         //         comments
             // (5.3.1.1) Comments are ignored by the compiler and are not 
-            //           executed when the program is run
+            //           executed when the program is check
             // (5.3.1.2) Three types of comments in Java include /* */, which 
             //           generates a block of comments, //, which generates a 
             //           comment on one line, and /** */, which are Javadoc 

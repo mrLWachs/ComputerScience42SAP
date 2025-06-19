@@ -3,7 +3,6 @@
 package testing.postsecondary;
 
 /** Required API imports */
-import testing.Tester;
 import utility.collections.BinaryTree;
 import utility.collections.LinkedList;
 import utility.collections.Queue;
@@ -26,16 +25,10 @@ public class TreesTest
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public TreesTest(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("Binary Trees Post Secondary Content not running");
-            return;
-        }
-        Simulator.title("Binary Trees Post Secondary Content:");
-                
+    public TreesTest() {
+        if (Simulator.check("Binary Trees Post Secondary")) return;
+        
         // Constants/variables for creating random values......................
         Simulator.comment("Constants/variables for creating random values..."); 
         

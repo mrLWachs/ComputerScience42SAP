@@ -9,6 +9,7 @@ import java.awt.Window;
 import java.io.File;
 import javax.swing.Icon;
 import javax.swing.JFrame;
+import testing.Tester;
 import utility.tools.WebPage;
 
 
@@ -122,6 +123,8 @@ public class Simulator
         YELLOW_BACKGROUND_BRIGHT,BLUE_BACKGROUND_BRIGHT,
         PURPLE_BACKGROUND_BRIGHT,CYAN_BACKGROUND_BRIGHT,WHITE_BACKGROUND_BRIGHT
     };
+    
+    private static final String SIMULATED_MESSAGE  = " simulated message";
     
     private static LinkedList<String> allOutput;
         
@@ -493,7 +496,14 @@ public class Simulator
     public static int dialog(Component parentComponent, Object message, 
                              String title, int optionType, int messageType, 
                              Icon icon, Object[] options, Object initialValue, 
-                             String dialogType) {        
+                             String dialogType) {   
+        if (Tester.state == Tester.RUN_SIMULATED) {
+            String text = SIMULATED_DIALOG_1 + dialogType + " " + title + " " +
+                          SIMULATED_MESSAGE + SIMULATED_DIALOG_2;
+            colorOutput(text, GREEN, RESET);
+            WebPage.addH3(text);
+            return FLAG_INTEGER;
+        }
         String text = SIMULATED_DIALOG_1 + dialogType +
                       SIMULATED_DIALOG_2;
         if (message == null) text += NULL;
@@ -517,7 +527,7 @@ public class Simulator
             text += options[options.length-1].toString() + "] },";
         }
         if (initialValue    != null) text += "{ initialValue: " + 
-                                     initialValue.toString()    + " }";
+                                     initialValue.toString()    + " }";        
         colorOutput(text, GREEN, RESET);
         WebPage.addH3(text);
         return FLAG_INTEGER;
@@ -598,6 +608,26 @@ public class Simulator
      */
     public static void initialize() {
         WebPage.initialize(WEB_PAGE_FILENAME);
+    }
+
+    /**
+     * Checks and runs the output content with a note or a title
+     * @param text the specific content text
+     * @return if it should not run (true) or run (false)
+     */
+    public static boolean check(String text) {
+        text = "Computer Science 42SAP - " + text + " content ";
+        if (Tester.state == Tester.DO_NOT_RUN) {
+            note(text + "not running...");
+            return true;
+        }
+        else if (Tester.state == Tester.RUN_SIMULATED) {
+            title(text + "running simulated:");
+        }
+        else if (Tester.state == Tester.RUN_NORMAL) {
+            title(text + "running normal:");
+        }
+        return false;
     }
 
 }

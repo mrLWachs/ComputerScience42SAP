@@ -27,14 +27,9 @@ public class APUnit082DArrays
 
     /**
      * Default constructor, set class properties
-     * 
-     * @param state the run state of this code module
      */
-    public APUnit082DArrays(int state) {
-        if (state == Tester.DO_NOT_RUN) {
-            Simulator.note("AP: Unit 8 (2D Arrays) not running");
-            return;
-        }
+    public APUnit082DArrays() {
+        if (Simulator.check("AP: Unit 8 (2D Arrays)")) return; 
         
         ////////////////////////////////////////////////////////////////////////
         CurriculumContentCS42SAP.showUnit(8);
