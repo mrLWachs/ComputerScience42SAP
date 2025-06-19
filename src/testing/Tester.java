@@ -53,6 +53,7 @@ public class Tester
     /**
      * Constructor for the class, sets class properties
      * 
+     * @param test the type of test to run
      * @param state the check state of this code module
      */
     public Tester(int test, int state) {

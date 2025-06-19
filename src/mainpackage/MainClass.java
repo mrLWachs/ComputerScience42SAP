@@ -6,7 +6,6 @@ package mainpackage;
 import testing.Tester;
 
 
-
 /**
  * MainClass.java - the main class for this project
  *
