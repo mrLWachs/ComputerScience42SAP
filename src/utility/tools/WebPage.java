@@ -5,6 +5,7 @@ package utility.tools;
 /** Required API imports */
 import utility.collections.LinkedList;
 import utility.io.FileHandler;
+import utility.io.Simulator;
 
  
 /**
@@ -265,7 +266,8 @@ public class WebPage
      * Completes the webpage documents and generates a HTML file in the system
      */
     public static void generate() {
-        text += NEW_LINE + CLOSE;
+        Simulator.title("Computer Science 42SAP - Computer Science 42SAP content completed!");
+        text += NEW_LINE + BREAK + CLOSE;
         FileHandler<LinkedList> handler = new FileHandler<>();
         handler.save(text, filename);
     }
