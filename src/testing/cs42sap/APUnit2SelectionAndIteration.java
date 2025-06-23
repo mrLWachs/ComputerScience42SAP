@@ -24,12 +24,12 @@ public class APUnit2SelectionAndIteration
         if (Simulator.check(TITLE)) return; 
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContentCS42SAP.showUnit(UNIT);
+        ComputerScience42SAP.showUnit(UNIT);
         // AP: Unit 1 (Primitive Types)
         ////////////////////////////////////////////////////////////////////////
                 
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContentCS42SAP.showUnit(UNIT,1);
+        ComputerScience42SAP.showUnit(UNIT,1);
         // 1.1 Why Programming? Why Java? 
         // (1.1.1) Call System class methods to generate output to the console
             // (1.1.1.1) System.out.print and System.out.println display 
@@ -45,17 +45,17 @@ public class APUnit2SelectionAndIteration
 //        Simulator.code("code here");
 //        System.out.println("standard output here");
 
-        CurriculumContentCS42SAP.showUnit(UNIT,2);
-        CurriculumContentCS42SAP.showUnit(UNIT,3);
-        CurriculumContentCS42SAP.showUnit(UNIT,4);
-        CurriculumContentCS42SAP.showUnit(UNIT,5);
-        CurriculumContentCS42SAP.showUnit(UNIT,6);
-        CurriculumContentCS42SAP.showUnit(UNIT,7);
-        CurriculumContentCS42SAP.showUnit(UNIT,8);
-        CurriculumContentCS42SAP.showUnit(UNIT,9);
-        CurriculumContentCS42SAP.showUnit(UNIT,10);
-        CurriculumContentCS42SAP.showUnit(UNIT,11);
-        CurriculumContentCS42SAP.showUnit(UNIT,12);
+        ComputerScience42SAP.showUnit(UNIT,2);
+        ComputerScience42SAP.showUnit(UNIT,3);
+        ComputerScience42SAP.showUnit(UNIT,4);
+        ComputerScience42SAP.showUnit(UNIT,5);
+        ComputerScience42SAP.showUnit(UNIT,6);
+        ComputerScience42SAP.showUnit(UNIT,7);
+        ComputerScience42SAP.showUnit(UNIT,8);
+        ComputerScience42SAP.showUnit(UNIT,9);
+        ComputerScience42SAP.showUnit(UNIT,10);
+        ComputerScience42SAP.showUnit(UNIT,11);
+        ComputerScience42SAP.showUnit(UNIT,12);
         
         ////////////////////////////////////////////////////////////////////////
     }

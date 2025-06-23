@@ -9,13 +9,13 @@ import utility.io.Simulator;
 
  
 /**
- * CurriculumContentCS42SAP.java - the curriculum content from the advanced
- * placement (AP) Computer Science curriculum.
+ * ComputerScience42SAP.java - the curriculum content from the advanced
+ placement (AP) Computer Science curriculum.
  *
  * @author Mr. Wachs
  * @since June 2023
  */
-public class CurriculumContentCS42SAP 
+public class ComputerScience42SAP 
 {
 
     private static String CURRICULUM_FILE = "curriculum.txt";

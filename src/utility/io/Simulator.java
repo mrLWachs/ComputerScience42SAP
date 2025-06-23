@@ -124,15 +124,18 @@ public class Simulator
         PURPLE_BACKGROUND_BRIGHT,CYAN_BACKGROUND_BRIGHT,WHITE_BACKGROUND_BRIGHT
     };
     
-    private static final String TITLE         = RED;
-    private static final String HEADER        = PURPLE;
-    private static final String TEXT          = BLUE;
-    private static final String SUBTEXT       = BLACK;
-    
-    private static final String UNIT_TITLE    = RED;
-    private static final String UNIT_TOPIC    = PURPLE;
-    private static final String UNIT_POINT    = BLUE;
-    private static final String UNIT_SUBPOINT = BLACK;
+    private static final String TITLE_COLOR         = RED;
+    private static final String HEADER_COLOR        = PURPLE;
+    private static final String TEXT_COLOR          = BLUE;
+    private static final String SUBTEXT_COLOR       = BLACK;
+    private static final String NOTE_COLOR          = CYAN;
+    private static final String COMMENT_COLOR       = YELLOW;
+    private static final String CODE_COLOR          = PURPLE_BOLD;
+    private static final String DIALOG_COLOR        = GREEN;
+    private static final String UNIT_TITLE_COLOR    = RED;
+    private static final String UNIT_TOPIC_COLOR    = BLUE;
+    private static final String UNIT_POINT_COLOR    = PURPLE;
+    private static final String UNIT_SUBPOINT_COLOR = BLACK;
     
     private static final String SIMULATED_MESSAGE  = " simulated message";
     
@@ -251,7 +254,7 @@ public class Simulator
         String text = object.toString();        
         int length = text.length();
         text += line(length);        
-        colorOutput(text, TITLE, RESET);
+        colorOutput(text, TITLE_COLOR, RESET);
         lineBreak();
         WebPage.addH1(text);
     }
@@ -267,7 +270,7 @@ public class Simulator
         String text = object.toString();        
         int length = text.length();
         text += line(length);        
-        colorOutput(text, HEADER, RESET);
+        colorOutput(text, HEADER_COLOR, RESET);
         lineBreak();
         WebPage.addH2(text);
     }
@@ -283,7 +286,7 @@ public class Simulator
         String text = object.toString();        
         int length = text.length();
         text += line(length);        
-        colorOutput(text, CYAN, RESET);
+        colorOutput(text, NOTE_COLOR, RESET);
         lineBreak();
         WebPage.addH3(text);
     }
@@ -298,7 +301,7 @@ public class Simulator
         if (object == null)  return; 
         String text = object.toString() + line();
         simpleOutput(NEW_LINE,"");
-        colorOutput(text, HEADER, RESET);
+        colorOutput(text, HEADER_COLOR, RESET);
         simpleOutput(NEW_LINE,"");
     }
     
@@ -311,7 +314,7 @@ public class Simulator
     public static void text(Object object) {
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
-        colorOutput(text, TEXT, RESET);
+        colorOutput(text, TEXT_COLOR, RESET);
         WebPage.addText(text);
     }
     
@@ -324,7 +327,7 @@ public class Simulator
     public static void subText(Object object) {
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
-        colorOutput(text, SUBTEXT, RESET);
+        colorOutput(text, SUBTEXT_COLOR, RESET);
         WebPage.addSubText(text);
     }
                 
@@ -337,7 +340,7 @@ public class Simulator
     public static void comment(Object object) {
         if (object == null)  object = new String(NULL); 
         String text = COMMENT + object.toString();
-        colorOutput(text, YELLOW, RESET);
+        colorOutput(text, COMMENT_COLOR, RESET);
         WebPage.addPreComment(text);
     }
     
@@ -350,7 +353,7 @@ public class Simulator
     public static void code(Object object) {
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
-        colorOutput(text, PURPLE_BOLD, RESET);
+        colorOutput(text, CODE_COLOR, RESET);
         WebPage.addPre(text);
     }
 
@@ -365,7 +368,7 @@ public class Simulator
         String text = object.toString();        
         int length = text.length();
         text += line(length);        
-        colorOutput(text, UNIT_TITLE, RESET);
+        colorOutput(text, UNIT_TITLE_COLOR, RESET);
         lineBreak();
         WebPage.addH1(text);
     }
@@ -381,7 +384,7 @@ public class Simulator
         String text = object.toString();        
         int length = text.length();
         text += line(length);        
-        colorOutput(text, UNIT_TOPIC, RESET);
+        colorOutput(text, UNIT_TOPIC_COLOR, RESET);
         lineBreak();
         WebPage.addH2(text);
     }
@@ -396,7 +399,7 @@ public class Simulator
     public static void unitPoint(Object object) {
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
-        colorOutput(text, UNIT_POINT, RESET);
+        colorOutput(text, UNIT_POINT_COLOR, RESET);
         WebPage.addText(text);
     }
     
@@ -409,7 +412,7 @@ public class Simulator
     public static void unitSubPoint(Object object) {
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
-        colorOutput(text, UNIT_SUBPOINT, RESET);
+        colorOutput(text, UNIT_SUBPOINT_COLOR, RESET);
         WebPage.addSubText(text);
     }
         
@@ -569,7 +572,7 @@ public class Simulator
         if (Tester.state == Tester.RUN_SIMULATED) {
             String text = SIMULATED_DIALOG_1 + dialogType + " " + title + " " +
                           SIMULATED_MESSAGE + SIMULATED_DIALOG_2;
-            colorOutput(text, GREEN, RESET);
+            colorOutput(text, DIALOG_COLOR, RESET);
             WebPage.addH3(text);
             return FLAG_INTEGER;
         }
@@ -597,7 +600,7 @@ public class Simulator
         }
         if (initialValue    != null) text += "{ initialValue: " + 
                                      initialValue.toString()    + " }";        
-        colorOutput(text, GREEN, RESET);
+        colorOutput(text, DIALOG_COLOR, RESET);
         WebPage.addH3(text);
         return FLAG_INTEGER;
     }
@@ -676,6 +679,7 @@ public class Simulator
      * Initializes the simulator and the web page generator
      */
     public static void initialize() {
+        System.out = new Out();
         WebPage.initialize(WEB_PAGE_FILENAME);
     }
 
