@@ -19,16 +19,17 @@ public class APUnit3ClassCreation
      * Default constructor, set class properties
      */
     public APUnit3ClassCreation() {
+        final int UNIT = 3;
         final String TITLE = "AP curriculum - Unit 3: Class Creation";
         if (Simulator.check(TITLE)) return; 
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContentCS42SAP.showUnit(3);
+        CurriculumContentCS42SAP.showUnit(UNIT);
         // AP: Unit 1 (Primitive Types)
         ////////////////////////////////////////////////////////////////////////
                 
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContentCS42SAP.showUnit(3,1);
+        CurriculumContentCS42SAP.showUnit(UNIT,1);
         // 1.1 Why Programming? Why Java? 
         // (1.1.1) Call System class methods to generate output to the console
             // (1.1.1.1) System.out.print and System.out.println display 
@@ -40,9 +41,18 @@ public class APUnit3ClassCreation
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        Simulator.comment("comment here");
-        Simulator.code("code here");
-        System.out.println("standard output here");
+//        Simulator.comment("comment here");
+//        Simulator.code("code here");
+//        System.out.println("standard output here");
+
+        CurriculumContentCS42SAP.showUnit(UNIT,2);
+        CurriculumContentCS42SAP.showUnit(UNIT,3);
+        CurriculumContentCS42SAP.showUnit(UNIT,4);
+        CurriculumContentCS42SAP.showUnit(UNIT,5);
+        CurriculumContentCS42SAP.showUnit(UNIT,6);
+        CurriculumContentCS42SAP.showUnit(UNIT,7);
+        CurriculumContentCS42SAP.showUnit(UNIT,8);
+        CurriculumContentCS42SAP.showUnit(UNIT,9);
         
         ////////////////////////////////////////////////////////////////////////
     }

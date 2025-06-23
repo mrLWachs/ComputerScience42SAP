@@ -25,7 +25,7 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void println(Object object) {
+    public void println(Object object) {
         if (Tester.state == Tester.RUN_SIMULATED) {
             Simulator.output(object, true);
             if (object == null) {
@@ -44,8 +44,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void println(boolean object) {
-        println(new Boolean(object));
+    public void println(boolean object) {
+        Object o = (Object)object;
+        println(o);
     }
 
     /**
@@ -53,8 +54,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void println(int object) {
-        println(new Integer(object));
+    public void println(int object) {
+        Object o = (Object)object;
+        println(o);
     }
 
     /**
@@ -62,8 +64,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void println(long object) {
-        println(new Long(object));
+    public void println(long object) {
+        Object o = (Object)object;
+        println(o);
     }
 
     /**
@@ -71,8 +74,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void println(float object) {
-        println(new Float(object));
+    public void println(float object) {
+        Object o = (Object)object;
+        println(o);
     }
 
     /**
@@ -80,8 +84,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void println(double object) {
-        println(new Double(object));
+    public void println(double object) {
+        Object o = (Object)object;
+        println(o);
     }
 
     /**
@@ -89,7 +94,7 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void print(Object object) {
+    public void print(Object object) {
         if (Tester.state == Tester.RUN_SIMULATED) {
             Simulator.output(object, false);
             if (object == null) {
@@ -108,8 +113,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void print(boolean object) {
-        print(new Boolean(object));
+    public void print(boolean object) {
+        Object o = (Object)object;
+        print(o);
     }
 
     /**
@@ -117,8 +123,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void print(int object) {
-        print(new Integer(object));
+    public void print(int object) {
+        Object o = (Object)object;
+        print(o);
     }
 
     /**
@@ -126,8 +133,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void print(long object) {
-        print(new Long(object));
+    public void print(long object) {
+        Object o = (Object)object;
+        print(o);
     }
 
     /**
@@ -135,8 +143,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void print(float object) {
-        print(new Float(object));
+    public void print(float object) {
+        Object o = (Object)object;
+        print(o);
     }
 
     /**
@@ -144,8 +153,9 @@ public class Out
      *
      * @param object The Object type to be 'printed'
      */
-    public static void print(double object) {
-        print(new Double(object));
+    public void print(double object) {
+        Object o = (Object)object;
+        print(o);
     }
 
 }

@@ -19,16 +19,17 @@ public class APUnit4DataCollections
      * Default constructor, set class properties
      */
     public APUnit4DataCollections() {
+        final int UNIT = 4;
         final String TITLE = "AP curriculum - Unit 4: Data Collections";
         if (Simulator.check(TITLE)) return; 
         
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContentCS42SAP.showUnit(4);
+        CurriculumContentCS42SAP.showUnit(UNIT);
         // AP: Unit 1 (Primitive Types)
         ////////////////////////////////////////////////////////////////////////
                 
         ////////////////////////////////////////////////////////////////////////
-        CurriculumContentCS42SAP.showUnit(4,1);
+        CurriculumContentCS42SAP.showUnit(UNIT,1);
         // 1.1 Why Programming? Why Java? 
         // (1.1.1) Call System class methods to generate output to the console
             // (1.1.1.1) System.out.print and System.out.println display 
@@ -40,9 +41,27 @@ public class APUnit4DataCollections
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        Simulator.comment("comment here");
-        Simulator.code("code here");
-        System.out.println("standard output here");
+//        Simulator.comment("comment here");
+//        Simulator.code("code here");
+//        System.out.println("standard output here");
+        
+        CurriculumContentCS42SAP.showUnit(UNIT,2);
+        CurriculumContentCS42SAP.showUnit(UNIT,3);
+        CurriculumContentCS42SAP.showUnit(UNIT,4);
+        CurriculumContentCS42SAP.showUnit(UNIT,5);
+        CurriculumContentCS42SAP.showUnit(UNIT,6);
+        CurriculumContentCS42SAP.showUnit(UNIT,7);
+        CurriculumContentCS42SAP.showUnit(UNIT,8);
+        CurriculumContentCS42SAP.showUnit(UNIT,9);
+        CurriculumContentCS42SAP.showUnit(UNIT,10);
+        CurriculumContentCS42SAP.showUnit(UNIT,11);
+        CurriculumContentCS42SAP.showUnit(UNIT,12);
+        CurriculumContentCS42SAP.showUnit(UNIT,13);
+        CurriculumContentCS42SAP.showUnit(UNIT,14);
+        CurriculumContentCS42SAP.showUnit(UNIT,15);
+        CurriculumContentCS42SAP.showUnit(UNIT,16);
+        CurriculumContentCS42SAP.showUnit(UNIT,17);
+        
         
         ////////////////////////////////////////////////////////////////////////
     }

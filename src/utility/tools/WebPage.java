@@ -223,7 +223,7 @@ public class WebPage
     }    
     
     /**
-     * Adds "point" text to the webpage document
+     * Adds "unitPoint" text to the webpage document
      * 
      * @param line the line of text to add
      */
@@ -233,7 +233,7 @@ public class WebPage
     }
     
     /**
-     * Adds "sub-point" text to the webpage document
+     * Adds "sub-unitPoint" text to the webpage document
      * 
      * @param line the line of text to add
      */

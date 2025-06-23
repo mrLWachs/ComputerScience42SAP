@@ -723,7 +723,7 @@ public class ComputerScience30S
         // show ending message
         JOptionPane.showMessageDialog(null, "Thank you!");
                 
-        // This line terminates any running java program at any point
+        // This line terminates any running java program at any unitPoint
         // System.exit(0);
         
         // Curly brackets (braces, parenthesis) { and } are important - all 

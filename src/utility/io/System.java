@@ -22,7 +22,7 @@ public class System
     /**
      * Default constructor for the class
      */
-    public System() { }
+    public System() {  }
 
     /**
      * Exits the application

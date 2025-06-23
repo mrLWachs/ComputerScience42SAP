@@ -124,6 +124,16 @@ public class Simulator
         PURPLE_BACKGROUND_BRIGHT,CYAN_BACKGROUND_BRIGHT,WHITE_BACKGROUND_BRIGHT
     };
     
+    private static final String TITLE         = RED;
+    private static final String HEADER        = PURPLE;
+    private static final String TEXT          = BLUE;
+    private static final String SUBTEXT       = BLACK;
+    
+    private static final String UNIT_TITLE    = RED;
+    private static final String UNIT_TOPIC    = PURPLE;
+    private static final String UNIT_POINT    = BLUE;
+    private static final String UNIT_SUBPOINT = BLACK;
+    
     private static final String SIMULATED_MESSAGE  = " simulated message";
     
     private static LinkedList<String> allOutput;
@@ -241,11 +251,11 @@ public class Simulator
         String text = object.toString();        
         int length = text.length();
         text += line(length);        
-        colorOutput(text, RED_BOLD, RESET);
+        colorOutput(text, TITLE, RESET);
         lineBreak();
         WebPage.addH1(text);
     }
-
+    
     /**
      * Simulates the 'Printing' of an object but uses a header style of
      * formatting
@@ -257,7 +267,7 @@ public class Simulator
         String text = object.toString();        
         int length = text.length();
         text += line(length);        
-        colorOutput(text, BLUE, RESET);
+        colorOutput(text, HEADER, RESET);
         lineBreak();
         WebPage.addH2(text);
     }
@@ -288,36 +298,36 @@ public class Simulator
         if (object == null)  return; 
         String text = object.toString() + line();
         simpleOutput(NEW_LINE,"");
-        colorOutput(text, BLUE, RESET);
+        colorOutput(text, HEADER, RESET);
         simpleOutput(NEW_LINE,"");
     }
     
     /**
-     * Simulates the 'Printing' of an object but uses a text style of
-     * formatting that tries to look like a point text
+     * Simulates the 'Printing' of an object but uses a text style of 
+     * formatting that tries to look like a unitPoint text
      *
      * @param object The Object type to be 'printed'
      */
     public static void text(Object object) {
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
-        colorOutput(text, PURPLE, RESET);
+        colorOutput(text, TEXT, RESET);
         WebPage.addText(text);
     }
     
     /**
-     * Simulates the 'Printing' of an object but uses a text style of
-     * formatting that tries to look like a sub-point text
+     * Simulates the 'Printing' of an object but uses a text style of 
+     * formatting that tries to look like a sub-unitPoint text
      *
      * @param object The Object type to be 'printed'
      */
     public static void subText(Object object) {
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
-        colorOutput(text, PURPLE, RESET);
+        colorOutput(text, SUBTEXT, RESET);
         WebPage.addSubText(text);
     }
-    
+                
     /**
      * Simulates the 'Printing' of an object but uses a comment style of
      * formatting that tries to look like a code "comment"
@@ -344,6 +354,65 @@ public class Simulator
         WebPage.addPre(text);
     }
 
+    /**
+     * Simulates the 'Printing' of an object but uses a unit title style of
+     * formatting
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void unitTitle(Object object) {
+        if (object == null)  return; 
+        String text = object.toString();        
+        int length = text.length();
+        text += line(length);        
+        colorOutput(text, UNIT_TITLE, RESET);
+        lineBreak();
+        WebPage.addH1(text);
+    }
+    
+    /**
+     * Simulates the 'Printing' of an object but uses a unit unitTopic style of 
+     * formatting
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void unitTopic(Object object) {
+        if (object == null)  return; 
+        String text = object.toString();        
+        int length = text.length();
+        text += line(length);        
+        colorOutput(text, UNIT_TOPIC, RESET);
+        lineBreak();
+        WebPage.addH2(text);
+    }
+    
+        
+    /**
+     * Simulates the 'Printing' of an object but uses a text style of 
+     * formatting that tries to look like a unitPoint text
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void unitPoint(Object object) {
+        if (object == null)  object = new String(NULL); 
+        String text = object.toString();
+        colorOutput(text, UNIT_POINT, RESET);
+        WebPage.addText(text);
+    }
+    
+    /**
+     * Simulates the 'Printing' of an object but uses a text style of 
+     * formatting that tries to look like a sub-Point text
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void unitSubPoint(Object object) {
+        if (object == null)  object = new String(NULL); 
+        String text = object.toString();
+        colorOutput(text, UNIT_SUBPOINT, RESET);
+        WebPage.addSubText(text);
+    }
+        
     /**
      * Adds this object to the dynamic list of outputs with or without a new
      * line

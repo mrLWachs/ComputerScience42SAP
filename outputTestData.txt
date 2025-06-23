@@ -31,85 +31,955 @@
 31:	// comment here
 32:	code here
 33:	standard output here
-34:	Computer Science 42SAP - AP curriculum - Unit 2: Selection and Iteration  content running simulated:.
-35:	Unit 2 - Selection and Iteration...........................................................
-36:	2.1 - Algorithms with Selection and Repetition.............................................
-37:	   2.1.1 - Represent patterns and algorithms that involve selection and repetition 
-38:	              found in everyday life using written language or diagrams.
-39:	      2.1.1.1 - The building blocks of algorithms include sequencing, selection, 
-40:	                 and repetition. 
-41:	      2.1.1.2 - Algorithms can contain selection, through decision making, and repetition, 
-42:	                 via looping.
-43:	      2.1.1.3 - Selection occurs when a choice of how the execution of an algorithm 
-44:	                 will proceed is based on a true or false decision.
-45:	      2.1.1.4 - Repetition is when a process repeats itself until a desired outcome 
-46:	                 is reached.
-47:	      2.1.1.5 - The order in which sequencing, selection, and repetition are used 
-48:	                 contributes to the outcome of the algorithm.
-49:	// comment here
-50:	code here
-51:	standard output here
-52:	Computer Science 42SAP - AP curriculum - Unit 3: Class Creation content running simulated:.
-53:	Unit 3 - Class Creation....................................................................
-54:	3.1 - Abstraction and Program Design.......................................................
-55:	   3.1.1 - Represent the design of a program by using natural language or creating 
-56:	              diagrams that indicate the classes in the program and the data and procedural 
-57:	              abstractions found in each class by including all attributes and behaviors. 
-58:	      3.1.1.1 - Abstraction is the process of reducing complexity by focusing on 
-59:	                 the main idea. By hiding details irrelevant to the question at hand and bringing 
-60:	                 together related and useful details, abstraction reduces complexity and allows 
-61:	                 one to focus on the idea.
-62:	      3.1.1.2 - Data abstraction provides a separation between the abstract properties 
-63:	                 of a data type and the concrete details of its  representation. Data abstraction 
-64:	                 manages complexity by giving data a name without referencing the specific 
-65:	                 details of the representation.  Data can take the form of a single variable 
-66:	                 or a collection of data, such as in a class or a set of data.
-67:	      3.1.1.3 - An attribute is a type of data abstraction that is defined in a 
-68:	                 class outside any method or constructor. An instance variable is an attribute 
-69:	                 whose value is unique to each instance of the class. A class variable is an 
-70:	                 attribute shared by all instances of the class.
-71:	      3.1.1.4 - Procedural abstraction provides a name for a process and allows 
-72:	                 a method to be used only knowing what it does, not how it does it. Through 
-73:	                 method decomposition, a programmer breaks down larger behaviors of the class 
-74:	                 into smaller behaviors by creating methods to represent each individual smaller 
-75:	                 behavior. A procedural abstraction may extract shared features to generalize 
-76:	                 functionality instead of duplicating code. This allows for code reuse, which 
-77:	                 helps manage complexity 
-78:	      3.1.1.5 - Using parameters allows procedures to be generalized, enabling the 
-79:	                 procedures to be reused with a range of input values or arguments.
-80:	      3.1.1.6 - Using procedural abstraction in a program allows programmers to 
-81:	                 change the internals of a method (to make it faster, more  efficient, use 
-82:	                 less storage, etc.) without needing to notify method users of the change as 
-83:	                 long as the method signature and what the  method does is preserved.
-84:	      3.1.1.7 - Prior to implementing a class, it is helpful to take time to design 
-85:	                 each class including its attributes and behaviors. This design can be represented 
-86:	                 using natural language or diagrams.
-87:	// comment here
-88:	code here
-89:	standard output here
-90:	Computer Science 42SAP - AP curriculum - Unit 4: Data Collections content running simulated:.
-91:	Unit 4 - Data Collections..................................................................
-92:	4.1 - Ethical and Social Issues Around Data Collection.....................................
-93:	   4.1.1 - Explain the risks to privacy from collecting and storing personal data 
-94:	              on computer systems.
-95:	      4.1.1.1 - When using a computer, personal privacy is at risk. When developing 
-96:	                 new programs, programmers should attempt to safeguard the personal privacy 
-97:	                 of the user.
-98:	   4.1.2 - Explain the importance of recognizing data quality and potential issues 
-99:	              when using a data set.
-100:	      4.1.2.1 - Algorithmic bias describes systemic and repeated errors in a program 
-101:	                 that create unfair outcomes for a specific group of users.
-102:	      4.1.2.2 - Programmers should be aware of the data set collection method and 
-103:	                 the potential for bias when using this method before using  the data to extrapolate 
-104:	                 new information or drawing conclusions.
-105:	      4.1.2.3 - Some data sets are incomplete or contain inaccurate data. Using 
-106:	                 such data in the development or use of a program can cause the program to 
-107:	                 work incorrectly or inefficiently. 
-108:	   4.1.3 - Identify an appropriate data set to use in order to solve a problem or 
-109:	              answer a specific question.
-110:	      4.1.3.1 - Contents of a data set might be related to a specific question or 
-111:	                 topic and might not be appropriate to give correct answers or extrapolate 
-112:	                 information for a different question or topic.
-113:	// comment here
-114:	code here
-115:	standard output here
+34:	1.2 - Variables and Data Types.............................................................
+35:	   1.2.1 - Identify the most appropriate data type category for a particular specification. 
+36:	      1.2.1.1 - A data type is a set of values and a corresponding set of operations 
+37:	                 on those values. Data types can be categorized as either primitive or reference. 
+38:	      1.2.1.2 - The primitive data types used in this course define the set of values 
+39:	                 and corresponding operations on those values for numbers and Boolean values. 
+40:	      1.2.1.3 - A reference type is used to define objects that are not primitive 
+41:	                 types.
+42:	   1.2.2 - Develop code to declare variables to store numbers and Boolean values.
+43:	      1.2.2.1 - The three primitive data types used in this course are int, double, 
+44:	                 and boolean. An int value is an integer. A double value is a real number. 
+45:	                 A boolean value is either true or false. Note: the other five primitive data 
+46:	                 types (long, short, byte, float, and char) are outside the scope of the AP 
+47:	                 Computer Science A course and exam. 
+48:	      1.2.2.2 - A variable is a storage location that holds a value, which can change 
+49:	                 while the program is running. Every variable has a name and an associated 
+50:	                 data type. A variable of a primitive type holds a primitive value from that 
+51:	                 type.
+52:	1.3 - Expressions and Output...............................................................
+53:	   1.3.1 - Develop code to generate output and determine the result that would be 
+54:	              displayed.
+55:	      1.3.1.1 - System.out.print and System.out.println display information on the 
+56:	                 computer display. System.out.println moves the cursor to a new line after 
+57:	                 the information has been displayed, while System.out.print does not.
+58:	   1.3.2 - Develop code to utilize string literals and determine the result of using 
+59:	              string literals.
+60:	      1.3.2.1 - A literal is the code  representation of a fixed value. 
+61:	      1.3.2.2 - A string literal is a sequence of characters enclosed in double 
+62:	                 quotes. 
+63:	      1.3.2.3 - Escape sequences are special sequences of characters that can be 
+64:	                 included in a string. They start with a \ and have a special meaning in Java. 
+65:	                 Escape sequences used in this course include double quote \", backslash \\, 
+66:	                 and newline \n.
+67:	   1.3.3 - Develop code for arithmetic expressions and determine the result of these 
+68:	              expressions. 
+69:	      1.3.3.1 - Arithmetic expressions, which consist of numeric values, variables, 
+70:	                 and operators, include expressions of type int and double. 
+71:	      1.3.3.2 - The arithmetic operators consist of addition +, subtraction -, multiplication 
+72:	                 *, division /, and remainder %. An  arithmetic operation that uses two int 
+73:	                 values will evaluate to an int value. An arithmetic operation that uses at 
+74:	                 least one double value will evaluate to a double value. Note: Expressions 
+75:	                 that result in special double values (e.g., infinities and NaN) are outside 
+76:	                 the scope of the AP Computer Science A course and exam.
+77:	      1.3.3.3 - When dividing numeric values that are both int values, the result 
+78:	                 is only the integer portion of the quotient. When dividing numeric values 
+79:	                 that use at least one double value, the result is the quotient. 
+80:	      1.3.3.4 - The remainder operator % is used to compute the remainder when one 
+81:	                 number a is divided by another number b. Note: The use of values less than 
+82:	                 0 for a and the use of values less than or equal to 0 for b is outside the 
+83:	                 scope of the AP Computer Science A course and exam. 
+84:	      1.3.3.5 - Operators can be used to construct compound expressions. At compile 
+85:	                 time, numeric values are associated with operators according to operator precedence 
+86:	                 to determine how they are grouped. Parentheses can be used to modify operator 
+87:	                 precedence. Multiplication, division, and remainder have precedence over addition 
+88:	                 and subtraction. Operators with the same precedence are evaluated from left 
+89:	                 to right. 
+90:	      1.3.3.6 - An attempt to divide an integer by the integer zero will result 
+91:	                 in an ArithmeticException. Note: The use of dividing by zero when one numeric 
+92:	                 value is a double is outside the scope of the AP Computer Science A course 
+93:	                 and exam)
+94:	1.4 - Assignment Statements and Input......................................................
+95:	   1.4.1 - Develop code for assignment statements with expressions and determine 
+96:	              the value that is stored in the variable as a result of these statements. 
+97:	      1.4.1.1 - Every variable must be assigned a value before it can be used in 
+98:	                 an expression. That value must be from a compatible data type. A variable 
+99:	                 is initialized the first time it is assigned a value. Reference types can 
+100:	                 be assigned a new object or null if there is no object. The literal null is 
+101:	                 a special value used to indicate that a reference is not associated with any 
+102:	                 object. 
+103:	      1.4.1.2 - The assignment operator = allows a program to initialize or change 
+104:	                 the value stored in a variable. The value of the expression on the right is 
+105:	                 stored in the variable on the left. Note: The use of assignment operators 
+106:	                 inside expressions (e.g., a = b = 4; or a[i += 5]) is outside the scope of 
+107:	                 the AP Computer Science A course and exam.
+108:	      1.4.1.3 - During execution, an expression is evaluated to produce a single 
+109:	                 value. The value of an expression has a type based on the evaluation of the 
+110:	                 expression)
+111:	   1.4.2 - Develop code to read input.
+112:	      1.4.2.1 - Input can come in a variety of forms, such as tactile, audio, visual, 
+113:	                 or text. The Scanner class is one way to obtain text input from the keyboard. 
+114:	                 Note: Any specific form of input from the user is outside the scope of the 
+115:	                 AP Computer Science A course and exam.
+116:	1.5 - Casting and Range of Variables.......................................................
+117:	   1.5.1 - Develop code to cast primitive values to different primitive types in 
+118:	              arithmetic expressions and determine the value that is produced as a result.
+119:	      1.5.1.1 - The casting operators (int) and (double) can be used to convert 
+120:	                 from a double value to an int value (or vice versa). 
+121:	      1.5.1.2 - Casting a double value to an int value causes the digits to the 
+122:	                 right of the decimal point to be truncated. 
+123:	      1.5.1.3 - Some code causes int values to be automatically cast (widened) to 
+124:	                 double values. 
+125:	      1.5.1.4 - Values of type double can be rounded to the nearest integer by (int) 
+126:	                 (x + 0.5) for non-negative numbers or (int)(x - 0.5) for negative numbers.
+127:	   1.5.2 - Describe conditions when an integer expression evaluates to a value out 
+128:	              of range.
+129:	      1.5.2.1 - The constant Integer.MAX_VALUE holds the value of the largest possible 
+130:	                 int value. The constant Integer.MIN_VALUE holds the value of the smallest 
+131:	                 possible int value. 
+132:	      1.5.2.2 - Integer values in Java are represented by values of type int, which 
+133:	                 are stored using a finite amount (4 bytes) of memory. Therefore, an int value 
+134:	                 must be in the range from Integer.MIN_VALUE to Integer.MAX_VALUE inclusive.
+135:	      1.5.2.3 - If an expression would evaluate to an int value outside of the allowed 
+136:	                 range, an integer overflow occurs. The result is an int value in the allowed 
+137:	                 range but not necessarily the value expected.
+138:	   1.5.3 - Describe conditions that limit accuracy of expressions.
+139:	      1.5.3.1 - Computers allot a specified amount of memory to store data based 
+140:	                 on the data type. If an expression would evaluate to a double that is more 
+141:	                 precise than can be stored in the allotted amount of memory, a round-off error 
+142:	                 occurs. The result will be rounded to the representable value. To avoid rounding 
+143:	                 errors that naturally occur, use int values. Note: Other special decimal data 
+144:	                 types that can be used to avoid rounding errors are outside the scope of the 
+145:	                 AP Computer Science A course and exam.
+146:	1.6 - Compound Assignment Operators........................................................
+147:	   1.6.1 - Develop code for assignment statements with compound assignment operators 
+148:	              and determine the value that is stored in the variable as a result.
+149:	      1.6.1.1 - Compound assignment operators +=, −=, *=, /=, and %= can be used 
+150:	                 in place of the assignment operator in numeric expressions. A compound assignment 
+151:	                 operator performs the indicated arithmetic operation between  the value on 
+152:	                 the left and the value on the right and then assigns the result to the variable 
+153:	                 on the left. 
+154:	      1.6.1.2 - The post-increment operator ++ and postdecrement operator -- are 
+155:	                 used to add 1 or subtract 1 from the stored value of a numeric variable. The 
+156:	                 new value is assigned to the variable. Note: The use of increment and decrement 
+157:	                 operators in prefix form (e.g., ++x) is outside the scope of the AP Computer 
+158:	                 Science A course and exam. The use of increment and decrement operators inside 
+159:	                 other expressions (e.g., arr[x++]) is outside the scope of the AP Computer 
+160:	                 Science A course and exam.
+161:	1.7 - Application Program Interface (API) and Libraries....................................
+162:	   1.7.1 - Identify the attributes and behaviors of a class found in the libraries 
+163:	              contained in an API.
+164:	      1.7.1.1 - Libraries are collections of classes. An application programming 
+165:	                 interface (API) specification informs the programmer how to use those classes. 
+166:	                 Documentation found in API specifications and libraries is  essential to understanding 
+167:	                 the attributes and behaviors of a class defined by the API. A class defines 
+168:	                 a specific reference type. Classes in the APIs and libraries are grouped into 
+169:	                 packages. Existing classes and class libraries can be utilized to create objects. 
+170:	      1.7.1.2 - Attributes refer to the data related to the class and are stored 
+171:	                 in variables. Behaviors refer to what instances of the class can do (or what 
+172:	                 can be done with them) and are defined by methods.
+173:	1.8 - Documentation with Comments..........................................................
+174:	   1.8.1 - Describe the functionality and use of code through comments.
+175:	      1.8.1.1 - Comments are written for both the original programmer and other 
+176:	                 programmers to understand the code and its functionality, but are ignored 
+177:	                 by the compiler and are not executed when the program is run. Three types 
+178:	                 of comments in Java include /* */, which generates a block of comments; //, 
+179:	                 which generates a comment on one line; and /** */, which are Javadoc comments 
+180:	                 and are used to create API documentation. 
+181:	      1.8.1.2 - A precondition is a condition that must be true just prior to the 
+182:	                 execution of a method in order for it to behave as expected. There is no expectation 
+183:	                 that the method will check to ensure preconditions are satisfied. 
+184:	      1.8.1.3 - A postcondition is a condition that must always be true after the 
+185:	                 execution of a method. Postconditions describe the outcome of the execution 
+186:	                 in terms of what is being returned or the current value of the attributes 
+187:	                 of an object)
+188:	1.9 - Method Signatures....................................................................
+189:	   1.9.1 - Identify the correct method to call based on documentation and method 
+190:	              signatures.
+191:	      1.9.1.1 - A method is a named block of code that only runs when it is called. 
+192:	                 A block of code is any section of code that is enclosed in braces. Procedural 
+193:	                 abstraction allows a programmer to use a method by knowing what the method 
+194:	                 does even if they do not know how the method was written. 
+195:	      1.9.1.2 - A parameter is a variable declared in the header of a method or 
+196:	                 constructor and can be used inside the body of the method. This allows values 
+197:	                 or arguments to be passed and used by a method or constructor. A method signature 
+198:	                 for a method with parameters consists of the method name and the ordered list 
+199:	                 of parameter types. A method signature for a method without parameters consists 
+200:	                 of the method name and an empty parameter list)
+201:	   1.9.2 - Describe how to call methods.
+202:	      1.9.2.1 - A void method does not have a return value and is therefore not 
+203:	                 called as part of an expression. 
+204:	      1.9.2.2 - A non-void method returns a value that is the same type as the return 
+205:	                 type in the header. To use the return value when calling a non-void method, 
+206:	                 it must be stored in a variable or used as part of an expression. 
+207:	      1.9.2.3 - An argument is a value that is passed into a method when the method 
+208:	                 is called. The arguments passed to a method must be compatible in number and 
+209:	                 order with the types identified in the parameter list of the method signature. 
+210:	                 When calling methods, arguments are passed using call by value. Call by value 
+211:	                 initializes the parameters with copies of the arguments. 
+212:	      1.9.2.4 - Methods are said to be overloaded when there are multiple methods 
+213:	                 with the same name but different signatures. 
+214:	      1.9.2.5 - A method call interrupts the sequential execution of statements, 
+215:	                 causing the program to first execute the statements in the method before continuing. 
+216:	                 Once the last statement in the method has been executed or a return statement 
+217:	                 is executed, the flow of control is returned to the point immediately following 
+218:	                 where the method was called)
+219:	1.10 - Calling Class Methods...............................................................
+220:	   1.10.1 - Develop code to call class methods and determine the result of those 
+221:	              calls.
+222:	      1.10.1.1 - Class methods are associated with the class, not instances of the 
+223:	                 class. Class methods include the keyword static in the header before the method 
+224:	                 name. 
+225:	      1.10.1.2 - Class methods are typically called using the class name along with 
+226:	                 the dot operator. When the method call occurs in the defining class, the use 
+227:	                 of the class name is optional in the call)
+228:	1.11 - Math Class..........................................................................
+229:	   1.11.1 - Develop code to write expressions that incorporate calls to built-in 
+230:	              mathematical libraries and determine the value that is produced as a result.
+231:	      1.11.1.1 - The Math class is part of the java.lang package. Classes in the 
+232:	                 java.lang package are available by default. 
+233:	      1.11.1.2 - The Math class contains only class methods. The following Math 
+234:	                 class methods - including what they do and when they are used - are part of 
+235:	                 the Java Quick Reference: (a) static int abs(int x) returns the absolute value 
+236:	                 of an int value. (b) static double abs(double x) returns the absolute value 
+237:	                 of a double value. (c) static double pow(double base, double exponent) returns 
+238:	                 the value of the first parameter raised to the power of the second parameter. 
+239:	                 (d) static double sqrt(double x) returns the nonnegative square root of a 
+240:	                 double value. (e) static double random() returns a double value greater than 
+241:	                 or equal to 0.0 and less than 1.0. 
+242:	      1.11.1.3 - The values returned from Math.random() can be manipulated using 
+243:	                 arithmetic and casting operators toproduce a random int or double in a defined 
+244:	                 range based on specified criteria. Each endpoint of the range can be inclusive, 
+245:	                 meaning the value is included, or exclusive, meaning the value is not included.
+246:	1.12 - Objects: Instances of Classes.......................................................
+247:	   1.12.1 - Explain the relationship between a class and an object.
+248:	      1.12.1.1 - An object is a specific instance of a class with defined attributes. 
+249:	                 A class is the formal implementation, or blueprint, of the attributes and 
+250:	                 behaviors of an object.
+251:	      1.12.1.2 - A class hierarchy can be developed by putting common attributes 
+252:	                 and behaviors of related classes into a single class called a superclass. 
+253:	                 Classes that extend a superclass, called subclasses, can draw upon the existing 
+254:	                 attributes and behaviors of the superclass without replacing these in the 
+255:	                 code. This creates an inheritance relationship from the subclasses to the 
+256:	                 superclass. Note: Designing and implementing inheritance relationships are 
+257:	                 outside the scope of the AP Computer Science A course and exam.
+258:	      1.12.1.3 - All classes in Java are subclasses of the Object class.
+259:	   1.12.2 - Develop code to declare variables to store reference types.
+260:	      1.12.2.1 - A variable of a reference type holds an object reference, which 
+261:	                 can be thought of as the memory address of that object.
+262:	1.13 - Object Creation and Storage (Instantiation).........................................
+263:	   1.13.1 - Identify, using its signature, the correct constructor being called.
+264:	      1.13.1.1 - A class contains constructors that are called to create objects. 
+265:	                 They have the same name as the class.
+266:	      1.13.1.2 - A constructor signature consists of the constructor's name, which 
+267:	                 is the same as the class name, and the ordered list of parameter types. The 
+268:	                 parameter list, in the header of a constructor, lists the types of the values 
+269:	                 that are passed and their variable names.
+270:	      1.13.1.3 - Constructors are said to be overloaded when there are multiple 
+271:	                 constructors with different signatures.
+272:	   1.13.2 - Develop code to declare variables of the correct types to hold object 
+273:	              references.
+274:	      1.13.2.1 - A variable of a reference type holds an object reference or, if 
+275:	                 there is no object, null
+276:	   1.13.3 - Develop code to create an object by calling a constructor.
+277:	      1.13.3.1 - An object is typically created using the keyword new followed by 
+278:	                 a call to one of the class's constructors.
+279:	      1.13.3.2 - Parameters allow constructors to accept values to establish the 
+280:	                 initial values of the attributes of the object.
+281:	      1.13.3.3 - A constructor argument is a value that is passed into a constructor 
+282:	                 when the constructor is called. The arguments passed to a constructor must 
+283:	                 be compatible in order and number with the types identified in the parameter 
+284:	                 list in the constructor signature. When calling constructors, arguments are 
+285:	                 passed using call by value. Call by value initializes the parameters with 
+286:	                 copies of the arguments.
+287:	      1.13.3.4 - A constructor call interrupts the sequential execution of statements, 
+288:	                 causing the program to first execute the statements in the constructor before 
+289:	                 continuing. Once the last statement in the constructor has been executed, 
+290:	                 the flow of control is returned to the point immediately following where the 
+291:	                 constructor was called.
+292:	1.14 - Calling Instance Methods............................................................
+293:	   1.14.1 - Develop code to call instance methods and determine the result of these 
+294:	              calls.
+295:	      1.14.1.1 - Instance methods are called on objects of the class. The dot operator 
+296:	                 is used along with the object name to call instance methods.
+297:	      1.14.1.2 - A method call on a null reference will result in a NullPointerException.
+298:	1.15 - String Manipulation.................................................................
+299:	   1.15.1 - Develop code to create string objects and determine the result of creating 
+300:	              and combining strings. 
+301:	      1.15.1.1 - A String object represents a sequence of characters and can be 
+302:	                 created by using a string literal or by calling the String class constructor.
+303:	      1.15.1.2 - The String class is part of the java.lang package. Classes in the 
+304:	                 java.lang package are available by default. 
+305:	      1.15.1.3 - A String object is immutable, meaning once a String object is created, 
+306:	                 its attributes cannot be changed. Methods called on a String object do not 
+307:	                 change the content of the String object.
+308:	      1.15.1.4 - Two String objects can be concatenated together or combined using 
+309:	                 the + or += operator, resulting in a new String object. A primitive value 
+310:	                 can be concatenated with a String object. This causes the implicit conversion 
+311:	                 of the primitive value to a String object.
+312:	      1.15.1.5 - A String object can be concatenated with any object, which implicitly 
+313:	                 calls the object's toString method (a behavior that is guaranteed to exist 
+314:	                 by the inheritance relationship every class has with the Object class). An 
+315:	                 object's toString method returns a string value representing the object. Subclasses 
+316:	                 of Object often override the toString method with class specific implementation. 
+317:	                 Method overriding occurs when a public method in a subclass has the same method 
+318:	                 signature as a public method in the superclass, but the behavior of the method 
+319:	                 is specific to the subclass. Note: Overriding the toString method of a class 
+320:	                 is outside the scope of the AP Computer Science A course and exam.
+321:	   1.15.2 - Develop code to call methods on string objects and determine the result 
+322:	              of calling these methods.
+323:	      1.15.2.1 - A String object has index values from 0 to one less than the length 
+324:	                 of the string. Attempting to access indices outside this range will result 
+325:	                 in an IndexOutOfBoundsException.
+326:	      1.15.2.2 - The following String methods - including what they do and when 
+327:	                 they are used - are part of the Java Quick Reference: (a)  int length() returns 
+328:	                 the number of characters in a String object. (b) String substring(int from, 
+329:	                 int to) returns the substring beginning at index from and ending at index 
+330:	                 to - 1. (c) String substring(int from) returns substring(from, length()). 
+331:	                 (d) int indexOf(String str) returns the index of the first occurrence of str; 
+332:	                 returns -1 if not found. (e) boolean equals(Object other) returns true if 
+333:	                 this corresponds to the same sequence of characters as other; returns false 
+334:	                 otherwise. (f) int compareTo(String other) returns a value < 0 if this is 
+335:	                 less than other; returns zero if this is equal to other; returns a value > 
+336:	                 0 if this is greater than other. Strings are ordered based upon the alphabet. 
+337:	                 Note: Using the equals method to compare one String object with an object 
+338:	                 of a type other than String is outside the scope of the AP Computer Science 
+339:	                 A course and exam1.15.2.3 - A string identical to the single element substring 
+340:	                 at position index can be created by calling substring(index, index + 1).
+341:	Computer Science 42SAP - AP curriculum - Unit 2: Selection and Iteration  content running simulated:.
+342:	Unit 2 - Selection and Iteration...........................................................
+343:	2.1 - Algorithms with Selection and Repetition.............................................
+344:	   2.1.1 - Represent patterns and algorithms that involve selection and repetition 
+345:	              found in everyday life using written language or diagrams.
+346:	      2.1.1.1 - The building blocks of algorithms include sequencing, selection, 
+347:	                 and repetition. 
+348:	      2.1.1.2 - Algorithms can contain selection, through decision making, and repetition, 
+349:	                 via looping.
+350:	      2.1.1.3 - Selection occurs when a choice of how the execution of an algorithm 
+351:	                 will proceed is based on a true or false decision.
+352:	      2.1.1.4 - Repetition is when a process repeats itself until a desired outcome 
+353:	                 is reached.
+354:	      2.1.1.5 - The order in which sequencing, selection, and repetition are used 
+355:	                 contributes to the outcome of the algorithm.
+356:	2.2 - Boolean Expressions..................................................................
+357:	   2.2.1 - Develop code to create Boolean expressions with relational operators 
+358:	              and determine the result of these expressions.
+359:	      2.2.1.1 - Values can be compared using the relational operators == and != 
+360:	                 to determine whether the values are the same. With primitive types, this compares 
+361:	                 the actual primitive values. With reference types, this compares the object 
+362:	                 references.
+363:	      2.2.1.2 - Numeric values can be compared using the relational operators <, 
+364:	                 >, <=, and >= to determine the relationship between the values.
+365:	      2.2.1.3 - An expression involving relational operators evaluates to a Boolean 
+366:	                 value.
+367:	2.3 - if Statements........................................................................
+368:	   2.3.1 - Develop code to represent branching logical processes by using selection 
+369:	              statements and determine the result of these processes.
+370:	      2.3.1.1 - Selection statements change the sequential execution of statements.
+371:	      2.3.1.2 - An if statement is a type of selection statement that affects the 
+372:	                 flow of control by executing different segments of code based on the value 
+373:	                 of a Boolean expression.
+374:	      2.3.1.3 - A one-way selection (if statement) is used when there is a segment 
+375:	                 of code to execute under a certain condition. In this case, the body is executed 
+376:	                 only when the Boolean expression is true.
+377:	      2.3.1.4 - A two-way selection (if-else statement) is used when there are two 
+378:	                 segments of code - one to be executed when the Boolean expression is true 
+379:	                 and another segment for when the Boolean expression is false. In this case, 
+380:	                 the body of the if is executed when the Boolean expression is true, and the 
+381:	                 body of the else is executed when the Boolean expression is false.
+382:	2.4 - Nested if Statements.................................................................
+383:	   2.4.1 - Develop code to represent nested branching logical processes and determine 
+384:	              the result of these processes.
+385:	      2.4.1.1 - Nested if statements consist of if, if-else, or if-else-if statements 
+386:	                 within if, if-else, or if-else-if statements.
+387:	      2.4.1.2 - The Boolean expression of the inner nested if statement is evaluated 
+388:	                 only if the Boolean expression of the outer if statement evaluates to true.
+389:	      2.4.1.3 - A multiway selection (if-else-if) is used when there are a series 
+390:	                 of expressions with different segments of code for each condition. Multiway 
+391:	                 selection is performed such that no more than one segment of code is executed 
+392:	                 based on the first expression that evaluates to true. If no expression evaluates 
+393:	                 to true and there is a trailing else statement, then the body of the else 
+394:	                 is executed.
+395:	2.5 - Compound Boolean Expressions.........................................................
+396:	   2.5.1 - Develop code to represent compound Boolean expressions and determine 
+397:	              the result of these expressions.
+398:	      2.5.1.1 - Logical operators ! (not), && (and), and || (or) are used with Boolean 
+399:	                 expressions. The expression !a evaluates to true if a is false and evaluates 
+400:	                 to false otherwise. The expression a && b evaluates to true if both a and 
+401:	                 b are true and evaluates to false otherwise. The expression a || b evaluates 
+402:	                 to true if a is true, b is true, or both, and evaluates to false otherwise. 
+403:	                 The order of precedence for evaluating logical operators is ! (not), && (and), 
+404:	                 then || (or). An expression involving logical operators evaluates to a Boolean 
+405:	                 value. 
+406:	      2.5.1.2 - Short-circuit evaluation occurs when the result of a logical operation 
+407:	                 using && or || can be determined by evaluating only the first Boolean expression. 
+408:	                 In this case, the second Boolean expression is not evaluated.
+409:	2.6 - Comparing Boolean Expressions........................................................
+410:	   2.6.1 - Compare equivalent Boolean expressions.
+411:	      2.6.1.1 - Two Boolean expressions are equivalent if they evaluate to the same 
+412:	                 value in all cases. Truth tables can be used to prove Boolean expressions 
+413:	                 are equivalent.
+414:	      2.6.1.2 - De Morgan's law can be applied to Boolean expressions to create 
+415:	                 equivalent Boolean expressions. Under De Morgan's law, the Boolean expression 
+416:	                 !(a && b) is equivalent to !a || !b and the Boolean expression !(a || b) is 
+417:	                 equivalent to !a && !b. 
+418:	   2.6.2 - Develop code to compare object references using Boolean expressions and 
+419:	              determine the result of these expressions.
+420:	      2.6.2.1 - Two different variables can hold references to the same object. 
+421:	                 Object references can be compared using == and !=. 
+422:	      2.6.2.2 - An object reference can be compared with null, using == or !=, to 
+423:	                 determine if the reference actually references an object. 
+424:	      2.6.2.3 - Classes often define their own equals method, which can be used 
+425:	                 to specify the criteria for equivalency for two objects of the class. The 
+426:	                 equivalency of two objects is most often determined using attributes from 
+427:	                 the two objects. Note: Overriding the equals method is outside the scope of 
+428:	                 the AP Computer Science A course and exam.
+429:	2.7 - while Loops..........................................................................
+430:	   2.7.1 - Identify when an iterative process is required to achieve a desired result.
+431:	      2.7.1.1 - Iteration is a form of repetition. Iteration statements change the 
+432:	                 flow of control by repeating a segment of code zero or more times as long 
+433:	                 as the Boolean expression controlling the loop evaluates to true. 
+434:	      2.7.1.2 - An infinite loop occurs when the Boolean expression in an iterative 
+435:	                 statement always evaluates to true.
+436:	      2.7.1.3 - The loop body of an iterative statement will not execute if the 
+437:	                 Boolean expression initially evaluates to false.
+438:	      2.7.1.4 - Off by one errors occur when the iteration statement loops one time 
+439:	                 too many or one time too few.
+440:	   2.7.2 - Develop code to represent iterative processes using while loops and determine 
+441:	              the result of these processes.
+442:	      2.7.2.1 - A while loop is a type of iterative statement. In while loops, the 
+443:	                 Boolean expression is evaluated before each iteration of the loop body, including 
+444:	                 the first. When the expression evaluates to true, the loop body is executed. 
+445:	                 This continues until the Boolean expression evaluates to false, whereupon 
+446:	                 the iteration terminates.
+447:	2.8 - for Loops............................................................................
+448:	   2.8.1 - Develop code to represent iterative processes using for loops and determine 
+449:	              the result of these processes.
+450:	      2.8.1.1 - A for loop is a type of iterative statement. There are three parts 
+451:	                 in a for loop header: the initialization, the Boolean expression, and the 
+452:	                 update.
+453:	      2.8.1.2 - In a for loop, the initialization statement is only executed once 
+454:	                 before the first Boolean expression evaluation. The variable being initialized 
+455:	                 is referred to as a loop control variable. The Boolean expression is evaluated 
+456:	                 immediately after the loop control variable is initialized and then following 
+457:	                 each execution of the increment statement until it is false. In each iteration, 
+458:	                 the update is executed after the entire loop body is executed and before the 
+459:	                 Boolean expression is evaluated again.
+460:	      2.8.1.3 - A for loop can be rewritten into an equivalent while loop (and vice 
+461:	                 versa).
+462:	2.9 - Implementing Selection and Iteration Algorithms......................................
+463:	   2.9.1 - Develop code for standard and original algorithms (without data structures) 
+464:	              and determine the result of these algorithms.
+465:	      2.9.1.1 - There are standard algorithms to: (a) identify if an integer is 
+466:	                 or is not evenly divisible by another integer (b)  identify the individual 
+467:	                 digits in an integer, (c) determine the frequency with which a specific criterion 
+468:	                 is met (d) determine a minimum or maximum value, and (e) compute a sum or 
+469:	                 average
+470:	2.10 - Implementing String Algorithms......................................................
+471:	   2.10.1 - Develop code for standard and original algorithms that involve strings 
+472:	              and determine the result of these algorithms. 
+473:	      2.10.1.1 - There are standard string algorithms to: (a) find if one or more 
+474:	                 substrings have a particular property, (b)  determine the number of substrings 
+475:	                 that meet specific criteria, (c) create a new string with the characters reversed
+476:	2.11 - Nested Iteration....................................................................
+477:	   2.11.1 - Develop code to represent nested iterative processes and determine the 
+478:	              result of these processes.
+479:	      2.11.1.1 - Nested iteration statements are iteration statements that appear 
+480:	                 in the body of another iteration statement. When a loop is nested inside another 
+481:	                 loop, the inner loop must complete all its iterations before the outer loop 
+482:	                 can continue to its next iteration.
+483:	2.12 - Informal Run-Time Analysis..........................................................
+484:	   2.12.1 - Calculate statement execution counts and informal run-time comparison 
+485:	              of iterative statements.
+486:	      2.12.1.1 - A statement execution count indicates the number of times a statement 
+487:	                 is executed by the program. Statement execution counts are often calculated 
+488:	                 informally through tracing and analysis of the iterative statements.
+489:	Computer Science 42SAP - AP curriculum - Unit 3: Class Creation content running simulated:.
+490:	Unit 3 - Class Creation....................................................................
+491:	3.1 - Abstraction and Program Design.......................................................
+492:	   3.1.1 - Represent the design of a program by using natural language or creating 
+493:	              diagrams that indicate the classes in the program and the data and procedural 
+494:	              abstractions found in each class by including all attributes and behaviors. 
+495:	      3.1.1.1 - Abstraction is the process of reducing complexity by focusing on 
+496:	                 the main idea. By hiding details irrelevant to the question at hand and bringing 
+497:	                 together related and useful details, abstraction reduces complexity and allows 
+498:	                 one to focus on the idea.
+499:	      3.1.1.2 - Data abstraction provides a separation between the abstract properties 
+500:	                 of a data type and the concrete details of its  representation. Data abstraction 
+501:	                 manages complexity by giving data a name without referencing the specific 
+502:	                 details of the representation.  Data can take the form of a single variable 
+503:	                 or a collection of data, such as in a class or a set of data.
+504:	      3.1.1.3 - An attribute is a type of data abstraction that is defined in a 
+505:	                 class outside any method or constructor. An instance variable is an attribute 
+506:	                 whose value is unique to each instance of the class. A class variable is an 
+507:	                 attribute shared by all instances of the class.
+508:	      3.1.1.4 - Procedural abstraction provides a name for a process and allows 
+509:	                 a method to be used only knowing what it does, not how it does it. Through 
+510:	                 method decomposition, a programmer breaks down larger behaviors of the class 
+511:	                 into smaller behaviors by creating methods to represent each individual smaller 
+512:	                 behavior. A procedural abstraction may extract shared features to generalize 
+513:	                 functionality instead of duplicating code. This allows for code reuse, which 
+514:	                 helps manage complexity 
+515:	      3.1.1.5 - Using parameters allows procedures to be generalized, enabling the 
+516:	                 procedures to be reused with a range of input values or arguments.
+517:	      3.1.1.6 - Using procedural abstraction in a program allows programmers to 
+518:	                 change the internals of a method (to make it faster, more  efficient, use 
+519:	                 less storage, etc.) without needing to notify method users of the change as 
+520:	                 long as the method signature and what the  method does is preserved.
+521:	      3.1.1.7 - Prior to implementing a class, it is helpful to take time to design 
+522:	                 each class including its attributes and behaviors. This design can be represented 
+523:	                 using natural language or diagrams.
+524:	3.2 - Impact of Program Design.............................................................
+525:	   3.2.1 - Explain the social and ethical implications of computing systems.
+526:	      3.2.1.1 - System reliability refers to the program being able to perform its 
+527:	                 tasks as expected under stated conditions without failure. Programmers should 
+528:	                 make an effort to maximize system reliability by testing the program with 
+529:	                 a variety of conditions.
+530:	      3.2.1.2 - The creation of programs has impacts on society, the economy, and 
+531:	                 culture. These impacts can be both beneficial and harmful. Programs meant 
+532:	                 to fill a need or solve a problem can have unintended harmful effects beyond 
+533:	                 their intended use.
+534:	      3.2.1.3 - Legal issues and intellectual property concerns arise when creating 
+535:	                 programs. Programmers often reuse code written by others and published as 
+536:	                 open source and free to use. Incorporation of code that is not published as 
+537:	                 open source requires the programmer to obtain permission and often purchase 
+538:	                 the code before integrating it into their program.
+539:	3.3 - Anatomy of a Class...................................................................
+540:	   3.3.1 - Develop code to designate access and visibility constraints to classes, 
+541:	              data, constructors, and methods. 
+542:	      3.3.1.1 - Data encapsulation is a technique in which the implementation details 
+543:	                 of a class are kept hidden from external classes. The keywords public and 
+544:	                 private affect the access of classes, data, constructors, and methods. The 
+545:	                 keyword private restricts access to the declaring class, while the keyword 
+546:	                 public allows access from classes outside the declaring class.
+547:	      3.3.1.2 - In this course, classes are always designated public and are declared 
+548:	                 with the keyword class. 
+549:	      3.3.1.3 - In this course, constructors are always designated public.
+550:	      3.3.1.4 - Instance variables belong to the object, and each object has its 
+551:	                 own copy of the variable. 
+552:	      3.3.1.5 - Access to attributes should be kept internal to the class in order 
+553:	                 to accomplish encapsulation.  Therefore, it is good programming practice to 
+554:	                 designate the instance variables for these attributes as private unless the 
+555:	                 class specification states otherwise.
+556:	      3.3.1.6 - Access to behaviors can be internal or external to the class. Methods 
+557:	                 designated as public can be accessed internally or externally to a class, 
+558:	                 whereas methods designated as private can only be accessed internally to the 
+559:	                 class
+560:	3.4 - Constructors.........................................................................
+561:	   3.4.1 - Develop code to declare instance variables for the attributes to be initialized 
+562:	              in the body of the constructors of a class.
+563:	      3.4.1.1 - An object's state refers to its attributes and their values at a 
+564:	                 given time and is defined by instance variables belonging to the object. This 
+565:	                 defines a has-a relationship between the object and its instance variables. 
+566:	      3.4.1.2 - A constructor is used to set the initial state of an object, which 
+567:	                 should include initial values for all instance variables. When a constructor 
+568:	                  is called, memory is allocated for the object and the associated object reference 
+569:	                 is returned. Constructor parameters, if specified, provide data to  initialize 
+570:	                 instance variables.
+571:	      3.4.1.3 - When a mutable object is a constructor parameter, the instance variable 
+572:	                 should be initialized with a copy of the referenced object. In this way, the 
+573:	                 instance variable does not hold a reference to the original object, and methods 
+574:	                 are prevented from modifying the state of the original object.
+575:	      3.4.1.4 - When no constructor is written, Java provides a no-parameter constructor, 
+576:	                 and the instance variables are set to default values according to the data 
+577:	                 type of the attribute. This constructor is called the default constructor. 
+578:	      3.4.1.5 - The default value for an attribute of type int is 0. The default 
+579:	                 value of an attribute of type double is 0.0. The default value of an attribute 
+580:	                 of type boolean is false. The default value of a reference type is null.
+581:	3.5 - Methods: How to Write Them...........................................................
+582:	   3.5.1 - Develop code to define behaviors of an object through methods written 
+583:	              in a class using primitive values and determine the result of calling these methods.
+584:	      3.5.1.1 - A void method does not return a value. Its header contains the keyword 
+585:	                 void before the method name.
+586:	      3.5.1.2 - A non-void method returns a single value. Its header includes the 
+587:	                 return type in place of the keyword void.
+588:	      3.5.1.3 - In non-void methods, a return expression compatible with the return 
+589:	                 type is evaluated, and the value is returned. This is referred to as return 
+590:	                 by value.
+591:	      3.5.1.4 - The return keyword is used to return the flow of control to the 
+592:	                 point where the method or constructor was called. Any code that is sequentially 
+593:	                 after a return statement will never be executed. Executing a return statement 
+594:	                 inside a selection or iteration statement will halt the statement and exit 
+595:	                 the method or constructor.
+596:	      3.5.1.5 - An accessor method allows objects of other classes to obtain a copy 
+597:	                 of the value of instance variables or class variables. An accessor method 
+598:	                 is a non-void method. 
+599:	      3.5.1.6 - A mutator (modifier) method is a method that changes the values 
+600:	                 of the instance variables or class variables. A mutator method is often a 
+601:	                 void method.
+602:	      3.5.1.7 - Methods with parameters receive values through those parameters 
+603:	                 and use those values in accomplishing the method's task.
+604:	      3.5.1.8 - When an argument is a primitive value, the parameter is initialized 
+605:	                 with a copy of that value. Changes to the parameter have no effect on the 
+606:	                 corresponding argument.
+607:	3.6 - Methods: Passing and Returning References of an Object...............................
+608:	   3.6.1 - Develop code to define behaviors of an object through methods written 
+609:	              in a class using object references and determine the result of calling these 
+610:	              methods.
+611:	      3.6.1.1 - When an argument is an object reference, the parameter is initialized 
+612:	                 with a copy of that reference; it does not create a new independent copy of 
+613:	                 the object. If the parameter refers to a mutable object, the method or constructor 
+614:	                 can use this reference to alter the state of the object. It is good  programming 
+615:	                 practice to not modify mutable objects that are passed as parameters unless 
+616:	                 required in the specification.
+617:	      3.6.1.2 - When the return expression evaluates to an object reference, the 
+618:	                 reference is returned, not a reference to a new copy of the object. 
+619:	      3.6.1.3 - Methods cannot access the private data and  methods of a parameter 
+620:	                 that holds a reference to an object unless the parameter is the same type 
+621:	                 as the method's enclosing class
+622:	3.7 - Class Variables and Methods..........................................................
+623:	   3.7.1 - Develop code to define behaviors of a class through class methods.
+624:	      3.7.1.1 - Class methods cannot access or change the values of instance variables 
+625:	                 or call instance methods without being passed an instance of the class via 
+626:	                 a parameter.
+627:	      3.7.1.2 - Class methods can access or change the values of class variables 
+628:	                 and can call other class methods.
+629:	   3.7.2 - Develop code to declare the class variables that belong to the class.
+630:	      3.7.2.1 - Class variables belong to the class, with all objects of a class 
+631:	                 sharing a single copy of the class variable. Class variables are designated 
+632:	                 with the static keyword before the variable type.
+633:	      3.7.2.2 - Class variables that are designated public are accessed outside 
+634:	                 of the class by using the class name and the dot operator, since they are 
+635:	                 associated with a class, not objects of a class.
+636:	      3.7.2.3 - When a variable is declared final, its value cannot be modified.
+637:	3.8 - Scope and Access.....................................................................
+638:	   3.8.1 - Explain where variables can be used in the code.
+639:	      3.8.1.1 - Local variables are variables declared in the headers or bodies 
+640:	                 of blocks of code. Local variables can only be accessed in the block in which 
+641:	                 they are declared. Since constructors and methods are blocks of code, parameters 
+642:	                 to constructors or methods are also considered local variables. These variables 
+643:	                 may only be used within the constructor or method and cannot be declared to 
+644:	                 be public or private.
+645:	      3.8.1.2 - When there is a local variable or parameter with the same name as 
+646:	                 an instance variable, the variable name will refer to the local variable instead 
+647:	                 of the instance variable within the body of the constructor or method.
+648:	3.9 - this Keyword.........................................................................
+649:	   3.9.1 - Develop code for expressions that are self-referencing and determine 
+650:	              the result of these expressions.
+651:	      3.9.1.1 - Within an instance method or a constructor, the keyword this acts 
+652:	                 as a special variable that holds a reference to the current object - the object 
+653:	                 whose method or constructor is being called.
+654:	      3.9.1.2 - The keyword this can be used to pass the current object as an argument 
+655:	                 in a method call. 
+656:	      3.9.1.3 - Class methods do not have a this reference.
+657:	Computer Science 42SAP - AP curriculum - Unit 4: Data Collections content running simulated:.
+658:	Unit 4 - Data Collections..................................................................
+659:	4.1 - Ethical and Social Issues Around Data Collection.....................................
+660:	   4.1.1 - Explain the risks to privacy from collecting and storing personal data 
+661:	              on computer systems.
+662:	      4.1.1.1 - When using a computer, personal privacy is at risk. When developing 
+663:	                 new programs, programmers should attempt to safeguard the personal privacy 
+664:	                 of the user.
+665:	   4.1.2 - Explain the importance of recognizing data quality and potential issues 
+666:	              when using a data set.
+667:	      4.1.2.1 - Algorithmic bias describes systemic and repeated errors in a program 
+668:	                 that create unfair outcomes for a specific group of users.
+669:	      4.1.2.2 - Programmers should be aware of the data set collection method and 
+670:	                 the potential for bias when using this method before using  the data to extrapolate 
+671:	                 new information or drawing conclusions.
+672:	      4.1.2.3 - Some data sets are incomplete or contain inaccurate data. Using 
+673:	                 such data in the development or use of a program can cause the program to 
+674:	                 work incorrectly or inefficiently. 
+675:	   4.1.3 - Identify an appropriate data set to use in order to solve a problem or 
+676:	              answer a specific question.
+677:	      4.1.3.1 - Contents of a data set might be related to a specific question or 
+678:	                 topic and might not be appropriate to give correct answers or extrapolate 
+679:	                 information for a different question or topic.
+680:	4.2 - Introduction to Using Data Sets......................................................
+681:	   4.2.1 - Represent patterns and algorithms that involve data sets found in everyday 
+682:	              life using written language or diagrams.
+683:	      4.2.1.1 - A data set is a collection of specific pieces of information or 
+684:	                 data.
+685:	      4.2.1.2 - Data sets can be manipulated and analyzed to solve a problem or 
+686:	                 answer a question. When analyzing data sets, values within the set are accessed 
+687:	                 and utilized one at a time and then processed according to the desired outcome.
+688:	      4.2.1.3 - Data can be represented in a diagram by using a chart or table. 
+689:	                 This visual can be used to plan the algorithm that will be used to manipulate 
+690:	                 the data
+691:	4.3 - Array Creation and Access............................................................
+692:	   4.3.1 - Develop code used to represent collections of related data using one 
+693:	              dimensional (1D) array objects.
+694:	      4.3.1.1 - An array stores multiple values of the same type. The values can 
+695:	                 be either primitive values or object references. 
+696:	      4.3.1.2 - The length of an array is established at the time of creation and 
+697:	                 cannot be changed. The length of an array can be accessed through the length 
+698:	                 attribute.
+699:	      4.3.1.3 - When an array is created using the keyword new, all of its elements 
+700:	                 are initialized to the default values for the element data type. The  default 
+701:	                 value for int is 0, for double is 0.0, for boolean is false, and for a reference 
+702:	                 type is null. 
+703:	      4.3.1.4 - Initializer lists can be used to create and initialize arrays.
+704:	      4.3.1.5 - Square brackets [ ] are used to access and modify an element in 
+705:	                 a 1D array using an index. 
+706:	      4.3.1.6 - The valid index values for an array are 0 through one less than 
+707:	                 the length of the array, inclusive. Using an index value outside of this range 
+708:	                 will result in an ArrayIndexOutOfBoundsException.
+709:	4.4 - Array Traversals.....................................................................
+710:	   4.4.1 - Develop code used to traverse the elements in a 1D array and determine 
+711:	              the result of these traversals.
+712:	      4.4.1.1 - Traversing an array is when repetition statements are used to access 
+713:	                 all or an ordered sequence of elements in an array. 
+714:	      4.4.1.2 - Traversing an array with an indexed for loop or while loop requires 
+715:	                 elements to be accessed using their indices.
+716:	      4.4.1.3 - An enhanced for loop header includes a variable, referred to as 
+717:	                 the enhanced for loop variable. For each iteration of the enhanced for loop, 
+718:	                  the enhanced for loop variable is assigned a copy of an element without using 
+719:	                 its index. 
+720:	      4.4.1.4 - Assigning a new value to the enhanced for loop variable does not 
+721:	                 change the value stored in the array.
+722:	      4.4.1.5 - When an array stores object references, the attributes can be modified 
+723:	                 by calling methods on the enhanced for loop variable. This does not change 
+724:	                 the object references stored in the array.
+725:	      4.4.1.6 - Code written using an enhanced for loop to traverse elements in 
+726:	                 an array can be rewritten using an indexed for loop or a while loop.
+727:	4.5 - Implementing Array Algorithms........................................................
+728:	   4.5.1 - Develop code for standard and original algorithms for a particular context 
+729:	              or specification that involves arrays and determine the result of these algorithms. 
+730:	      4.5.1.1 - There are standard algorithms that utilize array traversals to: 
+731:	                 (a) determine a minimum or maximum value, (b) compute a sum or average, (d) 
+732:	                 determine if at least one element has a particular property, (e) determine 
+733:	                 if all elements have a particular property, (f) determine the number of elements 
+734:	                 having a particular property, (g) access all consecutive pairs of elements, 
+735:	                 (h) determine the presence or absence of duplicate elements, (i) shift or 
+736:	                 rotate elements left or right, (j) reverse the order of the elements
+737:	4.6 - Using Text Files.....................................................................
+738:	   4.6.1 - Develop code to read data from a text file.
+739:	      4.6.1.1 - A file is storage for data that persists when the program is not 
+740:	                 running. The data in a file can be retrieved during program execution.
+741:	      4.6.1.2 - A file can be connected to the program using the File and Scanner 
+742:	                 classes.
+743:	      4.6.1.3 - A file can be opened by creating a File object, using the name of 
+744:	                 the file as the argument of the constructor. File(String str) is the File 
+745:	                 constructor that accepts a String file name to open for reading, where str 
+746:	                 is the pathname for the file.
+747:	      4.6.1.4 - When using the File class, it is required to indicate what to do 
+748:	                 if the file with the provided name cannot be opened. One way to accomplish 
+749:	                 this is to add throws IOException to the header of the method that uses the 
+750:	                 file. If the file name is invalid, the program will terminate.
+751:	      4.6.1.5 - The File and IOException classes are part of the java.io package. 
+752:	                 An import statement must be used to make these classes available for use in 
+753:	                  the program
+754:	      4.6.1.6 - Scanner methods are part of Java Quick Reference: (a) Scanner(File 
+755:	                 f) is the Scanner constructor that accepts a File for reading. (b)int nextInt() 
+756:	                 returns the next int read from the file or input source if available. If the 
+757:	                 next int does not exist or is out of range, it will result in an InputMismatchException. 
+758:	                 (c) double nextDouble() returns the next  double read from the file or input 
+759:	                 source. If the next double does not exist, it will result in an InputMismatchException. 
+760:	                 (d) boolean nextBoolean() returns the next boolean read from the file or input 
+761:	                 source. If the next boolean does not exist, it will result in an InputMismatchException. 
+762:	                 (e) String nextLine() returns the next line of text as a String read from 
+763:	                 the file or input source; can return the empty string if called immediately 
+764:	                 after another Scanner method that is reading from the file or input source. 
+765:	                 (f) String next() returns the next String read from the file or input source. 
+766:	                 (g)  boolean hasNext() returns true if ehere is a next item to read in the 
+767:	                 file or input source; returns false otherwise. (h) void close() closes this 
+768:	                 scanner. Note: accepting input from the keyboard is outside the scope of the 
+769:	                 AP Computer Science A course and exam.
+770:	      4.6.1.7 - Using nextLine and the other Scanner methods together on the same 
+771:	                 input source sometimes requires code to adjust for the methods' different 
+772:	                 ways of handling whitespace. Note: Writing or analyzing code that uses both 
+773:	                 nextLine and other Scanner methods on the same input source is outside the 
+774:	                 scope of the AP Computer Science A course and exam.
+775:	      4.6.1.8 - The following additional String method - including what it does 
+776:	                 and when it is used - is part of the Java Quick Reference: (a) String[] split(String 
+777:	                 del returns a String array where each element is a substring of this String, 
+778:	                 which has been split around matches of the given expression del. Note: The 
+779:	                 parameter del uses a format called a regular expression. Writing or analyzing 
+780:	                 code that uses any of the special properties of regular expressions (e.g., 
+781:	                 \\*, \\.) is outside the scope of the AP Computer Science A course and exam. 
+782:	      4.6.1.9 - A while loop can be used to detect if the file still contains elements 
+783:	                 to read by using the hasNext method as the condition of the loop.
+784:	      4.6.1.10 - A file should be closed when the program is finished using it. 
+785:	                 The close method from Scanner is called to close the file.
+786:	4.7 - Wrapper Classes......................................................................
+787:	   4.7.1 - Develop code to use Integer and Double objects from their primitive counterparts 
+788:	              and determine the result of using these objects.
+789:	      4.7.1.1 - The Integer class and Double class are part of the java.lang package. 
+790:	                 An Integer object is immutable, meaning once an Integer object is created, 
+791:	                 its attributes cannot be changed. A Double object is immutable, meaning once 
+792:	                 a Double object is created, its attributes cannot be changed. 
+793:	      4.7.1.2 - Autoboxing is the automatic conversion that the Java compiler makes 
+794:	                 between primitive types and their corresponding object wrapper classes. This 
+795:	                 includes converting an int to an Integer and a double to a Double. The Java 
+796:	                 compiler applies autoboxing when a primitive value is: (a) passed as a parameter 
+797:	                 to a method that expects an object of the corresponding wrapper class (b) 
+798:	                 assigned to a variable of the corresponding wrapper class 
+799:	      4.7.1.3 - Unboxing is the automatic conversion that the Java compiler makes 
+800:	                 from the wrapper class to the primitive type. This includes converting an 
+801:	                 Integer to an int and a Double to a double. The Java compiler applies unboxing 
+802:	                 when a wrapper class object is: (a) passed as a parameter to a method that 
+803:	                 expects a value of the corresponding primitive type (b) assigned to a variable 
+804:	                 of the corresponding primitive type 
+805:	      4.7.1.4 - The following class Integer method - including what it does and 
+806:	                 when it is used - is part of the Java Quick Reference: (a) static int parseInt(String 
+807:	                 s) returns the String argument as an int. 
+808:	      4.7.1.5 - The following class Double method - including what it does and when 
+809:	                 it is used - is part of the Java Quick Reference: (a) static double parseDouble(String 
+810:	                 s) returns the String argument as a double.
+811:	4.8 - ArrayList Methods....................................................................
+812:	   4.8.1 - Develop code for collections of related objects using ArrayList objects 
+813:	              and determine the result of calling methods on these objects. 
+814:	      4.8.1.1 - An ArrayList object is mutable in size and contains object references. 
+815:	      4.8.1.2 - The ArrayList constructor ArrayList() constructs an empty list. 
+816:	      4.8.1.3 - Java allows the generic type ArrayList<E>, where the type parameter 
+817:	                 E specifies the type of the elements. When ArrayList<E> is specified, the 
+818:	                 types of the reference parameters and return type when using the ArrayList 
+819:	                 methods are type E. ArrayList<E> is preferred over ArrayList. For example, 
+820:	                 ArrayList<String> names = new ArrayList<String>(); allows the compiler to 
+821:	                 find errors that would otherwise be found at run-time.
+822:	      4.8.1.4 - The ArrayList class is part of the java.util package. An import 
+823:	                 statement must be used to make this class available for use in the program. 
+824:	      4.8.1.5 - The following ArrayList methods - including what they do and when 
+825:	                 they are used - are part of the Java Quick Reference: (a) int size() returns 
+826:	                 the number of elements in the list. (b) boolean add(E obj) appends obj to 
+827:	                 end of list; returns true. (c) void add(int index, E obj) inserts obj at position 
+828:	                 index (0 <= index <= size), moving elements at position index and higher to 
+829:	                 the right (adds 1 to their indices) and adds 1 to size. (d) E get(int index) 
+830:	                 returns the element at position index in the list. (e) E set(int index, E 
+831:	                 obj) replaces the element at position index with obj; returns the element 
+832:	                 formerly at position index. (f) E remove(int index) removes element from position 
+833:	                 index, moving elements at position index + 1 and higher to the left (subtracts 
+834:	                 1 from their indices) and subtracts 1 from size; returns the element formerly 
+835:	                 at position index.
+836:	      4.8.1.6 - The indices for an ArrayList start at 0 and end at the number of 
+837:	                 elements - 1
+838:	4.9 - ArrayList Traversals.................................................................
+839:	   4.9.1 - Develop code used to traverse the elements of an ArrayList and determine 
+840:	              the results of these traversals.
+841:	      4.9.1.1 - Traversing an ArrayList is when iteration or recursive statements 
+842:	                 are used to access all or an ordered sequence of the elements in an ArrayList.
+843:	      4.9.1.2 - Deleting elements during a traversal of an ArrayList requires the 
+844:	                 use of special techniques to avoid skipping elements. 
+845:	      4.9.1.3 - Attempting to access an index value outside of its range will result 
+846:	                 in an IndexOutOfBoundsException. 
+847:	      4.9.1.4 - Changing the size of an ArrayList while traversing it using an enhanced 
+848:	                 for loop can result in a ConcurrentModificationException. Therefore, when 
+849:	                 using an enhanced for loop to traverse an ArrayList, you should not add or 
+850:	                 remove elements.
+851:	4.10 - Implementing ArrayList Algorithms...................................................
+852:	   4.10.1 - Develop code for standard and original algorithms for a particular context 
+853:	              or specification that involve ArrayList objects and determine the result of these 
+854:	              algorithms.
+855:	      4.10.1.1 - There are standard ArrayList algorithms that utilize traversals 
+856:	                 to: (a) determine a minimum or maximum value (b) compute a sum or average 
+857:	                 (c) determine if at least one element has a particular property (d) determine 
+858:	                 if all elements have a particular property (e) determine the number of elements 
+859:	                 having a particular property (f) access all consecutive pairs of elements 
+860:	                 (g) determine the presence or absence of duplicate elements (h) shift or rotate 
+861:	                 elements left or right (i) reverse the order of the elements (j)  insert elements 
+862:	                 (k)  delete elements
+863:	      4.10.1.2 - Some algorithms require multiple String, array, or ArrayList objects 
+864:	                 to be traversed simultaneously.
+865:	4.11 - 2D Array Creation and Access........................................................
+866:	   4.11.1 - Develop code used to represent collections of related data using twodimensional 
+867:	              (2D) array objects.
+868:	      4.11.1.1 - A 2D array is stored as an array of arrays. Therefore, the way 
+869:	                 2D arrays are created and indexed is similar to 1D array objects. The size 
+870:	                 of a 2D array is established at the time of creation and cannot be changed. 
+871:	                 2D arrays can store either primitive data or object reference data. Note: 
+872:	                 Nonrectangular 2D array objects are outside the scope of the AP Computer Science 
+873:	                 A course and exam.
+874:	      4.11.1.2 - When a 2D array is created using the keyword new, all of its elements 
+875:	                 are initialized to the default values for the element data type. The default 
+876:	                 value for int is 0, for double is 0.0, for boolean is false, and for a reference 
+877:	                 type is null. 
+878:	      4.11.1.3 - The initializer list used to create and initialize a 2D array consists 
+879:	                 of initializer lists that represent 1D arrays; for example, int[][] arr2D 
+880:	                 = { {1, 2, 3}, {4, 5, 6} };.
+881:	      4.11.1.4 - The square brackets [row][col] are used to access and modify an 
+882:	                 element in a 2D array. For the purposes of the exam, when accessing the element 
+883:	                 at arr[first][second], the first index is used for rows, the second index 
+884:	                 is used for columns.
+885:	      4.11.1.5 - A single array that is a row of a 2D array can be accessed using 
+886:	                 the 2D array name and a single set of square brackets containing the row index. 
+887:	      4.11.1.6 - The number of rows contained in a 2D array can be accessed through 
+888:	                 the length attribute. The valid row index values for a 2D array are 0 through 
+889:	                 one less than the number of rows or the length of the array, inclusive. The 
+890:	                 number of columns contained in a 2D array can be accessed through the length 
+891:	                 attribute of one of the rows. The valid column index values for a 2D array 
+892:	                 are 0 through one less than the number of columns or the length of any given 
+893:	                 row of the array, inclusive. For example, given a 2D array named values, the 
+894:	                 number of rows is  values. length and the number of columns is values[0].length. 
+895:	                 Using an index value outside of these ranges will result in an ArrayIndexOutOfBoundsException.
+896:	4.12 - 2D Array Traversals.................................................................
+897:	   4.12.1 - Develop code used to traverse the elements in a 2D array and determine 
+898:	              the result of these traversals.
+899:	      4.12.1.1 - Nested iteration statements are used to traverse and access all 
+900:	                 or an ordered sequence of elements in a 2D array. Since 2D arrays are stored 
+901:	                 as arrays of arrays, the way 2D arrays are traversed using for loops and enhanced 
+902:	                 for loops is similar to 1D array objects. Nested iteration statements can 
+903:	                 be written to traverse the 2D array in row-major order, column-major order, 
+904:	                 or a uniquely defined order. Row-major order refers to an ordering of 2D array 
+905:	                 elements where traversal occurs across each row, whereas columnmajor order 
+906:	                  traversal occurs down each column.
+907:	      4.12.1.2 - The outer loop of a nested enhanced for loop used to traverse a 
+908:	                 2D array traverses the rows. Therefore, the enhanced for loop variable must 
+909:	                 be the type of each row, which is a 1D array. The inner loop traverses a single 
+910:	                 row. Therefore, the inner enhanced for loop variable must be the same type 
+911:	                 as the elements stored in the 1D array. Assigning a new value to  the enhanced 
+912:	                 for loop variable does not change the value stored in the array. 
+913:	4.13 - Implementing 2D Array Algorithms....................................................
+914:	   4.13.1 - Develop code for standard and original algorithms for a particular context 
+915:	              or specification that involves 2D arrays and determine the result of these algorithms.
+916:	      4.13.1.1 - There are standard algorithms that utilize 2D array traversals 
+917:	                 to: (a) determine a minimum or maximum value of all the elements or for a 
+918:	                 designated row, column, or other subsection (b) compute a sum or average of 
+919:	                 all the elements or for a designated row, column, or other subsection (c) 
+920:	                 determine if at least one element has a particular property in the entire 
+921:	                 2D array or for a designated row, column, or other subsection (d) determine 
+922:	                 if all elements of the 2D array or a designated row, column, or other subsection 
+923:	                 have a particular property (e) determine the number of elements in the 2D 
+924:	                 array or in a designated row, column, or other subsection having a particular 
+925:	                 property (f) access all consecutive pairs of elements (g) determine the presence 
+926:	                 or absence of duplicate elements in the 2D array or in a designated row, column, 
+927:	                 or other subsection (h) shift or rotate elements in a row left or right or 
+928:	                 in a column up or down (i) reverse the order of the elements in a row or column
+929:	4.14 - Searching Algorithms................................................................
+930:	   4.14.1 - Develop code used for linear search algorithms to search for specific 
+931:	              information in a collection and determine the results of executing a search.
+932:	      4.14.1.1 - Linear search algorithms are standard algorithms that check each 
+933:	                 element in order until the desired value is found or all elements in the array 
+934:	                 or ArrayList have been checked. Linear search algorithms can begin the search 
+935:	                 process from either end of the array or ArrayList.
+936:	      4.14.1.2 - When applying linear search algorithms to 2D arrays, each row must 
+937:	                 be accessed then linear search applied to each row of the 2D array.
+938:	4.15 - Sorting Algorithms..................................................................
+939:	   4.15.1 - Determine the result of executing each step of sorting algorithms to 
+940:	              sort the elements of a collection.
+941:	      4.15.1.1 - Selection sort and insertion sort are iterative sorting algorithms 
+942:	                 that can be used to sort elements in an array or ArrayList. 
+943:	      4.15.1.2 - Selection sort repeatedly selects the smallest (or largest) element 
+944:	                 from the unsorted portion of the list and swaps it into its correct (and final) 
+945:	                 position in the sorted portion of the list.
+946:	      4.15.1.3 - Insertion sort inserts an element from the unsorted portion of 
+947:	                 a list into its correct (but not necessarily final) position in the sorted 
+948:	                 portion of the list by shifting elements of the sorted portion to make room 
+949:	                 for the new element.
+950:	4.16 - Recursion...........................................................................
+951:	   4.16.1 - Determine the result of calling recursive methods.
+952:	      4.16.1.1 - A recursive method is a method that calls itself. Recursive methods 
+953:	                 contain at least one base case, which halts the recursion, and at least one 
+954:	                 recursive call. Recursion is another form of repetition.
+955:	      4.16.1.2 - Each recursive call has its own set of local variables, including 
+956:	                 the parameters. Parameter values capture the progress of a recursive process, 
+957:	                 much like loop control variable values capture the progress of a loop. 
+958:	      4.16.1.3 - Any recursive solution can be replicated through the use of an 
+959:	                 iterative approach and vice versa. Note: Writing recursive code is outside 
+960:	                 the scope of the  AP Computer Science A course and exam.
+961:	4.17 - Recursive Searching and Sorting.....................................................
+962:	   4.17.1 - Determine the result of executing recursive algorithms that use strings 
+963:	              or collections.
+964:	      4.17.1.1 - Recursion can be used to traverse String objects, arrays, and ArrayList 
+965:	                 objects.
+966:	   4.17.2 - Determine the result of each iteration of a binary search algorithm 
+967:	              used to search for information in a collection.
+968:	      4.17.2.1 - Data must be in sorted order to use the binary search algorithm. 
+969:	                 Binary search starts at the middle of a sorted array or ArrayList and eliminates 
+970:	                 half of the array or ArrayList in each recursive call until the desired value 
+971:	                 is found or all elements have been eliminated. 
+972:	      4.17.2.2 - Binary search is typically more efficient than linear search. Note: 
+973:	                 Search algorithms other than linear and binary search are outside the scope 
+974:	                 of the AP Computer Science A course and exam.
+975:	      4.17.2.3 - The binary search algorithm can be written either iteratively or 
+976:	                 recursively.
+977:	   4.17.3 - Determine the result of each iteration of the merge sort algorithm when 
+978:	              used to sort a collection.
+979:	      4.17.3.1 - Merge sort is a recursive sorting algorithm that can be used to 
+980:	                 sort elements in an array or ArrayList. Note: Sorting algorithms other than 
+981:	                 selection, insertion, and merge sort are outside the scope of the AP Computer 
+982:	                 Science A course and exam. 
+983:	      4.17.3.2 - Merge sort repeatedly divides an array into smaller subarrays until 
+984:	                 each subarray is one element and then recursively merges the sorted subarrays 
+985:	                 back together in sorted  order to form the final sorted array.

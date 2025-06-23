@@ -10,6 +10,8 @@ import testing.prerequisite.cs20s.ComputerScience20S;
 import testing.prerequisite.cs30s.ComputerScience30S;
 import testing.prerequisite.cs40s.ComputerScience40S;
 import utility.io.Simulator;
+import utility.io.System;
+import utility.io.Out;
 
 
 /**
@@ -66,6 +68,7 @@ public class Tester
      */
     public Tester(int test, int state) {
         Tester.state = state;
+        System.out = new Out();
         Simulator.initialize();
         if (Simulator.check("Mr. Wachs' Computer Science")) return;        
         if (test == TEST_ALL) {

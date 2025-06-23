@@ -63,24 +63,24 @@ public class CurriculumUnit
      * Displays the title of this unit
      */
     public void getTitle() {
-        Simulator.title(title);
+        Simulator.unitTitle(title);
     }
     
     /**
-     * Displays the topic, the points, and the sub-points of the passed topic
-     * number
+     * Displays the unitTopic, the points, and the sub-points of the passed 
+     * unit Topic number
      * 
-     * @param number the topic number to display
+     * @param number the unitTopic number to display
      */
     public void getTopic(int number) {
         Topic topic = topics.get(number - 1);
-        Simulator.header(topic.text);
+        Simulator.unitTopic(topic.text);
         topic.showPoints();
     }
     
     /**
-     * Displays the topic, the points, and the sub-points of the passed topic
-     * number
+     * Displays the unitTopic, the points, and the sub-points of the passed 
+     * unit Topic number
      */
     public void getTopics() {
         for (int i = 0; i < topics.size(); i++) {
@@ -91,8 +91,8 @@ public class CurriculumUnit
     }
 
     /**
-     * Internal class storing a topic from this unit and the points (and 
-     * sub-points) of that topic
+     * Internal class storing a unitTopic from this unit and the points (and 
+     * sub-points) of that unit Topic
      */
     public class Topic 
     {
@@ -102,7 +102,7 @@ public class CurriculumUnit
         /**
          * Class constructor, sets class properties to passed parameter
          * 
-         * @param text the text to set the topic to
+         * @param text the text to set the unitTopic to
          */
         public Topic(String text){
             this.text = text;
@@ -110,7 +110,7 @@ public class CurriculumUnit
         }
         
         /**
-         * Shows all the points of this topic, and each point's sub-points
+         * Shows all the points of this unitTopic, and each unitPoint's sub-points
          */
         public void showPoints() {
             for (int i = 0; i < points.size(); i++) {
@@ -123,8 +123,8 @@ public class CurriculumUnit
     }
     
     /**
-     * Internal class storing a point from this unit and topic and the 
-     * sub-points of that point
+     * Internal class storing a unitPoint from this unit and unitTopic and the 
+     * sub-points of that unitPoint
      */
     private class Point 
     {
@@ -134,7 +134,7 @@ public class CurriculumUnit
         /**
          * Class constructor, sets class properties to passed parameter
          * 
-         * @param text the text to set the point to
+         * @param text the text to set the unitPoint to
          */
         public Point(String text) {
             this.text = text;
@@ -142,7 +142,7 @@ public class CurriculumUnit
         }
 
         /**
-         * Shows all the sub-points of this point
+         * Shows all the sub-points of this unitPoint
          */
         public void showSubPoints() {
             for (int i = 0; i < subPoints.size(); i++) {
@@ -154,7 +154,7 @@ public class CurriculumUnit
     }
     
     /**
-     * Internal class storing a sub-point from this unit, topic and point
+     * Internal class storing a sub-unitPoint from this unit, unitTopic and unitPoint
      */
     private class SubPoint 
     {
@@ -163,7 +163,7 @@ public class CurriculumUnit
         /**
          * Class constructor, sets class properties to passed parameter
          * 
-         * @param text the text to set the sub-point to
+         * @param text the text to set the sub-unitPoint to
          */
         public SubPoint(String text) {
             this.text = text;
@@ -200,8 +200,8 @@ public class CurriculumUnit
         for (int i = 0; i < allLines.size(); i++) {
             String line = allLines.get(i);
             if (i != 0) line = ADJUST + line;
-            if (isSubPoint) Simulator.subText(line);
-            else            Simulator.text(line);
+            if (isSubPoint) Simulator.unitSubPoint(line);
+            else            Simulator.unitPoint(line);
         }
     }
     

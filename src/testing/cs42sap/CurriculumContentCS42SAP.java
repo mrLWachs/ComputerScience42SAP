@@ -101,24 +101,14 @@ public class CurriculumContentCS42SAP
     }
 
     /**
-     * Shows all the topic points, and sub-points fo the passed unit and topic
-     * number passed
+     * Shows all the unitTopic points, and sub-points fo the passed unit and unitTopic
+ number passed
      * 
      * @param unit the unit number to show
-     * @param topic the topic number to show
+     * @param topic the unitTopic number to show
      */
     public static void showUnit(int unit, int topic) {
         units[unit].getTopic(topic);
     }
-    
-    /**
-     * Shows the curriculum content of all units
-     */
-    public static void show() {
-        for (int i = 1; i < units.length; i++) {
-            units[i].getTitle();
-            units[i].getTopics();
-        }       
-    }
-    
+
 }
