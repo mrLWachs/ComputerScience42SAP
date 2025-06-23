@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.cs42sap.curriculum;
+package testing.cs42sap;
 
 /** Required API imports */
 import utility.collections.LinkedList;
@@ -18,20 +18,10 @@ import utility.io.Simulator;
 public class CurriculumContentCS42SAP 
 {
 
-    /**
-     * Default constructor, set class properties
-     */
-    public CurriculumContentCS42SAP() {
-        if (Simulator.check("Curriculum")) return;          
-        new Part1();
-        new Part2();
-        new Part3();
-        new Part4();
-    }
-    
     private static String CURRICULUM_FILE = "curriculum.txt";
     private static CurriculumUnit[] units;    
-    private static final int TOTAL_UNITS = 11;
+    private static final int TOTAL_UNITS = 5;
+    
     
     /**
      * Initializes the curriculum content for display by reading the A.P.
@@ -46,6 +36,29 @@ public class CurriculumContentCS42SAP
         }  
     }
     
+    /**
+     * The curriculum content of the CS42SAP course
+     */
+    public static void curriculum() {
+        if (Simulator.check("Curriculum")) return;          
+        new APUnit1UsingObjectsAndMethods();
+        new APUnit2SelectionAndIteration();
+        new APUnit3ClassCreation();
+        new APUnit4DataCollections();
+    }
+    
+    /**
+     * These are practice test to practice the types of multiple choice 
+     * questions on the A.P. Computer Science exam
+     */
+    public static void practiceTests() {
+        if (Simulator.check("Practice Tests")) return;          
+        new PracticeTest1(); 
+        new PracticeTest2(); 
+        new PracticeTest3(); 
+        new PracticeTest4();   
+    }
+        
     /**
      * Reads the array of all lines read from the curriculum data file to 
      * parse out the lines that are for the passed specific unit
@@ -63,7 +76,7 @@ public class CurriculumContentCS42SAP
         LinkedList<String> unitLines = new LinkedList<>();
         boolean reading = false;
         for (int i = 0; i < lines.length; i++) {
-            String line = lines[i];            
+            String line = lines[i]; 
             if (line != null) {
                 String unitText = line.substring(START_UNIT, END_UNIT);
                 if (unitText.equals(MARKER)) {
@@ -96,6 +109,16 @@ public class CurriculumContentCS42SAP
      */
     public static void showUnit(int unit, int topic) {
         units[unit].getTopic(topic);
+    }
+    
+    /**
+     * Shows the curriculum content of all units
+     */
+    public static void show() {
+        for (int i = 1; i < units.length; i++) {
+            units[i].getTitle();
+            units[i].getTopics();
+        }       
     }
     
 }

@@ -21,7 +21,8 @@ public class MainClass
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new Tester();  
+        //new Tester();  
+        new Tester(Tester.TEST_ONLY_CS42SAP_CURRICULUM);          
     }
     
 }

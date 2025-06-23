@@ -3,8 +3,7 @@
 package testing;
 
 /** Required API imports */
-import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
-import testing.cs42sap.tests.PracticeTestsCS42SAP;
+import testing.cs42sap.CurriculumContentCS42SAP;
 import testing.fun.FunDaysCode;
 import testing.postsecondary.MorePostSecondaryContent;
 import testing.prerequisite.cs20s.ComputerScience20S;
@@ -36,7 +35,7 @@ public class Tester
     public static final int TEST_ONLY_CS20S           = 8;
     public static final int TEST_ONLY_CS30S           = 9;
     public static final int TEST_ONLY_CS40S           = 10;
-    public static final int TEST_ONLY_CS42SAP_CONTENT = 11;
+    public static final int TEST_ONLY_CS42SAP_CURRICULUM = 11;
     public static final int TEST_ONLY_CS42SAP_TESTS   = 12;
     public static final int TEST_ONLY_FUN_DAYS        = 13;
     public static final int TEST_ONLY_MORE_POST       = 14;
@@ -48,6 +47,15 @@ public class Tester
      */
     public Tester() {
         this(TEST_ALL, RUN_SIMULATED);
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param test the type of test to run
+     */
+    public Tester(int test) {
+        this(test, RUN_SIMULATED);
     }
     
     /**
@@ -77,13 +85,13 @@ public class Tester
             cs42sAP(); 
             postSecondary();
         }
-        else if (test == TEST_ONLY_CS42SAP_CONTENT) { 
+        else if (test == TEST_ONLY_CS42SAP_CURRICULUM) { 
             CurriculumContentCS42SAP.initialize();
-            new CurriculumContentCS42SAP(); 
+            CurriculumContentCS42SAP.curriculum();
         }
         else if (test == TEST_ONLY_CS42SAP_TESTS) { 
-            CurriculumContentCS42SAP.initialize();
-            new PracticeTestsCS42SAP(); 
+            CurriculumContentCS42SAP.initialize();            
+            CurriculumContentCS42SAP.practiceTests(); 
         }
         else if (test == TEST_ONLY_CS42SAP)       cs42sAP();
         else if (test == TEST_ONLY_PREREQUISITES) preRequisite();
@@ -118,8 +126,8 @@ public class Tester
      */
     public void cs42sAP() {
         CurriculumContentCS42SAP.initialize();
-        new CurriculumContentCS42SAP();
-        new PracticeTestsCS42SAP();
+        CurriculumContentCS42SAP.curriculum();
+        CurriculumContentCS42SAP.practiceTests();
     }
 
 }

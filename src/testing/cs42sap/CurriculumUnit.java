@@ -1,5 +1,5 @@
 /** Required package class namespace */
-package testing.cs42sap.curriculum;
+package testing.cs42sap;
 
 /** Required API imports */
 import utility.collections.LinkedList;
@@ -77,12 +77,24 @@ public class CurriculumUnit
         Simulator.header(topic.text);
         topic.showPoints();
     }
+    
+    /**
+     * Displays the topic, the points, and the sub-points of the passed topic
+     * number
+     */
+    public void getTopics() {
+        for (int i = 0; i < topics.size(); i++) {
+            Topic topic = topics.get(i);
+            Simulator.header(topic.text);
+            topic.showPoints();
+        }
+    }
 
     /**
      * Internal class storing a topic from this unit and the points (and 
      * sub-points) of that topic
      */
-    private class Topic 
+    public class Topic 
     {
         public String text;
         public LinkedList<Point> points;        

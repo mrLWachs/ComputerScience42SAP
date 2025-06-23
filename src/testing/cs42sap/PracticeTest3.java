@@ -1,5 +1,5 @@
 /** Required package class namespace */
-package testing.cs42sap.tests;
+package testing.cs42sap;
 
 /** Required API imports */
 //import java.util.ArrayList;
