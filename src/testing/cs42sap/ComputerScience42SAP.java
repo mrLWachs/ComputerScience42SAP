@@ -101,8 +101,8 @@ public class ComputerScience42SAP
     }
 
     /**
-     * Shows all the unitTopic points, and sub-points fo the passed unit and unitTopic
- number passed
+     * Shows all the unitTopic points, and sub-points fo the passed unit and 
+     * unit Topic number passed
      * 
      * @param unit the unit number to show
      * @param topic the unitTopic number to show

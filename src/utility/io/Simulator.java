@@ -136,6 +136,8 @@ public class Simulator
     private static final String UNIT_TOPIC_COLOR    = BLUE;
     private static final String UNIT_POINT_COLOR    = PURPLE;
     private static final String UNIT_SUBPOINT_COLOR = BLACK;
+    private static final String UNIT_EXAMPLE_COLOR  = CYAN;
+    
     
     private static final String SIMULATED_MESSAGE  = " simulated message";
     
@@ -256,7 +258,7 @@ public class Simulator
         text += line(length);        
         colorOutput(text, TITLE_COLOR, RESET);
         lineBreak();
-        WebPage.addH1(text);
+        WebPage.title(text);
     }
     
     /**
@@ -272,7 +274,7 @@ public class Simulator
         text += line(length);        
         colorOutput(text, HEADER_COLOR, RESET);
         lineBreak();
-        WebPage.addH2(text);
+        WebPage.header(text);
     }
     
     /**
@@ -288,7 +290,7 @@ public class Simulator
         text += line(length);        
         colorOutput(text, NOTE_COLOR, RESET);
         lineBreak();
-        WebPage.addH3(text);
+        WebPage.note(text);
     }
     
     /**
@@ -302,6 +304,7 @@ public class Simulator
         String text = object.toString() + line();
         simpleOutput(NEW_LINE,"");
         colorOutput(text, HEADER_COLOR, RESET);
+        WebPage.headerSpaced(text);
         simpleOutput(NEW_LINE,"");
     }
     
@@ -315,7 +318,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
         colorOutput(text, TEXT_COLOR, RESET);
-        WebPage.addText(text);
+        WebPage.text(text);
     }
     
     /**
@@ -328,7 +331,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
         colorOutput(text, SUBTEXT_COLOR, RESET);
-        WebPage.addSubText(text);
+        WebPage.subText(text);
     }
                 
     /**
@@ -341,7 +344,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = COMMENT + object.toString();
         colorOutput(text, COMMENT_COLOR, RESET);
-        WebPage.addPreComment(text);
+        WebPage.comment(text);
     }
     
     /**
@@ -354,7 +357,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
         colorOutput(text, CODE_COLOR, RESET);
-        WebPage.addPre(text);
+        WebPage.code(text);
     }
 
     /**
@@ -370,7 +373,7 @@ public class Simulator
         text += line(length);        
         colorOutput(text, UNIT_TITLE_COLOR, RESET);
         lineBreak();
-        WebPage.addH1(text);
+        WebPage.unitTitle(text);
     }
     
     /**
@@ -386,7 +389,7 @@ public class Simulator
         text += line(length);        
         colorOutput(text, UNIT_TOPIC_COLOR, RESET);
         lineBreak();
-        WebPage.addH2(text);
+        WebPage.unitTopic(text);
     }
     
         
@@ -400,7 +403,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
         colorOutput(text, UNIT_POINT_COLOR, RESET);
-        WebPage.addText(text);
+        WebPage.unitPoint(text);
     }
     
     /**
@@ -413,7 +416,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
         colorOutput(text, UNIT_SUBPOINT_COLOR, RESET);
-        WebPage.addSubText(text);
+        WebPage.unitSubPoint(text);
     }
         
     /**
@@ -573,7 +576,7 @@ public class Simulator
             String text = SIMULATED_DIALOG_1 + dialogType + " " + title + " " +
                           SIMULATED_MESSAGE + SIMULATED_DIALOG_2;
             colorOutput(text, DIALOG_COLOR, RESET);
-            WebPage.addH3(text);
+            WebPage.dialog(text);
             return FLAG_INTEGER;
         }
         String text = SIMULATED_DIALOG_1 + dialogType +
@@ -601,7 +604,7 @@ public class Simulator
         if (initialValue    != null) text += "{ initialValue: " + 
                                      initialValue.toString()    + " }";        
         colorOutput(text, DIALOG_COLOR, RESET);
-        WebPage.addH3(text);
+        WebPage.dialog(text);
         return FLAG_INTEGER;
     }
 
@@ -701,6 +704,24 @@ public class Simulator
             title(text + "running normal:");
         }
         return false;
+    }
+
+    /**
+     * Simulates printing that an example has started uses a comment style of
+     * formatting that tries to look like an "example"
+     */
+    public static void example(boolean start) {
+        String text = "";
+        if (start) {
+            text = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Curriculum example below" + 
+                    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+        }
+        else {
+            text = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Curriculum example above" + 
+                    "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+        }
+        colorOutput(text, UNIT_EXAMPLE_COLOR, RESET);
+        WebPage.example(text);
     }
 
 }
