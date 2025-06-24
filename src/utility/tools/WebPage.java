@@ -18,6 +18,21 @@ import utility.io.Simulator;
 public class WebPage 
 {
 
+    private static String filename;
+    private static LinkedList<String> lines;
+    
+    private static final int TYPE_TEXT           = 0;
+    private static final int TYPE_H1             = 1;
+    private static final int TYPE_H2             = 2;
+    private static final int TYPE_H3             = 3;
+    private static final int TYPE_ADD_TEXT       = 4;
+    private static final int TYPE_ADD_SUB_TEXT   = 5;
+    private static final int TYPE_PRE            = 6;
+    private static final int TYPE_PRE_COMMENT    = 7; 
+    
+    private static final String NEW_LINE = "\n";
+    private static final String SPACE    = "&nbsp;";
+    
     private static final String DEFAULT_BACKGROUND_COLOR = "white";
     private static final String DEFAULT_FONT_FAMILY      = "Consolas";
     private static final String DEFAULT_FONT_SIZE        = "16pt";
@@ -28,8 +43,7 @@ public class WebPage
     private static final String H1_FONT_COLOR          = "green";
     private static final String H2_FONT_COLOR          = "blue";
     private static final String H3_FONT_COLOR          = "purple";    
-    private static final String H3_TEXT_FONT_COLOR     = "fuchsia";    
-    
+    private static final String H3_TEXT_FONT_COLOR     = "fuchsia"; 
     private static final String PRE_FONT_COLOR         = "blue";
     private static final String PRE_COMMENT_FONT_COLOR = "gray";
         
@@ -37,7 +51,6 @@ public class WebPage
     private static final String H2_FONT_SIZE          = "17pt"; 
     private static final String H3_FONT_SIZE          = "14pt"; 
     private static final String H3_TEXT_FONT_SIZE     = "10pt"; 
-    
     private static final String PRE_FONT_SIZE         = DEFAULT_FONT_SIZE;
     private static final String PRE_COMMENT_FONT_SIZE = DEFAULT_FONT_SIZE;
         
@@ -45,7 +58,6 @@ public class WebPage
     private static final String H2_FONT_FAMILY          = "Courier New"; 
     private static final String H3_FONT_FAMILY          = "Consolas"; 
     private static final String H3_TEXT_FONT_FAMILY     = "Consolas"; 
-    
     private static final String PRE_FONT_FAMILY         = "Courier New"; 
     private static final String PRE_COMMENT_FONT_FAMILY = "Courier New"; 
         
@@ -53,7 +65,6 @@ public class WebPage
     private static final String H2_FONT_STYLE          = "italic";
     private static final String H3_FONT_STYLE          = "oblique";
     private static final String H3_TEXT_FONT_STYLE     = "normal";
-    
     private static final String PRE_FONT_STYLE         = DEFAULT_FONT_STYLE;
     private static final String PRE_COMMENT_FONT_STYLE = DEFAULT_FONT_STYLE;
     
@@ -61,13 +72,8 @@ public class WebPage
     private static final String H2_FONT_WEIGHT          = "600"; 
     private static final String H3_FONT_WEIGHT          = "normal"; 
     private static final String H3_TEXT_FONT_WEIGHT     = "lighter"; 
-    
     private static final String PRE_FONT_WEIGHT         = "lighter"; 
     private static final String PRE_COMMENT_FONT_WEIGHT = "lighter"; 
-    
-    private static final String NEW_LINE = "\n";
-    private static final String SPACE    = "&nbsp;";
-    
         
     private static final String BODY_STYLE = 
             "body {" + NEW_LINE
@@ -132,27 +138,7 @@ public class WebPage
                 + "   font-weight : " + PRE_COMMENT_FONT_WEIGHT + ";" + NEW_LINE
                 + "   color       : " + PRE_COMMENT_FONT_COLOR  + ";" + NEW_LINE
             + "}";
-                
-    private static final String STYLE = 
-            "<style>"      + NEW_LINE + 
-            BODY_STYLE     + NEW_LINE + 
-            H1_STYLE       + NEW_LINE + 
-            H2_STYLE       + NEW_LINE + 
-            H3_STYLE       + NEW_LINE + 
-            H3_TEXT_STYLE  + NEW_LINE +
-            PRE_STYLE      + NEW_LINE + 
-            PRE_COMMENT_STYLE + NEW_LINE + 
-            "</style>";
-
-    private static final String OPEN = 
-            "<html>"  + NEW_LINE + 
-            "<head>"  + NEW_LINE +
-            STYLE     + NEW_LINE + 
-            "</head>" + NEW_LINE + 
-            "<body>"  + NEW_LINE;
-    
-    private static final String CLOSE             = "</body></html>";
-    private static final String BREAK             = "</br />";
+          
     private static final String H1_OPEN           = "<h1>";
     private static final String H1_CLOSE          = "</h1>";
     private static final String H2_OPEN           = "<h2>";
@@ -164,17 +150,8 @@ public class WebPage
     private static final String PRE_CLOSE         = "</pre>";
     private static final String PRE_COMMENT_OPEN  = "<pre class=\"comment\">";
     
-    private static String filename;
-    private static LinkedList<String> lines;
+    ////////////////////////////////////////////////////////////////////////////
     
-    private static final int TYPE_TEXT           = 0;
-    private static final int TYPE_H1             = 1;
-    private static final int TYPE_H2             = 2;
-    private static final int TYPE_H3             = 3;
-    private static final int TYPE_ADD_TEXT       = 4;
-    private static final int TYPE_ADD_SUB_TEXT   = 5;
-    private static final int TYPE_PRE            = 6;
-    private static final int TYPE_PRE_COMMENT    = 7;    
     private static final int TYPE_UNIT_TITLE     = 8;
     private static final int TYPE_UNIT_TOPIC     = 9;
     private static final int TYPE_UNIT_POINT     = 10;
@@ -189,7 +166,310 @@ public class WebPage
     private static final int TYPE_NOTE           = 19;
     private static final int TYPE_HEADER         = 20;
     private static final int TYPE_TITLE          = 21;
-        
+    
+    private static final String UNIT_TITLE_CLASS       = "unitTitle";
+    private static final String UNIT_TITLE_FONT_COLOR  = "olive"; 
+    private static final String UNIT_TITLE_FONT_SIZE   = "20pt";
+    private static final String UNIT_TITLE_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String UNIT_TITLE_FONT_STYLE  = "normal";
+    private static final String UNIT_TITLE_FONT_WEIGHT = "bold";
+    private static final String UNIT_TITLE_STYLE = 
+            "h1." + UNIT_TITLE_CLASS + " {" + NEW_LINE
+                + "   font-family : " + UNIT_TITLE_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + UNIT_TITLE_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + UNIT_TITLE_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + UNIT_TITLE_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + UNIT_TITLE_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String UNIT_TITLE_OPEN = "<h1 class=\"" + UNIT_TITLE_CLASS + "\">";
+    private static final String UNIT_TITLE_CLOSE = "</h1>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String UNIT_TOPIC_CLASS       = "unitTopic";
+    private static final String UNIT_TOPIC_FONT_COLOR  = "fuchsia"; 
+    private static final String UNIT_TOPIC_FONT_SIZE   = "18pt";
+    private static final String UNIT_TOPIC_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String UNIT_TOPIC_FONT_STYLE  = "italic";
+    private static final String UNIT_TOPIC_FONT_WEIGHT = "normal";
+    private static final String UNIT_TOPIC_STYLE = 
+            "div." + UNIT_TOPIC_CLASS + " {" + NEW_LINE
+                + "   font-family : " + UNIT_TOPIC_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + UNIT_TOPIC_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + UNIT_TOPIC_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + UNIT_TOPIC_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + UNIT_TOPIC_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String UNIT_TOPIC_OPEN  = "<div class=\"" + UNIT_TOPIC_CLASS + "\">";
+    private static final String UNIT_TOPIC_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String UNIT_POINT_CLASS       = "unitPoint";
+    private static final String UNIT_POINT_FONT_COLOR  = "blue"; 
+    private static final String UNIT_POINT_FONT_SIZE   = "16pt";
+    private static final String UNIT_POINT_FONT_FAMILY = "Consolas"; 
+    private static final String UNIT_POINT_FONT_STYLE  = "normal";
+    private static final String UNIT_POINT_FONT_WEIGHT = "normal";
+    private static final String UNIT_POINT_STYLE = 
+            "div." + UNIT_POINT_CLASS + " {" + NEW_LINE
+                + "   font-family : " + UNIT_POINT_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + UNIT_POINT_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + UNIT_POINT_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + UNIT_POINT_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + UNIT_POINT_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String UNIT_POINT_OPEN  = "<div class=\"" + UNIT_POINT_CLASS + "\">";
+    private static final String UNIT_POINT_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String UNIT_SUB_POINT_CLASS       = "unitSubPoint";
+    private static final String UNIT_SUB_POINT_FONT_COLOR  = "gray"; 
+    private static final String UNIT_SUB_POINT_FONT_SIZE   = "10pt";
+    private static final String UNIT_SUB_POINT_FONT_FAMILY = "Consolas"; 
+    private static final String UNIT_SUB_POINT_FONT_STYLE  = "normal";
+    private static final String UNIT_SUB_POINT_FONT_WEIGHT = "normal";
+    private static final String UNIT_SUB_POINT_STYLE = 
+            "div." + UNIT_SUB_POINT_CLASS + " {" + NEW_LINE
+                + "   font-family : " + UNIT_SUB_POINT_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + UNIT_SUB_POINT_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + UNIT_SUB_POINT_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + UNIT_SUB_POINT_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + UNIT_SUB_POINT_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String UNIT_SUB_POINT_OPEN  = "<div class=\"" + UNIT_SUB_POINT_CLASS + "\">";
+    private static final String UNIT_SUB_POINT_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String EXAMPLE_CLASS       = "example";
+    private static final String EXAMPLE_FONT_COLOR  = "silver"; 
+    private static final String EXAMPLE_FONT_SIZE   = "16pt";
+    private static final String EXAMPLE_FONT_FAMILY = "Consolas"; 
+    private static final String EXAMPLE_FONT_STYLE  = "normal";
+    private static final String EXAMPLE_FONT_WEIGHT = "normal";
+    private static final String EXAMPLE_STYLE = 
+            "div." + EXAMPLE_CLASS + " {" + NEW_LINE
+                + "   font-family : " + EXAMPLE_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + EXAMPLE_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + EXAMPLE_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + EXAMPLE_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + EXAMPLE_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String EXAMPLE_OPEN  = "<div class=\"" + EXAMPLE_CLASS + "\">";
+    private static final String EXAMPLE_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String DIALOG_CLASS       = "dialog";
+    private static final String DIALOG_FONT_COLOR  = "lime"; 
+    private static final String DIALOG_FONT_SIZE   = "16pt";
+    private static final String DIALOG_FONT_FAMILY = "Consolas"; 
+    private static final String DIALOG_FONT_STYLE  = "normal";
+    private static final String DIALOG_FONT_WEIGHT = "normal";
+    private static final String DIALOG_STYLE = 
+            "div." + DIALOG_CLASS + " {" + NEW_LINE
+                + "   font-family : " + DIALOG_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + DIALOG_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + DIALOG_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + DIALOG_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + DIALOG_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String DIALOG_OPEN  = "<div class=\"" + DIALOG_CLASS + "\">";
+    private static final String DIALOG_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String CODE_CLASS       = "code";
+    private static final String CODE_FONT_COLOR  = "turquoise"; 
+    private static final String CODE_FONT_SIZE   = "16pt";
+    private static final String CODE_FONT_FAMILY = "Consolas"; 
+    private static final String CODE_FONT_STYLE  = "normal";
+    private static final String CODE_FONT_WEIGHT = "normal";
+    private static final String CODE_STYLE = 
+            "pre." + CODE_CLASS + " {" + NEW_LINE
+                + "   font-family : " + CODE_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + CODE_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + CODE_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + CODE_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + CODE_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String CODE_OPEN  = "<pre class=\"" + CODE_CLASS + "\">";
+    private static final String CODE_CLOSE = "</pre>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String COMMENT_CLASS       = "comment";
+    private static final String COMMENT_FONT_COLOR  = "limegreen"; 
+    private static final String COMMENT_FONT_SIZE   = "16pt";
+    private static final String COMMENT_FONT_FAMILY = "Consolas"; 
+    private static final String COMMENT_FONT_STYLE  = "normal";
+    private static final String COMMENT_FONT_WEIGHT = "normal";
+    private static final String COMMENT_STYLE = 
+            "pre." + COMMENT_CLASS + " {" + NEW_LINE
+                + "   font-family : " + COMMENT_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + COMMENT_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + COMMENT_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + COMMENT_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + COMMENT_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String COMMENT_OPEN  = "<pre class=\"" + COMMENT_CLASS + "\">";
+    private static final String COMMENT_CLOSE = "</pre>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String SUB_TEXT_CLASS       = "subText";
+    private static final String SUB_TEXT_FONT_COLOR  = "magenta"; 
+    private static final String SUB_TEXT_FONT_SIZE   = "16pt";
+    private static final String SUB_TEXT_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String SUB_TEXT_FONT_STYLE  = "normal";
+    private static final String SUB_TEXT_FONT_WEIGHT = "normal";
+    private static final String SUB_TEXT_STYLE = 
+            "div." + SUB_TEXT_CLASS + " {" + NEW_LINE
+                + "   font-family : " + SUB_TEXT_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + SUB_TEXT_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + SUB_TEXT_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + SUB_TEXT_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + SUB_TEXT_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String SUB_TEXT_OPEN  = "<div class=\"" + SUB_TEXT_CLASS + "\">";
+    private static final String SUB_TEXT_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String PLAIN_TEXT_CLASS       = "plainText";
+    private static final String PLAIN_TEXT_FONT_COLOR  = "black"; 
+    private static final String PLAIN_TEXT_FONT_SIZE   = "16pt";
+    private static final String PLAIN_TEXT_FONT_FAMILY = "Consolas"; 
+    private static final String PLAIN_TEXT_FONT_STYLE  = "normal";
+    private static final String PLAIN_TEXT_FONT_WEIGHT = "normal";
+    private static final String PLAIN_TEXT_STYLE = 
+            "div." + PLAIN_TEXT_CLASS + " {" + NEW_LINE
+                + "   font-family : " + PLAIN_TEXT_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + PLAIN_TEXT_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + PLAIN_TEXT_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + PLAIN_TEXT_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + PLAIN_TEXT_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String PLAIN_TEXT_OPEN  = "<div class=\"" + PLAIN_TEXT_CLASS + "\">";
+    private static final String PLAIN_TEXT_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String HEADER_SPACED_CLASS       = "headerSpaced";
+    private static final String HEADER_SPACED_FONT_COLOR  = "mediumpurple"; 
+    private static final String HEADER_SPACED_FONT_SIZE   = "18pt";
+    private static final String HEADER_SPACED_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String HEADER_SPACED_FONT_STYLE  = "normal";
+    private static final String HEADER_SPACED_FONT_WEIGHT = "bold";
+    private static final String HEADER_SPACED_STYLE = 
+            "div." + HEADER_SPACED_CLASS + " {" + NEW_LINE
+                + "   font-family : " + HEADER_SPACED_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + HEADER_SPACED_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + HEADER_SPACED_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + HEADER_SPACED_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + HEADER_SPACED_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String HEADER_SPACED_OPEN  = "<div class=\"" + HEADER_SPACED_CLASS + "\">";
+    private static final String HEADER_SPACED_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String NOTE_CLASS       = "note";
+    private static final String NOTE_FONT_COLOR  = "orange"; 
+    private static final String NOTE_FONT_SIZE   = "16pt";
+    private static final String NOTE_FONT_FAMILY = "Consolas"; 
+    private static final String NOTE_FONT_STYLE  = "italic";
+    private static final String NOTE_FONT_WEIGHT = "bold";
+    private static final String NOTE_STYLE = 
+            "div." + NOTE_CLASS + " {" + NEW_LINE
+                + "   font-family : " + NOTE_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + NOTE_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + NOTE_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + NOTE_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + NOTE_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String NOTE_OPEN  = "<div class=\"" + NOTE_CLASS + "\">";
+    private static final String NOTE_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String HEADER_CLASS       = "header";
+    private static final String HEADER_FONT_COLOR  = "mediumpurple"; 
+    private static final String HEADER_FONT_SIZE   = "18pt";
+    private static final String HEADER_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String HEADER_FONT_STYLE  = "normal";
+    private static final String HEADER_FONT_WEIGHT = "bold";
+    private static final String HEADER_STYLE = 
+            "div." + HEADER_CLASS + " {" + NEW_LINE
+                + "   font-family : " + HEADER_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + HEADER_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + HEADER_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + HEADER_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + HEADER_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String HEADER_OPEN  = "<div class=\"" + HEADER_CLASS + "\">";
+    private static final String HEADER_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String TITLE_CLASS       = "title";
+    private static final String TITLE_FONT_COLOR  = "slateblue"; 
+    private static final String TITLE_FONT_SIZE   = "20pt";
+    private static final String TITLE_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String TITLE_FONT_STYLE  = "normal";
+    private static final String TITLE_FONT_WEIGHT = "bold";
+    private static final String TITLE_STYLE = 
+            "div." + TITLE_CLASS + " {" + NEW_LINE
+                + "   font-family : " + TITLE_FONT_FAMILY + ";" + NEW_LINE
+                + "   font-size   : " + TITLE_FONT_SIZE   + ";" + NEW_LINE
+                + "   font-style  : " + TITLE_FONT_STYLE  + ";" + NEW_LINE
+                + "   font-weight : " + TITLE_FONT_WEIGHT + ";" + NEW_LINE
+                + "   color       : " + TITLE_FONT_COLOR  + ";" + NEW_LINE
+            + "}";
+    private static final String TITLE_OPEN  = "<div class=\"" + TITLE_CLASS + "\">";
+    private static final String TITLE_CLOSE = "</div>";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    private static final String STYLE = 
+            "<style>"            + NEW_LINE + 
+            BODY_STYLE           + NEW_LINE + 
+            H1_STYLE             + NEW_LINE + 
+            H2_STYLE             + NEW_LINE + 
+            H3_STYLE             + NEW_LINE + 
+            H3_TEXT_STYLE        + NEW_LINE +
+            PRE_STYLE            + NEW_LINE + 
+            PRE_COMMENT_STYLE    + NEW_LINE + 
+            UNIT_TITLE_STYLE     + NEW_LINE +             
+            UNIT_TOPIC_STYLE     + NEW_LINE +             
+            UNIT_POINT_STYLE     + NEW_LINE +  
+            UNIT_SUB_POINT_STYLE + NEW_LINE +  
+            EXAMPLE_STYLE        + NEW_LINE +             
+            DIALOG_STYLE         + NEW_LINE +             
+            CODE_STYLE           + NEW_LINE +             
+            COMMENT_STYLE        + NEW_LINE +             
+            SUB_TEXT_STYLE       + NEW_LINE +             
+            PLAIN_TEXT_STYLE     + NEW_LINE +             
+            HEADER_SPACED_STYLE  + NEW_LINE +             
+            NOTE_STYLE           + NEW_LINE +             
+            HEADER_STYLE         + NEW_LINE +             
+            TITLE_STYLE          + NEW_LINE +  
+            "</style>";
+
+    private static final String OPEN = 
+            "<html>"  + NEW_LINE + 
+            "<head>"  + NEW_LINE +
+            STYLE     + NEW_LINE + 
+            "</head>" + NEW_LINE + 
+            "<body>"  + NEW_LINE;
+    
+    private static final String CLOSE = "</body></html>";
+    private static final String BREAK = "</br />";
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
     
     /**
      * Initializes the webpage by getting the defined name for the page
@@ -239,31 +519,31 @@ public class WebPage
             
             else if (type == TYPE_UNIT_POINT)  {
                 line = SPACE + SPACE + SPACE + line;
-                text = H3_TEXT_OPEN + line + H3_CLOSE;
+                text = UNIT_POINT_OPEN + line + UNIT_POINT_CLOSE;
             }
             else if (type == TYPE_UNIT_SUB_POINT) {
                 line = SPACE + SPACE + SPACE + 
                        SPACE + SPACE + SPACE + line;
-                text = H3_TEXT_OPEN + line + H3_CLOSE;
+                text = UNIT_SUB_POINT_OPEN + line + UNIT_SUB_POINT_CLOSE;
             } 
             else if (type == TYPE_TEXT)           text = line + NEW_LINE + BREAK;
             else if (type == TYPE_PLAIN_TEXT)     text = line + NEW_LINE + BREAK;
-            else if (type == TYPE_H1)             text = H1_OPEN          + line + H1_CLOSE;
-            else if (type == TYPE_H2)             text = H2_OPEN          + line + H2_CLOSE;
-            else if (type == TYPE_H3)             text = H3_OPEN          + line + H3_CLOSE;
-            else if (type == TYPE_ADD_SUB_TEXT)   text = PRE_OPEN         + line + PRE_CLOSE;
-            else if (type == TYPE_PRE_COMMENT)    text = PRE_COMMENT_OPEN + line + PRE_CLOSE;
-            else if (type == TYPE_UNIT_TITLE)     text = H1_OPEN          + line + H1_CLOSE;
-            else if (type == TYPE_UNIT_TOPIC)     text = H2_OPEN          + line + H2_CLOSE;
-            else if (type == TYPE_EXAMPLE)        text = PRE_COMMENT_OPEN + line + PRE_CLOSE;
-            else if (type == TYPE_DIALOG)         text = H3_OPEN          + line + H3_CLOSE;
-            else if (type == TYPE_CODE)           text = PRE_OPEN         + line + PRE_CLOSE;
-            else if (type == TYPE_COMMENT)        text = PRE_COMMENT_OPEN + line + PRE_CLOSE;
-            else if (type == TYPE_SUB_TEXT)       text = PRE_OPEN         + line + PRE_CLOSE;
-            else if (type == TYPE_HEADER_SPACED)  text = H2_OPEN          + line + H2_CLOSE;
-            else if (type == TYPE_NOTE)           text = H3_OPEN          + line + H3_CLOSE;
-            else if (type == TYPE_HEADER)         text = H2_OPEN          + line + H2_CLOSE;
-            else if (type == TYPE_TITLE)          text = H1_OPEN          + line + H1_CLOSE;  
+            else if (type == TYPE_H1)             text = H1_OPEN            + line + H1_CLOSE;
+            else if (type == TYPE_H2)             text = H2_OPEN            + line + H2_CLOSE;
+            else if (type == TYPE_H3)             text = H3_OPEN            + line + H3_CLOSE;
+            else if (type == TYPE_ADD_SUB_TEXT)   text = PRE_OPEN           + line + PRE_CLOSE;
+            else if (type == TYPE_PRE_COMMENT)    text = PRE_COMMENT_OPEN   + line + PRE_CLOSE;
+            else if (type == TYPE_UNIT_TITLE)     text = UNIT_TITLE_OPEN    + line + UNIT_TITLE_CLOSE;
+            else if (type == TYPE_UNIT_TOPIC)     text = UNIT_TOPIC_OPEN    + line + UNIT_TOPIC_CLOSE;
+            else if (type == TYPE_EXAMPLE)        text = EXAMPLE_OPEN       + line + EXAMPLE_CLOSE;
+            else if (type == TYPE_DIALOG)         text = DIALOG_OPEN        + line + DIALOG_CLOSE;
+            else if (type == TYPE_CODE)           text = CODE_OPEN          + line + CODE_CLOSE;
+            else if (type == TYPE_COMMENT)        text = COMMENT_OPEN       + line + COMMENT_CLOSE;
+            else if (type == TYPE_SUB_TEXT)       text = SUB_TEXT_OPEN      + line + SUB_TEXT_CLOSE;
+            else if (type == TYPE_HEADER_SPACED)  text = HEADER_SPACED_OPEN + line + HEADER_SPACED_CLOSE;
+            else if (type == TYPE_NOTE)           text = NOTE_OPEN          + line + NOTE_CLOSE;
+            else if (type == TYPE_HEADER)         text = HEADER_OPEN        + line + HEADER_CLOSE;
+            else if (type == TYPE_TITLE)          text = TITLE_OPEN         + line + TITLE_CLOSE;  
             else                                  text = line;
             text = text + NEW_LINE;
         }
