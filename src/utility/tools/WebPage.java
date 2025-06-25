@@ -39,6 +39,12 @@ public class WebPage
     private static final String DEFAULT_FONT_STYLE       = "DEFAULT_FONT_STYLE";
     private static final String DEFAULT_FONT_WEIGHT      = "normal";    
     private static final String DEFAULT_FONT_COLOR       = "black";
+    
+    private static final String LEVEL_1_FONT_SIZE        = "18pt";
+    private static final String LEVEL_2_FONT_SIZE        = "20pt";
+    private static final String LEVEL_3_FONT_SIZE        = "22pt";
+    private static final String LEVEL_1_FONT_FAMILY      = "Lucida Sans Typewriter";   
+    private static final String LEVEL_2_FONT_FAMILY      = "Courier New"; 
         
     private static final String H1_FONT_COLOR          = "green";
     private static final String H2_FONT_COLOR          = "blue";
@@ -168,9 +174,9 @@ public class WebPage
     private static final int TYPE_TITLE          = 21;
     
     private static final String UNIT_TITLE_CLASS       = "unitTitle";
-    private static final String UNIT_TITLE_FONT_COLOR  = "olive"; 
-    private static final String UNIT_TITLE_FONT_SIZE   = "20pt";
-    private static final String UNIT_TITLE_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String UNIT_TITLE_FONT_COLOR  = "purple"; //olive"; 
+    private static final String UNIT_TITLE_FONT_SIZE   = LEVEL_3_FONT_SIZE;
+    private static final String UNIT_TITLE_FONT_FAMILY = LEVEL_1_FONT_FAMILY; 
     private static final String UNIT_TITLE_FONT_STYLE  = "normal";
     private static final String UNIT_TITLE_FONT_WEIGHT = "bold";
     private static final String UNIT_TITLE_STYLE = 
@@ -187,11 +193,11 @@ public class WebPage
     ////////////////////////////////////////////////////////////////////////////
     
     private static final String UNIT_TOPIC_CLASS       = "unitTopic";
-    private static final String UNIT_TOPIC_FONT_COLOR  = "fuchsia"; 
-    private static final String UNIT_TOPIC_FONT_SIZE   = "18pt";
-    private static final String UNIT_TOPIC_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String UNIT_TOPIC_FONT_COLOR  = "blue"; 
+    private static final String UNIT_TOPIC_FONT_SIZE   = LEVEL_2_FONT_SIZE; //"18pt";
+    private static final String UNIT_TOPIC_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
     private static final String UNIT_TOPIC_FONT_STYLE  = "italic";
-    private static final String UNIT_TOPIC_FONT_WEIGHT = "normal";
+    private static final String UNIT_TOPIC_FONT_WEIGHT = "bold";
     private static final String UNIT_TOPIC_STYLE = 
             "div." + UNIT_TOPIC_CLASS + " {" + NEW_LINE
                 + "   font-family : " + UNIT_TOPIC_FONT_FAMILY + ";" + NEW_LINE
@@ -206,10 +212,10 @@ public class WebPage
     ////////////////////////////////////////////////////////////////////////////
     
     private static final String UNIT_POINT_CLASS       = "unitPoint";
-    private static final String UNIT_POINT_FONT_COLOR  = "blue"; 
-    private static final String UNIT_POINT_FONT_SIZE   = "16pt";
-    private static final String UNIT_POINT_FONT_FAMILY = "Consolas"; 
-    private static final String UNIT_POINT_FONT_STYLE  = "normal";
+    private static final String UNIT_POINT_FONT_COLOR  = "fuchsia"; 
+    private static final String UNIT_POINT_FONT_SIZE   = LEVEL_1_FONT_SIZE; //"16pt";
+    private static final String UNIT_POINT_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
+    private static final String UNIT_POINT_FONT_STYLE  = "italic";
     private static final String UNIT_POINT_FONT_WEIGHT = "normal";
     private static final String UNIT_POINT_STYLE = 
             "div." + UNIT_POINT_CLASS + " {" + NEW_LINE
@@ -226,8 +232,8 @@ public class WebPage
     
     private static final String UNIT_SUB_POINT_CLASS       = "unitSubPoint";
     private static final String UNIT_SUB_POINT_FONT_COLOR  = "gray"; 
-    private static final String UNIT_SUB_POINT_FONT_SIZE   = "10pt";
-    private static final String UNIT_SUB_POINT_FONT_FAMILY = "Consolas"; 
+    private static final String UNIT_SUB_POINT_FONT_SIZE   = DEFAULT_FONT_SIZE; //"10pt";
+    private static final String UNIT_SUB_POINT_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
     private static final String UNIT_SUB_POINT_FONT_STYLE  = "normal";
     private static final String UNIT_SUB_POINT_FONT_WEIGHT = "normal";
     private static final String UNIT_SUB_POINT_STYLE = 
@@ -245,8 +251,8 @@ public class WebPage
     
     private static final String EXAMPLE_CLASS       = "example";
     private static final String EXAMPLE_FONT_COLOR  = "silver"; 
-    private static final String EXAMPLE_FONT_SIZE   = "16pt";
-    private static final String EXAMPLE_FONT_FAMILY = "Consolas"; 
+    private static final String EXAMPLE_FONT_SIZE   = DEFAULT_FONT_SIZE;
+    private static final String EXAMPLE_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
     private static final String EXAMPLE_FONT_STYLE  = "normal";
     private static final String EXAMPLE_FONT_WEIGHT = "normal";
     private static final String EXAMPLE_STYLE = 
@@ -263,9 +269,9 @@ public class WebPage
     ////////////////////////////////////////////////////////////////////////////
     
     private static final String DIALOG_CLASS       = "dialog";
-    private static final String DIALOG_FONT_COLOR  = "lime"; 
-    private static final String DIALOG_FONT_SIZE   = "16pt";
-    private static final String DIALOG_FONT_FAMILY = "Consolas"; 
+    private static final String DIALOG_FONT_COLOR  = "goldenrod"; 
+    private static final String DIALOG_FONT_SIZE   = DEFAULT_FONT_SIZE; //"16pt";
+    private static final String DIALOG_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
     private static final String DIALOG_FONT_STYLE  = "normal";
     private static final String DIALOG_FONT_WEIGHT = "normal";
     private static final String DIALOG_STYLE = 
@@ -282,11 +288,11 @@ public class WebPage
     ////////////////////////////////////////////////////////////////////////////
     
     private static final String CODE_CLASS       = "code";
-    private static final String CODE_FONT_COLOR  = "turquoise"; 
-    private static final String CODE_FONT_SIZE   = "16pt";
-    private static final String CODE_FONT_FAMILY = "Consolas"; 
+    private static final String CODE_FONT_COLOR  = "gray"; 
+    private static final String CODE_FONT_SIZE   = DEFAULT_FONT_SIZE; //"16pt";
+    private static final String CODE_FONT_FAMILY = LEVEL_2_FONT_FAMILY; 
     private static final String CODE_FONT_STYLE  = "normal";
-    private static final String CODE_FONT_WEIGHT = "normal";
+    private static final String CODE_FONT_WEIGHT = "bolder";
     private static final String CODE_STYLE = 
             "pre." + CODE_CLASS + " {" + NEW_LINE
                 + "   font-family : " + CODE_FONT_FAMILY + ";" + NEW_LINE
@@ -302,8 +308,8 @@ public class WebPage
     
     private static final String COMMENT_CLASS       = "comment";
     private static final String COMMENT_FONT_COLOR  = "limegreen"; 
-    private static final String COMMENT_FONT_SIZE   = "16pt";
-    private static final String COMMENT_FONT_FAMILY = "Consolas"; 
+    private static final String COMMENT_FONT_SIZE   = DEFAULT_FONT_SIZE; //"16pt";
+    private static final String COMMENT_FONT_FAMILY = LEVEL_2_FONT_FAMILY; 
     private static final String COMMENT_FONT_STYLE  = "normal";
     private static final String COMMENT_FONT_WEIGHT = "normal";
     private static final String COMMENT_STYLE = 
@@ -320,9 +326,9 @@ public class WebPage
     ////////////////////////////////////////////////////////////////////////////
     
     private static final String SUB_TEXT_CLASS       = "subText";
-    private static final String SUB_TEXT_FONT_COLOR  = "magenta"; 
-    private static final String SUB_TEXT_FONT_SIZE   = "16pt";
-    private static final String SUB_TEXT_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String SUB_TEXT_FONT_COLOR  = "lightsalmon"; 
+    private static final String SUB_TEXT_FONT_SIZE   = DEFAULT_FONT_SIZE; //"16pt";
+    private static final String SUB_TEXT_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
     private static final String SUB_TEXT_FONT_STYLE  = "normal";
     private static final String SUB_TEXT_FONT_WEIGHT = "normal";
     private static final String SUB_TEXT_STYLE = 
@@ -340,8 +346,8 @@ public class WebPage
     
     private static final String PLAIN_TEXT_CLASS       = "plainText";
     private static final String PLAIN_TEXT_FONT_COLOR  = "black"; 
-    private static final String PLAIN_TEXT_FONT_SIZE   = "16pt";
-    private static final String PLAIN_TEXT_FONT_FAMILY = "Consolas"; 
+    private static final String PLAIN_TEXT_FONT_SIZE   = DEFAULT_FONT_SIZE; //"16pt";
+    private static final String PLAIN_TEXT_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
     private static final String PLAIN_TEXT_FONT_STYLE  = "normal";
     private static final String PLAIN_TEXT_FONT_WEIGHT = "normal";
     private static final String PLAIN_TEXT_STYLE = 
@@ -358,11 +364,11 @@ public class WebPage
     ////////////////////////////////////////////////////////////////////////////
     
     private static final String HEADER_SPACED_CLASS       = "headerSpaced";
-    private static final String HEADER_SPACED_FONT_COLOR  = "mediumpurple"; 
-    private static final String HEADER_SPACED_FONT_SIZE   = "18pt";
-    private static final String HEADER_SPACED_FONT_FAMILY = "Lucida Sans Typewriter"; 
-    private static final String HEADER_SPACED_FONT_STYLE  = "normal";
-    private static final String HEADER_SPACED_FONT_WEIGHT = "bold";
+    private static final String HEADER_SPACED_FONT_COLOR  = UNIT_POINT_FONT_COLOR; 
+    private static final String HEADER_SPACED_FONT_SIZE   = LEVEL_1_FONT_SIZE;//"18pt";
+    private static final String HEADER_SPACED_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
+    private static final String HEADER_SPACED_FONT_STYLE  = "italic";
+    private static final String HEADER_SPACED_FONT_WEIGHT = "normal";
     private static final String HEADER_SPACED_STYLE = 
             "div." + HEADER_SPACED_CLASS + " {" + NEW_LINE
                 + "   font-family : " + HEADER_SPACED_FONT_FAMILY + ";" + NEW_LINE
@@ -378,8 +384,8 @@ public class WebPage
     
     private static final String NOTE_CLASS       = "note";
     private static final String NOTE_FONT_COLOR  = "orange"; 
-    private static final String NOTE_FONT_SIZE   = "16pt";
-    private static final String NOTE_FONT_FAMILY = "Consolas"; 
+    private static final String NOTE_FONT_SIZE   = DEFAULT_FONT_SIZE; //"16pt";
+    private static final String NOTE_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
     private static final String NOTE_FONT_STYLE  = "italic";
     private static final String NOTE_FONT_WEIGHT = "bold";
     private static final String NOTE_STYLE = 
@@ -396,10 +402,10 @@ public class WebPage
     ////////////////////////////////////////////////////////////////////////////
     
     private static final String HEADER_CLASS       = "header";
-    private static final String HEADER_FONT_COLOR  = "mediumpurple"; 
-    private static final String HEADER_FONT_SIZE   = "18pt";
-    private static final String HEADER_FONT_FAMILY = "Lucida Sans Typewriter"; 
-    private static final String HEADER_FONT_STYLE  = "normal";
+    private static final String HEADER_FONT_COLOR  = UNIT_TOPIC_FONT_COLOR; 
+    private static final String HEADER_FONT_SIZE   = LEVEL_2_FONT_SIZE;//"18pt";
+    private static final String HEADER_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
+    private static final String HEADER_FONT_STYLE  = "italic";
     private static final String HEADER_FONT_WEIGHT = "bold";
     private static final String HEADER_STYLE = 
             "div." + HEADER_CLASS + " {" + NEW_LINE
@@ -415,9 +421,9 @@ public class WebPage
     ////////////////////////////////////////////////////////////////////////////
     
     private static final String TITLE_CLASS       = "title";
-    private static final String TITLE_FONT_COLOR  = "slateblue"; 
-    private static final String TITLE_FONT_SIZE   = "20pt";
-    private static final String TITLE_FONT_FAMILY = "Lucida Sans Typewriter"; 
+    private static final String TITLE_FONT_COLOR  = UNIT_TITLE_FONT_COLOR; 
+    private static final String TITLE_FONT_SIZE   = LEVEL_3_FONT_SIZE;//"20pt";
+    private static final String TITLE_FONT_FAMILY = DEFAULT_FONT_FAMILY; 
     private static final String TITLE_FONT_STYLE  = "normal";
     private static final String TITLE_FONT_WEIGHT = "bold";
     private static final String TITLE_STYLE = 
@@ -459,6 +465,7 @@ public class WebPage
             "</style>";
 
     private static final String OPEN = 
+            "<!-- Code Generated by Mr. Wachs -->" + NEW_LINE + 
             "<html>"  + NEW_LINE + 
             "<head>"  + NEW_LINE +
             STYLE     + NEW_LINE + 

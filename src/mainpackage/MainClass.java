@@ -22,7 +22,7 @@ public class MainClass
      */
     public static void main(String[] args) {
         new Tester();  
-        //new Tester(Tester.TEST_CS42SAP_CURRICULUM);          
+        //new Tester(Tester.TEST_CS42SAP_CURRICULUM);        
     }
     
 }
