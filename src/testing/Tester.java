@@ -121,6 +121,7 @@ public class Tester
      */
     public void cs42sAP() {
         ComputerScience42SAP.curriculum();
+        ComputerScience42SAP.additional();
         ComputerScience42SAP.practiceTests();
     }
 

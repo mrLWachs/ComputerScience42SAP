@@ -3,6 +3,11 @@
 package testing.cs42sap;
 
 /** Required API imports */
+import testing.cs42sap.additional.TextFilesExamples;
+import testing.cs42sap.practice.PracticeTest4;
+import testing.cs42sap.practice.PracticeTest2;
+import testing.cs42sap.practice.PracticeTest1;
+import testing.cs42sap.practice.PracticeTest3;
 import utility.collections.LinkedList;
 import utility.io.FileHandler;
 import utility.io.Simulator;
@@ -58,7 +63,15 @@ public class ComputerScience42SAP
         new PracticeTest3(); 
         new PracticeTest4();   
     }
-        
+    
+    /**
+     * These are the additional content covered for the A.P. Computer Science 
+     * exam
+     */
+    public static void additional() {
+        if (Simulator.check("Additional Content")) return;          
+        new TextFilesExamples();  
+    } 
     /**
      * Reads the array of all lines read from the curriculum data file to 
      * parse out the lines that are for the passed specific unit

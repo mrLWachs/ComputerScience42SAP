@@ -554,6 +554,9 @@ public class WebPage
             else                                  text = line;
             text = text + NEW_LINE;
         }
+        if (lines == null) {
+            lines = new LinkedList<>();
+        }
         lines.add(text);
     }
     

@@ -252,6 +252,9 @@ public class Simulator
      * @param object The Object type to be 'printed'
      */
     public static void title(Object object) {
+        if (System.out == null) {
+            System.out = new Out();
+        }
         if (object == null)  return; 
         String text = object.toString();        
         int length = text.length();
@@ -674,8 +677,14 @@ public class Simulator
      */
     public static void saveOutput() {
         FileHandler<LinkedList> handler = new FileHandler<>();
-        handler.save(allOutput, DATA_FILE);
-        WebPage.generate();        
+        if (allOutput == null || allOutput.size() == 0) {
+            System.out.println("No output to save...");
+            return;
+        }
+        else {
+            handler.save(allOutput, DATA_FILE);
+            WebPage.generate();        
+        }
     }
 
     /**
