@@ -58,27 +58,25 @@ public class TextFilesExamples
      * Default constructor, set class properties
      */
     public TextFilesExamples() {
-        
+        // Learn about "error traps"...........................................   
         System.out.println("Learn about 'error traps'");
         
+        // Learn about the "try catch" blocks..................................
         try {
-            double number = 3 / 0;            
+            // Opening the "try" block (means "try this code"), this is the 
+            // "trap" we set to "try" some code, and if an error occurs (of 
+            // the type we are catching for) we "catch" that error and the  
+            // program keeps running........................................... 
+            double number = 3 / 0;  
         }
         catch (ArithmeticException error) {
-            System.out.println("Divide by zero");
+            // Open the "catch" block, so if an error occurs in the "try" block
+            // of the type we defined (divide by zero..) the program will 
+            // not shut down, instead it will jump (branch) to this block (the 
+            // catch block).................................................... 
+            System.out.println("Divide by zero error caught");
+            System.out.println("\t -> " + error.toString());
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
