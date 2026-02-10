@@ -59,7 +59,28 @@ public class TextFilesExamples
      */
     public TextFilesExamples() {
         
-        System.out.println("content here...");
+        System.out.println("Learn about 'error traps'");
+        
+        try {
+            double number = 3 / 0;            
+        }
+        catch (ArithmeticException error) {
+            System.out.println("Divide by zero");
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
      
