@@ -51,7 +51,7 @@ public class TextFilesExamples
     public static void main(String[] args) {
         Simulator.title("Starting Text Files Examples");
         new TextFilesExamples();
-        Simulator.title("Completed Text Files Examples");
+        Simulator.title("\nCompleted Text Files Examples");
     }
 
     /**
@@ -59,15 +59,17 @@ public class TextFilesExamples
      */
     public TextFilesExamples() {
         // Learn about "error traps"...........................................   
-        System.out.println("Learn about 'error traps'");
-        
+        System.out.println("Learn about File Handling");
+
         // Learn about the "try catch" blocks..................................
         try {
             // Opening the "try" block (means "try this code"), this is the 
             // "trap" we set to "try" some code, and if an error occurs (of 
             // the type we are catching for) we "catch" that error and the  
             // program keeps running........................................... 
-            double number = 3 / 0;  
+            double number = 3 / 0; 
+            int[] a = { 1, 2, 3 };
+            a[5] = 0;
         }
         catch (ArithmeticException error) {
             // Open the "catch" block, so if an error occurs in the "try" block
@@ -77,9 +79,27 @@ public class TextFilesExamples
             System.out.println("Divide by zero error caught");
             System.out.println("\t -> " + error.toString());
         }
+        catch (ArrayIndexOutOfBoundsException error) {
+            // You can add multiple "catch" blocks............................. 
+            System.out.println("Array was out of bounds -> " + error.toString());
+        }
+        
+        // Create some data to "save" and "open" from a file....................
+        System.out.println("Create sample data...");
+        
+        String word = "WachsAvoidant";
+        String[] poem = {
+            "He strolls in, hoodie up, coding brain on airplane mode  ",
+            "Dodges Mr. Wachs like it’s part of the syllabus ",
+            "Speaks fluent Java but not “good morning” ",
+            "Keyboard clacks louder than his social skills",
+            "Too cool, too chill, too Gen Z to ever look up from the screen"
+        };
         
         
         
+        
+        System.out.println("Completed Learning about File Handling");
     }
      
 }
