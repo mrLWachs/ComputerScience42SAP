@@ -3,6 +3,9 @@
 package testing.cs42sap.additional;
  
 /** Required API imports */
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import utility.io.Simulator;
 import utility.io.System;
 
@@ -91,10 +94,44 @@ public class TextFilesExamples
         String[] poem = {
             "He strolls in, hoodie up, coding brain on airplane mode  ",
             "Dodges Mr. Wachs like it’s part of the syllabus ",
-            "Speaks fluent Java but not “good morning” ",
+            "Speaks fluent Java but not good morning ",
             "Keyboard clacks louder than his social skills",
             "Too cool, too chill, too Gen Z to ever look up from the screen"
         };
+        
+        // Create a file name (proper, full) to save and open to and from.......
+        
+        String first  = "C:\\1\\";  // File "PATH" (e.g. "c:/my docs...")
+        String middle = "data";     // File NAME (e.g. "essay")
+        String last  = ".txt";      // File EXTENSION (e.g. ".docx" ".txt")
+        String name = first + middle + last;   // Full name (parts concatinated)
+        
+        // Could have done this all on one line like:
+        // String name = "C:\\1\\data.txt";
+        
+        // Write ONE piece of data (the word) to that permanent file............        
+        Simulator.comment("Save ONE piece of data to that permanent file");
+        
+        try {
+            // Create instance (object) of the classes needed and connect the 
+            // 2 classes with the file name we just made........................
+            FileWriter  writer  = new FileWriter(name);   // First object
+            PrintWriter printer = new PrintWriter(writer);
+            // Now write to the file............................................
+            printer.print(word);        // Call class method to write to file..   
+            // Sever (disconnect) from the file.................................
+            printer.close();                                // Close connection
+        } 
+        catch (IOException error) {                         // catch error.....
+            System.out.println("File write error");        // output message..
+        }
+        
+        
+        
+        
+        
+        
+        
         
         
         
