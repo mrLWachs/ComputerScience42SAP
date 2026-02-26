@@ -10,6 +10,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.swing.JFileChooser;
+import utility.collections.LinkedList;
 import utility.io.Simulator;
 import utility.io.System;
 
@@ -65,14 +66,16 @@ public class TextFilesExamples
      * Default constructor, set class properties
      */
     public TextFilesExamples() {
-        // Learn about "error traps"...........................................   
-        System.out.println("Learn about File Handling");
+        // Learn about "error traps"............................................   
+        System.out.println("Learn about File Handling........................");
 
         ////////////////////////////////////////////////////////////////////////
         // ERROR TRAPS (necessary for working with files)
         ////////////////////////////////////////////////////////////////////////        
         
-        // Learn about the "try catch" blocks..................................
+        // Learn about the "try catch" blocks...................................
+        System.out.println("Learn about the 'try catch' blocks...............");  
+        
         try {
             // Opening the "try" block (means "try this code"), this is the 
             // "trap" we set to "try" some code, and if an error occurs (of 
@@ -87,22 +90,24 @@ public class TextFilesExamples
             // of the type we defined (divide by zero..) the program will 
             // not shut down, instead it will jump (branch) to this block (the 
             // catch block).................................................... 
-            System.out.println("Divide by zero error caught");
-            System.out.println("\t -> " + error.toString());
+            System.out.println("Divide by zero error -> " + error.toString());
         }
         catch (ArrayIndexOutOfBoundsException error) {
             // You can add multiple "catch" blocks............................. 
-            System.out.println("Array was out of bounds -> " + error.toString());
+            System.out.println("Array out of bounds -> " + error.toString());
         }
         
         ////////////////////////////////////////////////////////////////////////
         // DATA (to use with the files)
         ////////////////////////////////////////////////////////////////////////
         
-        // Create some data to "save" and "open" from a file....................
-        System.out.println("Create sample data...");
+        // Create data to "save" and "open" from a file.........................
+        System.out.println("Create data to 'save' and 'open' from a file.....");
         
+        // A single "piece" of data (in this casee a string
         String word = "WachsAvoidant";
+        
+        // A "collection" of pieces of data (in this case an array)
         String[] poem = {
             "He strolls in, hoodie up, coding brain on airplane mode  ",
             "Dodges Mr. Wachs like it’s part of the syllabus ",
@@ -111,12 +116,14 @@ public class TextFilesExamples
             "Too cool, too chill, too Gen Z to ever look up from the screen"
         };
         
-        // Create a file name (proper, full) to save and open to and from.......
+        // A more advanced collection of data (in this case a LinkedList)
+        LinkedList<String> verses = new LinkedList(poem);
         
-        String first  = "C:\\1\\";  // File "PATH" (e.g. "c:/my docs...")
-        String middle = "data";     // File NAME (e.g. "essay")
-        String last  = ".txt";      // File EXTENSION (e.g. ".docx" ".txt")
-        String name = first + middle + last;   // Full name (parts concatinated)
+        // Create a file name (proper, full) to read and write (data)...........        
+        String first  = "C:\\1\\";       // File "PATH" (e.g. "c:/my docs...")
+        String middle = "data";          // File NAME (e.g. "essay")
+        String last   = ".txt";          // File EXTENSION (e.g. ".docx" ".txt")
+        String name   = first + middle + last; // Full name (parts concatinated)
         
         // Could have done this all on one line like:
         // String name = "C:\\1\\data.txt";
@@ -125,8 +132,8 @@ public class TextFilesExamples
         // WRITING TO A FILE
         ////////////////////////////////////////////////////////////////////////        
         
-        // Write ONE piece of data (the word) to that permanent file............
-        System.out.println("Save ONE piece of data to that permanent file");  
+        // Write ONE piece of data (the word) to a permanent file...............
+        System.out.println("Save ONE piece of data to a permanent file.......");  
         
         try {
             // Create instance (object) of the classes needed and connect the 
@@ -146,62 +153,87 @@ public class TextFilesExamples
         // READING FROM A FILE
         ////////////////////////////////////////////////////////////////////////
         
-        // Now involve the user in naming of a file.............................        
-        System.out.println("Now involve the user to get a file name");
+        // Read ONE piece of data (word) from file..............................
+        System.out.println("Read ONE piece of data (word) from file..........");  
         
-        // We could get input from the user using very simple input like 
+        // Actual reading of the data ("streaming") out of the file.............            
+        try {
+            // Create instance (object) of the classes needed and connect the 
+            // 2 classes with the same file name we wrote to....................
+            FileReader     reader = new FileReader(name);          // Connect...
+            BufferedReader buffer = new BufferedReader(reader);    // Connect...
+            // Now read from the file............................................
+            String line = buffer.readLine();                      // Read a line
+            System.out.println("line read was " + line);          // Output line
+            // Sever (disconnect) from the file.................................
+            buffer.close();                                  // Close connection
+        }            
+        catch (IOException error) {                         // catch error......
+            System.out.println("File read error");          // output message...
+        }
+        
+        ////////////////////////////////////////////////////////////////////////
+        // USER INTERACTION (involve the user in saving and opening file)
+        ////////////////////////////////////////////////////////////////////////
+        
+        // Now involve the user in naming of a file.............................        
+        System.out.println("Now involve the user in naming of a file.........");
+        
+        // We could get file name input from the user using simple input like 
         // Scanner or a simple JOptionPane input dialog like this...............
         
         // Scanner scanner = new Scanner(System.in);
         // name = scanner.nextLine();
-        // name = JOptionPane.showInputDialog("Enter name");
-                
-        // Or we could build a GUI and use a textbox, but instead, we will use
+        // or....
+        // name = JOptionPane.showInputDialog("Enter name");  
+        // or....
+        // We could build a GUI and use a textbox, but instead, we will use
         // something new that is already built for ths..........................
         
+        // This swing class dialog will allow for opening and saving files......
         JFileChooser chooser = new JFileChooser();
-        chooser.showOpenDialog(null);           // Showing a dialog to user....
+        chooser.showSaveDialog(null);            // Showing a dialog to user....        
         
-        // We will also use a "File" class object to work with as well.........
-        File file = chooser.getSelectedFile();  // Get the name from the user
+        // Save an ARRAY of data to a user created file.........................
+        System.out.println("Save an ARRAY of data to a user created file.....");
+        
+        // We will also use a "File" class object to work with as well..........
+        File file = chooser.getSelectedFile();  // Get the name from the user...
         
         // Check the file the user just selected...............................
         if (file == null) {                     // Error check on the file.....   
             // Means the user hit cancel or ok without selecting, etc..........
-            System.out.println("Please select a file");
+            System.out.println("Please select and/or name a file");
         }
         else {
-            if (!file.exists()) {
-                // The file does not exist, we create it
-                try {
-                    file.createNewFile();
+            if (!file.exists()) { // The file does not exist, so we create it...
+                try {                    
+                    file.createNewFile();       // Built-in File class method...
+                    // Now we can "save" data to the file the user created (in  
+                    // a directory) and "stream" our data into that file........                    
+                    FileWriter  writer  = new FileWriter(file);     // Link file
+                    PrintWriter printer = new PrintWriter(writer); // and writer       
+                    // Use the enhanced for loop - which you can read as...
+                    // "for every line in poem"
+                    for (String line : poem) { // Enhanced loop through array...  
+                        printer.println(line);     // Writing one array index...
+                    }
+                    printer.close();         // Sever (close) file connection...
                 } 
-                catch (IOException e) {
-                    System.out.println("File create error");
+                catch (IOException error) {                    // Catch error...
+                    System.out.println("File save error");
                 }
             }
-            // Actual reading of the data ("streaming") out of the file...            
-            try {
-                FileReader     reader = new FileReader(file);       // Connect..
-                BufferedReader buffer = new BufferedReader(reader); // Connect..
-                String line = buffer.readLine();                 // Read line...
-                System.out.println("line read was " + line);      // Output line
-                buffer.close();                                 // Close connect
-            }            
-            catch (IOException e) {
-                System.out.println("Error reading data");
+            else {
+                System.out.println("File already exists!");
             }
-            
-            
-            
-            
         }
         
         
         
         
         
-        System.out.println("Completed Learning about File Handling");
+        System.out.println("Completed Learning about File Handling...........");
     }
      
 }
