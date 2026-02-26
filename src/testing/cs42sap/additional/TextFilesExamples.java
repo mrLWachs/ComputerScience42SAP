@@ -64,6 +64,10 @@ public class TextFilesExamples
         // Learn about "error traps"...........................................   
         System.out.println("Learn about File Handling");
 
+        ////////////////////////////////////////////////////////////////////////
+        // ERROR TRAPS (necessary for working with files)
+        ////////////////////////////////////////////////////////////////////////        
+        
         // Learn about the "try catch" blocks..................................
         try {
             // Opening the "try" block (means "try this code"), this is the 
@@ -87,6 +91,10 @@ public class TextFilesExamples
             System.out.println("Array was out of bounds -> " + error.toString());
         }
         
+        ////////////////////////////////////////////////////////////////////////
+        // DATA (to use with the files)
+        ////////////////////////////////////////////////////////////////////////
+        
         // Create some data to "save" and "open" from a file....................
         System.out.println("Create sample data...");
         
@@ -109,6 +117,10 @@ public class TextFilesExamples
         // Could have done this all on one line like:
         // String name = "C:\\1\\data.txt";
         
+        ////////////////////////////////////////////////////////////////////////
+        // WRITING TO A FILE
+        ////////////////////////////////////////////////////////////////////////        
+        
         // Write ONE piece of data (the word) to that permanent file............        
         Simulator.comment("Save ONE piece of data to that permanent file");
         
@@ -126,7 +138,9 @@ public class TextFilesExamples
             System.out.println("File write error");        // output message..
         }
         
-        
+        ////////////////////////////////////////////////////////////////////////
+        // READING FROM A FILE
+        ////////////////////////////////////////////////////////////////////////
         
         
         
