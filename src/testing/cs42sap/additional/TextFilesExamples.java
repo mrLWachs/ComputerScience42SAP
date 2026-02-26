@@ -3,7 +3,9 @@
 package testing.cs42sap.additional;
  
 /** Required API imports */
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -178,7 +180,19 @@ public class TextFilesExamples
                     System.out.println("File create error");
                 }
             }
-            // Actual reading of the data ("streaming") out of the file...
+            // Actual reading of the data ("streaming") out of the file...            
+            try {
+                FileReader     reader = new FileReader(file);       // Connect..
+                BufferedReader buffer = new BufferedReader(reader); // Connect..
+                String line = buffer.readLine();                 // Read line...
+                System.out.println("line read was " + line);      // Output line
+                buffer.close();                                 // Close connect
+            }            
+            catch (IOException e) {
+                System.out.println("Error reading data");
+            }
+            
+            
             
             
         }
