@@ -121,8 +121,8 @@ public class TextFilesExamples
         // WRITING TO A FILE
         ////////////////////////////////////////////////////////////////////////        
         
-        // Write ONE piece of data (the word) to that permanent file............        
-        Simulator.comment("Save ONE piece of data to that permanent file");
+        // Write ONE piece of data (the word) to that permanent file............
+        System.out.println("Save ONE piece of data to that permanent file");  
         
         try {
             // Create instance (object) of the classes needed and connect the 
@@ -142,10 +142,18 @@ public class TextFilesExamples
         // READING FROM A FILE
         ////////////////////////////////////////////////////////////////////////
         
+        // Now involve the user in naming of a file.............................        
+        System.out.println("Now involve the user to get a file name");
         
+        // We could get input from the user using very simple input like 
+        // Scanner or a simple JOptionPane input dialog like this...............
         
-        
-        
+        // Scanner scanner = new Scanner(System.in);
+        // name = scanner.nextLine();
+        // name = JOptionPane.showInputDialog("Enter name");
+                
+        // Or we could build a GUI and use a textbox, but instead, we will use
+        // something new that is already built for ths..........................
         
         
         
