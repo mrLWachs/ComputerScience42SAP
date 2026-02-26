@@ -3,9 +3,11 @@
 package testing.cs42sap.additional;
  
 /** Required API imports */
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.swing.JFileChooser;
 import utility.io.Simulator;
 import utility.io.System;
 
@@ -154,6 +156,33 @@ public class TextFilesExamples
                 
         // Or we could build a GUI and use a textbox, but instead, we will use
         // something new that is already built for ths..........................
+        
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);           // Showing a dialog to user....
+        
+        // We will also use a "File" class object to work with as well.........
+        File file = chooser.getSelectedFile();  // Get the name from the user
+        
+        // Check the file the user just selected...............................
+        if (file == null) {                     // Error check on the file.....   
+            // Means the user hit cancel or ok without selecting, etc..........
+            System.out.println("Please select a file");
+        }
+        else {
+            if (!file.exists()) {
+                // The file does not exist, we create it
+                try {
+                    file.createNewFile();
+                } 
+                catch (IOException e) {
+                    System.out.println("File create error");
+                }
+            }
+            // Actual reading of the data ("streaming") out of the file...
+            
+            
+        }
+        
         
         
         
