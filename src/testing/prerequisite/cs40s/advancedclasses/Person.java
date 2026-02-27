@@ -1,6 +1,9 @@
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
 
+/** Required API imports */
+import java.io.Serializable;
+
 
 /*
  * Person - represents ("models") a person. This is a class with (some 
@@ -12,7 +15,7 @@ package testing.prerequisite.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since Mar 17, 2025
 */
-public class Person
+public class Person implements Serializable
 {
 
     // Properties: (things about it, adjectives, descriptors, variables, arrays)

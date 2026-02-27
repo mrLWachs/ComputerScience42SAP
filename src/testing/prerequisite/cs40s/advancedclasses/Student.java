@@ -1,6 +1,9 @@
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
 
+/** Required API imports */
+import java.io.Serializable;
+
 
 /*
  * Student - represents a student, reminder that "extends" causes
@@ -14,7 +17,7 @@ package testing.prerequisite.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since Mar 25, 2025
 */
-public class Student extends Person
+public class Student extends Person implements Serializable
 {
     
     private int number;     // Class properties (and inherited other properties)  

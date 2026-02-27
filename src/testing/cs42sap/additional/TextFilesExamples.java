@@ -225,6 +225,37 @@ public class TextFilesExamples
         }
         
         ////////////////////////////////////////////////////////////////////////
+        // BASIC EXAMPLE (simple, stripped down reading froma file)
+        ////////////////////////////////////////////////////////////////////////
+        
+        try {            
+            // Read in one line of a file...
+            FileReader     reader = new FileReader("C:\\1\\file.txt");
+            BufferedReader buffer = new BufferedReader(reader);
+            String line = buffer.readLine();
+            System.out.println(line);
+            buffer.close();
+
+            // What if the file had multiple lines?
+            reader = new FileReader("C:\\1\\multiple.txt");
+            buffer = new BufferedReader(reader);
+            line = buffer.readLine();
+            while (line != null) {
+                System.out.println(line);
+                line = buffer.readLine();
+            }            
+            buffer.close();                   
+        } catch (IOException e) {         }
+        
+        
+        //**********************************************************************
+        //**********************************************************************
+        // MORE FILE CONTENT (extra stuff for those who want to learn)
+        //**********************************************************************
+        //**********************************************************************
+        
+        
+        ////////////////////////////////////////////////////////////////////////
         // USER INTERACTION (involve the user in saving and opening file)
         ////////////////////////////////////////////////////////////////////////
         
@@ -281,35 +312,8 @@ public class TextFilesExamples
             }
         }
         
-        ////////////////////////////////////////////////////////////////////////
-        // BASIC EXAMPLE (simple, stripped down reading froma file)
-        ////////////////////////////////////////////////////////////////////////
-        
-        try {            
-            // Read in one line of a file...
-            FileReader     reader = new FileReader("C:\\1\\file.xyz");
-            BufferedReader buffer = new BufferedReader(reader);
-            String line = buffer.readLine();
-            java.lang.System.out.println(line);
-            buffer.close();
-
-            // What if the file had multiple lines?
-            reader = new FileReader("C:\\1\\multiple.txt");
-            buffer = new BufferedReader(reader);
-            line = buffer.readLine();
-            while (line != null) {
-                java.lang.System.out.println(line);
-                line = buffer.readLine();
-            }            
-            buffer.close();                   
-        } catch (IOException e) {         }
-        
-        ////////////////////////////////////////////////////////////////////////
-        // MORE FILE CONTENT (extra stuff for those who want to learn)
-        ////////////////////////////////////////////////////////////////////////
-        
         // Do it again with the array (multiple lines).........................
-        System.out.println("Open file with multiple lines (user picks file)");
+        System.out.println("Open file with multiple lines (user picks file)..");
         
         try {
             chooser.showOpenDialog(null);
@@ -327,22 +331,25 @@ public class TextFilesExamples
         
         // We can use a pre-built class (from Mr. Wachs but you can modify it
         // or not use it) to do the same thing (save and open).................
-        Simulator.comment("Class to save/open one line (no user)");
+        System.out.println("Class to save/open one line (no user)............");
+        
+        // Create the file to save the data into................................
+        String fileName = "C:\\1\\data2.txt";
         
         // Instantiate (make an object) the file handler....................... 
         FileHandler fileHandler = new FileHandler();
         
         // We can call any of the methods to do what we need...................  
-        fileHandler.save(word, name);
-        String newWord = fileHandler.open(name);
+        fileHandler.save(word, fileName);
+        String newWord = fileHandler.open(fileName);
         
         // Compare the before and after........................................        
         System.out.println("Before: " + word);
         System.out.println("After : " + newWord);
                 
         // Now with the array of data, we create a save dialog (using another 
-        // class available to you).............................................  
-        Simulator.comment("Class to save/open multiple lines (with user)");
+        // class available to you)............................................. 
+        System.out.println("Class to save/open multiple lines (with user)....");
         
         Dialogs dialog = new Dialogs();
         file = dialog.saveFile(null);
@@ -355,10 +362,9 @@ public class TextFilesExamples
         System.out.println("Before: " + text.toString(poem));
         System.out.println("After:  " + text.toString(newPoem));
         
-        // Now we want to save "anything" to a file (for save and open)........
-        Simulator.comment("Now save/open on a complex data type");
-        
-        
+        // Now we want to save "anything" to a file (for save and open).........
+        System.out.println("Now save/open on a complex data type.............");
+                
         // Make a variable of "anything", or array of ("anythings", or a 
         // collection (LinkedList) of "anythings"..............................
         
@@ -366,8 +372,8 @@ public class TextFilesExamples
         Athlete athlete = new Athlete();
         
         // Save this class object data to a file, open it, and compare......... 
-        fileHandler.saveObject(athlete, name);
-        Athlete newAthlete = (Athlete)fileHandler.openObject(name);
+        fileHandler.saveObject(athlete, fileName);
+        Athlete newAthlete = (Athlete)fileHandler.openObject(fileName);
         System.out.println("Before: " + athlete.toString());        
         if (newAthlete != null) {
             System.out.println("After:  " + newAthlete.toString());

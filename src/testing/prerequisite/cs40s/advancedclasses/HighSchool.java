@@ -1,6 +1,9 @@
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
  
+/** Required API imports */
+import java.io.Serializable;
+
 /**
  * HighSchool.java - represents a high school student person. Before creating
  * this class we altered the NetBeans template (Tools - Templates) for a 
@@ -21,7 +24,7 @@ package testing.prerequisite.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since May 2, 2025, 10:08:46 a.m.
  */
-public abstract class HighSchool extends Student
+public abstract class HighSchool extends Student implements Serializable
 {
 
     /**

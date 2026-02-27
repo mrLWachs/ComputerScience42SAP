@@ -1,13 +1,16 @@
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
  
+/** Required API imports */
+import java.io.Serializable;
+
 /**
  * Husky.java - represents a Husky HighSchool Student Person 
  *
  * @author Mr. Wachs
  * @since May 2, 2025, 10:08:52 a.m.
  */
-public class Husky extends HighSchool
+public class Husky extends HighSchool implements Serializable
 {
 
     /**

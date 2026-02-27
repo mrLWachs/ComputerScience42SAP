@@ -1,6 +1,9 @@
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
 
+/** Required API imports */
+import java.io.Serializable;
+
 
 /*
  * Book - represents a book object which is "associated" (the "has a" 
@@ -9,7 +12,7 @@ package testing.prerequisite.cs40s.advancedclasses;
  * @author Mr. Wachs
  * @since Mar 25, 2025
 */
-public class Book
+public class Book implements Serializable
 {
 
     // Although, altering a NetBeans template can be useful (so I do not always

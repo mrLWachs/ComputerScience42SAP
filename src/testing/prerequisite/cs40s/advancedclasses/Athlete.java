@@ -1,6 +1,9 @@
 /** Required package class namespace */
 package testing.prerequisite.cs40s.advancedclasses;
  
+/** Required API imports */
+import java.io.Serializable;
+
 /**
  * Athlete.java - represents a Athlete Husky HighSchool Student Person. Using 
  * the keyword 'implements' in the class signature line, means this class 
@@ -15,7 +18,7 @@ package testing.prerequisite.cs40s.advancedclasses;
  * @since May 2, 2025, 10:08:59 a.m.
  */
 public class Athlete extends Husky implements PermissionForm, Hockey, 
-        CheeseRolling
+        CheeseRolling, Serializable
 {
     
     private boolean haveForm;       // Encapsulated properties (variables)
