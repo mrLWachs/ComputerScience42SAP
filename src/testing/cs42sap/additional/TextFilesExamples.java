@@ -43,6 +43,53 @@ import utility.io.System;
  * associated with multiple files that might be reading and/or writing to 
  * multiple files at the same time – and, multiple applications might access 
  * the same file(s). 
+ * 
+ * SPECIFICALLY FROM THE AP COMPUTER SCIENCE CURRICULUM:
+ * =====================================================
+ * 
+ * See: https://bit.ly/3ONCRCY
+ * 
+ * Learning Objective: Develop code to read data from a text file.
+ * 
+ * Specifics: A file is storage for data that persists when the program is not 
+ * running. The data in a file can be retrieved during program execution. A 
+ * file can be connected to the program using the File and Scanner classes. A 
+ * file can be opened by creating a File object, using the name of the file as 
+ * the argument of the constructor. File(String str) is the File constructor 
+ * that accepts a String file name to open for reading, where str is the 
+ * pathname for the file. When using the File class, it is required to indicate
+ * what to do if the file with the provided name cannot be opened. One way to 
+ * accomplish this is to add throws IOException to the header of the method 
+ * that uses the file. If the file name is invalid, the program will terminate.
+ * The File and IOException classes are part of the java.io package. An import 
+ * statement must be used to make these classes available for use in the 
+ * program. The following Scanner methods and constructor - including what they
+ * do and when they are used - are part of the Java Quick Reference: 
+ * (1) Scanner(File f) is the Scanner constructor that accepts a File for 
+ * reading. (2) int nextInt() returns the next int read from the file or input
+ * source if available. If the next int does not exist or is out of range, it 
+ * will result in an InputMismatchException. (3) double nextDouble() returns
+ * the next double read from the file or input source. If the next double does 
+ * not exist, it will result in an InputMismatchException. 
+ * (4) boolean nextBoolean() returns the next boolean read from the file or 
+ * input source. If the next boolean does not exist, it will result in an 
+ * InputMismatchException. (5) String nextLine() returns the next line of text 
+ * as a String read from the file or input source; can return the empty string 
+ * if called immediately after another Scanner method that is reading from the 
+ * file or input source. (6) String next() returns the next String read from 
+ * the file or input source. (7) boolean hasNext() returns true if there is a 
+ * next item to read in the file or input source; returns false otherwise.
+ * (8) void close() closes this scanner. Using nextLine and the other Scanner 
+ * methods together on the same input source sometimes requires code to adjust
+ * for the methods’ different ways of handling whitespace. The following 
+ * additional String method - including what it does and when it is used - is
+ * part of the Java Quick Reference: String[] split(String del) returns a 
+ * String array where each element is a substring of this String, which has 
+ * been split around matches of the given expression del. A while loop can be 
+ * used to detect if the file still contains elements to read by using the 
+ * hasNext method as the condition of the loop. A file should be closed when 
+ * the program is finished using it. The close method from Scanner is called 
+ * to close the file. 
  *
  * @author Mr. Wachs
  * @since February 2026
