@@ -10,9 +10,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.swing.JFileChooser;
+import testing.prerequisite.cs40s.advancedclasses.Athlete;
 import utility.collections.LinkedList;
+import utility.io.Dialogs;
+import utility.io.FileHandler;
 import utility.io.Simulator;
 import utility.io.System;
+import utility.tools.Numbers;
+import utility.tools.Text;
 
 
 /**
@@ -157,7 +162,7 @@ public class TextFilesExamples
         // A "collection" of pieces of data (in this case an array)
         String[] poem = {
             "He strolls in, hoodie up, coding brain on airplane mode  ",
-            "Dodges Mr. Wachs like it’s part of the syllabus ",
+            "Dodges Mr. Wachs like it's part of the syllabus ",
             "Speaks fluent Java but not good morning ",
             "Keyboard clacks louder than his social skills",
             "Too cool, too chill, too Gen Z to ever look up from the screen"
@@ -299,8 +304,97 @@ public class TextFilesExamples
             buffer.close();                   
         } catch (IOException e) {         }
         
+        ////////////////////////////////////////////////////////////////////////
+        // MORE FILE CONTENT (extra stuff for those who want to learn)
+        ////////////////////////////////////////////////////////////////////////
+        
+        // Do it again with the array (multiple lines).........................
+        System.out.println("Open file with multiple lines (user picks file)");
+        
+        try {
+            chooser.showOpenDialog(null);
+            file = chooser.getSelectedFile();
+            FileReader     reader = new FileReader(file);       // Connect.....
+            BufferedReader buffer = new BufferedReader(reader); // Connect.....            
+            String line = buffer.readLine();                    // Read line...       
+            while (line != null) {                  // Loop until no inputs left
+                System.out.println("This line read was " + line); // Output....
+                line = buffer.readLine();                       // Read again..
+            }
+            buffer.close();                                     // Close connect  
+        } 
+        catch (IOException e) { }    // You do not need to respond to the error
+        
+        // We can use a pre-built class (from Mr. Wachs but you can modify it
+        // or not use it) to do the same thing (save and open).................
+        Simulator.comment("Class to save/open one line (no user)");
+        
+        // Instantiate (make an object) the file handler....................... 
+        FileHandler fileHandler = new FileHandler();
+        
+        // We can call any of the methods to do what we need...................  
+        fileHandler.save(word, name);
+        String newWord = fileHandler.open(name);
+        
+        // Compare the before and after........................................        
+        System.out.println("Before: " + word);
+        System.out.println("After : " + newWord);
+                
+        // Now with the array of data, we create a save dialog (using another 
+        // class available to you).............................................  
+        Simulator.comment("Class to save/open multiple lines (with user)");
+        
+        Dialogs dialog = new Dialogs();
+        file = dialog.saveFile(null);
+        fileHandler.save(poem, file);
+        file = dialog.openFile(null);
+        String[] newPoem = fileHandler.openArray(file);
+        
+        // Compare the before and after (and use another class "tool" to help).  
+        Text text = new Text();
+        System.out.println("Before: " + text.toString(poem));
+        System.out.println("After:  " + text.toString(newPoem));
+        
+        // Now we want to save "anything" to a file (for save and open)........
+        Simulator.comment("Now save/open on a complex data type");
         
         
+        // Make a variable of "anything", or array of ("anythings", or a 
+        // collection (LinkedList) of "anythings"..............................
+        
+        // Create an Athlete object............................................
+        Athlete athlete = new Athlete();
+        
+        // Save this class object data to a file, open it, and compare......... 
+        fileHandler.saveObject(athlete, name);
+        Athlete newAthlete = (Athlete)fileHandler.openObject(name);
+        System.out.println("Before: " + athlete.toString());        
+        if (newAthlete != null) {
+            System.out.println("After:  " + newAthlete.toString());
+        }
+        
+        // Now take it up to an entire collection of class level objects all 
+        // put into a linked list collection and then dave the entire list to
+        // a file, open the entire list, and compare the two lists.............   
+        LinkedList<Athlete> athletes = new LinkedList<>();
+        
+        Numbers numbers = new Numbers();
+        
+        // Traverse up to 100 athlete objects (instances), creating Athlete 
+        // objects, assign them random names and ages, and then adding that 
+        // instance to the list................................................
+        for (int i = 0; i < 100; i++) {
+            String athleteName     = text.randomWord();
+            Athlete athleteForList = new Athlete(athleteName);
+            athletes.add(athleteForList);
+        }
+        
+        // Save the list to the file, open the list, and compare...............  
+        fileHandler.saveObject(athletes, file);
+        LinkedList<Athlete> newAthletes = 
+                (LinkedList<Athlete>)fileHandler.openObject(file);
+        System.out.println("Before: " + athletes);
+        System.out.println("After:  " + newAthletes);
         
         System.out.println("Completed Learning about File Handling...........");
     }
