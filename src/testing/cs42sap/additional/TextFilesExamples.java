@@ -384,6 +384,7 @@ public class TextFilesExamples
         // a file, open the entire list, and compare the two lists.............   
         LinkedList<Athlete> athletes = new LinkedList<>();
         
+        // Naother "helper" class for generating random numbers................
         Numbers numbers = new Numbers();
         
         // Traverse up to 100 athlete objects (instances), creating Athlete 
@@ -391,14 +392,15 @@ public class TextFilesExamples
         // instance to the list................................................
         for (int i = 0; i < 100; i++) {
             String athleteName     = text.randomWord();
-            Athlete athleteForList = new Athlete(athleteName);
+            int jerseyNumber       = numbers.random(1, 99);
+            Athlete athleteForList = new Athlete(athleteName, jerseyNumber);
             athletes.add(athleteForList);
         }
         
         // Save the list to the file, open the list, and compare...............  
         fileHandler.saveObject(athletes, file);
-        LinkedList<Athlete> newAthletes = 
-                (LinkedList<Athlete>)fileHandler.openObject(file);
+        LinkedList<Athlete> newAthletes;
+        newAthletes = (LinkedList<Athlete>)fileHandler.openObject(file);
         System.out.println("Before: " + athletes);
         System.out.println("After:  " + newAthletes);
         

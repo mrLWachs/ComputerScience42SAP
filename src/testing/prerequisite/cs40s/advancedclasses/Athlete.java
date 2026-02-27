@@ -23,6 +23,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
     
     private boolean haveForm;       // Encapsulated properties (variables)
     private String opponentName;
+    private int jerseyNumber;
     private int homeScore;
     private int opponentScore;
     private boolean champion;
@@ -35,15 +36,17 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
      * Constructor, set class properties
      * 
      * @param name the name for this athlete
+     * @param jerseyNumber the jersey number for this athlete
      */
-    public Athlete(String name) {
-        super();                    // Call super-constructor
-        super.name    = name;       // Our inherited property
-        opponentName  = "";         // Even protected properties
-        opponentScore = 0;
-        homeScore     = 0;
-        haveForm      = PermissionForm.NOT_SIGNED;  // Using interface property
-        champion      = WE_LOST;
+    public Athlete(String name, int jerseyNumber) {
+        super();                                       // Call super-constructor
+        this.jerseyNumber = jerseyNumber;                 // This class property
+        super.name        = name;                      // Our inherited property
+        opponentName      = "";                     // Even protected properties
+        opponentScore     = 0;
+        homeScore         = 0;
+        haveForm          = PermissionForm.NOT_SIGNED; // Use interface property
+        champion          = WE_LOST;
     }
     
     /**
@@ -52,7 +55,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
     public Athlete() {
         // To have one constructor method call another class constructor method,
         // you use the keyword "this" with round brackets
-        this("Havoc");
+        this("Havoc", 0);
     }
          
     /**
@@ -62,7 +65,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
      */
     @Override
     public String toString() {
-        return "Athlete: " + super.toString();
+        return "Athlete (" + jerseyNumber + "): "+ super.toString();
     }
    
     /**
