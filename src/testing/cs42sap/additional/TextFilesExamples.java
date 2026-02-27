@@ -276,6 +276,28 @@ public class TextFilesExamples
             }
         }
         
+        ////////////////////////////////////////////////////////////////////////
+        // BASIC EXAMPLE (simple, stripped down reading froma file)
+        ////////////////////////////////////////////////////////////////////////
+        
+        try {            
+            // Read in one line of a file...
+            FileReader     reader = new FileReader("C:\\1\\file.xyz");
+            BufferedReader buffer = new BufferedReader(reader);
+            String line = buffer.readLine();
+            java.lang.System.out.println(line);
+            buffer.close();
+
+            // What if the file had multiple lines?
+            reader = new FileReader("C:\\1\\multiple.txt");
+            buffer = new BufferedReader(reader);
+            line = buffer.readLine();
+            while (line != null) {
+                java.lang.System.out.println(line);
+                line = buffer.readLine();
+            }            
+            buffer.close();                   
+        } catch (IOException e) {         }
         
         
         
