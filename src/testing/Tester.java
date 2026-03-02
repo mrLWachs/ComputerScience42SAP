@@ -36,7 +36,7 @@ public class Tester
     public static final int TEST_CS30S              = 9;
     public static final int TEST_CS40S              = 10;
     public static final int TEST_CS42SAP_CURRICULUM = 11;
-    public static final int TEST_CS42SAP_TESTS      = 12;
+    public static final int TEST_CS42SAP_TESTS      = 12;   
     public static final int TEST_FUN_DAYS           = 13;
     public static final int TEST_MORE_POSTSECONDARY = 14;
      

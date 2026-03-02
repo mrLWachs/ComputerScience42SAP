@@ -254,7 +254,7 @@ public class PermanentStorageTest
         // instance to the list................................................
         for (int i = 0; i < 100; i++) {
             String athleteName     = text.randomWord();
-            Athlete athleteForList = new Athlete(athleteName);
+            Athlete athleteForList = new Athlete(athleteName,0);
             athletes.add(athleteForList);
         }
         
