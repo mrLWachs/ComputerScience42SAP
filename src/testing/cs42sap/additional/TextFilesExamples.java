@@ -9,15 +9,18 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.swing.JFileChooser;
+//import javax.swing.JFileChooser;
 import testing.prerequisite.cs40s.advancedclasses.Athlete;
 import utility.collections.LinkedList;
 import utility.io.Dialogs;
 import utility.io.FileHandler;
 import utility.io.Simulator;
 import utility.io.System;
+import utility.io.JFileChooser;
 import utility.tools.Numbers;
 import utility.tools.Text;
+import utility.io.Simulator;
+import utility.io.System;
 
 
 /**

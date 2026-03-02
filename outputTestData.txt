@@ -72,10 +72,10 @@
 71:	answer4 = 125.0
 72:	answer5 = 3.0
 73:	answer6 = -0.6931471805599453
-74:	seed = 0.39407017855219273
-75:	number = 4.940701785521927
-76:	value = 4
-77:	card = 45
+74:	seed = 0.13542959789230036
+75:	number = 2.3542959789230036
+76:	value = 2
+77:	card = 29
 78:	equal
 79:	less than
 80:	!=
@@ -331,7 +331,7 @@
 330:	Problems
 331:	Problems
 332:	Problems
-333:	Number was 3
+333:	Number was 1
 334:	~~~ SIMULATED {Message null  simulated message} DIALOG: 
 335:	~~~ SIMULATED {Message Learning  simulated message} DIALOG: 
 336:	Completed learning methods!
@@ -542,7 +542,7 @@
 541:	~~~ SIMULATED {Message null  simulated message} DIALOG: 
 542:	~~~ SIMULATED {Message null  simulated message} DIALOG: 
 543:	~~~ SIMULATED {Message null  simulated message} DIALOG: 
-544:	Random character was B
+544:	Random character was K
 545:	~~~ SIMULATED {Message null  simulated message} DIALOG: 
 546:	~~~ SIMULATED {Message null  simulated message} DIALOG: 
 547:	~~~ SIMULATED {Message The Matrix...  simulated message} DIALOG: 
@@ -2370,1045 +2370,1065 @@
 2369:	Keyboard clacks louder than his social skills
 2370:	Too cool, too chill, too Gen Z to ever look up from the screen
 2371:	Now involve the user in naming of a file.........
-2372:	Save an ARRAY of data to a user created file.....
-2373:	File already exists!
-2374:	Open file with multiple lines (user picks file)..
-2375:	This line read was He strolls in, hoodie up, coding brain on airplane mode  
-2376:	This line read was Dodges Mr. Wachs like it's part of the syllabus 
-2377:	This line read was Speaks fluent Java but not good morning 
-2378:	This line read was Keyboard clacks louder than his social skills
-2379:	This line read was Too cool, too chill, too Gen Z to ever look up from the screen
-2380:	Class to save/open one line (no user)............
-2381:	Before: WachsAvoidant
-2382:	After : WachsAvoidant
-2383:	Class to save/open multiple lines (with user)....
-2384:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
-2385:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
-2386:	Before: [He strolls in, hoodie up, coding brain on airplane mode  ,Dodges Mr. Wachs like it's part of the syllabus ,Speaks fluent Java but not good morning ,Keyboard clacks louder than his social skil ... (line shortened) ...
-2387:	After:  [He strolls in, hoodie up, coding brain on airplane mode  ,Dodges Mr. Wachs like it's part of the syllabus ,Speaks fluent Java but not good morning ,Keyboard clacks louder than his social skil ... (line shortened) ...
-2388:	Now save/open on a complex data type.............
-2389:	Before: Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@3c130745
-2390:	After:  Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@7e0b85f9
-2391:	Before: [Athlete (34): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@63355449,Athlete (2): Husky: HighSchool: Student Over-ri ... (line shortened) ...
-2392:	After:  [Athlete (34): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@26794848,Athlete (2): Husky: HighSchool: Student Over-ri ... (line shortened) ...
-2393:	Completed Learning about File Handling...........
-2394:	Computer Science 42SAP - Practice Tests content running simulated:.........................
-2395:	Computer Science 42SAP - AP Practice Test 1 content running simulated:.....................
-2396:	// Question 1...
-2397:	Consider the following code segment.
-2398:	int a = 5;
-2399:	int b = 2;
-2400:	double c = 3.0;
-2401:	System.out.println(5 + a / b * c - 1);
-2402:	What is printed when the code segment is executed?
-2403:	(A) 0.666666666666667
-2404:	(B) 9.0
-2405:	(C) 10.0
-2406:	(D) 11.5
-2407:	(E) 14.0
-2408:	// Answer 1...
-2409:	C
-2410:	// Question 2...
-2411:	Which of the following statements assigns a random
-2412:	integer between 25 and 60, inclusive to rn?
-2413:	(A) int rnA = (int)(Math.random() * 25) + 36;
-2414:	(B) int rnB = (int)(Math.random() * 25) + 60;
-2415:	(C) int rnC = (int)(Math.random() * 26) + 60;
-2416:	(D) int rnD = (int)(Math.random() * 36) + 25;
-2417:	(E) int rnE = (int)(Math.random() * 60) + 25;
-2418:	// Answer 2...
-2419:	A
-2420:	D
-2421:	// Question 3...
-2422:	Which of the following best describes the value
-2423:	of the Boolean expression shown below?
-2424:	a && !(b || a)
-2425:	(A) The value is always true
-2426:	(B) The value is always false
-2427:	(C) The value is true when a has the value 
+2372:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
+2373:	Save an ARRAY of data to a user created file.....
+2374:	File already exists!
+2375:	Open file with multiple lines (user picks file)..
+2376:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
+2377:	This line read was �� sr utility.collections.LinkedList�̉-�� I 	NOT_FOUNDI lengthI longestWordL headt Lutility/collections/Node;L tailq ~ xp����   d   �sr utility.collections.Node5�����2 ... (line shortened) ...
+2378:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xr 0testing.prerequisite.cs40s.advancedclasses.Husky�F���r+g  xr 5testing.prerequisite.cs40s.advancedclasses.HighSchool6tII�_�^  x ... (line shortened) ...
+2379:	This line read was �+ I ageZ aliveL genderq ~ L nameq ~ xp    t unidentifedt pygmies           sr /testing.prerequisite.cs40s.advancedclasses.BookHE��?�N  xp               t  sq ~ sq ~ ... (line shortened) ...
+2380:	This line read was benefactor           sq ~                q ~ sq ~ sq ~     q ~ t 
+2381:	This line read was strikingly           sq ~                q ~ sq ~ sq ~     q ~ t Gish           sq ~                q ~ sq ~ sq ~     q ~ t moneylender           sq ~           ... (line shortened) ...
+2382:	This line read was councilmen           sq ~                q ~ sq ~ sq ~     q ~ t tram           sq ~                q ~ sq ~ sq ~     q ~ t muskrats           sq ~              ... (line shortened) ...
+2383:	This line read was Tweedledum           sq ~                q ~ sq ~ sq ~     q ~ t 
+2384:	This line read was italicization           sq ~                q ~ sq ~ sq ~     q ~ t particle           sq ~                q ~ sq ~ sq ~     q ~ t leadsman           sq ~       ... (line shortened) ...
+2385:	This line read was Greensboro           sq ~                q ~ sq ~ sq ~     q ~ t carting           sq ~                q ~ sq ~ sq ~     q ~ t Emmalyn           sq ~            ... (line shortened) ...
+2386:	This line read was saintliest           sq ~                q ~ sq ~ sq ~     q ~ t 
+2387:	This line read was resynchronize           sq ~                q ~ sq ~ sq ~     q ~ t fucks           sq ~                q ~ sq ~ sq ~     q ~ t 	unbundled           sq ~         ... (line shortened) ...
+2388:	This line read was subjugated           sq ~                q ~ sq ~ sq ~     q ~ t 
+2389:	This line read was antivenins           sq ~                q ~ sq ~ sq ~     q ~ t banana           sq ~                q ~ sq ~ sq ~     q ~ t 
+2390:	This line read was authentically           sq ~                q ~ sq ~ sq ~     q ~ t Leonardo           sq ~                q ~ sq ~ sq ~     q ~ t risible           sq ~        ... (line shortened) ...
+2391:	This line read was circumstances           sq ~                q ~ sq ~ sq ~     q ~ t 	wishbones           sq ~                q ~ sq ~ sq ~     q ~ t lubing           sq ~        ... (line shortened) ...
+2392:	This line read was rotundness           sq ~                q ~ sq ~ sq ~     q ~ t lawbreakings           sq ~                q ~ sq ~ sq ~     q ~ t poster           sq ~        ... (line shortened) ...
+2393:	This line read was subregions           sq ~                q ~ sq ~ sq ~     q ~ t fiends           sq ~                q ~ sq ~ sq ~     q ~ t Leslie           sq ~              ... (line shortened) ...
+2394:	This line read was sepulchres           sq ~                q ~ sq ~ sq ~     q ~ t meat           sq ~                q ~ sq ~ sq ~     q ~ t uncelebrated           sq ~          ... (line shortened) ...
+2395:	This line read was Northeasts           sq ~                q ~ sq ~ sq ~     q ~ t trite           sq ~                q ~ sq ~ sq ~     q ~ t 	camellias           sq ~            ... (line shortened) ...
+2396:	This line read was chromatics           sq ~                q ~ sq ~ sq ~     q ~ t fashion           sq ~                q ~ sq ~ sq ~     q ~ t Lyndsay           sq ~            ... (line shortened) ...
+2397:	This line read was persuaders           sq ~                q ~ sq ~ sq ~     q ~ t Tibet           sq ~                q ~ sq ~ sq ~     q ~ t 	zucchinis           sq ~            ... (line shortened) ...
+2398:	This line read was Mozambican           sq ~                q ~ sq ~ sq ~     q ~ t major           sq ~                q ~ sq ~ sq ~     q ~ t 	implosion           sq ~            ... (line shortened) ...
+2399:	Class to save/open one line (no user)............
+2400:	Before: WachsAvoidant
+2401:	After : WachsAvoidant
+2402:	Class to save/open multiple lines (with user)....
+2403:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
+2404:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
+2405:	Before: [He strolls in, hoodie up, coding brain on airplane mode  ,Dodges Mr. Wachs like it's part of the syllabus ,Speaks fluent Java but not good morning ,Keyboard clacks louder than his social skil ... (line shortened) ...
+2406:	After:  [He strolls in, hoodie up, coding brain on airplane mode  ,Dodges Mr. Wachs like it's part of the syllabus ,Speaks fluent Java but not good morning ,Keyboard clacks louder than his social skil ... (line shortened) ...
+2407:	Now save/open on a complex data type.............
+2408:	Before: Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@3745e5c6
+2409:	After:  Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@501edcf1
+2410:	Before: [Athlete (71): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@78b729e6,Athlete (41): Husky: HighSchool: Student Over-r ... (line shortened) ...
+2411:	After:  [Athlete (71): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@16293aa2,Athlete (41): Husky: HighSchool: Student Over-r ... (line shortened) ...
+2412:	Completed Learning about File Handling...........
+2413:	Computer Science 42SAP - Practice Tests content running simulated:.........................
+2414:	Computer Science 42SAP - AP Practice Test 1 content running simulated:.....................
+2415:	// Question 1...
+2416:	Consider the following code segment.
+2417:	int a = 5;
+2418:	int b = 2;
+2419:	double c = 3.0;
+2420:	System.out.println(5 + a / b * c - 1);
+2421:	What is printed when the code segment is executed?
+2422:	(A) 0.666666666666667
+2423:	(B) 9.0
+2424:	(C) 10.0
+2425:	(D) 11.5
+2426:	(E) 14.0
+2427:	// Answer 1...
+2428:	C
+2429:	// Question 2...
+2430:	Which of the following statements assigns a random
+2431:	integer between 25 and 60, inclusive to rn?
+2432:	(A) int rnA = (int)(Math.random() * 25) + 36;
+2433:	(B) int rnB = (int)(Math.random() * 25) + 60;
+2434:	(C) int rnC = (int)(Math.random() * 26) + 60;
+2435:	(D) int rnD = (int)(Math.random() * 36) + 25;
+2436:	(E) int rnE = (int)(Math.random() * 60) + 25;
+2437:	// Answer 2...
+2438:	A
+2439:	D
+2440:	// Question 3...
+2441:	Which of the following best describes the value
+2442:	of the Boolean expression shown below?
+2443:	a && !(b || a)
+2444:	(A) The value is always true
+2445:	(B) The value is always false
+2446:	(C) The value is true when a has the value 
     false, and is false otherwise
-2428:	(D) The value is true when b has the value 
+2447:	(D) The value is true when b has the value 
     false, and is false otherwise
-2429:	(E) The value is true when either a or b has 
+2448:	(E) The value is true when either a or b has 
     the value true, and is false otherwise
-2430:	// Answer 3...
-2431:	B
-2432:	// Question 4...
-2433:	Consider the following code segment
-2434:	int val = 48;
-2435:	int div = 6;
-2436:	while((val % 2 == 0) && div > 0) {
-2437:	    if (val % div == 0) {
-2438:	        System.out.print(val + " ");
-2439:	    }
-2440:	    val /= 2;
-2441:	    div--;
-2442:	}
-2443:	What is printed when the code segment is executed?
-2444:	(A) 48 12 6
-2445:	(B) 48 12 6 3
-2446:	(C) 48 12 6 3 1
-2447:	(D) 48 24 12 6
-2448:	(E) 48 24 12 6 3
-2449:	// Answer 4...
-2450:	A
-2451:	// Question 5...
-2452:	Which of the following code segments is equivalent to the code below
-2453:	if (x >= 1) x = x * 3;
-2454:	if (x > 3) x = 0;
-2455:	(A) x = 0
-2456:	(B) if (x > 1) x = 0;
-2457:	(C) if (x > 3) x = 0;
-2458:	(D) if (x >= 1) x = 0;
-2459:	(E) none of the above
-2460:	// Answer 5...
-2461:	B
-2462:	// Question 6...
-2463:	When is the following Boolean expression true
-2464:	(a and b are integers)?
-2465:	(a < b) && !(b > a)
-2466:	(A) Always true
-2467:	(B) Never true
-2468:	(C) a = b
-2469:	(D) a < b
-2470:	(E) a > b
-2471:	// Answer 6...
-2472:	B
-2473:	// Question 7...
-2474:	Consider the following code segment
-2475:	int i = a random number such that 1 <= i <= n;
-2476:	for (int a = 2; a <= i; a++)
-2477:	    for (int b = 1; b < i; b++)
-2478:	        System.out.println("*");
-2479:	(A) 0
-2480:	(B) 1
-2481:	(C) 2
-2482:	(D) n - 1
-2483:	(E) n - 2
-2484:	// Answer 7...
-2485:	B
-2486:	// Question 8...
-2487:	Consider the following code segment
-2488:	int p = 5;
-2489:	int q = 2;
-2490:	int sum = 0;
-2491:	while (p <= 8) {
-2492:	    sum += p % q;
-2493:	    p++;
-2494:	    q++;
-2495:	}
-2496:	(A) 1
-2497:	(B) 0
-2498:	(C) 13
-2499:	(D) 7
-2500:	(E) 4
-2501:	// Answer 8...
-2502:	D
-2503:	// Question 9...
-2504:	Consider the following code segment
-2505:	for (int i = 0; i <= 3; i++) {
-2506:	    for (int j = 1; j <= 5; j+=2) {
-2507:	        System.out.println("*");
-2508:	    }
-2509:	}
-2510:	(A) 3
-2511:	(B) 6
-2512:	(C) 9
-2513:	(D) 12
-2514:	(E) 15
-2515:	// Answer 9...
-2516:	D
-2517:	// Question 10...
-2518:	What are the values of a and b after the for loop
-2519:	finishes?
-2520:	int a = 10;
-2521:	int b = 3;
-2522:	int t = 0;
-2523:	for (int i = 1; i < 4; i++) {
-2524:	    t = a;
-2525:	    a = i + b;
-2526:	    b = t - i;
-2527:	}
-2528:	(A) a = 5 and b = -2
-2529:	(B) a = 6 and b = 7
-2530:	(C) a = 6 and b = 3
-2531:	(D) a = 12 and b = 1
-2532:	(E) a = 5 and b = 8
-2533:	// Answer 10...
-2534:	E
-2535:	Computer Science 42SAP - AP Practice Test 2 content running simulated:.....................
-2536:	// Question 1...
-2537:	Consider the following class definition
-2538:	public class Example
-2539:	{
-2540:	     private int x;
-2541:	     // constructor not shown
-2542:	}
-2543:	Which of the following is a correct header for a
-2544:	method that would return the value of the private
-2545:	instance variable x so that it can be used in a
-2546:	class other than Example?
-2547:	(A) private int getX()
-2548:	(B) private void getX()
-2549:	(C) public int getX()
-2550:	(D) public void getX()
-2551:	(E) public void getX(int x)
-2552:	// Answer 1...
-2553:	C
-2554:	// Question 2...
-2555:	Consider the following class definitions
-2556:	public class Thing1 {
-2557:	     public void calc(int n) {
-2558:	          n *= 3;
-2559:	          System.out.print(n);
-2560:	     }
+2449:	// Answer 3...
+2450:	B
+2451:	// Question 4...
+2452:	Consider the following code segment
+2453:	int val = 48;
+2454:	int div = 6;
+2455:	while((val % 2 == 0) && div > 0) {
+2456:	    if (val % div == 0) {
+2457:	        System.out.print(val + " ");
+2458:	    }
+2459:	    val /= 2;
+2460:	    div--;
+2461:	}
+2462:	What is printed when the code segment is executed?
+2463:	(A) 48 12 6
+2464:	(B) 48 12 6 3
+2465:	(C) 48 12 6 3 1
+2466:	(D) 48 24 12 6
+2467:	(E) 48 24 12 6 3
+2468:	// Answer 4...
+2469:	A
+2470:	// Question 5...
+2471:	Which of the following code segments is equivalent to the code below
+2472:	if (x >= 1) x = x * 3;
+2473:	if (x > 3) x = 0;
+2474:	(A) x = 0
+2475:	(B) if (x > 1) x = 0;
+2476:	(C) if (x > 3) x = 0;
+2477:	(D) if (x >= 1) x = 0;
+2478:	(E) none of the above
+2479:	// Answer 5...
+2480:	B
+2481:	// Question 6...
+2482:	When is the following Boolean expression true
+2483:	(a and b are integers)?
+2484:	(a < b) && !(b > a)
+2485:	(A) Always true
+2486:	(B) Never true
+2487:	(C) a = b
+2488:	(D) a < b
+2489:	(E) a > b
+2490:	// Answer 6...
+2491:	B
+2492:	// Question 7...
+2493:	Consider the following code segment
+2494:	int i = a random number such that 1 <= i <= n;
+2495:	for (int a = 2; a <= i; a++)
+2496:	    for (int b = 1; b < i; b++)
+2497:	        System.out.println("*");
+2498:	(A) 0
+2499:	(B) 1
+2500:	(C) 2
+2501:	(D) n - 1
+2502:	(E) n - 2
+2503:	// Answer 7...
+2504:	B
+2505:	// Question 8...
+2506:	Consider the following code segment
+2507:	int p = 5;
+2508:	int q = 2;
+2509:	int sum = 0;
+2510:	while (p <= 8) {
+2511:	    sum += p % q;
+2512:	    p++;
+2513:	    q++;
+2514:	}
+2515:	(A) 1
+2516:	(B) 0
+2517:	(C) 13
+2518:	(D) 7
+2519:	(E) 4
+2520:	// Answer 8...
+2521:	D
+2522:	// Question 9...
+2523:	Consider the following code segment
+2524:	for (int i = 0; i <= 3; i++) {
+2525:	    for (int j = 1; j <= 5; j+=2) {
+2526:	        System.out.println("*");
+2527:	    }
+2528:	}
+2529:	(A) 3
+2530:	(B) 6
+2531:	(C) 9
+2532:	(D) 12
+2533:	(E) 15
+2534:	// Answer 9...
+2535:	D
+2536:	// Question 10...
+2537:	What are the values of a and b after the for loop
+2538:	finishes?
+2539:	int a = 10;
+2540:	int b = 3;
+2541:	int t = 0;
+2542:	for (int i = 1; i < 4; i++) {
+2543:	    t = a;
+2544:	    a = i + b;
+2545:	    b = t - i;
+2546:	}
+2547:	(A) a = 5 and b = -2
+2548:	(B) a = 6 and b = 7
+2549:	(C) a = 6 and b = 3
+2550:	(D) a = 12 and b = 1
+2551:	(E) a = 5 and b = 8
+2552:	// Answer 10...
+2553:	E
+2554:	Computer Science 42SAP - AP Practice Test 2 content running simulated:.....................
+2555:	// Question 1...
+2556:	Consider the following class definition
+2557:	public class Example
+2558:	{
+2559:	     private int x;
+2560:	     // constructor not shown
 2561:	}
-2562:	public class Thing2 extends Thing1 {
-2563:	     public void calc(int n) {
-2564:	          n += 2;
-2565:	          super.calc(n);
-2566:	          System.out.print(n);
-2567:	     }
-2568:	}
-2569:	The following code seqment appears in a class
-2570:	other than Thing1 or Thing2
-2571:	Thing1 t = new Thing2();
-2572:	t.calc(2);
-2573:	What is printed as a result of executing the
-2574:	code segment?
-2575:	(A) 4
-2576:	(B) 6
-2577:	(C) 68
-2578:	(D) 124
-2579:	(E) 1212
-2580:	// Answer 2...
-2581:	D
-2582:	// Question 3...
-2583:	Consider the following class definitions.
-2584:	public class Student {
-2585:	    public String getFood() {
-2586:	        return "Pizza";
-2587:	    }
-2588:	    public String getInfo() {
-2589:	        return "Studying";
-2590:	    }
-2591:	}
-2592:	public class GradStudent extends Student {
-2593:	    public String getFood() {
-2594:	        return "Taco";
-2595:	    }
-2596:	    public String getInfo() {
-2597:	        super.getInfo();
-2598:	        return "Eating";
-2599:	    }
-2600:	}
-2601:	What is printed when the following code is
-2602:	executed?
-2603:	Student s = new GradStudent();
-2604:	System.out.println(s.getInfo());
-2605:	(A) Pizza
-2606:	(B) Taco
-2607:	(C) Studying
-2608:	(D) Eating
-2609:	(E) Studying
-2610:	    Eating
-2611:	// Answer 3...
-2612:	D
-2613:	// Question 4...
-2614:	Given the following class declarations:
-2615:	public class Car {
-2616:	    private String make;
-2617:	    public Car(String theMake) {
-2618:	        make = theMake;
-2619:	    }
-2620:	    public String getMake() {
-2621:	        return make;
-2622:	    }
-2623:	}
-2624:	public class ElectricCar extends Car {
-2625:	    public ElectricCar() {
-2626:	        super("Ford");
-2627:	    }
-2628:	    public ElectricCar(String theMake) {
-2629:	        super(theMake);
-2630:	    } 
-2631:	}
-2632:	Which of the following will cause a compile
-2633:	time error?
-2634:	(A) Car myCar = new Car();
-2635:	(B) Car myCar1 = new ElectricCar();
-2636:	(C) ElectricCar myCar2 = new ElectricCar("Ford");
-2637:	(D) Car myCar3 = new Car("Ford");
-2638:	(E) Car myCar4 = new ElectricCar("Ford");
-2639:	// Answer 4...
-2640:	A
-2641:	// Question 5...
-2642:	Given the following declarations.
-2643:	public class Vehicle {
-2644:	    public void test(Car x, SportsCar y) { }
-2645:	}
-2646:	public class Car extends Vehicle {
-2647:	}
-2648:	public class SportsCar extends Car {
-2649:	}
-2650:	Also consider the following code that appears
-2651:	in a different class.
-2652:	Vehicle v = new Vehicle();
-2653:	Car c = new Car();
-2654:	SportsCar sporty = new SportsCar();
-2655:	Which of the following is a correct call to test ?
-2656:	(A) v.test(sporty, v);
-2657:	(B) sporty.test(c, c);
-2658:	(C) v.test(sporty, c);
-2659:	(D) sporty.test(sporty, v);
-2660:	(E) c.test(sporty, sporty);
-2661:	// Answer 5...
-2662:	E
-2663:	// Question 6...
-2664:	Class C extends class B, which extends class A. 
-2665:	Also, all of the three classes implement a public
-2666:	method test(). How can a method in an object of
-2667:	class C invoke the test() method defined in class
-2668:	A (without creating a new instance of class A)?
-2669:	(A) test();
-2670:	(B) super.super.test();
-2671:	(C) super.test();
-2672:	(D) this.test();
-2673:	(E) There is no way to call a method in a 
-2674:	    grandparent class from a grandchild class
-2675:	// Answer 6...
-2676:	E
-2677:	// Question 7...
-2678:	Given the following class declarations. Assume
-2679:	that Parent p = new Child(); appears in a client
-2680:	program. What is the result of the call p.m1();
-2681:	public class Parent {
-2682:	    public void m1() {
-2683:	        System.out.print("pm1");
-2684:	        m2();
-2685:	    }
-2686:	    public void m2() {
-2687:	        System.out.print("pm2");
-2688:	    }
-2689:	}
-2690:	public class Child extends Parent {
-2691:	    public void m1() {
-2692:	        super.m1();
-2693:	        System.out.print("cm1");
-2694:	    }
-2695:	    public void m2() {
-2696:	        super.m2();
-2697:	        System.out.print("cm2");
-2698:	    }
-2699:	}
-2700:	(A) pm1pm2cm2cm1
-2701:	(B) pm1pm2
-2702:	(C) pm1pm2cm1cm2
-2703:	(D) pm1cm1
-2704:	(E) pm1
-2705:	// Answer 7...
-2706:	pm1pm2cm2cm1// Question 8...
-2707:	Given the following class declarations.
-2708:	public class Animal {
-2709:	    public void eat() {
-2710:	        System.out.println("AE");
-2711:	    }
-2712:	}
-2713:	public class Bear extends Animal {
-2714:	    public void growl() {
-2715:	        System.out.println("BG");
-2716:	    }
-2717:	}
-2718:	Assume the following declaration is in a 
-2719:	different class.
-2720:	Animal b = new Bear();
-2721:	Which of the following will compile without error?
-2722:	I.   b.eat();
-2723:	II.  b.growl();
-2724:	III. ((Bear)b).growl();
-2725:	(A) I only
-2726:	(B) II only
-2727:	(C) III only
-2728:	(D) I and III only
-2729:	(E) I, II, and III
-2730:	// Answer 8...
-2731:	B
-2732:	// Question 9...
-2733:	Consider the following partial class definitions.
-2734:	public class C1 {
-2735:	    private int num;
-2736:	    private String name;
-2737:	    public C1(int theNum) {
-2738:	        num = theNum
-2739:	    } 
-2740:	    public C1(String theName) {
-2741:	        name = theName;
-2742:	    }
-2743:	}
-2744:	public class C2 extends C1 {
-2745:	    // methods not shown
-2746:	}
-2747:	Which of the following constructors are valid for
-2748:	C2?
-2749:	I. public C2() { }
-2750:	II. public C2(int quan) { super(quan); }
-2751:	III. public C2(String label) { super(label); }
-2752:	(A) All three are valid
-2753:	(B) II only
-2754:	(C) III only
-2755:	(D) II and III
-2756:	(E) None are valid
-2757:	// Answer 9...
-2758:	D
-2759:	// Question 10...
-2760:	Given the following class definition. What are 
-2761:	the values of x, y, and z just before method2
-2762:	returns?
-2763:	public class Class1 {
-2764:	    public int method1(int a, int b) {
-2765:	        int temp = a;
-2766:	        a = b;
-2767:	        b = temp;
-2768:	        return b;
-2769:	    }  
-2770:	    public void method2() {
-2771:	        int x = 3;
-2772:	        int y = 5;
-2773:	        int z = method1(x, y);
-2774:	    }
-2775:	}
-2776:	(A) x=3,y=3,z=3
-2777:	(B) x=3,y=5,z=3
-2778:	(C) x=5,y=3,z=5
-2779:	(D) x=5,y=3,z=3
-2780:	(E) x=3,y=5,z=5
-2781:	// Answer 10...
-2782:	B
-2783:	Computer Science 42SAP - AP Practice Test 3 content running simulated:.....................
-2784:	// Section 1...
-2785:	For the next two Free response questions, 
-2786:	refer to the description below...
-2787:	A travel agency maintains a list of information 
-2788:	about airline flights. Flight information 
-2789:	includes a departure time and an arrival time.
-2790:	You may assume that the two times occur on the 
-2791:	same day. These times are represented by 
-2792:	objects of the Time class. The declaration for
-2793:	the Time class is shown below. It includes a 
-2794:	method which returns the difference (in minutes)
-2795:	between the current Time object and another Time
-2796:	object. 
-2797:	public class Time {
-2798:	     /** 
-2799:	      * @return difference, in minutes, between this
-2800:	      * time and other; difference is negative
-2801:	      * if other is earlier than this time
-2802:	      */
-2803:	     public int minutesUntil(Time other) {
-2804:	          /* implementation not shown */
-2805:	     }
-2806:	     // There may be instance variables, constructors,
-2807:	     // and methods that are not shown.
-2808:	}
-2809:	For example, assume that t1 and t2 are Time 
-2810:	objects where t1 represents 1:00 p.m. and t2 
-2811:	represents 2:15 p.m. The call t1.minutesUntil(t2) 
-2812:	will return 75 and the call t2.minutesUntil(t1) 
-2813:	will return -75. The declaration for the Flight class 
-2814:	is shown below. It has methods to access the 
-2815:	departure time and the arrival time of a flight. 
-2816:	You may assume that the departure time of a 
-2817:	flight is earlier than its arrival time.
-2818:	public class Flight {
-2819:	      /** @return time at which the flight departs */
-2820:	      public Time getDepartureTime() {
-2821:	           /* implementation not shown */ 
-2822:	      }
-2823:	      /** @return time at which the flight arrives */
-2824:	      public Time getArrivalTime() {
-2825:	           /* implementation not shown */ 
-2826:	      }
-2827:	      // There may be instance variables, constructors, 
-2828:	      // and methods that are not shown.
-2829:	}
-2830:	A trip consists of a sequence of flights and is 
-2831:	represented by the Trip class. The Trip class 
-2832:	contains a List of Flight objects that are stored 
-2833:	in chronological order. You may assume that for 
-2834:	each flight after the first flight in the list, 
-2835:	the departure time of the flight is later than 
-2836:	the arrival time of the preceding flight in the 
-2837:	list. A partial declaration of the Trip class is 
-2838:	shown below. You will write two methods for the 
-2839:	Trip class.
-2840:	public class Trip {
-2841:	     /** 
-2842:	       * The list of flights (if any) that make up 
-2843:	       * this trip, stored in chronological order
-2844:	       */
-2845:	     private List<Flight> flights;
-2846:	     /** 
-2847:	       * @return the number of minutes from the 
-2848:	       * departure of the first flight to the arrival 
-2849:	       * of the last flight if there are one or more 
-2850:	       * flights in the trip; 0, if there are no 
-2851:	       * flights in the trip
-2852:	       */
-2853:	     public int getDuration() {
-2854:	          /* to be implemented in part (a) */ 
-2855:	     }
-2856:	     /** 
-2857:	       * Precondition: the departure time for each 
-2858:	       * flight is later than the arrival time of its 
-2859:	       * preceding flight
-2860:	       * @return the smallest number of minutes 
-2861:	       * between the arrival of a flight and the 
-2862:	       * departure of the flight immediately after it, 
-2863:	       * if there are two or more flights in the 
-2864:	       * trip; -1, if there are fewer than two flights 
-2865:	       * in the trip
-2866:	       */
-2867:	     public int getShortestLayover() {
-2868:	          /* to be implemented in part (b) */
-2869:	     }
-2870:	       // There may be instance variables, constructors,
-2871:	       // and methods that are not shown
-2872:	}
-2873:	// Question 1...
-2874:	Complete method getDuration below.  
-2875:	// An answer could be...
-2876:	public int getDuration() {
-2877:	    int totalDuration = 0;
-2878:	    for (Flight flight : flights) {
-2879:	        Time departure = flight.getDepartureTime();
-2880:	        Time arrival   = flight.getArrivalTime();
-2881:	        int  duration  = departure.minutesUntil(arrival);
-2882:	        totalDuration  = totalDuration + duration;
-2883:	    }
-2884:	    return totalDuration;
-2885:	}
-2886:	// Question 2...
-2887:	Write the Trip method getShortestLayover. A 
-2888:	layover is the number of minutes from the arrival 
-2889:	of one flight in a trip to the departure of the 
-2890:	flight immediately after it. If there are two or 
-2891:	more flights in the trip, the method should return 
-2892:	the shortest layover of the trip; otherwise, it 
-2893:	should return -1. For example, assume that the 
-2894:	instance variable flights of a Trip object vacation 
-2895:	contains the following flight information.
-2896:	          Departure   Arrival   Layover
-2897:	            Time      Time     (minutes)
-2898:	         +---------+----------+
-2899:	Flight 0 | 11:30am |  12:15pm |
-2900:	         +---------+----------+ }  60
-2901:	Flight 1 |  1:15pm |   3:45pm |
-2902:	         +---------+----------+ }  15
-2903:	Flight 2 |  4:00pm |   6:45pm |
-2904:	         +---------+----------+ }  210
-2905:	Flight 3 | 10:15pm |  11:00pm |
-2906:	         +---------+----------+
-2907:	The call vacation.getShortestLayover() should 
-2908:	return 15. Complete method getShortestLayover() 
-2909:	below.
-2910:	public int getShortestLayover()
-2911:	// An answer could be...
-2912:	public int getShortestLayover() {
-2913:	    if (flights.isEmpty()) return -1;
-2914:	    int shortestLayover = Integer.MAX_VALUE;
-2915:	    int i = 0;
-2916:	    while (i < flights.size()) {
-2917:	        Flight currentFlight = flights.get(i);
-2918:	        i++;
-2919:	        Flight nextFlight    = flights.get(i);
-2920:	        Time arrival         = currentFlight.getArrivalTime();
-2921:	        Time departure       = nextFlight.getDepartureTime();
-2922:	        int layover = Math.abs(arrival.minutesUntil(departure));
-2923:	        if (layover < shortestLayover) {
-2924:	            shortestLayover = layover;
-2925:	        }
-2926:	        i++;
-2927:	    }
-2928:	    return shortestLayover;
-2929:	}
-2930:	// Section 1...
-2931:	For the next three Free response questions, refer 
-2932:	to the description below...
-2933:	Consider the hierarchy of classes shown in the 
-2934:	following diagram
-2935:	         +----------+ 
-2936:	         |    Pet   |
-2937:	         +----------+
-2938:	            /    \
-2939:	 +----------+    +----------+
-2940:	 |    Cat   |    |    Dog   |
-2941:	 +----------+    +----------+
-2942:	                       \
-2943:	                       +----------+
-2944:	                       | Loud Dog |
-2945:	                       +----------+
-2946:	Note that a Cat 'is-a' Pet, a Dog 'is-a' Pet, and 
-2947:	a LoudDog 'is-a' Dog. The class Pet is specified 
-2948:	as an abstract class as shown in the following 
-2949:	declaration. Each Pet has a name that is 
-2950:	specified when it is constructed.
-2951:	public abstract class Pet {
-2952:	    private String name;
-2953:	    public Pet(String petName) {
-2954:	        name = petName;
-2955:	    }
-2956:	    public String getName() {
-2957:	        return name;
-2958:	    }
-2959:	    public abstract String speak();
-2960:	}
-2961:	The subclass Dog has the partial class 
-2962:	declaration shown below.
-2963:	public class Dog extends Pet {
-2964:	    public Dog(String petName) {
-2965:	        /* implementation not shown */
-2966:	    }
-2967:	    public String speak() {
-2968:	        /* implementation not shown */
-2969:	    }
-2970:	}
-2971:	// Question 3...
-2972:	Given the class hierarchy shown above, write a 
-2973:	complete class declaration for the class Cat, 
-2974:	including implementations of its constructor 
-2975:	and method(s). The Cat method speak returns 
-2976:	'meow' when it is invoked.
-2977:	// An answer could be...
-2978:	public class Cat extends Pet {
-2979:	    public Cat(String petName) {
-2980:	        super(petName);
-2981:	    }
-2982:	    public String speak() {
-2983:	        return "meow";
-2984:	    }
-2985:	}
-2986:	// Question 4...
-2987:	Assume that class Dog has been declared as shown 
-2988:	at the beginning of the question. If the String 
-2989:	dog-sound is returned by the Dog method speak, 
-2990:	then the LoudDog method method speak returns a 
-2991:	String containing dog-sound repeated two times. 
-2992:	Given the class hierarchy shown previously, 
-2993:	write a complete class declaration for the class 
-2994:	LoudDog including implementations of its 
-2995:	constructor and method(s).
+2562:	Which of the following is a correct header for a
+2563:	method that would return the value of the private
+2564:	instance variable x so that it can be used in a
+2565:	class other than Example?
+2566:	(A) private int getX()
+2567:	(B) private void getX()
+2568:	(C) public int getX()
+2569:	(D) public void getX()
+2570:	(E) public void getX(int x)
+2571:	// Answer 1...
+2572:	C
+2573:	// Question 2...
+2574:	Consider the following class definitions
+2575:	public class Thing1 {
+2576:	     public void calc(int n) {
+2577:	          n *= 3;
+2578:	          System.out.print(n);
+2579:	     }
+2580:	}
+2581:	public class Thing2 extends Thing1 {
+2582:	     public void calc(int n) {
+2583:	          n += 2;
+2584:	          super.calc(n);
+2585:	          System.out.print(n);
+2586:	     }
+2587:	}
+2588:	The following code seqment appears in a class
+2589:	other than Thing1 or Thing2
+2590:	Thing1 t = new Thing2();
+2591:	t.calc(2);
+2592:	What is printed as a result of executing the
+2593:	code segment?
+2594:	(A) 4
+2595:	(B) 6
+2596:	(C) 68
+2597:	(D) 124
+2598:	(E) 1212
+2599:	// Answer 2...
+2600:	D
+2601:	// Question 3...
+2602:	Consider the following class definitions.
+2603:	public class Student {
+2604:	    public String getFood() {
+2605:	        return "Pizza";
+2606:	    }
+2607:	    public String getInfo() {
+2608:	        return "Studying";
+2609:	    }
+2610:	}
+2611:	public class GradStudent extends Student {
+2612:	    public String getFood() {
+2613:	        return "Taco";
+2614:	    }
+2615:	    public String getInfo() {
+2616:	        super.getInfo();
+2617:	        return "Eating";
+2618:	    }
+2619:	}
+2620:	What is printed when the following code is
+2621:	executed?
+2622:	Student s = new GradStudent();
+2623:	System.out.println(s.getInfo());
+2624:	(A) Pizza
+2625:	(B) Taco
+2626:	(C) Studying
+2627:	(D) Eating
+2628:	(E) Studying
+2629:	    Eating
+2630:	// Answer 3...
+2631:	D
+2632:	// Question 4...
+2633:	Given the following class declarations:
+2634:	public class Car {
+2635:	    private String make;
+2636:	    public Car(String theMake) {
+2637:	        make = theMake;
+2638:	    }
+2639:	    public String getMake() {
+2640:	        return make;
+2641:	    }
+2642:	}
+2643:	public class ElectricCar extends Car {
+2644:	    public ElectricCar() {
+2645:	        super("Ford");
+2646:	    }
+2647:	    public ElectricCar(String theMake) {
+2648:	        super(theMake);
+2649:	    } 
+2650:	}
+2651:	Which of the following will cause a compile
+2652:	time error?
+2653:	(A) Car myCar = new Car();
+2654:	(B) Car myCar1 = new ElectricCar();
+2655:	(C) ElectricCar myCar2 = new ElectricCar("Ford");
+2656:	(D) Car myCar3 = new Car("Ford");
+2657:	(E) Car myCar4 = new ElectricCar("Ford");
+2658:	// Answer 4...
+2659:	A
+2660:	// Question 5...
+2661:	Given the following declarations.
+2662:	public class Vehicle {
+2663:	    public void test(Car x, SportsCar y) { }
+2664:	}
+2665:	public class Car extends Vehicle {
+2666:	}
+2667:	public class SportsCar extends Car {
+2668:	}
+2669:	Also consider the following code that appears
+2670:	in a different class.
+2671:	Vehicle v = new Vehicle();
+2672:	Car c = new Car();
+2673:	SportsCar sporty = new SportsCar();
+2674:	Which of the following is a correct call to test ?
+2675:	(A) v.test(sporty, v);
+2676:	(B) sporty.test(c, c);
+2677:	(C) v.test(sporty, c);
+2678:	(D) sporty.test(sporty, v);
+2679:	(E) c.test(sporty, sporty);
+2680:	// Answer 5...
+2681:	E
+2682:	// Question 6...
+2683:	Class C extends class B, which extends class A. 
+2684:	Also, all of the three classes implement a public
+2685:	method test(). How can a method in an object of
+2686:	class C invoke the test() method defined in class
+2687:	A (without creating a new instance of class A)?
+2688:	(A) test();
+2689:	(B) super.super.test();
+2690:	(C) super.test();
+2691:	(D) this.test();
+2692:	(E) There is no way to call a method in a 
+2693:	    grandparent class from a grandchild class
+2694:	// Answer 6...
+2695:	E
+2696:	// Question 7...
+2697:	Given the following class declarations. Assume
+2698:	that Parent p = new Child(); appears in a client
+2699:	program. What is the result of the call p.m1();
+2700:	public class Parent {
+2701:	    public void m1() {
+2702:	        System.out.print("pm1");
+2703:	        m2();
+2704:	    }
+2705:	    public void m2() {
+2706:	        System.out.print("pm2");
+2707:	    }
+2708:	}
+2709:	public class Child extends Parent {
+2710:	    public void m1() {
+2711:	        super.m1();
+2712:	        System.out.print("cm1");
+2713:	    }
+2714:	    public void m2() {
+2715:	        super.m2();
+2716:	        System.out.print("cm2");
+2717:	    }
+2718:	}
+2719:	(A) pm1pm2cm2cm1
+2720:	(B) pm1pm2
+2721:	(C) pm1pm2cm1cm2
+2722:	(D) pm1cm1
+2723:	(E) pm1
+2724:	// Answer 7...
+2725:	pm1pm2cm2cm1// Question 8...
+2726:	Given the following class declarations.
+2727:	public class Animal {
+2728:	    public void eat() {
+2729:	        System.out.println("AE");
+2730:	    }
+2731:	}
+2732:	public class Bear extends Animal {
+2733:	    public void growl() {
+2734:	        System.out.println("BG");
+2735:	    }
+2736:	}
+2737:	Assume the following declaration is in a 
+2738:	different class.
+2739:	Animal b = new Bear();
+2740:	Which of the following will compile without error?
+2741:	I.   b.eat();
+2742:	II.  b.growl();
+2743:	III. ((Bear)b).growl();
+2744:	(A) I only
+2745:	(B) II only
+2746:	(C) III only
+2747:	(D) I and III only
+2748:	(E) I, II, and III
+2749:	// Answer 8...
+2750:	B
+2751:	// Question 9...
+2752:	Consider the following partial class definitions.
+2753:	public class C1 {
+2754:	    private int num;
+2755:	    private String name;
+2756:	    public C1(int theNum) {
+2757:	        num = theNum
+2758:	    } 
+2759:	    public C1(String theName) {
+2760:	        name = theName;
+2761:	    }
+2762:	}
+2763:	public class C2 extends C1 {
+2764:	    // methods not shown
+2765:	}
+2766:	Which of the following constructors are valid for
+2767:	C2?
+2768:	I. public C2() { }
+2769:	II. public C2(int quan) { super(quan); }
+2770:	III. public C2(String label) { super(label); }
+2771:	(A) All three are valid
+2772:	(B) II only
+2773:	(C) III only
+2774:	(D) II and III
+2775:	(E) None are valid
+2776:	// Answer 9...
+2777:	D
+2778:	// Question 10...
+2779:	Given the following class definition. What are 
+2780:	the values of x, y, and z just before method2
+2781:	returns?
+2782:	public class Class1 {
+2783:	    public int method1(int a, int b) {
+2784:	        int temp = a;
+2785:	        a = b;
+2786:	        b = temp;
+2787:	        return b;
+2788:	    }  
+2789:	    public void method2() {
+2790:	        int x = 3;
+2791:	        int y = 5;
+2792:	        int z = method1(x, y);
+2793:	    }
+2794:	}
+2795:	(A) x=3,y=3,z=3
+2796:	(B) x=3,y=5,z=3
+2797:	(C) x=5,y=3,z=5
+2798:	(D) x=5,y=3,z=3
+2799:	(E) x=3,y=5,z=5
+2800:	// Answer 10...
+2801:	B
+2802:	Computer Science 42SAP - AP Practice Test 3 content running simulated:.....................
+2803:	// Section 1...
+2804:	For the next two Free response questions, 
+2805:	refer to the description below...
+2806:	A travel agency maintains a list of information 
+2807:	about airline flights. Flight information 
+2808:	includes a departure time and an arrival time.
+2809:	You may assume that the two times occur on the 
+2810:	same day. These times are represented by 
+2811:	objects of the Time class. The declaration for
+2812:	the Time class is shown below. It includes a 
+2813:	method which returns the difference (in minutes)
+2814:	between the current Time object and another Time
+2815:	object. 
+2816:	public class Time {
+2817:	     /** 
+2818:	      * @return difference, in minutes, between this
+2819:	      * time and other; difference is negative
+2820:	      * if other is earlier than this time
+2821:	      */
+2822:	     public int minutesUntil(Time other) {
+2823:	          /* implementation not shown */
+2824:	     }
+2825:	     // There may be instance variables, constructors,
+2826:	     // and methods that are not shown.
+2827:	}
+2828:	For example, assume that t1 and t2 are Time 
+2829:	objects where t1 represents 1:00 p.m. and t2 
+2830:	represents 2:15 p.m. The call t1.minutesUntil(t2) 
+2831:	will return 75 and the call t2.minutesUntil(t1) 
+2832:	will return -75. The declaration for the Flight class 
+2833:	is shown below. It has methods to access the 
+2834:	departure time and the arrival time of a flight. 
+2835:	You may assume that the departure time of a 
+2836:	flight is earlier than its arrival time.
+2837:	public class Flight {
+2838:	      /** @return time at which the flight departs */
+2839:	      public Time getDepartureTime() {
+2840:	           /* implementation not shown */ 
+2841:	      }
+2842:	      /** @return time at which the flight arrives */
+2843:	      public Time getArrivalTime() {
+2844:	           /* implementation not shown */ 
+2845:	      }
+2846:	      // There may be instance variables, constructors, 
+2847:	      // and methods that are not shown.
+2848:	}
+2849:	A trip consists of a sequence of flights and is 
+2850:	represented by the Trip class. The Trip class 
+2851:	contains a List of Flight objects that are stored 
+2852:	in chronological order. You may assume that for 
+2853:	each flight after the first flight in the list, 
+2854:	the departure time of the flight is later than 
+2855:	the arrival time of the preceding flight in the 
+2856:	list. A partial declaration of the Trip class is 
+2857:	shown below. You will write two methods for the 
+2858:	Trip class.
+2859:	public class Trip {
+2860:	     /** 
+2861:	       * The list of flights (if any) that make up 
+2862:	       * this trip, stored in chronological order
+2863:	       */
+2864:	     private List<Flight> flights;
+2865:	     /** 
+2866:	       * @return the number of minutes from the 
+2867:	       * departure of the first flight to the arrival 
+2868:	       * of the last flight if there are one or more 
+2869:	       * flights in the trip; 0, if there are no 
+2870:	       * flights in the trip
+2871:	       */
+2872:	     public int getDuration() {
+2873:	          /* to be implemented in part (a) */ 
+2874:	     }
+2875:	     /** 
+2876:	       * Precondition: the departure time for each 
+2877:	       * flight is later than the arrival time of its 
+2878:	       * preceding flight
+2879:	       * @return the smallest number of minutes 
+2880:	       * between the arrival of a flight and the 
+2881:	       * departure of the flight immediately after it, 
+2882:	       * if there are two or more flights in the 
+2883:	       * trip; -1, if there are fewer than two flights 
+2884:	       * in the trip
+2885:	       */
+2886:	     public int getShortestLayover() {
+2887:	          /* to be implemented in part (b) */
+2888:	     }
+2889:	       // There may be instance variables, constructors,
+2890:	       // and methods that are not shown
+2891:	}
+2892:	// Question 1...
+2893:	Complete method getDuration below.  
+2894:	// An answer could be...
+2895:	public int getDuration() {
+2896:	    int totalDuration = 0;
+2897:	    for (Flight flight : flights) {
+2898:	        Time departure = flight.getDepartureTime();
+2899:	        Time arrival   = flight.getArrivalTime();
+2900:	        int  duration  = departure.minutesUntil(arrival);
+2901:	        totalDuration  = totalDuration + duration;
+2902:	    }
+2903:	    return totalDuration;
+2904:	}
+2905:	// Question 2...
+2906:	Write the Trip method getShortestLayover. A 
+2907:	layover is the number of minutes from the arrival 
+2908:	of one flight in a trip to the departure of the 
+2909:	flight immediately after it. If there are two or 
+2910:	more flights in the trip, the method should return 
+2911:	the shortest layover of the trip; otherwise, it 
+2912:	should return -1. For example, assume that the 
+2913:	instance variable flights of a Trip object vacation 
+2914:	contains the following flight information.
+2915:	          Departure   Arrival   Layover
+2916:	            Time      Time     (minutes)
+2917:	         +---------+----------+
+2918:	Flight 0 | 11:30am |  12:15pm |
+2919:	         +---------+----------+ }  60
+2920:	Flight 1 |  1:15pm |   3:45pm |
+2921:	         +---------+----------+ }  15
+2922:	Flight 2 |  4:00pm |   6:45pm |
+2923:	         +---------+----------+ }  210
+2924:	Flight 3 | 10:15pm |  11:00pm |
+2925:	         +---------+----------+
+2926:	The call vacation.getShortestLayover() should 
+2927:	return 15. Complete method getShortestLayover() 
+2928:	below.
+2929:	public int getShortestLayover()
+2930:	// An answer could be...
+2931:	public int getShortestLayover() {
+2932:	    if (flights.isEmpty()) return -1;
+2933:	    int shortestLayover = Integer.MAX_VALUE;
+2934:	    int i = 0;
+2935:	    while (i < flights.size()) {
+2936:	        Flight currentFlight = flights.get(i);
+2937:	        i++;
+2938:	        Flight nextFlight    = flights.get(i);
+2939:	        Time arrival         = currentFlight.getArrivalTime();
+2940:	        Time departure       = nextFlight.getDepartureTime();
+2941:	        int layover = Math.abs(arrival.minutesUntil(departure));
+2942:	        if (layover < shortestLayover) {
+2943:	            shortestLayover = layover;
+2944:	        }
+2945:	        i++;
+2946:	    }
+2947:	    return shortestLayover;
+2948:	}
+2949:	// Section 1...
+2950:	For the next three Free response questions, refer 
+2951:	to the description below...
+2952:	Consider the hierarchy of classes shown in the 
+2953:	following diagram
+2954:	         +----------+ 
+2955:	         |    Pet   |
+2956:	         +----------+
+2957:	            /    \
+2958:	 +----------+    +----------+
+2959:	 |    Cat   |    |    Dog   |
+2960:	 +----------+    +----------+
+2961:	                       \
+2962:	                       +----------+
+2963:	                       | Loud Dog |
+2964:	                       +----------+
+2965:	Note that a Cat 'is-a' Pet, a Dog 'is-a' Pet, and 
+2966:	a LoudDog 'is-a' Dog. The class Pet is specified 
+2967:	as an abstract class as shown in the following 
+2968:	declaration. Each Pet has a name that is 
+2969:	specified when it is constructed.
+2970:	public abstract class Pet {
+2971:	    private String name;
+2972:	    public Pet(String petName) {
+2973:	        name = petName;
+2974:	    }
+2975:	    public String getName() {
+2976:	        return name;
+2977:	    }
+2978:	    public abstract String speak();
+2979:	}
+2980:	The subclass Dog has the partial class 
+2981:	declaration shown below.
+2982:	public class Dog extends Pet {
+2983:	    public Dog(String petName) {
+2984:	        /* implementation not shown */
+2985:	    }
+2986:	    public String speak() {
+2987:	        /* implementation not shown */
+2988:	    }
+2989:	}
+2990:	// Question 3...
+2991:	Given the class hierarchy shown above, write a 
+2992:	complete class declaration for the class Cat, 
+2993:	including implementations of its constructor 
+2994:	and method(s). The Cat method speak returns 
+2995:	'meow' when it is invoked.
 2996:	// An answer could be...
-2997:	public class LoudDog extends Dog {
-2998:	    public LoudDog(String petName) {
+2997:	public class Cat extends Pet {
+2998:	    public Cat(String petName) {
 2999:	        super(petName);
 3000:	    }
 3001:	    public String speak() {
-3002:	        return super.speak() + super.speak();
+3002:	        return "meow";
 3003:	    }
 3004:	}
-3005:	// Question 5...
-3006:	Consider the following partial declaration of 
-3007:	class Kennel
-3008:	public class Kennel {
-3009:	    private ArrayList<Pet> petList;
-3010:	     /**
-3011:	      * For every Pet in the kennel, prints the name 
-3012:	      * followed by the result of a call to its speak 
-3013:	      * method, one line per Pet
-3014:	      */
-3015:	     public void allSpeak() {
-3016:	        /* to be implemented */
-3017:	     }
-3018:	     // There may be instance variables, constructors, 
-3019:	     // and methods that are not shown
-3020:	}
-3021:	Write the Kennel method allSpeak For each Pet in 
-3022:	the kennel, allSpeak prints a line with the name 
-3023:	of the Pet followed by the result of a call to 
-3024:	its speak method. In writing allSpeak you may use 
-3025:	any of the methods defined for any of the classes 
-3026:	specified for this problem. Assume that these 
-3027:	methods work as specified, regardless of what 
-3028:	you wrote in previous questions. Complete method
-3029:	allSpeak below
-3030:	public void allSpeak()
-3031:	// An answer could be...
-3032:	public void allSpeak() {
-3033:	    for (Pet pet : petList) {
-3034:	        System.out.println(pet.getName() + pet.speak());
-3035:	    }
-3036:	}
-3037:	Computer Science 42SAP - AP Practice Test 4 content running simulated:.....................
-3038:	// Question 1...
-3039:	(A) 
-3040:	(B) 
-3041:	(C) 
-3042:	(D) 
-3043:	(E) 
-3044:	// Answer 1...
-3045:	// Question 2...
-3046:	(A) 
-3047:	(B) 
-3048:	(C) 
-3049:	(D) 
-3050:	(E) 
-3051:	// Answer 2...
-3052:	// Question 3...
-3053:	(A) 
-3054:	(B) 
-3055:	(C) 
-3056:	(D) 
-3057:	(E) 
-3058:	// Answer 3...
-3059:	// Question 4...
-3060:	(A) 
-3061:	(B) 
-3062:	(C) 
-3063:	(D) 
-3064:	(E) 
-3065:	// Answer 4...
-3066:	// Question 5...
-3067:	(A) 
-3068:	(B) 
-3069:	(C) 
-3070:	(D) 
-3071:	(E) 
-3072:	// Answer 5...
-3073:	// Question 6...
-3074:	(A) 
-3075:	(B) 
-3076:	(C) 
-3077:	(D) 
-3078:	(E) 
-3079:	// Answer 6...
-3080:	// Question 7...
-3081:	(A) 
-3082:	(B) 
-3083:	(C) 
-3084:	(D) 
-3085:	(E) 
-3086:	// Answer 7...
-3087:	// Question 8...
-3088:	(A) 
-3089:	(B) 
-3090:	(C) 
-3091:	(D) 
-3092:	(E) 
-3093:	// Answer 8...
-3094:	// Question 9...
-3095:	(A) 
-3096:	(B) 
-3097:	(C) 
-3098:	(D) 
-3099:	(E) 
-3100:	// Answer 9...
-3101:	// Question 10...
-3102:	(A) 
-3103:	(B) 
-3104:	(C) 
-3105:	(D) 
-3106:	(E) 
-3107:	// Answer 10...
-3108:	Computer Science 42SAP - Student Driven 'fun' Days content running simulated:..............
-3109:	Computer Science 42SAP - More Post Secondary content running simulated:....................
-3110:	Computer Science 42SAP - Permanent Storage Post Secondary content running simulated:.......
-3111:	// Learn about 'error traps'
-3112:	Divide by zero -> java.lang.ArithmeticException: / by zero
-3113:	// Create sample data to use
-3114:	// Save ONE piece of data to that permanent file
-3115:	File write error
-3116:	// Now involve the user to get a file name
-3117:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
-3118:	File already exists!
-3119:	// Open file with one line (no user involvment)
-3120:	// Open file with multiple lines (user picks file)
-3121:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
-3122:	This line read was �� sr utility.collections.LinkedList�̉-�� I 	NOT_FOUNDI lengthI longestWordL headt Lutility/collections/Node;L tailq ~ xp����   d   �sr utility.collections.Node5�����2 ... (line shortened) ...
-3123:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xr 0testing.prerequisite.cs40s.advancedclasses.Husky�F���r+g  xr 5testing.prerequisite.cs40s.advancedclasses.HighSchool6tII�_�^  x ... (line shortened) ...
-3124:	This line read was �+ I ageZ aliveL genderq ~ L nameq ~ xp    t unidentifedt receptionist           sr /testing.prerequisite.cs40s.advancedclasses.BookHE��?�N  xp          "    t  sq ~  ... (line shortened) ...
-3125:	This line read was exhaustive           sq ~           6    q ~ sq ~ sq ~     q ~ t Issi           sq ~               q ~ sq ~ sq ~     q ~ t curdles           sq ~              ... (line shortened) ...
-3126:	This line read was concerting           sq ~           9    q ~ sq ~ sq ~     q ~ t contour           sq ~           #    q ~ sq ~ sq ~     q ~ t 
-3127:	This line read was dissenting           sq ~           (    q ~ sq ~ sq ~     q ~ t embolism           sq ~           W    q ~ sq ~ sq ~     q ~ t axe           sq ~           I   ... (line shortened) ...
-3128:	This line read was deviations           sq ~               q ~ sq ~ sq ~     q ~ t 
-3129:	This line read was unpolished           sq ~               q ~ sq ~ sq ~     q ~ t teddies           sq ~           Y    q ~ sq ~ sq ~     q ~ t Ginsburg           sq ~           ... (line shortened) ...
-3130:	This line read was financings           sq ~           ,    q ~ sq ~ sq ~     q ~ t 
-3131:	This line read was epicentres           sq ~           A    q ~ sq ~ sq ~     q ~ t disruptiveness           sq ~           C    q ~ sq ~ sq ~     q ~ t 
-3132:	This line read was prayerfulness           sq ~           X    q ~ sq ~ sq ~     q ~ t 	filleting           sq ~           `    q ~ sq ~ sq ~     q ~ t mansards           sq ~      ... (line shortened) ...
-3133:	This line read was superdense           sq ~           S    q ~ sq ~ sq ~     q ~ t dobbins           sq ~           >    q ~ sq ~ sq ~     q ~ t outré           sq ~           ]  ... (line shortened) ...
-3134:	This line read was overdecorated           sq ~               q ~ sq ~ sq ~     q ~ t 
-3135:	This line read was nosediving           sq ~           
-3136:	This line read was     q ~ sq ~ sq ~     q ~ t recitals           sq ~           8    q ~ sq ~ sq ~     q ~ t blazers           sq ~               q ~ sq ~ sq ~     q ~ t 	clea ... (line shortened) ...
-3137:	This line read was reattained           sq ~           V    q ~ sq ~ sq ~     q ~ t omening           sq ~           &    q ~ sq ~ sq ~     q ~ t haller           sq ~           ) ... (line shortened) ...
-3138:	This line read was androgenic           sq ~           ;    q ~ sq ~ sq ~     q ~ t headwind           sq ~           6    q ~ sq ~ sq ~     q ~ t heisting           sq ~          ... (line shortened) ...
-3139:	This line read was convicting           sq ~           >    q ~ sq ~ sq ~     q ~ t revere           sq ~               q ~ sq ~ sq ~     q ~ t referentiality           sq ~      ... (line shortened) ...
-3140:	This line read was penetrable           sq ~           c    q ~ sq ~ sq ~     q ~ t Midway           sq ~           2    q ~ sq ~ sq ~     q ~ t aeolian           sq ~           = ... (line shortened) ...
-3141:	This line read was     q ~ sq ~ sq ~     q ~ t 	cheerless           sq ~               q ~ sq ~ sq ~     q ~ t exhumations           sq ~           5    q ~ sq ~ sq ~     q ~ t  ... (line shortened) ...
-3142:	This line read was cotangents           sq ~           `    q ~ sq ~ sq ~     q ~ t 	Berkshire           sq ~           U    q ~ sq ~ sq ~     q ~ t clicked           sq ~          ... (line shortened) ...
-3143:	// Class to save/open one line (no user)
-3144:	File save: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-3145:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-3146:	Before: Defenestration
-3147:	After : null
-3148:	// Class to save/open multiple lines (with user)
-3149:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
-3150:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
-3151:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-3152:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-3153:	// Now save/open on a complex data type
-3154:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-3155:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-3156:	Before: Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@1757cd72
-3157:	Before: [Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@445b295b,Athlete (0): Husky: HighSchool: Student Over-rid ... (line shortened) ...
-3158:	After:  [Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@6fd83fc1,Athlete (0): Husky: HighSchool: Student Over-rid ... (line shortened) ...
-3159:	Computer Science 42SAP - Stacks and Queues Post Secondary content running simulated:.......
-3160:	// Create objects for testing...
-3161:	// Create and Test a stack object...
-3162:	// Test toString, size, isEmpty, and push methods...
-3163:	Empty = true	Size = 0	Empty Stack
-3164:	// Loop through adding random values
-3165:	Empty = false	Size = 1	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@2d52216b] <- bottom
-3166:	Empty = false	Size = 2	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@242b836,testing.prerequisite.cs40s.advancedclasses.Box@2d52216b] <- bottom
-3167:	Empty = false	Size = 3	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3f6f6701,testing.prerequisite.cs40s.advancedclasses.Box@242b836,testing.prerequisite.cs40s.advancedclasses.Box@2d522 ... (line shortened) ...
-3168:	Empty = false	Size = 4	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3527942a,testing.prerequisite.cs40s.advancedclasses.Box@3f6f6701,testing.prerequisite.cs40s.advancedclasses.Box@242b ... (line shortened) ...
-3169:	Empty = false	Size = 5	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@942a29c,testing.prerequisite.cs40s.advancedclasses.Box@3527942a,testing.prerequisite.cs40s.advancedclasses.Box@3f6f6 ... (line shortened) ...
-3170:	Empty = false	Size = 6	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@1ed6388a,testing.prerequisite.cs40s.advancedclasses.Box@942a29c,testing.prerequisite.cs40s.advancedclasses.Box@35279 ... (line shortened) ...
-3171:	Empty = false	Size = 7	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@5a45133e,testing.prerequisite.cs40s.advancedclasses.Box@1ed6388a,testing.prerequisite.cs40s.advancedclasses.Box@942a ... (line shortened) ...
-3172:	Empty = false	Size = 8	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisite.cs40s.advancedclasses.Box@5a45133e,testing.prerequisite.cs40s.advancedclasses.Box@1ed6 ... (line shortened) ...
-3173:	Empty = false	Size = 9	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisite.cs40s.advancedclasses.Box@5a45 ... (line shortened) ...
-3174:	Empty = false	Size = 10	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534 ... (line shortened) ...
-3175:	// Test clone method...
-3176:	Clone stack: Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testi ... (line shortened) ...
-3177:	// Test equals method...
-3178:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisi ... (line shortened) ...
-3179:	// Now change the copy
-3180:	// Now check again
-3181:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisi ... (line shortened) ...
-3182:	// Re-clone the stack, and output
-3183:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisi ... (line shortened) ...
-3184:	// Text the pop method...
-3185:	Clone stack:	Empty = false	Size = 10	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedcl ... (line shortened) ...
-3186:	// Loop through removing values
-3187:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@60bd273d	Empty = false	Size = 9	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
-3188:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@4f80542f	Empty = false	Size = 8	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
-3189:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@534a5a98	Empty = false	Size = 7	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@5a45133e,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
-3190:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@5a45133e	Empty = false	Size = 6	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@1ed6388a,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
-3191:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@1ed6388a	Empty = false	Size = 5	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@942a29c,testing.prerequisite.cs40s.advancedclasses ... (line shortened) ...
-3192:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@942a29c	Empty = false	Size = 4	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3527942a,testing.prerequisite.cs40s.advancedclasses ... (line shortened) ...
-3193:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@3527942a	Empty = false	Size = 3	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3f6f6701,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
-3194:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@3f6f6701	Empty = false	Size = 2	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@242b836,testing.prerequisite.cs40s.advancedclasses ... (line shortened) ...
-3195:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@242b836	Empty = false	Size = 1	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@2d52216b] <- bottom
-3196:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@2d52216b	Empty = true	Size = 0	Empty Stack
-3197:	Popped -> null	Empty = true	Size = 0	Empty Stack
-3198:	// Test peek (top is wrapper no testing needed)...
-3199:	Clone Top = null
-3200:	Stack Top = testing.prerequisite.cs40s.advancedclasses.Box@60bd273d
-3201:	// Test to array and to linked list...
-3202:	[testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisite.cs40s.adva ... (line shortened) ...
-3203:	Array   	[testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisite.c ... (line shortened) ...
-3204:	// Test our constructors...
-3205:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisi ... (line shortened) ...
-3206:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@60bd273d,testing.prerequisite.cs40s.advancedclasses.Box@4f80542f,testing.prerequisite.cs40s.advancedclasses.Box@534a5a98,testing.prerequisi ... (line shortened) ...
-3207:	// Test the Queue object...
-3208:	// Test toString,size,isEmpty, and enqueue methods...
-3209:	Empty = true	Size = 0	Empty Queue
-3210:	// Loop through adding random values
-3211:	Empty = false	Size = 1	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@5e600dd5] <- front
-3212:	Empty = false	Size = 2	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@576d5deb,testing.prerequisite.cs40s.advancedclasses.Box@5e600dd5] <- front
-3213:	Empty = false	Size = 3	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@5d534f5d,testing.prerequisite.cs40s.advancedclasses.Box@576d5deb,testing.prerequisite.cs40s.advancedclasses.Box@5e6 ... (line shortened) ...
-3214:	Empty = false	Size = 4	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e3967ea,testing.prerequisite.cs40s.advancedclasses.Box@5d534f5d,testing.prerequisite.cs40s.advancedclasses.Box@576 ... (line shortened) ...
-3215:	Empty = false	Size = 5	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@70e9c95d,testing.prerequisite.cs40s.advancedclasses.Box@2e3967ea,testing.prerequisite.cs40s.advancedclasses.Box@5d5 ... (line shortened) ...
-3216:	Empty = false	Size = 6	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@4d5650ae,testing.prerequisite.cs40s.advancedclasses.Box@70e9c95d,testing.prerequisite.cs40s.advancedclasses.Box@2e3 ... (line shortened) ...
-3217:	Empty = false	Size = 7	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@a38c7fe,testing.prerequisite.cs40s.advancedclasses.Box@4d5650ae,testing.prerequisite.cs40s.advancedclasses.Box@70e9 ... (line shortened) ...
-3218:	Empty = false	Size = 8	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequisite.cs40s.advancedclasses.Box@a38c7fe,testing.prerequisite.cs40s.advancedclasses.Box@4d56 ... (line shortened) ...
-3219:	Empty = false	Size = 9	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequisite.cs40s.advancedclasses.Box@a38 ... (line shortened) ...
-3220:	Empty = false	Size = 10	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6f ... (line shortened) ...
-3221:	// Test clone method...
-3222:	Clone Queue 			Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,te ... (line shortened) ...
-3223:	// Test equals method...
-3224:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequis ... (line shortened) ...
-3225:	// Now change the duplicate
-3226:	// Now check again
-3227:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequis ... (line shortened) ...
-3228:	// Re-clone the queue, and output
-3229:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequis ... (line shortened) ...
-3230:	// Test the dequeue method...
-3231:	Clone queue:	Empty = false	Size = 10	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedc ... (line shortened) ...
-3232:	// Loop through removing values
-3233:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@5e600dd5	Empty = false	Size = 9	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
-3234:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@576d5deb	Empty = false	Size = 8	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
-3235:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@5d534f5d	Empty = false	Size = 7	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
-3236:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@2e3967ea	Empty = false	Size = 6	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
-3237:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@70e9c95d	Empty = false	Size = 5	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
-3238:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@4d5650ae	Empty = false	Size = 4	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
-3239:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@a38c7fe	Empty = false	Size = 3	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclas ... (line shortened) ...
-3240:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764	Empty = false	Size = 2	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
-3241:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@51c668e3	Empty = false	Size = 1	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155] <- front
-3242:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155	Empty = true	Size = 0	Empty Queue
-3243:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
-3244:	// Test front and back...
-3245:	Clone Front = null
-3246:	Queue Front = testing.prerequisite.cs40s.advancedclasses.Box@5e600dd5
-3247:	Clone Back  = null
-3248:	Queue Back  = testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155
-3249:	// Test to array and to linked list...
-3250:	[testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequisite.cs40s.adva ... (line shortened) ...
-3251:	Array   	[testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequisite.c ... (line shortened) ...
-3252:	// Test our constructors...
-3253:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequis ... (line shortened) ...
-3254:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequis ... (line shortened) ...
-3255:	// Constructors from stack to queue (and back)...
-3256:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequis ... (line shortened) ...
-3257:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@2e6a8155,testing.prerequisite.cs40s.advancedclasses.Box@51c668e3,testing.prerequisite.cs40s.advancedclasses.Box@6fdbe764,testing.prerequisi ... (line shortened) ...
-3258:	Computer Science 42SAP - Searching and Sorting Post Secondary content running simulated:...
-3259:	// Search: linear search and binary search
-3260:	// Sort: bubble sort and the selection sort
-3261:	// Create some constants (edges) for the data
-3262:	// Create some random data to search through and sort
-3263:	// Including edge cases to test
-3264:	// Create data to store the results...
-3265:	// The simpliest of searches
-3266:	Array [68,61,88,19,35,4,36,36,67,7,80,25,6,64,22,63,34,12,29,2,61,57,93,39,66,86,65,21,10,48,98,45,51,60,67,11,59,3,18,49,26,63,93,39,45,2,77,10,21,21,56,70,86,19,6,63,70,14,40,68,97,18,67,18,64,93,13 ... (line shortened) ...
-3267:	// Now the linear search on all test data
-3268:	Array [68,61,88,19,35,4,36,36,67,7,80,25,6,64,22,63,34,12,29,2,61,57,93,39,66,86,65,21,10,48,98,45,51,60,67,11,59,3,18,49,26,63,93,39,45,2,77,10,21,21,56,70,86,19,6,63,70,14,40,68,97,18,67,18,64,93,13 ... (line shortened) ...
-3269:	Array [68,61,88,19,35,4,36,36,67,7,80,25,6,64,22,63,34,12,29,2,61,57,93,39,66,86,65,21,10,48,98,45,51,60,67,11,59,3,18,49,26,63,93,39,45,2,77,10,21,21,56,70,86,19,6,63,70,14,40,68,97,18,67,18,64,93,13 ... (line shortened) ...
-3270:	Array [68,61,88,19,35,4,36,36,67,7,80,25,6,64,22,63,34,12,29,2,61,57,93,39,66,86,65,21,10,48,98,45,51,60,67,11,59,3,18,49,26,63,93,39,45,2,77,10,21,21,56,70,86,19,6,63,70,14,40,68,97,18,67,18,64,93,13 ... (line shortened) ...
-3271:	Array [68,61,88,19,35,4,36,36,67,7,80,25,6,64,22,63,34,12,29,2,61,57,93,39,66,86,65,21,10,48,98,45,51,60,67,11,59,3,18,49,26,63,93,39,45,2,77,10,21,21,56,70,86,19,6,63,70,14,40,68,97,18,67,18,64,93,13 ... (line shortened) ...
-3272:	Array [68,61,88,19,35,4,36,36,67,7,80,25,6,64,22,63,34,12,29,2,61,57,93,39,66,86,65,21,10,48,98,45,51,60,67,11,59,3,18,49,26,63,93,39,45,2,77,10,21,21,56,70,86,19,6,63,70,14,40,68,97,18,67,18,64,93,13 ... (line shortened) ...
-3273:	// Simple sort...
-3274:	Sorted Array: 	[0,2,2,2,3,4,4,6,6,7,9,10,10,10,11,11,12,13,14,16,18,18,18,19,19,21,21,21,21,22,25,26,27,29,31,33,34,35,36,36,39,39,40,40,41,42,45,45,46,48,48,49,49,50,51,51,55,56,57,59,60,61,61,63,63, ... (line shortened) ...
-3275:	// We will re-scramble array for further testing
-3276:	Sorted Array: 	[8,7,74,45,2,63,86,26,12,91,10,66,73,93,74,81,69,20,9,43,21,2,78,47,72,32,28,21,36,72,92,77,88,4,93,97,71,92,5,39,75,88,63,95,12,60,81,52,100,19,60,91,59,4,54,40,13,94,47,86,84,98,70,94 ... (line shortened) ...
-3277:	// Now bubble sort (from bubbles rising from water)
-3278:	Original Array 	[8,7,74,45,2,63,86,26,12,91,10,66,73,93,74,81,69,20,9,43,21,2,78,47,72,32,28,21,36,72,92,77,88,4,93,97,71,92,5,39,75,88,63,95,12,60,81,52,100,19,60,91,59,4,54,40,13,94,47,86,84,98,70,9 ... (line shortened) ...
-3279:	// Now selection sort (from selecting the smallest)
-3280:	Original Array 	[8,7,74,45,2,63,86,26,12,91,10,66,73,93,74,81,69,20,9,43,21,2,78,47,72,32,28,21,36,72,92,77,88,4,93,97,71,92,5,39,75,88,63,95,12,60,81,52,100,19,60,91,59,4,54,40,13,94,47,86,84,98,70,9 ... (line shortened) ...
-3281:	// Now binary search (named after two or dividing)
-3282:	// NOTE: binary search can only happen on sorted list
-3283:	// Redo some of the test data...
-3284:	Array [2,2,3,4,4,5,7,8,8,9,10,12,12,13,19,20,21,21,21,26,26,28,28,28,28,28,30,32,36,36,36,39,40,40,43,43,44,45,47,47,47,47,47,52,54,55,59,60,60,61,62,63,63,63,64,66,66,67,67,69,70,71,72,72,73,73,74,74 ... (line shortened) ...
-3285:	Array [2,2,3,4,4,5,7,8,8,9,10,12,12,13,19,20,21,21,21,26,26,28,28,28,28,28,30,32,36,36,36,39,40,40,43,43,44,45,47,47,47,47,47,52,54,55,59,60,60,61,62,63,63,63,64,66,66,67,67,69,70,71,72,72,73,73,74,74 ... (line shortened) ...
-3286:	Array [2,2,3,4,4,5,7,8,8,9,10,12,12,13,19,20,21,21,21,26,26,28,28,28,28,28,30,32,36,36,36,39,40,40,43,43,44,45,47,47,47,47,47,52,54,55,59,60,60,61,62,63,63,63,64,66,66,67,67,69,70,71,72,72,73,73,74,74 ... (line shortened) ...
-3287:	Array [2,2,3,4,4,5,7,8,8,9,10,12,12,13,19,20,21,21,21,26,26,28,28,28,28,28,30,32,36,36,36,39,40,40,43,43,44,45,47,47,47,47,47,52,54,55,59,60,60,61,62,63,63,63,64,66,66,67,67,69,70,71,72,72,73,73,74,74 ... (line shortened) ...
-3288:	Array [2,2,3,4,4,5,7,8,8,9,10,12,12,13,19,20,21,21,21,26,26,28,28,28,28,28,30,32,36,36,36,39,40,40,43,43,44,45,47,47,47,47,47,52,54,55,59,60,60,61,62,63,63,63,64,66,66,67,67,69,70,71,72,72,73,73,74,74 ... (line shortened) ...
-3289:	// Use class for searching and sorting
-3290:	// Create random linked list data
-3291:	// Create random array data
-3292:	// Place all test cases into another linked list
-3293:	// Execute the linear search on all list test data...
-3294:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3295:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3296:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3297:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3298:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3299:	// Execute the linear search on all array test data...
-3300:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3301:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3302:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3303:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3304:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3305:	// Execute all the sorts on all test data...
-3306:	// Bubble sort LinkedList data...
-3307:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3308:	// Bubble sort array data...
-3309:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3310:	// Selection sort LinkedList data...
-3311:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3312:	// Selection sort array data...
-3313:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3314:	// Shell sort LinkedList data...
-3315:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3316:	// Shell sort array data...
-3317:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3318:	// Insertion sort LinkedList data...
-3319:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3320:	// Insertion sort array data...
-3321:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3322:	// Quick sort LinkedList data...
-3323:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3324:	// Quick sort array data...
-3325:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3326:	// Merge sort LinkedList data...
-3327:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3328:	// Merge sort array data...
-3329:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3330:	// Heap sort LinkedList data...
-3331:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3332:	// Heap sort array data...
-3333:	Before: 	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali, ... (line shortened) ...
-3334:	// Execute the binary search on all List test data...
-3335:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3336:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3337:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3338:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3339:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3340:	// Execute the binary search on all Array test data...
-3341:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3342:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3343:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3344:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3345:	[hone,Luce,leis,seas,scat,guys,Isis,bald,Kare,Niko,muff,Wang,leap,give,grub,Thom,Fuji,rind,Brie,lion,recs,kind,Fran,roof,nail,bald,alts,Miss,errs,clap,Kenn,bock,wife,hump,pref,Bede,Sung,tali,acme,Loni ... (line shortened) ...
-3346:	Computer Science 42SAP - Binary Trees Post Secondary content running simulated:............
-3347:	// Constants/variables for creating random values...
-3348:	// Creating some TreeNode objects...
-3349:	// Linking the TreeNodes...
-3350:	// Testing TreeNode equals...
-3351:	// Testing TreeNode toString...
-3352:	76
-3353:	90
-3354:	16
-3355:	// Creating a Tree object...
-3356:	// Test the insert method...
-3357:	// Insert one more...
-3358:	// Test the search of the tree...
-3359:	Should be found     = true
-3360:	Should NOT be found = false
-3361:	// Test toString() and pre, post, in order traversals
-3362:	Binary Tree:
-Order: [77,64,34,25,54,78]
-Pre:   [77,64,34,25,54,78]
-Post:  [25,54,34,64,78,77]
-In:    [25,34,54,64,77,78]
-3363:	// Building second tree (test clone) and test equals
-3364:	1st tree -> [25,34,54,64,77,78]
-3365:	2nd tree -> [24,30,35,46,66,79]
-3366:	1st!=2nd
-3367:	// Building a third tree (test clone) and test equals
-3368:	1st tree -> [25,34,54,64,77,78]
-3369:	3rd tree -> [25,34,54,64,77,78]
-3370:	1st==3rd
-3371:	// Build all our data structures from each other...
-3372:	// Create variable objects...
-3373:	// Create array from variables...
-3374:	// Create LinkedList from array...
-3375:	// Create Stack from LinkedList...
-3376:	// Create Queue from Stack...
-3377:	// Create Tree from Queue...
-3378:	// Output variables,array,list,stack,queue,tree...
-3379:	geoff
-3380:	melva
-3381:	balsa
-3382:	lever
-3383:	gonad
-3384:	[geoff,melva,balsa,lever,gonad]
-3385:	[geoff,melva,balsa,lever,gonad]
-3386:	Stack top -> [geoff,melva,balsa,lever,gonad] <- bottom
-3387:	Queue back -> [geoff,melva,balsa,lever,gonad] <- front
-3388:	Binary Tree:
-Order: [geoff,melva,balsa,lever,gonad]
-Pre:   [geoff,balsa,melva,lever,gonad]
-Post:  [balsa,gonad,lever,melva,geoff]
-In:    [balsa,geoff,gonad,lever,melva]
-3389:	// Now re-building queue from tree
-3390:	// Now re-building stack from queue
-3391:	// Now re-building LinkedList from stack...
-3392:	// Now re-building array from LinkedList...
-3393:	// Output array,list,stack,queue,tree again...
-3394:	[balsa,geoff,gonad,lever,melva]
-3395:	[balsa,geoff,gonad,lever,melva]
-3396:	Stack top -> [balsa,geoff,gonad,lever,melva] <- bottom
-3397:	Queue back -> [balsa,geoff,gonad,lever,melva] <- front
-3398:	Binary Tree:
-Order: [geoff,melva,balsa,lever,gonad]
-Pre:   [geoff,balsa,melva,lever,gonad]
-Post:  [balsa,gonad,lever,melva,geoff]
-In:    [balsa,geoff,gonad,lever,melva]
+3005:	// Question 4...
+3006:	Assume that class Dog has been declared as shown 
+3007:	at the beginning of the question. If the String 
+3008:	dog-sound is returned by the Dog method speak, 
+3009:	then the LoudDog method method speak returns a 
+3010:	String containing dog-sound repeated two times. 
+3011:	Given the class hierarchy shown previously, 
+3012:	write a complete class declaration for the class 
+3013:	LoudDog including implementations of its 
+3014:	constructor and method(s).
+3015:	// An answer could be...
+3016:	public class LoudDog extends Dog {
+3017:	    public LoudDog(String petName) {
+3018:	        super(petName);
+3019:	    }
+3020:	    public String speak() {
+3021:	        return super.speak() + super.speak();
+3022:	    }
+3023:	}
+3024:	// Question 5...
+3025:	Consider the following partial declaration of 
+3026:	class Kennel
+3027:	public class Kennel {
+3028:	    private ArrayList<Pet> petList;
+3029:	     /**
+3030:	      * For every Pet in the kennel, prints the name 
+3031:	      * followed by the result of a call to its speak 
+3032:	      * method, one line per Pet
+3033:	      */
+3034:	     public void allSpeak() {
+3035:	        /* to be implemented */
+3036:	     }
+3037:	     // There may be instance variables, constructors, 
+3038:	     // and methods that are not shown
+3039:	}
+3040:	Write the Kennel method allSpeak For each Pet in 
+3041:	the kennel, allSpeak prints a line with the name 
+3042:	of the Pet followed by the result of a call to 
+3043:	its speak method. In writing allSpeak you may use 
+3044:	any of the methods defined for any of the classes 
+3045:	specified for this problem. Assume that these 
+3046:	methods work as specified, regardless of what 
+3047:	you wrote in previous questions. Complete method
+3048:	allSpeak below
+3049:	public void allSpeak()
+3050:	// An answer could be...
+3051:	public void allSpeak() {
+3052:	    for (Pet pet : petList) {
+3053:	        System.out.println(pet.getName() + pet.speak());
+3054:	    }
+3055:	}
+3056:	Computer Science 42SAP - AP Practice Test 4 content running simulated:.....................
+3057:	// Question 1...
+3058:	(A) 
+3059:	(B) 
+3060:	(C) 
+3061:	(D) 
+3062:	(E) 
+3063:	// Answer 1...
+3064:	// Question 2...
+3065:	(A) 
+3066:	(B) 
+3067:	(C) 
+3068:	(D) 
+3069:	(E) 
+3070:	// Answer 2...
+3071:	// Question 3...
+3072:	(A) 
+3073:	(B) 
+3074:	(C) 
+3075:	(D) 
+3076:	(E) 
+3077:	// Answer 3...
+3078:	// Question 4...
+3079:	(A) 
+3080:	(B) 
+3081:	(C) 
+3082:	(D) 
+3083:	(E) 
+3084:	// Answer 4...
+3085:	// Question 5...
+3086:	(A) 
+3087:	(B) 
+3088:	(C) 
+3089:	(D) 
+3090:	(E) 
+3091:	// Answer 5...
+3092:	// Question 6...
+3093:	(A) 
+3094:	(B) 
+3095:	(C) 
+3096:	(D) 
+3097:	(E) 
+3098:	// Answer 6...
+3099:	// Question 7...
+3100:	(A) 
+3101:	(B) 
+3102:	(C) 
+3103:	(D) 
+3104:	(E) 
+3105:	// Answer 7...
+3106:	// Question 8...
+3107:	(A) 
+3108:	(B) 
+3109:	(C) 
+3110:	(D) 
+3111:	(E) 
+3112:	// Answer 8...
+3113:	// Question 9...
+3114:	(A) 
+3115:	(B) 
+3116:	(C) 
+3117:	(D) 
+3118:	(E) 
+3119:	// Answer 9...
+3120:	// Question 10...
+3121:	(A) 
+3122:	(B) 
+3123:	(C) 
+3124:	(D) 
+3125:	(E) 
+3126:	// Answer 10...
+3127:	Computer Science 42SAP - Student Driven 'fun' Days content running simulated:..............
+3128:	Computer Science 42SAP - More Post Secondary content running simulated:....................
+3129:	Computer Science 42SAP - Permanent Storage Post Secondary content running simulated:.......
+3130:	// Learn about 'error traps'
+3131:	Divide by zero -> java.lang.ArithmeticException: / by zero
+3132:	// Create sample data to use
+3133:	// Save ONE piece of data to that permanent file
+3134:	File write error
+3135:	// Now involve the user to get a file name
+3136:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
+3137:	File already exists!
+3138:	// Open file with one line (no user involvment)
+3139:	// Open file with multiple lines (user picks file)
+3140:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
+3141:	This line read was �� sr utility.collections.LinkedList�̉-�� I 	NOT_FOUNDI lengthI longestWordL headt Lutility/collections/Node;L tailq ~ xp����   d   �sr utility.collections.Node5�����2 ... (line shortened) ...
+3142:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xr 0testing.prerequisite.cs40s.advancedclasses.Husky�F���r+g  xr 5testing.prerequisite.cs40s.advancedclasses.HighSchool6tII�_�^  x ... (line shortened) ...
+3143:	This line read was �+ I ageZ aliveL genderq ~ L nameq ~ xp    t unidentifedt 
+3144:	This line read was beastliest           sr /testing.prerequisite.cs40s.advancedclasses.BookHE��?�N  xp          G    t  sq ~ sq ~     q ~ t 	washering           sq ~           )    q ~ sq ~ ... (line shortened) ...
+3145:	This line read was spideriest           sq ~               q ~ sq ~ sq ~     q ~ t glums           sq ~           8    q ~ sq ~ sq ~     q ~ t 
+3146:	This line read was noneffectives           sq ~               q ~ sq ~ sq ~     q ~ t Zoe           sq ~           F    q ~ sq ~ sq ~     q ~ t womanish           sq ~           
+3147:	This line read was     q ~ sq ~ sq ~     q ~ t 
+3148:	This line read was wiretapper           sq ~           $    q ~ sq ~ sq ~     q ~ t 
+3149:	This line read was prosciutto           sq ~               q ~ sq ~ sq ~     q ~ t commerce           sq ~           =    q ~ sq ~ sq ~     q ~ t recombinational           sq ~   ... (line shortened) ...
+3150:	This line read was indeterminism           sq ~           *    q ~ sq ~ sq ~     q ~ t 
+3151:	This line read was chairwoman           sq ~               q ~ sq ~ sq ~     q ~ t 
+3152:	This line read was septillion           sq ~           +    q ~ sq ~ sq ~     q ~ t billions           sq ~           a    q ~ sq ~ sq ~     q ~ t embark           sq ~            ... (line shortened) ...
+3153:	This line read was     q ~ sq ~ sq ~     q ~ t 	bankrupts           sq ~               q ~ sq ~ sq ~     q ~ t subjunctive           sq ~           E    q ~ sq ~ sq ~     q ~ t  ... (line shortened) ...
+3154:	This line read was hydrochloride           sq ~           !    q ~ sq ~ sq ~     q ~ t 	totallers           sq ~               q ~ sq ~ sq ~     q ~ t 
+3155:	This line read was willingnesses           sq ~           /    q ~ sq ~ sq ~     q ~ t 	isostatic           sq ~           -    q ~ sq ~ sq ~     q ~ t merits           sq ~        ... (line shortened) ...
+3156:	This line read was synchronizers           sq ~               q ~ sq ~ sq ~     q ~ t funder           sq ~           ,    q ~ sq ~ sq ~     q ~ t Geo           sq ~           N  ... (line shortened) ...
+3157:	This line read was prodigally           sq ~               q ~ sq ~ sq ~     q ~ t Argo           sq ~               q ~ sq ~ sq ~     q ~ t counteracted           sq ~          ... (line shortened) ...
+3158:	This line read was matriarchs           sq ~           ?    q ~ sq ~ sq ~     q ~ t 
+3159:	This line read was meditative           sq ~           ^    q ~ sq ~ sq ~     q ~ t demit           sq ~               q ~ sq ~ sq ~     q ~ t pomaded           sq ~           @  ... (line shortened) ...
+3160:	This line read was unsettledness           sq ~               q ~ sq ~ sq ~     q ~ t Iberia           sq ~           "    q ~ sq ~ sq ~     q ~ t Carolyne           sq ~         ... (line shortened) ...
+3161:	This line read was clotheshorses           sq ~           B    q ~ sq ~ sq ~     q ~ t 	humbugged           sq ~           X    q ~ sq ~ sq ~     q ~ t 
+3162:	This line read was finickinesses           sq ~           )    q ~ sq ~ sq ~     q ~ t Ragnar           sq ~           5    q ~ sq ~ sq ~     q ~ t 	mineshaft           sq ~        ... (line shortened) ...
+3163:	// Class to save/open one line (no user)
+3164:	File save: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
+3165:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
+3166:	Before: Defenestration
+3167:	After : null
+3168:	// Class to save/open multiple lines (with user)
+3169:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
+3170:	~~~ SIMULATED {File Chooser null  simulated message} DIALOG: 
+3171:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+3172:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+3173:	// Now save/open on a complex data type
+3174:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
+3175:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
+3176:	Before: Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@34123d65
+3177:	Before: [Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@59474f18,Athlete (0): Husky: HighSchool: Student Over-rid ... (line shortened) ...
+3178:	After:  [Athlete (0): Husky: HighSchool: Student Over-riding from: Person Over-riding from: testing.prerequisite.cs40s.advancedclasses.Athlete@1649b0e6,Athlete (0): Husky: HighSchool: Student Over-rid ... (line shortened) ...
+3179:	Computer Science 42SAP - Stacks and Queues Post Secondary content running simulated:.......
+3180:	// Create objects for testing...
+3181:	// Create and Test a stack object...
+3182:	// Test toString, size, isEmpty, and push methods...
+3183:	Empty = true	Size = 0	Empty Stack
+3184:	// Loop through adding random values
+3185:	Empty = false	Size = 1	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@6d3a388c] <- bottom
+3186:	Empty = false	Size = 2	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@193f604a,testing.prerequisite.cs40s.advancedclasses.Box@6d3a388c] <- bottom
+3187:	Empty = false	Size = 3	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@20f5239f,testing.prerequisite.cs40s.advancedclasses.Box@193f604a,testing.prerequisite.cs40s.advancedclasses.Box@6d3a ... (line shortened) ...
+3188:	Empty = false	Size = 4	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@57af006c,testing.prerequisite.cs40s.advancedclasses.Box@20f5239f,testing.prerequisite.cs40s.advancedclasses.Box@193f ... (line shortened) ...
+3189:	Empty = false	Size = 5	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@6bedbc4d,testing.prerequisite.cs40s.advancedclasses.Box@57af006c,testing.prerequisite.cs40s.advancedclasses.Box@20f5 ... (line shortened) ...
+3190:	Empty = false	Size = 6	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@932bc4a,testing.prerequisite.cs40s.advancedclasses.Box@6bedbc4d,testing.prerequisite.cs40s.advancedclasses.Box@57af0 ... (line shortened) ...
+3191:	Empty = false	Size = 7	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@d29f28,testing.prerequisite.cs40s.advancedclasses.Box@932bc4a,testing.prerequisite.cs40s.advancedclasses.Box@6bedbc4 ... (line shortened) ...
+3192:	Empty = false	Size = 8	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisite.cs40s.advancedclasses.Box@d29f28,testing.prerequisite.cs40s.advancedclasses.Box@932bc4 ... (line shortened) ...
+3193:	Empty = false	Size = 9	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisite.cs40s.advancedclasses.Box@d29f ... (line shortened) ...
+3194:	Empty = false	Size = 10	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd ... (line shortened) ...
+3195:	// Test clone method...
+3196:	Clone stack: Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testi ... (line shortened) ...
+3197:	// Test equals method...
+3198:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisi ... (line shortened) ...
+3199:	// Now change the copy
+3200:	// Now check again
+3201:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisi ... (line shortened) ...
+3202:	// Re-clone the stack, and output
+3203:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisi ... (line shortened) ...
+3204:	// Text the pop method...
+3205:	Clone stack:	Empty = false	Size = 10	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedcl ... (line shortened) ...
+3206:	// Loop through removing values
+3207:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0	Empty = false	Size = 9	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
+3208:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d	Empty = false	Size = 8	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
+3209:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e	Empty = false	Size = 7	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@d29f28,testing.prerequisite.cs40s.advancedclasses. ... (line shortened) ...
+3210:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@d29f28	Empty = false	Size = 6	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@932bc4a,testing.prerequisite.cs40s.advancedclasses.B ... (line shortened) ...
+3211:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@932bc4a	Empty = false	Size = 5	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@6bedbc4d,testing.prerequisite.cs40s.advancedclasses ... (line shortened) ...
+3212:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@6bedbc4d	Empty = false	Size = 4	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@57af006c,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
+3213:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@57af006c	Empty = false	Size = 3	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@20f5239f,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
+3214:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@20f5239f	Empty = false	Size = 2	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@193f604a,testing.prerequisite.cs40s.advancedclasse ... (line shortened) ...
+3215:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@193f604a	Empty = false	Size = 1	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@6d3a388c] <- bottom
+3216:	Popped -> testing.prerequisite.cs40s.advancedclasses.Box@6d3a388c	Empty = true	Size = 0	Empty Stack
+3217:	Popped -> null	Empty = true	Size = 0	Empty Stack
+3218:	// Test peek (top is wrapper no testing needed)...
+3219:	Clone Top = null
+3220:	Stack Top = testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0
+3221:	// Test to array and to linked list...
+3222:	[testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisite.cs40s.adva ... (line shortened) ...
+3223:	Array   	[testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisite.c ... (line shortened) ...
+3224:	// Test our constructors...
+3225:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisi ... (line shortened) ...
+3226:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@3514a4c0,testing.prerequisite.cs40s.advancedclasses.Box@29d89d5d,testing.prerequisite.cs40s.advancedclasses.Box@2fd1433e,testing.prerequisi ... (line shortened) ...
+3227:	// Test the Queue object...
+3228:	// Test toString,size,isEmpty, and enqueue methods...
+3229:	Empty = true	Size = 0	Empty Queue
+3230:	// Loop through adding random values
+3231:	Empty = false	Size = 1	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@69997e9d] <- front
+3232:	Empty = false	Size = 2	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@793be5ca,testing.prerequisite.cs40s.advancedclasses.Box@69997e9d] <- front
+3233:	Empty = false	Size = 3	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@2df9b86,testing.prerequisite.cs40s.advancedclasses.Box@793be5ca,testing.prerequisite.cs40s.advancedclasses.Box@6999 ... (line shortened) ...
+3234:	Empty = false	Size = 4	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@37654521,testing.prerequisite.cs40s.advancedclasses.Box@2df9b86,testing.prerequisite.cs40s.advancedclasses.Box@793b ... (line shortened) ...
+3235:	Empty = false	Size = 5	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@15aab8c6,testing.prerequisite.cs40s.advancedclasses.Box@37654521,testing.prerequisite.cs40s.advancedclasses.Box@2df ... (line shortened) ...
+3236:	Empty = false	Size = 6	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@33990a0c,testing.prerequisite.cs40s.advancedclasses.Box@15aab8c6,testing.prerequisite.cs40s.advancedclasses.Box@376 ... (line shortened) ...
+3237:	Empty = false	Size = 7	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@4de4b452,testing.prerequisite.cs40s.advancedclasses.Box@33990a0c,testing.prerequisite.cs40s.advancedclasses.Box@15a ... (line shortened) ...
+3238:	Empty = false	Size = 8	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequisite.cs40s.advancedclasses.Box@4de4b452,testing.prerequisite.cs40s.advancedclasses.Box@339 ... (line shortened) ...
+3239:	Empty = false	Size = 9	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequisite.cs40s.advancedclasses.Box@4de ... (line shortened) ...
+3240:	Empty = false	Size = 10	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50 ... (line shortened) ...
+3241:	// Test clone method...
+3242:	Clone Queue 			Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,te ... (line shortened) ...
+3243:	// Test equals method...
+3244:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequis ... (line shortened) ...
+3245:	// Now change the duplicate
+3246:	// Now check again
+3247:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequis ... (line shortened) ...
+3248:	// Re-clone the queue, and output
+3249:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequis ... (line shortened) ...
+3250:	// Test the dequeue method...
+3251:	Clone queue:	Empty = false	Size = 10	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedc ... (line shortened) ...
+3252:	// Loop through removing values
+3253:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@69997e9d	Empty = false	Size = 9	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
+3254:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@793be5ca	Empty = false	Size = 8	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
+3255:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@2df9b86	Empty = false	Size = 7	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclas ... (line shortened) ...
+3256:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@37654521	Empty = false	Size = 6	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
+3257:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@15aab8c6	Empty = false	Size = 5	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
+3258:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@33990a0c	Empty = false	Size = 4	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
+3259:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@4de4b452	Empty = false	Size = 3	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
+3260:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82	Empty = false	Size = 2	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedcla ... (line shortened) ...
+3261:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@101952da	Empty = false	Size = 1	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf] <- front
+3262:	Dequeued -> testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf	Empty = true	Size = 0	Empty Queue
+3263:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
+3264:	// Test front and back...
+3265:	Clone Front = null
+3266:	Queue Front = testing.prerequisite.cs40s.advancedclasses.Box@69997e9d
+3267:	Clone Back  = null
+3268:	Queue Back  = testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf
+3269:	// Test to array and to linked list...
+3270:	[testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequisite.cs40s.adva ... (line shortened) ...
+3271:	Array   	[testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequisite.c ... (line shortened) ...
+3272:	// Test our constructors...
+3273:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequis ... (line shortened) ...
+3274:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequis ... (line shortened) ...
+3275:	// Constructors from stack to queue (and back)...
+3276:	Queue back -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequis ... (line shortened) ...
+3277:	Stack top -> [testing.prerequisite.cs40s.advancedclasses.Box@6babf3bf,testing.prerequisite.cs40s.advancedclasses.Box@101952da,testing.prerequisite.cs40s.advancedclasses.Box@50b5ac82,testing.prerequisi ... (line shortened) ...
+3278:	Computer Science 42SAP - Searching and Sorting Post Secondary content running simulated:...
+3279:	// Search: linear search and binary search
+3280:	// Sort: bubble sort and the selection sort
+3281:	// Create some constants (edges) for the data
+3282:	// Create some random data to search through and sort
+3283:	// Including edge cases to test
+3284:	// Create data to store the results...
+3285:	// The simpliest of searches
+3286:	Array [18,98,61,65,3,50,49,23,24,30,15,85,80,53,80,27,100,84,95,44,92,27,23,32,90,89,98,67,71,80,27,51,13,92,73,8,86,46,62,77,64,58,63,84,13,2,100,27,47,19,51,73,55,37,33,63,86,93,44,100,100,2,95,75,6 ... (line shortened) ...
+3287:	// Now the linear search on all test data
+3288:	Array [18,98,61,65,3,50,49,23,24,30,15,85,80,53,80,27,100,84,95,44,92,27,23,32,90,89,98,67,71,80,27,51,13,92,73,8,86,46,62,77,64,58,63,84,13,2,100,27,47,19,51,73,55,37,33,63,86,93,44,100,100,2,95,75,6 ... (line shortened) ...
+3289:	Array [18,98,61,65,3,50,49,23,24,30,15,85,80,53,80,27,100,84,95,44,92,27,23,32,90,89,98,67,71,80,27,51,13,92,73,8,86,46,62,77,64,58,63,84,13,2,100,27,47,19,51,73,55,37,33,63,86,93,44,100,100,2,95,75,6 ... (line shortened) ...
+3290:	Array [18,98,61,65,3,50,49,23,24,30,15,85,80,53,80,27,100,84,95,44,92,27,23,32,90,89,98,67,71,80,27,51,13,92,73,8,86,46,62,77,64,58,63,84,13,2,100,27,47,19,51,73,55,37,33,63,86,93,44,100,100,2,95,75,6 ... (line shortened) ...
+3291:	Array [18,98,61,65,3,50,49,23,24,30,15,85,80,53,80,27,100,84,95,44,92,27,23,32,90,89,98,67,71,80,27,51,13,92,73,8,86,46,62,77,64,58,63,84,13,2,100,27,47,19,51,73,55,37,33,63,86,93,44,100,100,2,95,75,6 ... (line shortened) ...
+3292:	Array [18,98,61,65,3,50,49,23,24,30,15,85,80,53,80,27,100,84,95,44,92,27,23,32,90,89,98,67,71,80,27,51,13,92,73,8,86,46,62,77,64,58,63,84,13,2,100,27,47,19,51,73,55,37,33,63,86,93,44,100,100,2,95,75,6 ... (line shortened) ...
+3293:	// Simple sort...
+3294:	Sorted Array: 	[2,2,3,7,8,8,13,13,15,18,18,19,23,23,24,27,27,27,27,27,29,30,32,33,34,37,39,44,44,46,47,48,48,48,49,49,50,50,50,51,51,51,52,53,53,55,55,55,55,58,58,60,61,61,61,62,62,63,63,63,64,65,65,6 ... (line shortened) ...
+3295:	// We will re-scramble array for further testing
+3296:	Sorted Array: 	[62,35,61,47,5,37,6,84,62,8,1,14,50,92,6,63,90,43,10,70,33,31,94,77,41,68,75,61,32,62,49,55,7,65,16,55,41,48,96,94,81,16,7,44,36,57,15,49,59,72,5,45,79,71,22,100,92,25,29,37,31,55,51,24 ... (line shortened) ...
+3297:	// Now bubble sort (from bubbles rising from water)
+3298:	Original Array 	[62,35,61,47,5,37,6,84,62,8,1,14,50,92,6,63,90,43,10,70,33,31,94,77,41,68,75,61,32,62,49,55,7,65,16,55,41,48,96,94,81,16,7,44,36,57,15,49,59,72,5,45,79,71,22,100,92,25,29,37,31,55,51,2 ... (line shortened) ...
+3299:	// Now selection sort (from selecting the smallest)
+3300:	Original Array 	[62,35,61,47,5,37,6,84,62,8,1,14,50,92,6,63,90,43,10,70,33,31,94,77,41,68,75,61,32,62,49,55,7,65,16,55,41,48,96,94,81,16,7,44,36,57,15,49,59,72,5,45,79,71,22,100,92,25,29,37,31,55,51,2 ... (line shortened) ...
+3301:	// Now binary search (named after two or dividing)
+3302:	// NOTE: binary search can only happen on sorted list
+3303:	// Redo some of the test data...
+3304:	Array [1,5,5,6,6,7,7,8,9,10,11,14,15,16,16,20,21,21,22,22,24,25,25,26,29,29,31,31,32,33,34,35,36,37,37,37,40,41,41,41,41,43,44,45,47,47,48,48,49,49,50,50,51,53,53,55,55,55,56,57,58,59,60,61,61,61,61,6 ... (line shortened) ...
+3305:	Array [1,5,5,6,6,7,7,8,9,10,11,14,15,16,16,20,21,21,22,22,24,25,25,26,29,29,31,31,32,33,34,35,36,37,37,37,40,41,41,41,41,43,44,45,47,47,48,48,49,49,50,50,51,53,53,55,55,55,56,57,58,59,60,61,61,61,61,6 ... (line shortened) ...
+3306:	Array [1,5,5,6,6,7,7,8,9,10,11,14,15,16,16,20,21,21,22,22,24,25,25,26,29,29,31,31,32,33,34,35,36,37,37,37,40,41,41,41,41,43,44,45,47,47,48,48,49,49,50,50,51,53,53,55,55,55,56,57,58,59,60,61,61,61,61,6 ... (line shortened) ...
+3307:	Array [1,5,5,6,6,7,7,8,9,10,11,14,15,16,16,20,21,21,22,22,24,25,25,26,29,29,31,31,32,33,34,35,36,37,37,37,40,41,41,41,41,43,44,45,47,47,48,48,49,49,50,50,51,53,53,55,55,55,56,57,58,59,60,61,61,61,61,6 ... (line shortened) ...
+3308:	Array [1,5,5,6,6,7,7,8,9,10,11,14,15,16,16,20,21,21,22,22,24,25,25,26,29,29,31,31,32,33,34,35,36,37,37,37,40,41,41,41,41,43,44,45,47,47,48,48,49,49,50,50,51,53,53,55,55,55,56,57,58,59,60,61,61,61,61,6 ... (line shortened) ...
+3309:	// Use class for searching and sorting
+3310:	// Create random linked list data
+3311:	// Create random array data
+3312:	// Place all test cases into another linked list
+3313:	// Execute the linear search on all list test data...
+3314:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3315:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3316:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3317:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3318:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3319:	// Execute the linear search on all array test data...
+3320:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3321:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3322:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3323:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3324:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3325:	// Execute all the sorts on all test data...
+3326:	// Bubble sort LinkedList data...
+3327:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3328:	// Bubble sort array data...
+3329:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3330:	// Selection sort LinkedList data...
+3331:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3332:	// Selection sort array data...
+3333:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3334:	// Shell sort LinkedList data...
+3335:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3336:	// Shell sort array data...
+3337:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3338:	// Insertion sort LinkedList data...
+3339:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3340:	// Insertion sort array data...
+3341:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3342:	// Quick sort LinkedList data...
+3343:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3344:	// Quick sort array data...
+3345:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3346:	// Merge sort LinkedList data...
+3347:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3348:	// Merge sort array data...
+3349:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3350:	// Heap sort LinkedList data...
+3351:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3352:	// Heap sort array data...
+3353:	Before: 	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri, ... (line shortened) ...
+3354:	// Execute the binary search on all List test data...
+3355:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3356:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3357:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3358:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3359:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3360:	// Execute the binary search on all Array test data...
+3361:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3362:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3363:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3364:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3365:	[Darb,Thea,alma,jute,spur,ands,Capt,dews,jowl,this,goad,swum,Abra,Linn,tier,Amos,tams,obit,coed,neap,Hutu,nook,void,muon,thus,Linc,ogle,lens,risk,bust,Hoff,balk,Fara,Alas,Mimi,clap,tore,Kiri,cozy,then ... (line shortened) ...
+3366:	Computer Science 42SAP - Binary Trees Post Secondary content running simulated:............
+3367:	// Constants/variables for creating random values...
+3368:	// Creating some TreeNode objects...
+3369:	// Linking the TreeNodes...
+3370:	// Testing TreeNode equals...
+3371:	// Testing TreeNode toString...
+3372:	37
+3373:	40
+3374:	74
+3375:	// Creating a Tree object...
+3376:	// Test the insert method...
+3377:	// Insert one more...
+3378:	// Test the search of the tree...
+3379:	Should be found     = true
+3380:	Should NOT be found = false
+3381:	// Test toString() and pre, post, in order traversals
+3382:	Binary Tree:
+Order: [73,22,79,55,30,71]
+Pre:   [73,22,55,30,71,79]
+Post:  [30,71,55,22,79,73]
+In:    [22,30,55,71,73,79]
+3383:	// Building second tree (test clone) and test equals
+3384:	1st tree -> [22,30,55,71,73,79]
+3385:	2nd tree -> [22,34,47,76,79,80]
+3386:	1st!=2nd
+3387:	// Building a third tree (test clone) and test equals
+3388:	1st tree -> [22,30,55,71,73,79]
+3389:	3rd tree -> [22,30,55,71,73,79]
+3390:	1st==3rd
+3391:	// Build all our data structures from each other...
+3392:	// Create variable objects...
+3393:	// Create array from variables...
+3394:	// Create LinkedList from array...
+3395:	// Create Stack from LinkedList...
+3396:	// Create Queue from Stack...
+3397:	// Create Tree from Queue...
+3398:	// Output variables,array,list,stack,queue,tree...
+3399:	saned
+3400:	hague
+3401:	keven
+3402:	ritzy
+3403:	foxes
+3404:	[saned,hague,keven,ritzy,foxes]
+3405:	[saned,hague,keven,ritzy,foxes]
+3406:	Stack top -> [saned,hague,keven,ritzy,foxes] <- bottom
+3407:	Queue back -> [saned,hague,keven,ritzy,foxes] <- front
+3408:	Binary Tree:
+Order: [saned,hague,keven,ritzy,foxes]
+Pre:   [saned,hague,foxes,keven,ritzy]
+Post:  [foxes,ritzy,keven,hague,saned]
+In:    [foxes,hague,keven,ritzy,saned]
+3409:	// Now re-building queue from tree
+3410:	// Now re-building stack from queue
+3411:	// Now re-building LinkedList from stack...
+3412:	// Now re-building array from LinkedList...
+3413:	// Output array,list,stack,queue,tree again...
+3414:	[foxes,hague,keven,ritzy,saned]
+3415:	[foxes,hague,keven,ritzy,saned]
+3416:	Stack top -> [foxes,hague,keven,ritzy,saned] <- bottom
+3417:	Queue back -> [foxes,hague,keven,ritzy,saned] <- front
+3418:	Binary Tree:
+Order: [saned,hague,keven,ritzy,foxes]
+Pre:   [saned,hague,foxes,keven,ritzy]
+Post:  [foxes,ritzy,keven,hague,saned]
+In:    [foxes,hague,keven,ritzy,saned]
