@@ -3,6 +3,7 @@
 package testing.cs42sap;
 
 /** Required API imports */
+import testing.cs42sap.additional.ArrayListExamples;
 import testing.cs42sap.additional.TextFilesExamples;
 import testing.cs42sap.practice.PracticeTest4;
 import testing.cs42sap.practice.PracticeTest2;
@@ -71,6 +72,7 @@ public class ComputerScience42SAP
     public static void additional() {
         if (Simulator.check("Additional Content")) return;          
         new TextFilesExamples();  
+        new ArrayListExamples();
     } 
     /**
      * Reads the array of all lines read from the curriculum data file to 

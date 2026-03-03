@@ -31,6 +31,9 @@ import utility.io.System;
  * and CS40S) as it relates to the AP Computer Science curriculum by having 
  * presentations, doing examples, and making notes. 
  * 
+ * DESCRIPTION:
+ * ============
+ * 
  * Apps you have previously created stored data in memory as primitive data 
  * structures (e.g. variables and arrays), more advanced data structures 
  * (e.g. classes), or even abstract dynamic data structures (e.g. 
