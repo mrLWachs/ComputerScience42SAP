@@ -22,7 +22,41 @@ import utility.io.Simulator;
  * primitives) and provides built-in methods such as add(), remove(), get(), 
  * and size() to efficiently manage data. In AP Computer Science, ArrayList is 
  * especially useful when the number of elements is unknown in advance, making 
- * it a flexible way to store and manipulate collections of objects.
+ * it a flexible way to store and manipulate collections of objects. ArrayLists 
+ * are imported from the Java core library (API framework) "util" (utility) and 
+ * can be seen in this top-down diagram below...
+ * 
+ *            +------------+
+ *            | Collection |
+ *            +------------+
+ *           /      |      \
+ *          /       |       \
+ *   +-----+    +------+    +-------+
+ *   | Set |    | List |    | Queue |
+ *   +-----+    +------+    +-------+
+ *             /    |   \           \
+ *            /     |    +-----+     +----+
+ *           /      |           \          \
+ * +-----------+ +------------+ +--------+ +---------------+    
+ * | ArrayList | | LinkedList | | Vector | | PriorityQueue |
+ * +-----------+ +------------+ +--------+ +---------------+
+ *                                  | 
+ *                              +-------+
+ *                              | Stack |
+ *                              +-------+
+ * 
+ * From this: "Collection", "Set", "Queue", and "List" are interfaces that are 
+ * implemented by the classes: "ArrayList", "LinkedList", "Vector", and 
+ * "PriorityQueue" and the class "Stack" inherits from the "Vector" class.
+ * 
+ * NOTE: further resources for ArrayLists can be found here:
+ *       - A video reviewing this AP specific content: https://bit.ly/4h2uYlN
+ *       - Similar web page/presentation/PDF content: https://bit.ly/3QzsYGR
+ *       - The AP classroom site on unit 7: https://bit.ly/3DbsrYs
+ *       - Some other websites that go over the ArrayList in Java:
+ *            - https://bit.ly/3EV4Dsl
+ *            - https://bit.ly/3QDJPs8
+ *            - https://bit.ly/3F0OBNF
  *
  * SPECIFICALLY FROM THE AP COMPUTER SCIENCE CURRICULUM:
  * =====================================================
