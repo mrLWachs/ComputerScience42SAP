@@ -162,11 +162,50 @@ public class ArrayListExamples
         // Create (declare) an ArrayList object...
         ArrayList<Integer> list = new ArrayList<>();
         
+         ////////////////////////////////////////////////////////////////////////
+        // Now some ArrayList methods of that imported class. The A.P. 
+        // reference document you will have for the exam outlines the required 
+        // methods to know from the ArrayList (you do not need to know ALL the
+        // methods that the ArrayList class has). This document can be found
+        // here: https://bit.ly/4gZyXiH - And these are the 6 methods to know:
+        // int size(), boolean add(T), boolean add(int, T), T get(int), 
+        // T set(int, T), and T remove(int)
+        //
+        // The A.P. curriculum unit 7.2 states this as: represent collections 
+        // of related object reference data using ArrayList objects. The 
+        // ArrayList class is part of the java.util package. An import 
+        // statement can be used to make this class available for use in the 
+        // program. The following ArrayList methods—including what they do 
+        // and when they are used—are part of the Java Quick Reference: 
+        // (1) int size() - Returns the number of elements in the list
+        // (2) boolean add(E obj) - Appends obj to end of list; returns true 
+        // (3) void add(int index, E obj) - Inserts obj at position index 
+        //     (0 <= index <= size), moving elements at position index and 
+        //     higher to the right (adds 1 to their indices) and adds 1 to size
+        // (4) E get(int index) - Returns the element at position index in the 
+        //     list
+        // (5) E set(int index, E obj) — Replaces the element at position 
+        //     index with obj; returns the element formerly at position index 
+        // (6) E remove(int index) — Removes element from position index, 
+        //     moving elements at position index + 1 and higher to the left 
+        //     (subtracts 1 from their indices) and subtracts 1 from size;  
+        //     returns the element formerly at position index
+        ////////////////////////////////////////////////////////////////////////
         
+        ////////////////////////////////////////////////////////////////////////
+        // (1) The "size()" method is used to get the size of the ArrayList  
+        //     (note: with arrays, we use ".length" instead)
+        ////////////////////////////////////////////////////////////////////////
         
+        int size = list.size();
+        System.out.print("Method size() = " + size);
+        System.out.println(" ArrayList: " + list.toString());
         
-        
-        
+        ////////////////////////////////////////////////////////////////////////
+        // (2) The "add(T)" method is used to add values dynamically into the 
+        //     ArrayList. Note: it will always append the item to the end of 
+        //     the ArrayList
+        ////////////////////////////////////////////////////////////////////////
         
         
         
