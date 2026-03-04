@@ -3,6 +3,7 @@ package testing.cs42sap.additional;
 
 /** Required API imports */
 import utility.io.Simulator;
+import java.util.ArrayList;
 
 
 /*
@@ -52,7 +53,7 @@ import utility.io.Simulator;
  * NOTE: further resources for ArrayLists can be found here:
  *       - A video reviewing this AP specific content: https://bit.ly/4h2uYlN
  *       - Similar web page/presentation/PDF content: https://bit.ly/3QzsYGR
- *       - The AP classroom site on unit 7: https://bit.ly/3DbsrYs
+ *       - The AP classroom site on this: https://bit.ly/3DbsrYs
  *       - Some other websites that go over the ArrayList in Java:
  *            - https://bit.ly/3EV4Dsl
  *            - https://bit.ly/3QDJPs8
@@ -144,6 +145,34 @@ public class ArrayListExamples
      */
     public ArrayListExamples() {  
         System.out.println("Learn about ArrayList............................");
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Let us begin to start learning about ArrayLists...
+        ////////////////////////////////////////////////////////////////////////
+        // The A.P. curriculum states that ArrayLists represent collections of 
+        // related object reference data using ArrayList objects. An ArrayList 
+        // object is mutable and contains object references. The ArrayList 
+        // constructor ArrayList() constructs an empty list. Java allows the 
+        // generic type ArrayList<E>, where the generic type E specifies the 
+        // type of the elements. When ArrayList<E> is specified, the types of 
+        // the reference parameters and return type when using the methods are 
+        // type E. ArrayList<E> is preferred over ArrayList because it allows 
+        // the compiler to find errors that would otherwise be found at run-time
+        
+        // Create (declare) an ArrayList object...
+        ArrayList<Integer> list = new ArrayList<>();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
