@@ -207,6 +207,24 @@ public class ArrayListExamples
         //     the ArrayList
         ////////////////////////////////////////////////////////////////////////
         
+        Integer value = 10;
+        boolean success = list.add(value);
+        System.out.print("Method add(T) = " + success);
+        System.out.println(" ArrayList: " + list.toString());
+        
+        System.out.println("...Repeating the add() method...");
+        for (int i = 0; i < 4; i++) {
+            value = i * 10 + 20;
+            success = list.add(value);
+            System.out.print("Method add(T) = " + success);
+            System.out.println(" ArrayList: " + list.toString());
+        }
+        
+        
+        
+        
+        
+        
         
         
         
