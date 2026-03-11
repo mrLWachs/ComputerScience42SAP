@@ -284,12 +284,62 @@ public class ArrayListExamples
         //     element. It also returns the item it removes
         ////////////////////////////////////////////////////////////////////////
         
+        index = 4;
+        System.out.println("Method remove(4) = " + list.remove(index));
+        System.out.println(" ArrayList: " + list.toString()); 
         
+        index = 0;
+        System.out.print("Method remove(0) = " + list.remove(index));
+        System.out.println(" ArrayList: " + list.toString());
         
+        index = list.size()-1;
+        System.out.print("Method remove(list.size()-1) = " + list.remove(index));
+        System.out.println(" ArrayList: " + list.toString());
         
+        ////////////////////////////////////////////////////////////////////////
+        // Traversing an ArrayList with a standard for loop and an enhanced 
+        // for loop.
+        //
+        // The A.P. curriculum unit 7.3 states this as: for ArrayList 
+        // objects: (a) Traverse using a for or while loop, (b) Traverse using
+        // an enhanced for loop. Iteration statements can be used to access 
+        // all the elements in an ArrayList. This is called traversing the 
+        // ArrayList. Deleting elements during a traversal of an ArrayList
+        // requires using special techniques to avoid skipping elements. 
+        // Since the indices for an ArrayList start at 0 and end at the 
+        // number of elements − 1, accessing an index value outside of this 
+        // range will result in an ArrayIndexOutOfBoundsException being thrown.
+        // Changing the size of an ArrayList while traversing it using an 
+        // enhanced for loop can result in a ConcurrentModificationException 
+        // being thrown. Therefore, when using an enhanced for loop to traverse
+        // an ArrayList, you should not add or remove elements
+        ////////////////////////////////////////////////////////////////////////
         
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("'for' loop ArrayList: " + list.get(i));
+            // If we compare with arrays, we would use code like: 
+            // array[i] and array.length, etc...
+        }
         
+        for (Integer integer : list) {
+            System.out.println("'enhanced for' loop ArrayList = " + integer.toString());
+            // The enhanced for loop cannot be used with primitive data types
+        }
         
+        ////////////////////////////////////////////////////////////////////////
+        
+        System.out.println("Comparing ArrayList to arrays...");
+        System.out.println("All array operations: ");
+        System.out.println(" - declaring:  int a[] = new int[5];");
+        System.out.println(" - mutating:   a[2] = 5;");
+        System.out.println(" - accessing:  int x = a[2];");
+        System.out.println(" - traversing: for (int i = 0; i < a.length; i++)");
+        System.out.println("Can also be performed with ArrayList:");
+        System.out.println(" - declaring:  ArrayList<Integer> a = new ArrayList<>();");
+        System.out.println(" - mutating:   a.set(2,5);");
+        System.out.println(" - accessing:  int x = a.get(2);");
+        System.out.println(" - traversing: for (int i = 0; i < a.size(); i++)");  
+        System.out.println("           or: for (Integer integer : list)");
         
         System.out.println("Completed Learning about ArrayList...............");
     }
