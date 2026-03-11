@@ -242,6 +242,29 @@ public class ArrayListExamples
         list.add(index, value);
         System.out.println("Method add(list.size(),97) ArrayList: " + list.toString());
         
+        ////////////////////////////////////////////////////////////////////////
+        // (4) The "get(int)" accessor method is used like accessing array like
+        //     "int value = array[index];" which retrieves the value at the 
+        //     passed index
+        ////////////////////////////////////////////////////////////////////////
+        
+        index = 4;
+        System.out.println("Method get(4) = " + list.get(index));
+        
+        index = 0;
+        System.out.println("Method get(0) = " + list.get(index));
+        
+        index = list.size()-1;
+        System.out.println("Method get(list.size()-1) = " + list.get(index));
+        
+        ////////////////////////////////////////////////////////////////////////
+        // (5) The "set(int,T)" mutator method is used like changing an array
+        //     like: "array[index] = value;" mutates (changes) the value at the 
+        //     passed index and returns the previous value at that index
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
         
         
         
