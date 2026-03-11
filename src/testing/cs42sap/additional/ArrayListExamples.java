@@ -263,9 +263,26 @@ public class ArrayListExamples
         //     passed index and returns the previous value at that index
         ////////////////////////////////////////////////////////////////////////
         
+        index = 4;
+        value = 0;
+        System.out.println("Method set(4,0) = " + list.set(index, value));   
+        System.out.println(" ArrayList: " + list.toString());
+                
+        index = 0;
+        value = 0;
+        System.out.println("Method set(0,0) = " + list.set(index, value));   
+        System.out.println(" ArrayList: " + list.toString());        
+                
+        index = list.size()-1;
+        value = 0;
+        System.out.println("Method set(list.size()-1,0) = " + list.set(index, value));   
+        System.out.println(" ArrayList: " + list.toString());        
         
-        
-        
+        ////////////////////////////////////////////////////////////////////////
+        // (6) The "remove(int)" mutator method removes the index value from
+        //     the ArrayList and adjusts the list to now have one less 
+        //     element. It also returns the item it removes
+        ////////////////////////////////////////////////////////////////////////
         
         
         
