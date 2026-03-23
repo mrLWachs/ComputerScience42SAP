@@ -184,15 +184,62 @@ public class StringMethodsExamples
         //     determines if they are equal or not
         ////////////////////////////////////////////////////////////////////////
         
+        String letter1 = "aaa";
+        String letter2 = "bbb";
+        String letter3 = "ccc";
+        System.out.println("letter1 = " + letter1);
+        System.out.println("letter2 = " + letter2);
+        System.out.println("letter3 = " + letter3);
+        boolean equals1 = letter1.equals(letter2);
+        boolean equals2 = letter1.equals(letter1);
+        System.out.println("letter1.equals(letter2) = " + equals1);
+        System.out.println("letter1.equals(letter1) = " + equals2);
         
+        ////////////////////////////////////////////////////////////////////////
+        // (7) The compareTo String method examines the two strings   
+        //     lexographically and determines if the strings are equal, less  
+        //     than, or greater than each other
+        ////////////////////////////////////////////////////////////////////////
         
+        int compare1 = letter1.compareTo(letter1);
+        int compare2 = letter1.compareTo(letter2);
+        int compare3 = letter2.compareTo(letter1);
+                      // bbb            // aaa
         
+        System.out.println("letter1.compareTo(letter1) = " + compare1);
+        System.out.println("letter1.compareTo(letter2) = " + compare2);
+        System.out.println("letter2.compareTo(letter1) = " + compare3);
         
+        ////////////////////////////////////////////////////////////////////////
+        // (8) The split String method returns a string array where each element
+        //     is a substring of this string, which has been split around
+        //     matches of the given expression parameter
+        ////////////////////////////////////////////////////////////////////////
         
+        String split1 = "supercalifragilisticexpialidocious";
+        String[] array1 = split1.split("a");
+        System.out.println("Example 1: " + split1 + " -> .split('a')");
+        for (String string1 : array1) {
+            System.out.println("->" + string1 + "<-");
+        }
         
+        String[] array2 = split1.split("fragil");
+        System.out.println("Example 2: " + split1 + " -> .split('fragil')");
+        for (String string1 : array2) {
+            System.out.println("->" + string1 + "<-");
+        }
         
-        
-        
+        String[] array3 = split1.split("[a,i]");
+        System.out.println("Example 3: " + split1 + " -> .split([a,i])");
+        for (String string1 : array3) {
+            System.out.println("->" + string1 + "<-");
+        }
+        String split2 = "The fat cat, sat on a red mat. That cat, is PHAT!";
+        String[] array4 = split2.split("[ ,.!]");
+        System.out.println("Example 4: " + split2 + " -> .split([ ,.!])");
+        for (String string1 : array4) {
+            System.out.println("->" + string1 + "<-");
+        }
         
         System.out.println("Completed String Methods.........................");
     }
