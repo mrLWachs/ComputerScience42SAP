@@ -2,7 +2,6 @@
 package testing.cs42sap.additional;
 
 /** Required API imports */
-import java.util.ArrayList;
 import utility.io.Simulator;
 
 /*
