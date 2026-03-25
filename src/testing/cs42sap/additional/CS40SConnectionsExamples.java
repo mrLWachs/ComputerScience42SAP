@@ -230,6 +230,9 @@ public class CS40SConnectionsExamples
         ////////////////////////////////////////////////////////////////////////
         // - Constructors are said to be overloaded when there are multiple 
         //   constructors with different signatures.
+        // - Within an instance method or a constructor, the keyword this acts 
+        //   as a special variable that holds a reference to the current 
+        //   object - the object whose method or constructor is being called.
         ////////////////////////////////////////////////////////////////////////
         
         
@@ -256,15 +259,7 @@ public class CS40SConnectionsExamples
         //   called the default constructor.
         ////////////////////////////////////////////////////////////////////////
         
-        
-        
-        ////////////////////////////////////////////////////////////////////////
-        // - Within an instance method or a constructor, the keyword this acts 
-        //   as a special variable that holds a reference to the current 
-        //   object - the object whose method or constructor is being called.
-        ////////////////////////////////////////////////////////////////////////
-        
-        
+                
         
         ////////////////////////////////////////////////////////////////////////
         // - An enhanced for loop header includes a variable, referred to as 
