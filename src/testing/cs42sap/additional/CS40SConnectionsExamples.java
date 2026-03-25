@@ -193,6 +193,10 @@ public class CS40SConnectionsExamples
         // would have been implemented iteratively (with a loop)
         ////////////////////////////////////////////////////////////////////////
         
+        String s1 = "This is a string of characters.";
+        String s2 = reverse(s1);
+        System.out.println("s1 = " + s1);
+        System.out.println("s2 = " + s2);
         
         
         ////////////////////////////////////////////////////////////////////////
@@ -317,6 +321,17 @@ public class CS40SConnectionsExamples
         
         
         System.out.println("Completed CS40S Connections......................");
+    }
+
+    /**
+     * Reverses the order of characters in a given string using a 
+     * recursive process.
+     *
+     * @param string The String to be reversed
+     * @return A new String with the characters in reverse order
+     */
+    private static String reverse(String string) {
+        
     }
 
 }
