@@ -194,12 +194,12 @@ public class CS40SConnectionsExamples
         ////////////////////////////////////////////////////////////////////////
         
         String s1 = "This is a string of characters.";
-        String s2 = reverse(s1);
+        String s2 = reverse(s1);                // Calling recursive method here
         System.out.println("s1 = " + s1);
         System.out.println("s2 = " + s2);
         
         int[] array = { 10, 20, 30, 40 };
-        int sum = sum(array, 0);
+        int sum = sum(array, 0);                // Calling recursive method here
         System.out.println("Sum = " + sum);
         
         ////////////////////////////////////////////////////////////////////////
@@ -210,7 +210,7 @@ public class CS40SConnectionsExamples
         //   of the attributes and behaviors of an object. 
         ////////////////////////////////////////////////////////////////////////
         
-        Animal animal = new Animal();
+        Animal animal = new Animal();    // Class/object with properties/methods
         animal.type  = "Horse";
         animal.sound = "neigh...";
         animal.makeNoise();
@@ -224,7 +224,7 @@ public class CS40SConnectionsExamples
         //   inheritance relationship from the subclasses to the superclass.
         ////////////////////////////////////////////////////////////////////////
         
-        Dog dog = new Dog();
+        Dog dog = new Dog();     // Class inheriting ('is a') from another class
         dog.type  = "Dog";
         dog.sound = "woof";
         dog.makeNoise();
@@ -239,7 +239,7 @@ public class CS40SConnectionsExamples
         //   their variable names.
         ////////////////////////////////////////////////////////////////////////
         
-        Cat cat = new Cat();
+        Cat cat = new Cat();                    // Class with constructor method
         
         ////////////////////////////////////////////////////////////////////////
         // - Constructors are said to be overloaded when there are multiple 
@@ -249,7 +249,7 @@ public class CS40SConnectionsExamples
         //   object - the object whose method or constructor is being called.
         ////////////////////////////////////////////////////////////////////////
         
-        Cat gary = new Cat("Gary","purrr");
+        Cat gary = new Cat("Gary","purrr");    // Overloaded constructor methods
         
         ////////////////////////////////////////////////////////////////////////
         // - Data encapsulation is a technique in which the implementation 
@@ -260,7 +260,7 @@ public class CS40SConnectionsExamples
         //   from classes outside the declaring class.
         ////////////////////////////////////////////////////////////////////////
         
-        BigAnimal bigAnimal = new BigAnimal("Lion", "growl", "Large");
+        BigAnimal big = new BigAnimal("Lion", "grrr", "Large"); // Encapsulation
         
         ////////////////////////////////////////////////////////////////////////
         // - An object’s state refers to its attributes and their values at a 
@@ -273,7 +273,7 @@ public class CS40SConnectionsExamples
         //   called the default constructor.
         ////////////////////////////////////////////////////////////////////////
         
-                
+        
         
         ////////////////////////////////////////////////////////////////////////
         // - An enhanced for loop header includes a variable, referred to as 
@@ -377,8 +377,8 @@ public class CS40SConnectionsExamples
             return array[index] + sum(array, index + 1);
         }
     }
-    
-    
+        
+    /** Class example with properties (attributes) and methods (behaviors) */
     public class Animal 
     {
         // Properties/Attributes: defined characteristics
@@ -390,7 +390,8 @@ public class CS40SConnectionsExamples
             System.out.println(type + " says " + sound);
         }
     }
-
+    
+    /** Class example with inheritance ("is a") */
     public class Dog extends Animal
     {
         public void wagTail() {
@@ -398,6 +399,7 @@ public class CS40SConnectionsExamples
         }
     }
     
+    /** Class example with constructor, overloading, and "this" keyword */
     public class Cat extends Animal
     {
         public Cat() {
@@ -406,19 +408,20 @@ public class CS40SConnectionsExamples
             makeNoise();
             scratch();
         }
-        
+
         public Cat(String type, String sound) {
             this.type  = type;
             this.sound = sound;
             makeNoise();
         }
-
+        
         private void scratch() {
             System.out.println(type + " will scratch you");
         }
     }
     
-    public static class BigAnimal extends Animal
+    /** Class example with encapsulation and over-ride methods */
+    public class BigAnimal extends Animal
     {
         private String size;
         
@@ -436,8 +439,7 @@ public class CS40SConnectionsExamples
         @Override
         public void makeNoise() {
             System.out.println(size + " " + type + " roars: " + sound);
-        }
-        
+        }        
     }
     
 }
