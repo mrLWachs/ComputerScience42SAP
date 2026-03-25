@@ -224,7 +224,11 @@ public class CS40SConnectionsExamples
         //   inheritance relationship from the subclasses to the superclass.
         ////////////////////////////////////////////////////////////////////////
         
-        
+        Dog dog = new Dog();
+        dog.type  = "Dog";
+        dog.sound = "woof";
+        dog.makeNoise();
+        dog.wagTail();
         
         ////////////////////////////////////////////////////////////////////////
         // - All classes in Java are subclasses of the Object class. 
@@ -387,4 +391,11 @@ public class CS40SConnectionsExamples
         }
     }
 
+    public static class Dog extends Animal
+    {
+        public void wagTail() {
+            System.out.println(type + " is wagging their tail");
+        }
+    }
+    
 }
