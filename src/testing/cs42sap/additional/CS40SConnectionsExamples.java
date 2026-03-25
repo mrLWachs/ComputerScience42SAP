@@ -239,7 +239,7 @@ public class CS40SConnectionsExamples
         //   their variable names.
         ////////////////////////////////////////////////////////////////////////
         
-        
+        Cat cat = new Cat();
         
         ////////////////////////////////////////////////////////////////////////
         // - Constructors are said to be overloaded when there are multiple 
@@ -391,10 +391,24 @@ public class CS40SConnectionsExamples
         }
     }
 
-    public static class Dog extends Animal
+    public class Dog extends Animal
     {
         public void wagTail() {
             System.out.println(type + " is wagging their tail");
+        }
+    }
+    
+    public class Cat extends Animal
+    {
+        public Cat() {
+            type =  "Cat";
+            sound = "meow";
+            makeNoise();
+            scratch();
+        }
+
+        private void scratch() {
+            System.out.println(type + " will scratch you");
         }
     }
     
