@@ -260,7 +260,7 @@ public class CS40SConnectionsExamples
         //   from classes outside the declaring class.
         ////////////////////////////////////////////////////////////////////////
         
-        
+        BigAnimal bigAnimal = new BigAnimal("Lion", "growl", "Large");
         
         ////////////////////////////////////////////////////////////////////////
         // - An object’s state refers to its attributes and their values at a 
@@ -416,6 +416,28 @@ public class CS40SConnectionsExamples
         private void scratch() {
             System.out.println(type + " will scratch you");
         }
+    }
+    
+    public static class BigAnimal extends Animal
+    {
+        private String size;
+        
+        public BigAnimal(String type, String sound, String size) {
+            super.type  = type;
+            super.sound = sound;
+            set(size);
+            makeNoise();
+        }
+
+        private void set(String size) {
+            this.size = size;
+        }
+        
+        @Override
+        public void makeNoise() {
+            System.out.println(size + " " + type + " roars: " + sound);
+        }
+        
     }
     
 }
