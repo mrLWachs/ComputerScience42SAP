@@ -331,7 +331,19 @@ public class CS40SConnectionsExamples
      * @return A new String with the characters in reverse order
      */
     private static String reverse(String string) {
-        
+        if (string == null || string.length() <= 1) {        
+            // Base Case:If the string is empty or one char, it's already 
+            // "reversed"
+            return string;
+        }
+        else {
+            // Recursive Case: Take the last char and put it in front of 
+            // the result of reversing the rest of the string
+            int    index = string.length() - 1;
+            String last  = string.substring(index);
+            String rest  = string.substring(0, index);
+            return last + reverse(rest);
+        }
     }
 
 }
