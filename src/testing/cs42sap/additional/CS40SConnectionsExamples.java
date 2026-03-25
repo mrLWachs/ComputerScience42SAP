@@ -249,7 +249,7 @@ public class CS40SConnectionsExamples
         //   object - the object whose method or constructor is being called.
         ////////////////////////////////////////////////////////////////////////
         
-        
+        Cat gary = new Cat("Gary","purrr");
         
         ////////////////////////////////////////////////////////////////////////
         // - Data encapsulation is a technique in which the implementation 
@@ -405,6 +405,12 @@ public class CS40SConnectionsExamples
             sound = "meow";
             makeNoise();
             scratch();
+        }
+        
+        public Cat(String type, String sound) {
+            this.type  = type;
+            this.sound = sound;
+            makeNoise();
         }
 
         private void scratch() {
