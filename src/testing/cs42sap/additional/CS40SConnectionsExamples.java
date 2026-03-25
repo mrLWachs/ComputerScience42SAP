@@ -174,11 +174,152 @@ public class CS40SConnectionsExamples
     public CS40SConnectionsExamples() {  
         System.out.println("Learn about CS40S Connections....................");
         
-        // Advanced Classes
+        ////////////////////////////////////////////////////////////////////////
+        // (1) RECURSION:
+        ////////////////////////////////////////////////////////////////////////
+        //
+        // - A recursive method is a method that calls itself. Recursive 
+        //   methods contain at least one base case, which halts the 
+        //   recursion, and at least one recursive call. Recursion is another 
+        //   form of repetition.
+        // - Each recursive call has its own set of local variables, 
+        //   including the parameters. Parameter values capture the progress 
+        //   of a recursive process, much like loop control variable values 
+        //   capture the progress of a loop.
+        // - Any recursive solution can be replicated through the use of an 
+        //   iterative approach and vice versa.
+        //
+        // A recursive method with a base case and recursive case and how it
+        // would have been implemented iteratively (with a loop)
+        ////////////////////////////////////////////////////////////////////////
         
-        // what is an object
-        // classes have properties and methods
-        // constructor methods and overloading a constructor
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // (2) ADVANCED CLASSES:
+        ////////////////////////////////////////////////////////////////////////
+        // - An object is a specific instance of a class with defined 
+        //   attributes. A class is the formal implementation, or blueprint, 
+        //   of the attributes and behaviors of an object. 
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // - A class hierarchy can be developed by putting common attributes 
+        //   and behaviors of related classes into a single class called a 
+        //   superclass. Classes that extend a superclass, called subclasses, 
+        //   can draw upon the existing attributes and behaviors of the 
+        //   superclass without replacing these in the code. This creates an 
+        //   inheritance relationship from the subclasses to the superclass.
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // - All classes in Java are subclasses of the Object class. 
+        //   A constructor signature consists of the constructor’s name, 
+        //   which is the same as the class name, and the ordered list of 
+        //   parameter types. The parameter list, in the header of a 
+        //   constructor, lists the types of the values that are passed and 
+        //   their variable names.
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // - Constructors are said to be overloaded when there are multiple 
+        //   constructors with different signatures.
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // - Data encapsulation is a technique in which the implementation 
+        //   details of a class are kept hidden from external classes. The 
+        //   keywords public and private affect the access of classes, data, 
+        //   constructors, and methods. The keyword private restricts access 
+        //   to the declaring class, while the keyword public allows access 
+        //   from classes outside the declaring class.
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // - An object’s state refers to its attributes and their values at a 
+        //   given time and is defined by instance variables belonging to the 
+        //   object. This defines a has-a relationship between the object and 
+        //   its instance variables.
+        // - When no constructor is written, Java provides a no-parameter 
+        //   constructor, and the instance variables are set to default values 
+        //   according to the data type of the attribute. This constructor is 
+        //   called the default constructor.
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // - Within an instance method or a constructor, the keyword this acts 
+        //   as a special variable that holds a reference to the current 
+        //   object - the object whose method or constructor is being called.
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // - An enhanced for loop header includes a variable, referred to as 
+        //   the enhanced for loop variable. For each iteration of the 
+        //   enhanced for loop, the enhanced for loop variable is assigned a 
+        //   copy of an element without using its index.
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // (3) COLLECTIONS:
+        ////////////////////////////////////////////////////////////////////////
+        // - An ArrayList object is mutable in size and contains object 
+        //   references. 
+        // - The ArrayList constructor ArrayList() constructs an empty list. 
+        // - Java allows the generic type ArrayList<E>, where the type 
+        //   parameter E specifies the type of the elements. When 
+        //   ArrayList<E> is specified, the types of the reference parameters 
+        //   and return type when using the ArrayList methods are type E. 
+        //   ArrayList<E> is preferred over ArrayList. For example, 
+        //   ArrayList<String> names = new ArrayList<String>(); allows the 
+        //   compiler to find errors that would otherwise be found at run-time
+        // - The ArrayList class is part of the java.util package. An import 
+        //   statement must be used to make this class available for use in 
+        //   the program.
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        // - The following ArrayList methods - including what they do and when 
+        //   they are used - are part of the Java Quick Reference: 
+        //   int size(), boolean add(E obj), void add(int index, E obj), 
+        //   E get(int index), E set(int index, E obj), E remove(int index)
+        //   NOTE: These are covered in more detail in this example:
+        //   https://bit.ly/4uQE10W
+        // - The indices for an ArrayList start at 0 and end at the number of 
+        //   elements - 1.
+        // - Traversing an ArrayList is when iteration or recursive statements 
+        //   are used to access all or an ordered sequence of the elements in 
+        //   an ArrayList.
+        // - Deleting elements during a traversal of an ArrayList requires the 
+        //   use of special techniques to avoid skipping elements.
+        // - Attempting to access an index value outside of its range will 
+        //   result in an IndexOutOfBoundsException.
+        // - Changing the size of an ArrayList while traversing it using an 
+        //   enhanced for loop can result in a 
+        //   ConcurrentModificationException. Therefore, when using an 
+        //   enhanced for loop to traverse an ArrayList, you should not add or 
+        //   remove elements.
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
         
         System.out.println("Completed CS40S Connections......................");
     }
