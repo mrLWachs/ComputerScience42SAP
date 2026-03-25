@@ -198,6 +198,9 @@ public class CS40SConnectionsExamples
         System.out.println("s1 = " + s1);
         System.out.println("s2 = " + s2);
         
+        int[] array = { 10, 20, 30, 40 };
+        int sum = sum(array, 0);
+        System.out.println("Sum = " + sum);
         
         ////////////////////////////////////////////////////////////////////////
         // (2) ADVANCED CLASSES:
@@ -207,7 +210,10 @@ public class CS40SConnectionsExamples
         //   of the attributes and behaviors of an object. 
         ////////////////////////////////////////////////////////////////////////
         
-        
+        Animal animal = new Animal();
+        animal.type  = "Horse";
+        animal.sound = "neigh...";
+        animal.makeNoise();
         
         ////////////////////////////////////////////////////////////////////////
         // - A class hierarchy can be developed by putting common attributes 
@@ -330,7 +336,7 @@ public class CS40SConnectionsExamples
      * @param string The String to be reversed
      * @return A new String with the characters in reverse order
      */
-    private static String reverse(String string) {
+    private String reverse(String string) {
         if (string == null || string.length() <= 1) {        
             // Base Case:If the string is empty or one char, it's already 
             // "reversed"
@@ -343,6 +349,41 @@ public class CS40SConnectionsExamples
             String last  = string.substring(index);
             String rest  = string.substring(0, index);
             return last + reverse(rest);
+        }
+    }
+    
+    /**
+     * Recursively calculates the sum of all integers in an array starting 
+     * from a given index.
+     *
+     * @param array The array of integers to be summed
+     * @param index The current starting position in the array
+     * @return The sum of the element at the current index plus the sum of all 
+     * subsequent elements
+     */
+    private int sum(int[] array, int index) {
+        if (index == array.length) {
+            // Base Case: We've reached the end of the array (stop recursion)
+            return 0;
+        }
+        else {
+            // Recursive Case: Add current element to the sum of the remaining 
+            // elements (the 'index + 1' captures the progress of the recursion)
+            // recursion is the method calling itself
+            return array[index] + sum(array, index + 1);
+        }
+    }
+    
+    
+    public class Animal 
+    {
+        // Properties/Attributes: defined characteristics
+        String type;
+        String sound;
+        
+        // Methods/Behaviours: defined actions
+        public void makeNoise() {
+            System.out.println(type + " says " + sound);
         }
     }
 
