@@ -273,7 +273,9 @@ public class CS40SConnectionsExamples
         //   called the default constructor.
         ////////////////////////////////////////////////////////////////////////
         
-        
+        Gun gun = new Gun();
+        Hunter hunter = new Hunter();
+        hunter.hunt(big);
         
         ////////////////////////////////////////////////////////////////////////
         // - An enhanced for loop header includes a variable, referred to as 
@@ -439,6 +441,28 @@ public class CS40SConnectionsExamples
         @Override
         public void makeNoise() {
             System.out.println(size + " " + type + " roars: " + sound);
+        }        
+    }
+    
+    /** Class example with no constructor but Java creates a default for us */
+    public class Gun
+    {
+        void shoot(Animal animal) {
+            System.out.println("Bang at " + animal.type);
+        }
+    }
+    
+    /** Class example of association ("has a") of 2 classes */
+    public class Hunter
+    {
+        private Gun gun;
+        
+        public Hunter() {
+            gun = new Gun();
+        }
+        
+        public void hunt(Animal animal) {
+            gun.shoot(animal);
         }        
     }
     
