@@ -2,6 +2,7 @@
 package testing.cs42sap.additional;
 
 /** Required API imports */
+import java.util.ArrayList;
 import utility.io.Simulator;
 
 /*
@@ -284,7 +285,10 @@ public class CS40SConnectionsExamples
         //   copy of an element without using its index.
         ////////////////////////////////////////////////////////////////////////
         
-        
+        Animal[] zoo = { animal, dog, cat, gary, big };
+        for (Animal creature : zoo) {
+            creature.makeNoise();
+        }
         
         ////////////////////////////////////////////////////////////////////////
         // (3) COLLECTIONS:
@@ -304,8 +308,8 @@ public class CS40SConnectionsExamples
         //   the program.
         ////////////////////////////////////////////////////////////////////////
         
-        
-        
+        ArrayList<Animal> petShop = new ArrayList<>();
+                
         ////////////////////////////////////////////////////////////////////////
         // - The following ArrayList methods - including what they do and when 
         //   they are used - are part of the Java Quick Reference: 
@@ -329,8 +333,24 @@ public class CS40SConnectionsExamples
         //   remove elements.
         ////////////////////////////////////////////////////////////////////////
         
-        
-        
+        System.out.print("Method size() = " + petShop.size());
+        System.out.println(" ArrayList: " + petShop.toString());
+        boolean success = petShop.add(animal);
+        System.out.print("Method add(T) = " + success);
+        success = petShop.add(dog);
+        success = petShop.add(cat);
+        success = petShop.add(gary);
+        success = petShop.add(big);
+        for (Animal creature : petShop) {
+            System.out.println(" ArrayList: " + creature.toString());
+        }
+        petShop.add(3, gary);
+        System.out.println("Method add(3,gary) ArrayList: " + petShop.toString());
+        System.out.println("Method get(4) = " + petShop.get(4));
+        System.out.println("Method set(4,0) = " + petShop.set(4, big));   
+        System.out.println(" ArrayList: " + petShop.toString());
+        System.out.println("Method remove(4) = " + petShop.remove(4));
+        System.out.println(" ArrayList: " + petShop.toString());        
         
         System.out.println("Completed CS40S Connections......................");
     }
