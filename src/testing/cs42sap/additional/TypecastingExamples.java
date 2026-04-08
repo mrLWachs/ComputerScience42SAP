@@ -7,7 +7,7 @@ import utility.io.Simulator;
 
 
 /*
- * TypeCastingExamples - This class is an example of Java Typecasting. 
+ * TypecastingExamples - This class is an example of Java Typecasting. 
  * Typecasting objects in Java lets you switch how you view an object within 
  * an inheritance hierarchy, either safely (upcasting) or carefully 
  * (downcasting). Typecasting objects in Java means treating an object of one 
