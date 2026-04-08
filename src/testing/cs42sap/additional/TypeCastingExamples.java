@@ -7,19 +7,28 @@ import utility.io.Simulator;
 
 
 /*
- * UpCastingDownCastingExamples - This class is an example 
- * 
- * SPECIFICS FROM THE CURRICULUM....
- * 
- *   - 4.16.A.1 A recursive method is a method that calls itself. Recursive 
- *              methods contain at least one base case, which halts the 
- *              recursion, and at least one recursive call. Recursion is another 
- *              form of repetition.
+ * TypeCastingExamples - This class is an example of Java Typecasting. 
+ * Typecasting objects in Java lets you switch how you view an object within 
+ * an inheritance hierarchy, either safely (upcasting) or carefully 
+ * (downcasting). Typecasting objects in Java means treating an object of one 
+ * reference type as if it were another type, as long as both types are related 
+ * through inheritance. It does not change the actual object in memory - only 
+ * how the reference "views" it. Object typecasting changes the reference type, 
+ * not the object itself. Think of it like swapping remote controls: the object 
+ * stays the same, but the buttons (methods you can access) change.
+ *
+ * Why Typecast Objects?
+ * - To use polymorphism effectively
+ * - To access subclass-specific methods after upcasting
+ * - To write flexible, reusable code that works with general types but can
+ *   specialize when needed        
+ * - Work with collections: List<Animal> animals = new ArrayList<>();
+ * - Method parameters accepting superclass but need subclass behavior
  * 
  * @author Mr. Wachs
  * @since Apr 7, 2026, 2:23:33 PM
  */
-public class UpCastingDownCastingExamples 
+public class TypecastingExamples 
 {
     
     /**
@@ -29,37 +38,154 @@ public class UpCastingDownCastingExamples
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Simulator.title("Starting Upcasting and Downcasting Examples");
-        new UpCastingDownCastingExamples();
-        Simulator.title("\nCompleted Upcasting and Downcasting Examples");
+        Simulator.title("Starting Typecasting Examples");
+        new TypecastingExamples();
+        Simulator.title("\nCompleted Typecasting Examples");
     }
     
     /**
      * Default constructor, set class properties
      */
-    public UpCastingDownCastingExamples() {
-        System.out.println("Learn about Upcasting and Downcasting............");
+    public TypecastingExamples() {
+        System.out.println("Learn about Typecasting..........................");
         
         ////////////////////////////////////////////////////////////////////////
-        // (1) RECURSION:
+        // Upcasting (Child -> Parent) - Automatic (The Safe Bet)
         ////////////////////////////////////////////////////////////////////////
+        // Converting a subclass reference to a superclass type. Always safe, 
+        // done implicitly. Upcasting is casting a Subclass type to a 
+        // Superclass type.
         //
-        // - A recursive method is a method that calls itself. Recursive 
-        //   methods contain at least one base case, which halts the 
-        //   recursion, and at least one recursive call. Recursion is another 
-        //   form of repetition.
-        // - Each recursive call has its own set of local variables, 
-        //   including the parameters. Parameter values capture the progress 
-        //   of a recursive process, much like loop control variable values 
-        //   capture the progress of a loop.
-        // - Any recursive solution can be replicated through the use of an 
-        //   iterative approach and vice versa.
+        //  - Direction: Moving up the inheritance hierarchy (Child to Parent)
+        //  - Automatic: Java does this automatically because a child is always 
+        //               an instance of its parent
+        //  - Trade-off: You lose access to specific methods defined only in 
+        //               the subclass
         //
-        // A recursive method with a base case and recursive case and how it
-        // would have been implemented iteratively (with a loop)
-        ////////////////////////////////////////////////////////////////////////        
+        // Why use Upcasting?
+        //  - To achieve polymorphism (method overriding)
+        //  - To store different subclass objects in a single superclass 
+        //    reference (e.g., in arrays or lists)
+        ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Completed Upcasting and Downcasting..............");
+        System.out.println("Example 1: Upcasting.............................");
+        
+        Animal animal1 = new Dog();  // Dog object treated as Animal
+        animal1.eat();               // Animal method called
+        animal1.sound();             // Dog override method called
+        // animal1.wag();            // Compile error: Animal cannot call wag()
+        // After upcasting, you only access methods defined in the parent class
+
+        ////////////////////////////////////////////////////////////////////////
+        // Downcasting (Parent -> Child) - Manual (The Risky Move)
+        ////////////////////////////////////////////////////////////////////////
+        // Converting a superclass reference back to a subclass type. Must be 
+        // done explicitly. Downcasting is casting a Superclass type back to a 
+        // Subclass type.
+        //
+        //  - Direction:   Moving down the hierarchy (Parent to Child)
+        //  - Manual:      You must explicitly tell the compiler you know what 
+        //                 you're doing using parentheses: (Child)
+        //  - Requirement: The object being cast must actually be an instance 
+        //                 of that subclass at runtime
+        ////////////////////////////////////////////////////////////////////////
+        
+        System.out.println("Example 2: Downcasting...........................");
+        
+        Animal animal2 = new Dog();   // Upcast first
+        Dog dog2 = (Dog)animal2;      // Downcast explicitly
+        dog2.eat();                   // Call Animal method
+        dog2.sound();                 // Call override Dog method
+        dog2.wag();                   // Now you can access Dog methods
+        
+        // Dangerous downcast (ClassCastException):
+        Animal animal3 = new Animal();  // NOT a Dog object
+        // Dog dog3 = (Dog)animal3;     // Throws ClassCastException at runtime!
+       
+        ////////////////////////////////////////////////////////////////////////
+        // Safe Casting with instanceof
+        ////////////////////////////////////////////////////////////////////////
+        // If you try to downcast an object to a type it doesn't actually belong
+        // belong to, Java will throw a ClassCastException and crash your 
+        // program. To stay safe, always use the instanceof operator first.
+        // Always check before downcasting to avoid ClassCastException.
+        ////////////////////////////////////////////////////////////////////////
+        
+        System.out.println("Example 3: Safe Casting with instanceof..........");
+        
+        Animal animal4 = new Dog();     // Upcast
+        if (animal4 instanceof Dog) {   // Error check with instanceof
+            Dog dog4 = (Dog)animal4;    // Downcast
+            dog4.sound();               // Safe call override Dog method
+        }
+        
+        System.out.println("Example 4: Typecasting with array................");
+                
+        Animal[] animals = { new Dog(), new Cat(), new Animal() };  // Upcasting
+        for (Animal animal : animals) {     // Enhanced for loop
+            animal.eat();                   // Method works for all
+            if (animal instanceof Dog) {    // Error check
+                ((Dog)animal).sound();      // Downcast override Dog method
+            } 
+            else if (animal instanceof Cat) {
+                ((Cat)animal).sound();
+            } 
+            else {
+                animal.sound();
+            }
+        }        
+        
+        /*          
+        +===============+======================+===============================+
+        | Summary Table                                                        |
+        +===============+======================+===============================+
+        | Feature       | Upcasting            | Downcasting                   |
+        +===============+======================+===============================+
+        | Direction     | Child -> Parent      | Parent -> Child               |
+        +---------------+----------------------+-------------------------------+
+        | Done          | Automatically        | Manually with (Type)          |
+        +---------------+----------------------+-------------------------------+
+        | Syntax        | Implicit (Automatic) | Explicit (Manual)             |
+        +---------------+----------------------+-------------------------------+
+        | Safety        | Always safe          | Risky (can throw Exception)   |
+        +---------------+----------------------+-------------------------------+
+        | Access        | Parent methods only  | All child methods             |
+        +---------------+----------------------+-------------------------------+
+        | Best practice |           -          | Use instanceof before casting |
+        +---------------+----------------------+-------------------------------+
+        | Purpose       | To treat different   | To access specific subclass   |
+        |               | objects generally    | behaviors                     |
+        +===============+======================+===============================+
+        */
+
+        System.out.println("Completed Typecasting............................");
+    }
+    
+    public class Animal {
+        void eat() { 
+            System.out.println("Animal eats"); 
+        }        
+        void sound() {
+            System.out.println("Animal sound");
+        }
+    }
+
+    public class Dog extends Animal {
+        void sound() { 
+            System.out.println("Dog barks"); 
+        }        
+        void wag() {
+            System.out.println("Dog wags tail");
+        }
+    }
+    
+    public class Cat extends Animal {
+        void sound() { 
+            System.out.println("Cat meows"); 
+        }        
+        void scratch() {
+            System.out.println("Cat scratches");
+        }
     }
     
 }
