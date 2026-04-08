@@ -7,7 +7,7 @@ import testing.cs42sap.additional.ArrayListExamples;
 import testing.cs42sap.additional.CS40SConnectionsExamples;
 import testing.cs42sap.additional.StringMethodsExamples;
 import testing.cs42sap.additional.TextFilesExamples;
-import testing.cs42sap.additional.TypecastingExamples;
+import testing.cs42sap.additional.Typecasting1Examples;
 import testing.cs42sap.practice.PracticeTest4;
 import testing.cs42sap.practice.PracticeTest2;
 import testing.cs42sap.practice.PracticeTest1;
@@ -78,7 +78,7 @@ public class ComputerScience42SAP
         new ArrayListExamples();
         new StringMethodsExamples();
         new CS40SConnectionsExamples();
-        new TypecastingExamples();
+        new Typecasting1Examples();
     } 
     /**
      * Reads the array of all lines read from the curriculum data file to 
