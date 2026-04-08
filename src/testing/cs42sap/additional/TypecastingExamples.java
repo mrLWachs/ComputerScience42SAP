@@ -28,7 +28,7 @@ import utility.io.Simulator;
  * @author Mr. Wachs
  * @since Apr 7, 2026, 2:23:33 PM
  */
-public class Typecasting1Examples 
+public class TypecastingExamples 
 {
     
     /**
@@ -39,14 +39,14 @@ public class Typecasting1Examples
      */
     public static void main(String[] args) {
         Simulator.title("Starting Typecasting Examples");
-        new Typecasting1Examples();
+        new TypecastingExamples();
         Simulator.title("\nCompleted Typecasting Examples");
     }
     
     /**
      * Default constructor, set class properties
      */
-    public Typecasting1Examples() {
+    public TypecastingExamples() {
         System.out.println("Learn about Typecasting..........................");
         
         ////////////////////////////////////////////////////////////////////////
