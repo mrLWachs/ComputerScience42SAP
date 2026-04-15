@@ -49,6 +49,20 @@ public class TypecastingExamples
     public TypecastingExamples() {
         System.out.println("Learn about Typecasting..........................");
         
+        System.out.println("Typical Objects and methods......................");
+        
+        Animal a = new Animal();
+        a.eat();
+        a.sound();
+        Dog d = new Dog();
+        d.eat();
+        d.sound();
+        d.wag();
+        Cat c = new Cat();
+        c.eat();
+        c.sound();
+        c.scratch();
+        
         ////////////////////////////////////////////////////////////////////////
         // Upcasting (Child -> Parent) - Automatic (The Safe Bet)
         ////////////////////////////////////////////////////////////////////////
@@ -119,9 +133,22 @@ public class TypecastingExamples
             dog4.sound();               // Safe call override Dog method
         }
         
+        Animal animal5 = new Animal();  // Upcast
+        if (animal5 instanceof Dog) {   // Error check with instanceof
+            Dog dog5 = (Dog)animal5;    // Downcast error    
+            dog5.wag();                 // Method call not possible
+        }
+        else {
+            System.out.println("Cast error caught!");
+        }
+        
         System.out.println("Example 4: Typecasting with array................");
                 
-        Animal[] animals = { new Dog(), new Cat(), new Animal() };  // Upcasting
+        Animal[] animals = { 
+            new Dog(), 
+            new Cat(), 
+            new Animal() 
+        };                                  // Upcasting
         for (Animal animal : animals) {     // Enhanced for loop
             animal.eat();                   // Method works for all
             if (animal instanceof Dog) {    // Error check
@@ -157,6 +184,18 @@ public class TypecastingExamples
         |               | objects generally    | behaviors                     |
         +===============+======================+===============================+
         */
+        
+        System.out.println("Typical casting with primitives..................");
+        
+        int    x = 1;           // Primitive data type: integer (int)
+        double y = 2.2;         // Primitive data type: double
+        char   z = 'a';         // Primitive data type: character (char)
+        
+        int    m = (int)y;      // Cast double -> int
+        double n = (double)z;   // Cast char   -> double (using ASCII value)
+        
+        System.out.println("m = " + m);
+        System.out.println("n = " + n);
 
         System.out.println("Completed Typecasting............................");
     }
