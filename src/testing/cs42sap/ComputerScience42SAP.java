@@ -5,6 +5,7 @@ package testing.cs42sap;
 /** Required API imports */
 import testing.cs42sap.additional.ArrayListExamples;
 import testing.cs42sap.additional.CS40SConnectionsExamples;
+import testing.cs42sap.additional.SearchingExamples;
 import testing.cs42sap.additional.StringMethodsExamples;
 import testing.cs42sap.additional.TextFilesExamples;
 import testing.cs42sap.additional.TypecastingExamples;
@@ -79,6 +80,7 @@ public class ComputerScience42SAP
         new StringMethodsExamples();
         new CS40SConnectionsExamples();
         new TypecastingExamples();
+        new SearchingExamples();
     } 
     /**
      * Reads the array of all lines read from the curriculum data file to 
