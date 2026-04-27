@@ -6,6 +6,7 @@ package testing.cs42sap;
 import testing.cs42sap.additional.ArrayListExamples;
 import testing.cs42sap.additional.CS40SConnectionsExamples;
 import testing.cs42sap.additional.SearchingExamples;
+import testing.cs42sap.additional.SortingExamples;
 import testing.cs42sap.additional.StringMethodsExamples;
 import testing.cs42sap.additional.TextFilesExamples;
 import testing.cs42sap.additional.TypecastingExamples;
@@ -74,13 +75,14 @@ public class ComputerScience42SAP
      * exam
      */
     public static void additional() {
-        if (Simulator.check("Additional Content")) return;          
-        new TextFilesExamples();  
-        new ArrayListExamples();
-        new StringMethodsExamples();
+        if (Simulator.check("Additional Content")) return;   
         new CS40SConnectionsExamples();
+        new StringMethodsExamples();
+        new ArrayListExamples();
+        new TextFilesExamples();
         new TypecastingExamples();
         new SearchingExamples();
+        new SortingExamples();
     } 
     /**
      * Reads the array of all lines read from the curriculum data file to 
