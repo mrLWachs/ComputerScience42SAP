@@ -108,41 +108,10 @@ public class SortingExamples
         // Now we can start learning about sorting...
         ////////////////////////////////////////////////////////////////////////
         
-        ////////////////////////////////////////////////////////////////////////
-        // The "Bubble" sort is considered the "easiest" of the sorts...
-        //
-        //  - Watch: https://bit.ly/4mXR3Xd (simple 2 minutes)
-        //  - Read:  https://bit.ly/4tHzHQY (defines the algorithm)
-        ////////////////////////////////////////////////////////////////////////
-        
-        bubble(a1);
-        
-        ////////////////////////////////////////////////////////////////////////
-        // The "Selection" sort algorithm...
-        //
-        //  - Watch: https://bit.ly/4w4UGii (simple 2 minutes)
-        //  - Read:  https://bit.ly/4n1sgBF (defines the algorithm)
-        ////////////////////////////////////////////////////////////////////////
-        
-        selection(a2);
-        
-        ////////////////////////////////////////////////////////////////////////
-        // The "Insertion" sort algorithm...
-        //
-        //  - Watch: https://bit.ly/4t5ijEv (simple 2 minutes)
-        //  - Read:  https://bit.ly/48utoHO (defines the algorithm)
-        ////////////////////////////////////////////////////////////////////////
-        
-        insertion(a3);
-        
-        ////////////////////////////////////////////////////////////////////////
-        // The "Merge" sort algorithm...
-        //
-        //  - Watch: https://bit.ly/4eca71v (simple 2 minutes)
-        //  - Read:  https://bit.ly/4vXLhZB (defines the algorithm)
-        ////////////////////////////////////////////////////////////////////////
-        
-        merge(a4);
+        bubbleSort(a1);    // Harder to understand but the easiest to write
+        selectionSort(a2); // Easy to understand (intuitive) but harder to write
+        insertionSort(a3); // Not easy to understand and not easy to write
+        mergeSort(a4);     // Recursive and is difficult to write and understand
         
         ////////////////////////////////////////////////////////////////////////
         // Finally display the arrays after the various sorts...
@@ -182,11 +151,11 @@ public class SortingExamples
      * @return an array of random integers
      */
     private static int[] build(int size) {
-        int[] array = new int[size];
-        for (int i = 0; i < size; i++) {
-            array[i] = (int)((size-1-0+1)*Math.random()+0);
+        int[] array = new int[size];              // Create array of passed size
+        for (int i = 0; i < size; i++) {                       // Traverse array
+            array[i] = (int)((size-1-0+1)*Math.random()+0);  // Fill with random
         }
-        return array;
+        return array;                           // Pass back filled random array
     }
     
     /**
@@ -196,15 +165,19 @@ public class SortingExamples
      * @param text the first text to show before the array is shown
      */
     private static void show(int[] array, String text) {
-        System.out.print(text + ":\t");
-        for (int i : array) {
-            System.out.print(i + ",");
+        System.out.print(text + ":\t");                  // Display initial text
+        for (int i : array) {                                  // Traverse array
+            System.out.print(i + ",");                  // Display array element
         }
-        System.out.println("");
+        System.out.println("");                                // Add line break
     }
     
     /**
-     * Simple implementation of the bubble sort algorithm
+     * Simple implementation of the bubble sort algorithm. The algorithm is 
+     * named bubble sort because larger values gradually "bubble up" to the 
+     * correct end of the list with each pass through the data. It’s designed 
+     * to look just like air bubbles rising to the surface of a glass of soda 
+     * until they reach their final position at the top!
      * 
      *  - Watch: https://bit.ly/4mXR3Xd (simple 2 minutes)
      *  - Read:  https://bit.ly/4tHzHQY (defines the algorithm)
@@ -214,11 +187,11 @@ public class SortingExamples
      * 
      * @param array the array to sort
      */
-    private static void bubble(int[] array) {
-         for (int i = 0; i < array.length; i++) {
-             for (int j = 0; j < array.length-1; j++) {
-                 if (array[j] > array[j+1]) {
-                     int temp   = array[j];
+    private static void bubbleSort(int[] array) {
+         for (int i = 0; i < array.length; i++) {              // Traverse array
+             for (int j = 0; j < array.length-1; j++) {    // Traverse to 1 less
+                 if (array[j] > array[j+1]) {               // Compare if larger
+                     int temp   = array[j];                        // Swap items 
                      array[j]   = array[j+1];
                      array[j+1] = temp;
                  }
@@ -227,7 +200,11 @@ public class SortingExamples
     }
     
     /**
-     * Implementation of the selection sort algorithm
+     * Implementation of the selection sort algorithm. It is called selection 
+     * sort because the algorithm repeatedly searches through the unsorted part 
+     * of a list to select the smallest remaining item. Once that item is picked 
+     * out, it's moved to its correct spot, much like how you would sort a hand 
+     * of cards by constantly picking the lowest card you see.
      * 
      * - Watch: https://bit.ly/4w4UGii (simple 2 minutes)
      * - Read:  https://bit.ly/4n1sgBF (defines the algorithm)
@@ -237,22 +214,26 @@ public class SortingExamples
      * 
      * @param array the array to sort
      */
-    private static void selection(int[] array) {
-        for (int i = 0; i < array.length - 1; i++) {
-            int min = i;
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[j] < array[min]) {
-                    min = j;
+    private static void selectionSort(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {      // Travel array to < 1
+            int min = i;                                      // Assume smallest
+            for (int j = i + 1; j < array.length; j++) { // Travel rest of array
+                if (array[j] < array[min]) {               // Compare if smaller
+                    min = j;                       // Store position of smallest
                 }
             }
-            int temp   = array[min];
+            int temp   = array[min];              // Swap smallest with position
             array[min] = array[i];
             array[i]   = temp;
         }
     }
     
     /**
-     * Implementation of the insertion sort algorithm
+     * Implementation of the insertion sort algorithm. It is called insertion 
+     * sort because you take one item at a time and insert it into its correct 
+     * spot within the already organized part of the list. It’s exactly like 
+     * sorting a hand of playing cards where you pick up a new card and slide it 
+     * into the right place between the others!
      * 
      * - Watch: https://bit.ly/4t5ijEv (simple 2 minutes) 
      * - Read:  https://bit.ly/48utoHO (defines the algorithm)
@@ -262,21 +243,25 @@ public class SortingExamples
      * 
      * @param array the array to sort
      */
-    private static void insertion(int[] array) {
-        for (int i = 1; i < array.length; i++) {
-            int key = array[i];
-            int j   = i - 1;
-            while (j >= 0 && array[j] > key) {
-                array[j + 1] = array[j];
-                j--;
+    private static void insertionSort(int[] array) {
+        for (int i = 1; i < array.length; i++) {        // Travel array from 2nd
+            int key = array[i];                  // Item we are trying to insert
+            int j   = i - 1;                             // Index right of index
+            while (j >= 0 && array[j] > key) {        // Loop and move positions
+                array[j + 1] = array[j];                       // Move positions
+                j--;                                                // Move left
             }
-            array[j + 1] = key;
+            array[j + 1] = key;                              // Put key in place
         }
     }
-    
+        
     /**
-     * Implementation of the merge sort algorithm
-     * (a "wrapper" method of the recursive implementation of the algorithm)
+     * Implementation of the merge sort algorithm (a "wrapper" method of the 
+     * recursive implementation of the algorithm). It’s called merge sort 
+     * because the main trick is taking two smaller, already-organized lists and 
+     * merging them together into one larger, sorted list. It works by splitting 
+     * everything into tiny pieces and then zipping them back together in the 
+     * perfect order!
      * 
      * - Watch: https://bit.ly/4eca71v (simple 2 minutes)
      * - Read:  https://bit.ly/4vXLhZB (defines the algorithm)
@@ -286,8 +271,8 @@ public class SortingExamples
      * 
      * @param array the array to sort
      */
-    private static void merge(int[] a) {
-        mergeRecursively(a,0,a.length-1);       
+    private static void mergeSort(int[] a) {
+        mergeRecursively(a, 0, a.length-1);    // Call "hidden" recursive method
     }
 
     /**
@@ -322,30 +307,30 @@ public class SortingExamples
      * Merges two sorted contiguous segments of an array into a single sorted 
      * segment
      * 
-     * @param array The original array containing the segments
-     * @param left  The starting index of the first segment
-     * @param mid   The ending index of the first segment
-     * @param right The ending index of the second segment
+     * @param array  The original array containing the segments
+     * @param left   The starting index of the first segment
+     * @param middle The ending index of the first segment
+     * @param right  The ending index of the second segment
     */
-    private static void mergeSegments(int[] array, int left, int mid, int right) {
+    private static void mergeSegments(int[] array, int left, int middle, int right) {
         // 1. Calculate the sizes of the two subarrays to be merged
-        int n1 = mid   - left + 1; // Size of the left half
-        int n2 = right - mid;      // Size of the right half
+        int subarray1 = middle - left + 1;              // Size of the left half
+        int subarray2 = right  - middle;               // Size of the right half
         // 2. Create temporary arrays to hold the data during the merge process
-        int[] leftTemp  = new int[n1];
-        int[] rightTemp = new int[n2];
+        int[] leftTemp  = new int[subarray1];
+        int[] rightTemp = new int[subarray2];
         // 3. Copy data from the main array into the temporary arrays L and R
-        for (int i = 0; i < n1; ++i) {
+        for (int i = 0; i < subarray1; ++i) {
             leftTemp[i] = array[left + i];
         }
-        for (int j = 0; j < n2; ++j) {
-            rightTemp[j] = array[mid + 1 + j];
+        for (int j = 0; j < subarray2; ++j) {
+            rightTemp[j] = array[middle + 1 + j];
         }
         // 4. Merge the temporary arrays back into the original array
-        int i = 0;    // Initial index of the first subarray (L)
-        int j = 0;    // Initial index of the second subarray (R)
+        int i = 0;    // Initial index of the first subarray (leftTemp)
+        int j = 0;    // Initial index of the second subarray (rightTemp)
         int k = left; // Initial index of the merged subarray (original array)
-        while (i < n1 && j < n2) {
+        while (i < subarray1 && j < subarray2) {
             // Pick smaller element from either L or R to maintain sorted order
             if (leftTemp[i] <= rightTemp[j]) {
                 array[k] = leftTemp[i];
@@ -358,13 +343,13 @@ public class SortingExamples
             k++;
         }
         // 5. Copy any remaining elements from the left array (L), if any exist
-        while (i < n1) {
+        while (i < subarray1) {
             array[k] = leftTemp[i];
             i++;
             k++;
         }
         // 6. Copy any remaining elements from the right array (R), if any exist
-        while (j < n2) {
+        while (j < subarray2) {
             array[k] = rightTemp[j];
             j++;
             k++;
