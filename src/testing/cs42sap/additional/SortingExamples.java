@@ -206,6 +206,12 @@ public class SortingExamples
     /**
      * Simple implementation of the bubble sort algorithm
      * 
+     *  - Watch: https://bit.ly/4mXR3Xd (simple 2 minutes)
+     *  - Read:  https://bit.ly/4tHzHQY (defines the algorithm)
+     * 
+     * The time complexity (BigO notation) of this algorithm is:
+     *   O(n^2) -> where "n" is the items in the array (squared)
+     * 
      * @param array the array to sort
      */
     private static void bubble(int[] array) {
@@ -222,6 +228,12 @@ public class SortingExamples
     
     /**
      * Implementation of the selection sort algorithm
+     * 
+     * - Watch: https://bit.ly/4w4UGii (simple 2 minutes)
+     * - Read:  https://bit.ly/4n1sgBF (defines the algorithm)
+     * 
+     * The time complexity (BigO notation) of this algorithm is:
+     *   O(n^2) -> where "n" is the items in the array (squared)
      * 
      * @param array the array to sort
      */
@@ -242,6 +254,12 @@ public class SortingExamples
     /**
      * Implementation of the insertion sort algorithm
      * 
+     * - Watch: https://bit.ly/4t5ijEv (simple 2 minutes) 
+     * - Read:  https://bit.ly/48utoHO (defines the algorithm)
+     * 
+     * The time complexity (BigO notation) of this algorithm is:
+     *   O(n^2) -> where "n" is the items in the array (squared)
+     * 
      * @param array the array to sort
      */
     private static void insertion(int[] array) {
@@ -258,6 +276,13 @@ public class SortingExamples
     
     /**
      * Implementation of the merge sort algorithm
+     * (a "wrapper" method of the recursive implementation of the algorithm)
+     * 
+     * - Watch: https://bit.ly/4eca71v (simple 2 minutes)
+     * - Read:  https://bit.ly/4vXLhZB (defines the algorithm)
+     * 
+     * The time complexity (BigO notation) of this algorithm is:
+     *   O(nLOGn) -> where "n" is the items in the array (logarithmic)
      * 
      * @param array the array to sort
      */
@@ -308,11 +333,9 @@ public class SortingExamples
         // 1. Calculate the sizes of the two subarrays to be merged
         int n1 = mid - left + 1; // Size of the left half
         int n2 = right - mid;    // Size of the right half
-
         // 2. Create temporary arrays to hold the data during the merge process
         int[] leftTemp  = new int[n1];
         int[] rightTemp = new int[n2];
-
         // 3. Copy data from the main array into the temporary arrays L and R
         for (int i = 0; i < n1; ++i) {
             leftTemp[i] = array[left + i];
@@ -320,12 +343,10 @@ public class SortingExamples
         for (int j = 0; j < n2; ++j) {
             rightTemp[j] = array[mid + 1 + j];
         }
-
         // 4. Merge the temporary arrays back into the original array
         int i = 0;    // Initial index of the first subarray (L)
         int j = 0;    // Initial index of the second subarray (R)
         int k = left; // Initial index of the merged subarray (original array)
-
         while (i < n1 && j < n2) {
             // Pick smaller element from either L or R to maintain sorted order
             if (leftTemp[i] <= rightTemp[j]) {
@@ -338,14 +359,12 @@ public class SortingExamples
             }
             k++;
         }
-
         // 5. Copy any remaining elements from the left array (L), if any exist
         while (i < n1) {
             array[k] = leftTemp[i];
             i++;
             k++;
         }
-
         // 6. Copy any remaining elements from the right array (R), if any exist
         while (j < n2) {
             array[k] = rightTemp[j];
