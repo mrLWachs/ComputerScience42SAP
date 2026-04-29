@@ -3,7 +3,6 @@ package testing.cs42sap.additional;
  
 /** Required API imports */
 import utility.io.Simulator;
-import java.util.ArrayList;
 import java.util.Arrays;
 import utility.collections.LinkedList;
 import utility.tools.Numbers;
@@ -169,6 +168,9 @@ public class SortingExamples
         //  - https://bit.ly/4cG1Vpa
         //  - https://bit.ly/4t8lcoa
         ////////////////////////////////////////////////////////////////////////
+        
+        System.out.println("\n\nBonus sorting examples...");
+        
         bonus();
     }
         
