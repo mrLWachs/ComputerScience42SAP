@@ -12,22 +12,38 @@ import utility.tools.Text;
 
 
 /**
- * SortingExamples.java - useful methods for sorting arrays and lists of data. This is 
- * the student requested review of the sorting concepts as needed for the AP 
- * exam (from the AP Computer Science curriculum). 
- *
- * In the A.P. Computer Science A curriculum in Units 7 and 9, students will 
- * notice that the term "sorting" comes up as something potentially they 
- * can be tested on. For example it states: "Apply selection sort and 
- * insertion sort algorithms to sort the elements of array or ArrayList 
- * objects", "Selection sort and insertion sort are iterative sorting 
- * algorithms that can be used to sort elements in an array or ArrayList", 
- * "Recursive algorithms, such as sorting and searching algorithms, often 
- * produce a result much more quickly than iterative solutions", "Apply 
- * recursive algorithms to sort elements of array or ArrayList objects", 
- * and "Merge sort is a recursive sorting algorithm that can be used to 
- * sort elements in an array or ArrayList". 
+ * SortingExamples.java - useful methods for sorting arrays and lists of data. 
+ * This is the sorting concepts as needed for the AP exam (from the AP Computer
+ * Science curriculum). 
  * 
+ * The AP Curriculum mentions "sort" in the following places:
+ * 
+ *  - 4.15.A   Determine the result of executing each step of sorting algorithms 
+ *             to sort the elements of a collection.
+ *  - 4.15.A.1 Selection sort and insertion sort are iterative sorting 
+ *             algorithms that can be used to sort elements in an array or 
+ *             ArrayList.
+ *  - 4.15.A.2 Selection sort repeatedly selects the smallest (or largest) 
+ *             element from the unsorted portion of the list and swaps it into 
+ *             its correct (and final) position in the sorted portion of the 
+ *             list.
+ *  - 4.15.A.3 Insertion sort inserts an element from the unsorted portion of a
+ *             list into its correct (but not necessarily final) position in the 
+ *             sorted portion of the list by shifting elements of the sorted 
+ *             portion
+ *  - 4.17.C   Determine the result of each iteration of the merge sort 
+ *             algorithm when used to sort a collection.
+ *  - 4.17.C.1 Merge sort is a recursive sorting algorithm that can be used to 
+ *             sort elements in an array or ArrayList.
+ *  - 4.17.C.2 Merge sort repeatedly divides an array into smaller subarrays 
+ *             until each subarray is one element and then recursively merges 
+ *             the sorted subarrays back together in sorted order to form the 
+ *             final sorted array.
+ * 
+ *  EXCLUSION STATEMENT: Sorting algorithms other than selection, insertion, 
+ *                       and merge sort are outside the scope of the AP Computer 
+ *                       Science A course and exam.
+ *
  * However, with more analysis of these curriculum points, more specifics 
  * can be drawn out. Since the curriculum document is vague about it, I would 
  * interpret what you need to know about sorting is:
@@ -51,7 +67,7 @@ import utility.tools.Text;
  *             - https://bit.ly/42dFt18
  *
  * @author Mr. Wachs
- * @since Apr 27, 2026, 7:20:21 AM
+ * @since Apr 29, 2026, 7:20:21 AM
  */
 public class SortingExamples 
 {
@@ -75,47 +91,272 @@ public class SortingExamples
         System.out.println("Let us start learning about sorting...");
         
         ////////////////////////////////////////////////////////////////////////
-        // Let us begin to start learning about sorting...
+        // First let us make some methods to build and show random arrays...
         ////////////////////////////////////////////////////////////////////////
         
+        final int SIZE = 20;
+        int a1[] = build(SIZE);
+        int a2[] = build(SIZE);
+        int a3[] = build(SIZE);
+        int a4[] = build(SIZE);
         
+        show(a1,"Array 1 before");
+        show(a2,"Array 2 before");
+        show(a3,"Array 3 before");
+        show(a4,"Array 4 before");
+                
         ////////////////////////////////////////////////////////////////////////
-        // Create a maximum number of random people for our list object and use
-        // three different actual population sizes for testing...
-        // Approximate population of Winnipeg:  783 thousand people    (783,096)
-        // Approximate population of Manitoba:  1.3 million  people  (1,342,153)
-        // Approximate population of Canada:   40.1 million  people (40,100,000)
-        ////////////////////////////////////////////////////////////////////////
-        
-        final int WINNIPEG =   783096;
-        final int MANITOBA =  1342153;
-        final int CANADA   = 40100000;
-        final int TOTAL    = CANADA;
-        
-        ////////////////////////////////////////////////////////////////////////
-        // Create the ADT list to store the data
+        // Now we can start learning about sorting...
         ////////////////////////////////////////////////////////////////////////
         
-        ArrayList<String> population = new ArrayList<>();
+        ////////////////////////////////////////////////////////////////////////
+        // The "Bubble" sort is considered the "easiest" of the sorts...
+        //
+        //  - Watch: https://bit.ly/4mXR3Xd (simple 2 minutes)
+        //  - Read:  https://bit.ly/4tHzHQY (defines the algorithm)
+        ////////////////////////////////////////////////////////////////////////
+        
+        bubble(a1);
         
         ////////////////////////////////////////////////////////////////////////
-        // Fill the ArrayList ADT with random names
+        // The "Selection" sort algorithm...
+        //
+        //  - Watch: https://bit.ly/4w4UGii (simple 2 minutes)
+        //  - Read:  https://bit.ly/4n1sgBF (defines the algorithm)
         ////////////////////////////////////////////////////////////////////////
         
-        for (int i = 0; i < TOTAL; i++) {
-            String person = randomName();
-            population.add(person);
+        selection(a2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        // The "Insertion" sort algorithm...
+        //
+        //  - Watch: https://bit.ly/4t5ijEv (simple 2 minutes)
+        //  - Read:  https://bit.ly/48utoHO (defines the algorithm)
+        ////////////////////////////////////////////////////////////////////////
+        
+        insertion(a3);
+        
+        ////////////////////////////////////////////////////////////////////////
+        // The "Merge" sort algorithm...
+        //
+        //  - Watch: https://bit.ly/4eca71v (simple 2 minutes)
+        //  - Read:  https://bit.ly/4vXLhZB (defines the algorithm)
+        ////////////////////////////////////////////////////////////////////////
+        
+        merge(a4);
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Finally display the arrays after the various sorts...
+        ////////////////////////////////////////////////////////////////////////
+        
+        System.out.println("After sorts...");
+        
+        show(a1,"Bubble sort   ");
+        show(a2,"Selection sort");
+        show(a3,"Insertion sort");
+        show(a4,"Merge sort    ");
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Also some bonus sorting code to potentially look at...
+        //
+        // And some "fun" videos to show the concepts:
+        //  - Bubble    sort: https://bit.ly/4mVFjnQ
+        //  - Selection sort: https://bit.ly/490ziAC
+        //  - Insertion sort: https://bit.ly/4n144iz
+        //  - Merge     sort: https://bit.ly/4ddMHHZ
+        // And some online "visualizers"...
+        //  - https://bit.ly/422UhiA
+        //  - https://bit.ly/4cG1Vpa
+        //  - https://bit.ly/4t8lcoa
+        ////////////////////////////////////////////////////////////////////////
+        bonus();
+    }
+        
+    /**
+     * Builds an array of the passed size filled with random integers from 0 up 
+     * to one less than the size of the array
+     * 
+     * @param size the size of the array to create
+     * @return an array of random integers
+     */
+    private static int[] build(int size) {
+        int[] array = new int[size];
+        for (int i = 0; i < size; i++) {
+            array[i] = (int)((size-1-0+1)*Math.random()+0);
         }
-        
-        ////////////////////////////////////////////////////////////////////////
-        // Now sort the list and display some of the results
-        ////////////////////////////////////////////////////////////////////////
-        
-        final int AMOUNT_TO_DISPLAY = 5;
-        
-        sort(population);                       // Sort the list
-        output(population,AMOUNT_TO_DISPLAY);   // Display the sorted list
-        
+        return array;
+    }
+    
+    /**
+     * Shows the array on screen with some preliminary text
+     * 
+     * @param array the array to show
+     * @param text the first text to show before the array is shown
+     */
+    private static void show(int[] array, String text) {
+        System.out.print(text + ":\t");
+        for (int i : array) {
+            System.out.print(i + ",");
+        }
+        System.out.println("");
+    }
+    
+    /**
+     * Simple implementation of the bubble sort algorithm
+     * 
+     * @param array the array to sort
+     */
+    private static void bubble(int[] array) {
+         for (int i = 0; i < array.length; i++) {
+             for (int j = 0; j < array.length-1; j++) {
+                 if (array[j] > array[j+1]) {
+                     int temp = array[j];
+                     array[j]     = array[j+1];
+                     array[j+1]   = temp;
+                 }
+             }
+         }
+    }
+    
+    /**
+     * Implementation of the selection sort algorithm
+     * 
+     * @param array the array to sort
+     */
+    private static void selection(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[j] < array[min]) {
+                    min = j;
+                }
+            }
+            int temp   = array[min];
+            array[min] = array[i];
+            array[i]   = temp;
+        }
+    }
+    
+    /**
+     * Implementation of the insertion sort algorithm
+     * 
+     * @param array the array to sort
+     */
+    private static void insertion(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            int key = array[i];
+            int j   = i - 1;
+            while (j >= 0 && array[j] > key) {
+                array[j + 1] = array[j];
+                j--;
+            }
+            array[j + 1] = key;
+        }
+    }
+    
+    /**
+     * Implementation of the merge sort algorithm
+     * 
+     * @param array the array to sort
+     */
+    private static void merge(int[] a) {
+        mergeRecursively(a,0,a.length-1);       
+    }
+
+    /**
+     * Recursively divides the array into halves and triggers the merging 
+     * process. Part of the Merge Sort algorithm.
+     *
+     * @param array The array to be sorted
+     * @param left  The starting index of the current segment
+     * @param right The ending index of the current segment
+    */
+    private static void mergeRecursively(int[] array, int left, int right) {
+        // Base Case: If left is not less than right, the segment has 0 or 1 
+        // element and is already "sorted"
+        if (left < right) {
+            // Calculate the midpoint to divide the array into two halves, 
+            // using (right - left) / 2 prevents potential integer overflow for
+            // large arrays
+            int mid = left + (right - left) / 2;
+            
+            // Recursive Call 1: Sort the left half (from left to mid)
+            mergeRecursively(array, left, mid);
+            
+            // Recursive Call 2: Sort the right half (from mid + 1 to right)
+            mergeRecursively(array, mid + 1, right);
+            
+            // Merge Step: Combine the two sorted halves back together
+            // Note: This calls an overloaded version of mergeRecursively (or 
+            //       a merge helper)
+            mergeRecursively(array, left, mid, right);
+        }
+    }
+
+    /**
+     * Merges two sorted contiguous segments of an array into a single sorted 
+     * segment
+     * 
+     * @param array The original array containing the segments
+     * @param left  The starting index of the first segment
+     * @param mid   The ending index of the first segment
+     * @param right The ending index of the second segment
+    */
+    private static void mergeRecursively(int[] array, int left, int mid, int right) {
+        // 1. Calculate the sizes of the two subarrays to be merged
+        int n1 = mid - left + 1; // Size of the left half
+        int n2 = right - mid;    // Size of the right half
+
+        // 2. Create temporary arrays to hold the data during the merge process
+        int[] leftTemp  = new int[n1];
+        int[] rightTemp = new int[n2];
+
+        // 3. Copy data from the main array into the temporary arrays L and R
+        for (int i = 0; i < n1; ++i) {
+            leftTemp[i] = array[left + i];
+        }
+        for (int j = 0; j < n2; ++j) {
+            rightTemp[j] = array[mid + 1 + j];
+        }
+
+        // 4. Merge the temporary arrays back into the original array
+        int i = 0;    // Initial index of the first subarray (L)
+        int j = 0;    // Initial index of the second subarray (R)
+        int k = left; // Initial index of the merged subarray (original array)
+
+        while (i < n1 && j < n2) {
+            // Pick smaller element from either L or R to maintain sorted order
+            if (leftTemp[i] <= rightTemp[j]) {
+                array[k] = leftTemp[i];
+                i++;
+            } 
+            else {
+                array[k] = rightTemp[j];
+                j++;
+            }
+            k++;
+        }
+
+        // 5. Copy any remaining elements from the left array (L), if any exist
+        while (i < n1) {
+            array[k] = leftTemp[i];
+            i++;
+            k++;
+        }
+
+        // 6. Copy any remaining elements from the right array (R), if any exist
+        while (j < n2) {
+            array[k] = rightTemp[j];
+            j++;
+            k++;
+        }
+    }
+    
+    /**
+     * Some bonus sorting code in a class in this project you can examine that
+     * uses generic values in lists and arrays
+     */
+    private void bonus() {
         ////////////////////////////////////////////////////////////////////////
         // NOTE: more searching code including searching arrays and LinkedList
         // (the one we developed ourselves in the CS40S class) of generic data
@@ -248,147 +489,5 @@ public class SortingExamples
         sort.radix(list);        
         System.out.println("After radix sort list:   \t" + list.toString());
     }
-        
-    /**
-     * Creates a random "name" of a set number of random characters with the 
-     * first character being a capital letter
-     * 
-     * @return a random name
-     */
-    private String randomName() {
-        final int LOW  = (int)'a';              // Letters from the alphabet
-        final int HIGH = (int)'z';      
-        final int SIZE = 5;                     // The size of the name
-        String name = "";       
-        for (int i = 0; i < SIZE; i++) {        // Fill name with letters
-            char letter = (char)( (HIGH - LOW + 1d) * Math.random() + LOW);
-            if (i == 0) {                       // Capitalize first letter
-                letter = Character.toUpperCase(letter);
-            }
-            name += letter;                     // Add letter to name
-        }
-        return name;
-    }
-    
-    /**
-     * Display the list of on screen of a set amount from the beginning of the
-     * list and the ned of the list
-     * 
-     * @param list the ADT list to display
-     * @param amount the amount of items to display from the front and back
-     */
-    private void output(ArrayList<String> list, int amount) {
-        System.out.println("Here are the first " + amount + " in the list...");
-        for (int i = 0; i < amount; i++) {
-            System.out.println(i + ": \t" + list.get(i));
-        }
-        System.out.println("Here are the last " + amount + " in the list...");
-        int end = list.size();
-        int start = end - amount;
-        for (int i = start; i < end; i++) {
-            System.out.println(i + ": \t" + list.get(i));
-        }
-    }
-    
-    /**
-     * The sorting of the list 
-     * 
-     * @param list the ADT list 
-     */
-    private void sort(ArrayList<String> list) {
-        // There are many types of sort algorithms you can investigate,
-        // the most intuitive one most people think of is known as the 
-        // "selection sort" algorithm. In which you search a list for the 
-        // smallest item, move it to a new list, and continue until all items
-        // fromt he original list are moved to a new list. However, the 
-        // "bubble sort" is the easiest algorithm to write.
-        
-        // A Basic "bubble sort" algorithm below:
-        // int a[] = { 3,5,7,2,9,1,8 };
-        // for (int i = 0; i < a.length; i++) {
-        //     for (int j = 0; j < a.length-1; j++) {
-        //         if (a[j] > a[j+1]) {
-        //             int temp = a[j];
-        //             a[j]     = a[j+1];
-        //             a[j+1]   = temp;
-        //         }
-        //     }
-        // }
-        
-        // Here is a more "optimized" version of the bubble sort
-        // for (int i = list.size()-1; i > 0; i--) {            
-        //     boolean didISwap = false;            
-        //     // Travel through the list...
-        //     for (int j = 0; j < i; j++) {
-        //         Person p1 = list.get(j);
-        //         Person p2 = list.get(j + 1);
-        //         // Check if the value is greater than 
-        //         // the next value
-        //         if (p1.compareTo(p2) > 0) {
-        //             didISwap = true;
-        //             // Swap them
-        //             Person p3 = p1.clone();
-        //             p1 = new Person(p2.name, p2.age, p2.iq);
-        //             p2 = new Person(p3.name, p3.age, p3.iq);
-        //             // Update the list
-        //             list.set(j, p1);
-        //             list.set(j + 1, p2);
-        //         }
-        //     }            
-        //     // check if no swaps took place
-        //     if (didISwap == false) {
-        //         return;
-        //     }
-        // }
-        // // Do it again (as many times as things in the list)
-        
-        
-        // And here is a "fancier" sort algorithm known as the "quick sort"
-        // algorithm that uses wrapper methods and recursion to sort the list
-        if (list == null) return;                       // error check
-        recursiveQuick(list,0,list.size()-1);        
-    }
-    
-    /**
-     * Recursive implementation of a quick sort algorithm 
-     * 
-     * @param list the ArrayList to sort
-     * @param front the marker for the front partition
-     * @param back the marker for the back partition 
-     */
-    private void recursiveQuick(ArrayList<String> list, int front, int back) {
-        if (back <= front) return;
-        else {
-            int pivot = partition(list,front,back);
-            recursiveQuick(list,front,pivot-1);
-            recursiveQuick(list,pivot+1,back);
-        }
-    }
-    
-    /**
-     * Partitions the list into S1 and S2 and separates
-     * 
-     * @param list the ArrayList to partition
-     * @param front the marker for the front partition
-     * @param back the marker for the back partition 
-     * @return the position of the partition in the list
-     */
-    private int partition(ArrayList<String> list, int front, int back) {
-        String pivot = list.get(front);
-        while (back > front) {
-            while (back > front && list.get(back).compareTo(pivot) > 0)
-                back--;
-            if (back == front) break;
-            list.set(front,list.get(back));
-            front++;            
-            while (back > front && list.get(front).compareTo(pivot) < 0)
-                front++;
-            if (back == front) break;
-            list.set(back,list.get(front));
-            back--;
-        }
-        list.set(front,pivot);
-        return front; 
-    }
-    
+
 }
