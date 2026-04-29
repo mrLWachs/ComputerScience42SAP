@@ -218,9 +218,9 @@ public class SortingExamples
          for (int i = 0; i < array.length; i++) {
              for (int j = 0; j < array.length-1; j++) {
                  if (array[j] > array[j+1]) {
-                     int temp = array[j];
-                     array[j]     = array[j+1];
-                     array[j+1]   = temp;
+                     int temp   = array[j];
+                     array[j]   = array[j+1];
+                     array[j+1] = temp;
                  }
              }
          }
@@ -314,9 +314,7 @@ public class SortingExamples
             mergeRecursively(array, mid + 1, right);
             
             // Merge Step: Combine the two sorted halves back together
-            // Note: This calls an overloaded version of mergeRecursively (or 
-            //       a merge helper)
-            mergeRecursively(array, left, mid, right);
+            mergeSegments(array, left, mid, right);
         }
     }
 
@@ -329,10 +327,10 @@ public class SortingExamples
      * @param mid   The ending index of the first segment
      * @param right The ending index of the second segment
     */
-    private static void mergeRecursively(int[] array, int left, int mid, int right) {
+    private static void mergeSegments(int[] array, int left, int mid, int right) {
         // 1. Calculate the sizes of the two subarrays to be merged
-        int n1 = mid - left + 1; // Size of the left half
-        int n2 = right - mid;    // Size of the right half
+        int n1 = mid   - left + 1; // Size of the left half
+        int n2 = right - mid;      // Size of the right half
         // 2. Create temporary arrays to hold the data during the merge process
         int[] leftTemp  = new int[n1];
         int[] rightTemp = new int[n2];
