@@ -79,7 +79,7 @@ public class SortingExamples
      */
     public static void main(String[] args) {
         Simulator.title("Starting Searching Examples");
-        new SortingExamples();
+        new SortingExamples(); 
         Simulator.title("\nCompleted Searching Examples");
     }
 
